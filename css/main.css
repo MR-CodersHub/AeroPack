@@ -1569,3 +1569,99 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   .principle-grid { grid-template-columns: 1fr; }
   .principle-card:last-child { grid-column: auto; }
 }
+
+
+/* ── 28. Traveler Personas ────────────────────────────────── */
+.persona-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.6fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: stretch;
+}
+.persona-intro {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 4vw, 3rem);
+  border-radius: var(--radius-lg);
+  background: var(--midnight-navy);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.persona-intro::after {
+  content: '';
+  position: absolute;
+  width: 260px; height: 260px;
+  right: -120px; bottom: -120px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 50%;
+  box-shadow: 0 0 0 48px rgba(255,255,255,0.03), 0 0 0 96px rgba(255,255,255,0.02);
+  pointer-events: none;
+}
+.persona-intro .section-label,
+.persona-intro .section-title,
+.persona-intro .section-subtitle,
+.persona-count { position: relative; z-index: 1; }
+.persona-intro .section-label { color: var(--muted-gold); }
+.persona-intro .section-label::before,
+.persona-intro .section-label::after { display: none; }
+.persona-intro .section-title { color: var(--white); font-size: clamp(1.9rem, 3vw, 2.7rem); }
+.persona-intro .section-subtitle { color: rgba(255,255,255,0.72); font-size: 1rem; margin-bottom: 2rem; }
+.persona-count {
+  display: inline-flex; align-items: baseline; gap: 0.6rem;
+  font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+.persona-count strong {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.5rem; line-height: 1; letter-spacing: 0;
+  color: var(--muted-gold);
+}
+.persona-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.persona-card {
+  position: relative;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.persona-card:last-child { grid-column: 1 / -1; }
+.persona-card::before {
+  content: '';
+  position: absolute; inset: 0 auto 0 0; width: 3px;
+  background: var(--muted-gold); opacity: 0;
+  transition: opacity var(--transition);
+}
+[dir="rtl"] .persona-card::before { inset: 0 0 0 auto; }
+.persona-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--muted-gold); }
+.persona-card:hover::before { opacity: 1; }
+.persona-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
+.persona-num { font-family: 'Playfair Display', Georgia, serif; font-size: 0.9rem; letter-spacing: 0.08em; color: var(--muted-gold); }
+.persona-icon {
+  width: 44px; height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: var(--radius-md);
+  background: rgba(197,164,95,0.12);
+  color: var(--muted-gold);
+  font-size: 1.15rem;
+}
+.persona-card h4 { margin-bottom: 0.5rem; font-size: 1.05rem; }
+.persona-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem; }
+.persona-link {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--muted-gold);
+  transition: gap var(--transition-fast);
+}
+.persona-link:hover { gap: 0.6rem; }
+
+@media (max-width: 1100px) {
+  .persona-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .persona-grid { grid-template-columns: 1fr; }
+  .persona-card:last-child { grid-column: auto; }
+}
