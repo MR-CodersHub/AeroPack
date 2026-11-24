@@ -2423,3 +2423,13 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   .blog-excerpt { font-size: 0.85rem; }
   .blog-meta { font-size: 0.75rem; }
 }
+
+/* Bestseller section header action */
+.bestsellers-head { align-items: flex-end; }
+.bestsellers-head .section-header { flex: 1 1 420px; min-width: 0; }
+.bestsellers-head > .btn { flex: 0 0 auto; }
+@media (max-width: 768px) {
+  .bestsellers-head { align-items: stretch; }
+  .bestsellers-head .section-header { flex: 1 1 100%; }
+  .bestsellers-head > .btn { width: 100%; justify-content: center; text-align: center; }
+}
