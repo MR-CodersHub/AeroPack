@@ -476,6 +476,47 @@ p:last-child { margin-bottom: 0; }
   background: var(--muted-gold);
   border-radius: 1px;
 }
+/* Services dropdown */
+.nav-dropdown { position: relative; display: flex; align-items: center; }
+.nav-dropdown-toggle {
+  display: flex; align-items: center; gap: 0.35rem;
+  cursor: pointer;
+  background: none; border: none;
+  font-family: inherit;
+}
+.nav-caret { font-size: 0.7rem; transition: transform var(--transition-fast); }
+.nav-dropdown:hover .nav-caret,
+.nav-dropdown:focus-within .nav-caret,
+.nav-dropdown.open .nav-caret,
+.mobile-nav-group.open .nav-caret { transform: rotate(180deg); }
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  inset-inline-start: 0;
+  min-width: 220px;
+  padding: 0.4rem;
+  display: none;
+  flex-direction: column;
+  background: var(--midnight-navy);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  z-index: 1000;
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu { display: flex; }
+.nav-dropdown-link {
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  color: rgba(255,255,255,0.85);
+}
+.nav-dropdown-link:hover, .nav-dropdown-link.active {
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+}
 .navbar-actions { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
 .navbar-icon-btn {
   position: relative;
@@ -540,6 +581,16 @@ p:last-child { margin-bottom: 0; }
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 .mobile-nav-link:hover { background: rgba(255,255,255,0.08); color: var(--white); }
+.mobile-nav-group-toggle {
+  width: 100%;
+  display: flex; align-items: center; justify-content: space-between;
+  text-align: start;
+  background: none; border: none;
+  font-family: inherit; cursor: pointer;
+}
+.mobile-nav-submenu { display: none; }
+.mobile-nav-group.open .mobile-nav-submenu { display: block; }
+.mobile-nav-submenu .mobile-nav-link { padding-inline-start: 2rem; font-size: 0.9rem; }
 
 /* Page Offset */
 .page-content { padding-top: var(--navbar-height); }

@@ -27,22 +27,26 @@
 
       <nav class="navbar-nav" aria-label="Primary Navigation">
         <a href="index.html" class="nav-link active">Home 1</a>
-        <a href="home-2.html" class="nav-link">Home 2</a>
-        <a href="about.html" class="nav-link">About Us</a>
-        <a href="services.html" class="nav-link">Shop</a>
-        <a href="services.html#shop-by-type" class="nav-link">Travel Collections</a>
-        <a href="services.html#warranty-protection" class="nav-link">Warranty &amp; Repair</a>
-        <a href="blog.html" class="nav-link">Travel Journal</a>
-        <a href="pricing.html" class="nav-link">Offers</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="login.html" class="nav-link">Sign In</a>
+        <a href="pages/home-2.html" class="nav-link">Home 2</a>
+        <a href="pages/about.html" class="nav-link">About Us</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown-menu">
+            <a href="pages/services.html" class="nav-dropdown-link">Shop</a>
+            <a href="pages/services.html#shop-by-type" class="nav-dropdown-link">Travel Collections</a>
+            <a href="pages/services.html#warranty-protection" class="nav-dropdown-link">Warranty &amp; Repair</a>
+          </div>
+        </div>
+        <a href="pages/blog.html" class="nav-link">Blog</a>
+        <a href="pages/pricing.html" class="nav-link">Offers</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
       </nav>
 
       <div class="navbar-actions">
         <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme">🌙 Dark</button>
         <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
         
-        <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='services.html'" title="Wishlist" aria-label="Wishlist">
+        <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='pages/services.html'" title="Wishlist" aria-label="Wishlist">
           🤍
           <span class="navbar-badge wishlist-count-badge" style="display:none;">0</span>
         </button>
@@ -52,7 +56,7 @@
           <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
         </button>
 
-        <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
+        <a href="pages/services.html" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
 
         <button class="navbar-toggle" aria-label="Toggle Mobile Navigation">☰</button>
       </div>
@@ -62,18 +66,21 @@
   <!-- MOBILE NAVIGATION DRAWER -->
   <div class="mobile-nav" id="mobile-navigation">
     <a href="index.html" class="mobile-nav-link">Home 1 (General Store)</a>
-    <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
-    <a href="about.html" class="mobile-nav-link">About Us</a>
-    <a href="services.html" class="mobile-nav-link">Shop All Products</a>
-    <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
-    <a href="services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Product Care</a>
-    <a href="services.html#repair-services" class="mobile-nav-link">Luggage Repair Service</a>
-    <a href="blog.html" class="mobile-nav-link">Travel Journal &amp; Guides</a>
-    <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Sets</a>
-    <a href="contact.html" class="mobile-nav-link">Contact Store</a>
-    <a href="login.html" class="mobile-nav-link">Login / Register</a>
+    <a href="pages/home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
+    <a href="pages/about.html" class="mobile-nav-link">About Us</a>
+    <div class="mobile-nav-group">
+      <button type="button" class="mobile-nav-link mobile-nav-group-toggle" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true">▾</span></button>
+      <div class="mobile-nav-submenu">
+        <a href="pages/services.html" class="mobile-nav-link">Shop</a>
+        <a href="pages/services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
+        <a href="pages/services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Repair</a>
+      </div>
+    </div>
+    <a href="pages/blog.html" class="mobile-nav-link">Blog</a>
+    <a href="pages/pricing.html" class="mobile-nav-link">Pricing &amp; Sets</a>
+    <a href="pages/contact.html" class="mobile-nav-link">Contact Store</a>
     <div class="p-3">
-      <a href="services.html" class="btn btn-teal w-100">Shop Travel Essentials</a>
+      <a href="pages/services.html" class="btn btn-teal w-100">Shop Travel Essentials</a>
     </div>
   </div>
 
@@ -94,8 +101,8 @@
           Engineered for international flights, high-speed rail, and spontaneous weekend escapes. Discover aerospace-grade polycarbonate shells, whisper-quiet spinner wheels, and ergonomic travel systems built to withstand a lifetime of exploration.
         </p>
         <div class="hero-actions">
-          <a href="services.html" class="btn btn-gold btn-lg">Shop Now &rarr;</a>
-          <a href="services.html#shop-by-type" class="btn btn-outline-white btn-lg">Explore Collections</a>
+          <a href="pages/services.html" class="btn btn-gold btn-lg">Shop Now &rarr;</a>
+          <a href="pages/services.html#shop-by-type" class="btn btn-outline-white btn-lg">Explore Collections</a>
         </div>
         <div class="hero-stats">
           <div>
@@ -135,7 +142,7 @@
               Engineered matching sets built for harmonious airport transit, flexible capacities, and compact nested storage at home.
             </p>
           </div>
-          <a href="services.html?category=luggage-sets" class="btn btn-outline btn-sm">View All Sets &rarr;</a>
+          <a href="pages/services.html?category=luggage-sets" class="btn btn-outline btn-sm">View All Sets &rarr;</a>
         </div>
 
         <div class="grid cols-auto-fill-280 gap-3">
@@ -155,7 +162,7 @@
             <div class="product-card-body">
               <div class="product-type">Hard-Shell &bull; Polycarbonate &bull; 3 Pieces</div>
               <h3 class="product-name">
-                <a href="service-details.html?id=aero-voyager-set">AeroVoyager Pro 3-Piece Luggage Set</a>
+                <a href="pages/service-details.html?id=aero-voyager-set">AeroVoyager Pro 3-Piece Luggage Set</a>
               </h3>
               <div class="product-rating">
                 <span class="stars">★★★★★</span>
@@ -171,7 +178,7 @@
               </div>
             </div>
             <div class="product-card-footer">
-              <a href="service-details.html?id=aero-voyager-set" class="btn btn-outline btn-sm flex-1">View Details</a>
+              <a href="pages/service-details.html?id=aero-voyager-set" class="btn btn-outline btn-sm flex-1">View Details</a>
               <button class="btn btn-teal btn-sm" onclick="addToCart('aero-voyager-set')">Add to Cart</button>
             </div>
           </article>
@@ -192,7 +199,7 @@
             <div class="product-card-body">
               <div class="product-type">Hard-Shell &bull; Covestro Poly &bull; 2 Pieces</div>
               <h3 class="product-name">
-                <a href="service-details.html?id=aero-duo-set">Nomad Duo 2-Piece Carry-On &amp; Check Set</a>
+                <a href="pages/service-details.html?id=aero-duo-set">Nomad Duo 2-Piece Carry-On &amp; Check Set</a>
               </h3>
               <div class="product-rating">
                 <span class="stars">★★★★★</span>
@@ -208,7 +215,7 @@
               </div>
             </div>
             <div class="product-card-footer">
-              <a href="service-details.html?id=aero-duo-set" class="btn btn-outline btn-sm flex-1">View Details</a>
+              <a href="pages/service-details.html?id=aero-duo-set" class="btn btn-outline btn-sm flex-1">View Details</a>
               <button class="btn btn-teal btn-sm" onclick="addToCart('aero-duo-set')">Add to Cart</button>
             </div>
           </article>
@@ -229,7 +236,7 @@
             <div class="product-card-body">
               <div class="product-type">Hard-Shell &bull; Aluminum Frame &bull; 1 Piece</div>
               <h3 class="product-name">
-                <a href="service-details.html?id=stratus-carry-on">Stratus Luxe Carbon Cabin Suitcase</a>
+                <a href="pages/service-details.html?id=stratus-carry-on">Stratus Luxe Carbon Cabin Suitcase</a>
               </h3>
               <div class="product-rating">
                 <span class="stars">★★★★★</span>
@@ -245,7 +252,7 @@
               </div>
             </div>
             <div class="product-card-footer">
-              <a href="service-details.html?id=stratus-carry-on" class="btn btn-outline btn-sm flex-1">View Details</a>
+              <a href="pages/service-details.html?id=stratus-carry-on" class="btn btn-outline btn-sm flex-1">View Details</a>
               <button class="btn btn-teal btn-sm" onclick="addToCart('stratus-carry-on')">Add to Cart</button>
             </div>
           </article>
@@ -265,7 +272,7 @@
             <div class="product-card-body">
               <div class="product-type">Hard-Shell &bull; Polycarbonate &bull; 96L Check-In</div>
               <h3 class="product-name">
-                <a href="service-details.html?id=horizon-checkin-large">Horizon Grand 28" Check-in Trunk</a>
+                <a href="pages/service-details.html?id=horizon-checkin-large">Horizon Grand 28" Check-in Trunk</a>
               </h3>
               <div class="product-rating">
                 <span class="stars">★★★★★</span>
@@ -280,7 +287,7 @@
               </div>
             </div>
             <div class="product-card-footer">
-              <a href="service-details.html?id=horizon-checkin-large" class="btn btn-outline btn-sm flex-1">View Details</a>
+              <a href="pages/service-details.html?id=horizon-checkin-large" class="btn btn-outline btn-sm flex-1">View Details</a>
               <button class="btn btn-teal btn-sm" onclick="addToCart('horizon-checkin-large')">Add to Cart</button>
             </div>
           </article>
@@ -303,7 +310,7 @@
 
         <div class="grid cols-auto-fill-280 gap-3">
           <!-- 1. Cabin Suitcases -->
-          <div class="category-card reveal" onclick="window.location.href='services.html?category=cabin-luggage'">
+          <div class="category-card reveal" onclick="window.location.href='pages/services.html?category=cabin-luggage'">
             <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=600&q=80" alt="Cabin Suitcases" loading="lazy">
             <div class="category-card-overlay">
               <div class="category-card-info">
@@ -315,7 +322,7 @@
           </div>
 
           <!-- 2. Check-in Luggage -->
-          <div class="category-card reveal reveal-delay-1" onclick="window.location.href='services.html?category=checkin-suitcases'">
+          <div class="category-card reveal reveal-delay-1" onclick="window.location.href='pages/services.html?category=checkin-suitcases'">
             <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Check-in Luggage" loading="lazy">
             <div class="category-card-overlay">
               <div class="category-card-info">
@@ -327,7 +334,7 @@
           </div>
 
           <!-- 3. Luggage Sets -->
-          <div class="category-card reveal reveal-delay-2" onclick="window.location.href='services.html?category=luggage-sets'">
+          <div class="category-card reveal reveal-delay-2" onclick="window.location.href='pages/services.html?category=luggage-sets'">
             <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=600&q=80" alt="Luggage Sets" loading="lazy">
             <div class="category-card-overlay">
               <div class="category-card-info">
@@ -339,7 +346,7 @@
           </div>
 
           <!-- 4. Travel Backpacks -->
-          <div class="category-card reveal reveal-delay-3" onclick="window.location.href='services.html?category=travel-backpacks'">
+          <div class="category-card reveal reveal-delay-3" onclick="window.location.href='pages/services.html?category=travel-backpacks'">
             <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=600&q=80" alt="Travel Backpacks" loading="lazy">
             <div class="category-card-overlay">
               <div class="category-card-info">
@@ -351,7 +358,7 @@
           </div>
 
           <!-- 5. Duffel Bags -->
-          <div class="category-card reveal" onclick="window.location.href='services.html?category=duffel-bags'">
+          <div class="category-card reveal" onclick="window.location.href='pages/services.html?category=duffel-bags'">
             <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Duffel Bags" loading="lazy">
             <div class="category-card-overlay">
               <div class="category-card-info">
@@ -363,7 +370,7 @@
           </div>
 
           <!-- 6. Business Travel Bags -->
-          <div class="category-card reveal reveal-delay-1" onclick="window.location.href='services.html?category=business-bags'">
+          <div class="category-card reveal reveal-delay-1" onclick="window.location.href='pages/services.html?category=business-bags'">
             <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Business Travel Bags" loading="lazy">
             <div class="category-card-overlay">
               <div class="category-card-info">
@@ -375,7 +382,7 @@
           </div>
 
           <!-- 7. Travel Accessories -->
-          <div class="category-card reveal reveal-delay-2" onclick="window.location.href='services.html?category=travel-accessories'">
+          <div class="category-card reveal reveal-delay-2" onclick="window.location.href='pages/services.html?category=travel-accessories'">
             <img src="https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=600&q=80" alt="Travel Accessories" loading="lazy">
             <div class="category-card-overlay">
               <div class="category-card-info">
@@ -519,8 +526,8 @@
             Experience effortless glide, aerospace-certified durability, and sophisticated travel aesthetics backed by our 5-year global structural protection and dedicated repair support.
           </p>
           <div class="cta-banner-actions">
-            <a href="services.html" class="btn btn-gold btn-lg">Explore All Products &rarr;</a>
-            <a href="pricing.html" class="btn btn-outline-white btn-lg">View Collections &amp; Bundles</a>
+            <a href="pages/services.html" class="btn btn-gold btn-lg">Explore All Products &rarr;</a>
+            <a href="pages/pricing.html" class="btn btn-outline-white btn-lg">View Collections &amp; Bundles</a>
           </div>
         </div>
       </div>
@@ -557,13 +564,13 @@
           <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-links">
             <li><a href="index.html" class="footer-link">Home 1 (General Store)</a></li>
-            <li><a href="home-2.html" class="footer-link">Home 2 (Collections)</a></li>
-            <li><a href="about.html" class="footer-link">About Brand Story</a></li>
-            <li><a href="services.html" class="footer-link">Shop All Products</a></li>
-            <li><a href="services.html#shop-by-type" class="footer-link">Travel Collections</a></li>
-            <li><a href="services.html#warranty-protection" class="footer-link">Warranty Information</a></li>
-            <li><a href="services.html#repair-services" class="footer-link">Luggage Repair Service</a></li>
-            <li><a href="pricing.html" class="footer-link">Luggage Sets &amp; Offers</a></li>
+            <li><a href="pages/home-2.html" class="footer-link">Home 2 (Collections)</a></li>
+            <li><a href="pages/about.html" class="footer-link">About Brand Story</a></li>
+            <li><a href="pages/services.html" class="footer-link">Shop All Products</a></li>
+            <li><a href="pages/services.html#shop-by-type" class="footer-link">Travel Collections</a></li>
+            <li><a href="pages/services.html#warranty-protection" class="footer-link">Warranty Information</a></li>
+            <li><a href="pages/services.html#repair-services" class="footer-link">Luggage Repair Service</a></li>
+            <li><a href="pages/pricing.html" class="footer-link">Luggage Sets &amp; Offers</a></li>
           </ul>
         </div>
 
@@ -571,14 +578,14 @@
         <div>
           <h4 class="footer-col-title">Collections &amp; Tips</h4>
           <ul class="footer-links">
-            <li><a href="services.html?category=cabin-luggage" class="footer-link">Cabin Suitcases</a></li>
-            <li><a href="services.html?category=checkin-suitcases" class="footer-link">Check-in Luggage</a></li>
-            <li><a href="services.html?category=luggage-sets" class="footer-link">Luggage Sets</a></li>
-            <li><a href="services.html?category=travel-backpacks" class="footer-link">Travel Backpacks</a></li>
-            <li><a href="services.html?category=duffel-bags" class="footer-link">Duffel Bags</a></li>
-            <li><a href="services.html?category=travel-accessories" class="footer-link">Travel Accessories</a></li>
-            <li><a href="blog.html" class="footer-link">Travel Journal &amp; Guides</a></li>
-            <li><a href="contact.html" class="footer-link">Customer Support</a></li>
+            <li><a href="pages/services.html?category=cabin-luggage" class="footer-link">Cabin Suitcases</a></li>
+            <li><a href="pages/services.html?category=checkin-suitcases" class="footer-link">Check-in Luggage</a></li>
+            <li><a href="pages/services.html?category=luggage-sets" class="footer-link">Luggage Sets</a></li>
+            <li><a href="pages/services.html?category=travel-backpacks" class="footer-link">Travel Backpacks</a></li>
+            <li><a href="pages/services.html?category=duffel-bags" class="footer-link">Duffel Bags</a></li>
+            <li><a href="pages/services.html?category=travel-accessories" class="footer-link">Travel Accessories</a></li>
+            <li><a href="pages/blog.html" class="footer-link">Blog</a></li>
+            <li><a href="pages/contact.html" class="footer-link">Customer Support</a></li>
           </ul>
         </div>
 
@@ -599,7 +606,7 @@
           </div>
 
           <div class="footer-newsletter">
-            <span class="text-xs" style="color: rgba(255,255,255,0.7); font-weight:600;">Subscribe to Travel Journal</span>
+            <span class="text-xs" style="color: rgba(255,255,255,0.7); font-weight:600;">Subscribe to Blog</span>
             <form class="footer-newsletter-form" onsubmit="return handleNewsletterSubmit(event)">
               <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
               <button type="submit" class="btn btn-gold btn-sm">Join</button>
@@ -613,9 +620,9 @@
           &copy; 2026 AeroPack International Travel Goods. All rights reserved. Precision engineering for the modern voyager.
         </div>
         <div class="footer-legal">
-          <a href="contact.html">Terms of Service</a>
-          <a href="contact.html">Privacy Policy</a>
-          <a href="services.html#warranty-protection">Warranty Notice</a>
+          <a href="pages/contact.html">Terms of Service</a>
+          <a href="pages/contact.html">Privacy Policy</a>
+          <a href="pages/services.html#warranty-protection">Warranty Notice</a>
         </div>
       </div>
     </div>

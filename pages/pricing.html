@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
   <header class="navbar" id="site-header">
     <div class="container navbar-inner">
       <div class="navbar-brand">
-        <a href="index.html" class="navbar-logo" aria-label="AeroPack Home">
+        <a href="../index.html" class="navbar-logo" aria-label="AeroPack Home">
           <div class="navbar-logo-icon">🧳</div>
           <div class="navbar-logo-text">
             <span class="navbar-logo-name">AeroPack</span>
@@ -26,16 +26,20 @@
       </div>
 
       <nav class="navbar-nav" aria-label="Primary Navigation">
-        <a href="index.html" class="nav-link">Home 1</a>
+        <a href="../index.html" class="nav-link">Home 1</a>
         <a href="home-2.html" class="nav-link">Home 2</a>
         <a href="about.html" class="nav-link">About Us</a>
-        <a href="services.html" class="nav-link">Shop</a>
-        <a href="services.html#shop-by-type" class="nav-link">Travel Collections</a>
-        <a href="services.html#warranty-protection" class="nav-link">Warranty &amp; Repair</a>
-        <a href="blog.html" class="nav-link">Travel Journal</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true">▾</span></button>
+          <div class="nav-dropdown-menu">
+            <a href="services.html" class="nav-dropdown-link">Shop</a>
+            <a href="services.html#shop-by-type" class="nav-dropdown-link">Travel Collections</a>
+            <a href="services.html#warranty-protection" class="nav-dropdown-link">Warranty &amp; Repair</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">Blog</a>
         <a href="pricing.html" class="nav-link active">Offers</a>
         <a href="contact.html" class="nav-link">Contact</a>
-        <a href="login.html" class="nav-link">Sign In</a>
       </nav>
 
       <div class="navbar-actions">
@@ -60,17 +64,20 @@
 
   <!-- MOBILE NAVIGATION DRAWER -->
   <div class="mobile-nav" id="mobile-navigation">
-    <a href="index.html" class="mobile-nav-link">Home 1 (General Store)</a>
+    <a href="../index.html" class="mobile-nav-link">Home 1 (General Store)</a>
     <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
     <a href="about.html" class="mobile-nav-link">About Us</a>
-    <a href="services.html" class="mobile-nav-link">Shop All Products</a>
-    <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
-    <a href="services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Product Care</a>
-    <a href="services.html#repair-services" class="mobile-nav-link">Luggage Repair Service</a>
-    <a href="blog.html" class="mobile-nav-link">Travel Journal &amp; Guides</a>
+    <div class="mobile-nav-group">
+      <button type="button" class="mobile-nav-link mobile-nav-group-toggle" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true">▾</span></button>
+      <div class="mobile-nav-submenu">
+        <a href="services.html" class="mobile-nav-link">Shop</a>
+        <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
+        <a href="services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Repair</a>
+      </div>
+    </div>
+    <a href="blog.html" class="mobile-nav-link">Blog</a>
     <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Sets</a>
     <a href="contact.html" class="mobile-nav-link">Contact Store</a>
-    <a href="login.html" class="mobile-nav-link">Login / Register</a>
   </div>
 
   <main class="page-content">
@@ -85,7 +92,7 @@
       <div class="page-hero-overlay"></div>
       <div class="container page-hero-content">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Home</a> &gt; <span>Travel Collections &amp; Pricing</span>
+          <a href="../index.html">Home</a> &gt; <span>Travel Collections &amp; Pricing</span>
         </nav>
         <span class="section-label">Transparent Value</span>
         <h1>Travel Collections, Sets &amp; Offers</h1>
@@ -413,7 +420,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="navbar-logo mb-2" aria-label="AeroPack">
+          <a href="../index.html" class="navbar-logo mb-2" aria-label="AeroPack">
             <div class="navbar-logo-icon">🧳</div>
             <div class="navbar-logo-text">
               <span class="navbar-logo-name">AeroPack</span>
@@ -434,7 +441,7 @@
         <div>
           <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html" class="footer-link">Home 1 (General Store)</a></li>
+            <li><a href="../index.html" class="footer-link">Home 1 (General Store)</a></li>
             <li><a href="home-2.html" class="footer-link">Home 2 (Collections)</a></li>
             <li><a href="about.html" class="footer-link">About Brand Story</a></li>
             <li><a href="services.html" class="footer-link">Shop All Products</a></li>
@@ -454,7 +461,7 @@
             <li><a href="services.html?category=travel-backpacks" class="footer-link">Travel Backpacks</a></li>
             <li><a href="services.html?category=duffel-bags" class="footer-link">Duffel Bags</a></li>
             <li><a href="services.html?category=travel-accessories" class="footer-link">Travel Accessories</a></li>
-            <li><a href="blog.html" class="footer-link">Travel Journal &amp; Guides</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
             <li><a href="contact.html" class="footer-link">Customer Support</a></li>
           </ul>
         </div>
@@ -475,7 +482,7 @@
           </div>
 
           <div class="footer-newsletter">
-            <span class="text-xs" style="color: rgba(255,255,255,0.7); font-weight:600;">Subscribe to Travel Journal</span>
+            <span class="text-xs" style="color: rgba(255,255,255,0.7); font-weight:600;">Subscribe to Blog</span>
             <form class="footer-newsletter-form" onsubmit="return handleNewsletterSubmit(event)">
               <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
               <button type="submit" class="btn btn-gold btn-sm">Join</button>
@@ -519,7 +526,7 @@
   <button class="back-to-top" aria-label="Back to Top">&uarr;</button>
   <div class="toast-container" aria-live="polite"></div>
 
-  <script src="js/products.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

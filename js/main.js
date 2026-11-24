@@ -6,6 +6,9 @@
 (function () {
   'use strict';
 
+  // All pages except index.html live in /pages
+  const PAGES_BASE = window.location.pathname.replace(/\\/g, '/').includes('/pages/') ? '' : 'pages/';
+
   // ── 1. GLOBAL STATE & LOCAL STORAGE ────────────────────────
   const STATE = {
     cart: JSON.parse(localStorage.getItem('aeropack_cart')) || [],
@@ -190,7 +193,7 @@
             <div class="cart-empty-icon">🧳</div>
             <h4>Your travel bag is empty</h4>
             <p class="text-sm text-secondary mt-1">Discover durable luggage designed for seamless global journeys.</p>
-            <a href="services.html" class="btn btn-teal btn-sm mt-3" onclick="closeCart()">Explore Collections</a>
+            <a href="${PAGES_BASE}services.html" class="btn btn-teal btn-sm mt-3" onclick="closeCart()">Explore Collections</a>
           </div>
         `;
       } else {
@@ -409,6 +412,42 @@
     }
   }
 
+  // ── 9b. SERVICES NAVIGATION DROPDOWN ────────────────────────
+  function initNavDropdowns() {
+    const groups = document.querySelectorAll('.nav-dropdown, .mobile-nav-group');
+
+    const closeAll = () => {
+      groups.forEach(group => {
+        group.classList.remove('open');
+        const toggle = group.querySelector('button');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      });
+    };
+
+    groups.forEach(group => {
+      const toggle = group.querySelector('button');
+      if (!toggle) return;
+
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isOpen = group.classList.contains('open');
+        closeAll();
+        if (!isOpen) {
+          group.classList.add('open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-dropdown, .mobile-nav-group')) closeAll();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeAll();
+    });
+  }
+
   // ── 10. LIGHTBOX FUNCTIONALITY ─────────────────────────────
   window.openLightbox = function (imgSrc) {
     let overlay = document.querySelector('.lightbox-overlay');
@@ -542,7 +581,7 @@
         <div class="product-card-body">
           <div class="product-type">${product.categoryName}</div>
           <h3 class="product-name">
-            <a href="service-details.html?id=${product.id}">${product.name}</a>
+            <a href="${PAGES_BASE}service-details.html?id=${product.id}">${product.name}</a>
           </h3>
           <div class="product-rating">
             <span class="stars">★★★★★</span>
@@ -557,7 +596,7 @@
           </div>
         </div>
         <div class="product-card-footer">
-          <a href="service-details.html?id=${product.id}" class="btn btn-outline btn-sm flex-1">View Details</a>
+          <a href="${PAGES_BASE}service-details.html?id=${product.id}" class="btn btn-outline btn-sm flex-1">View Details</a>
           <button class="btn btn-teal btn-sm" onclick="addToCart('${product.id}')">Add to Cart</button>
         </div>
       </div>
@@ -582,6 +621,7 @@
     initAccordions();
     initScrollEffects();
     initMobileNav();
+    initNavDropdowns();
 
     // If services page
     if (document.getElementById('services-product-grid')) {
