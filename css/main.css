@@ -426,8 +426,13 @@ p:last-child { margin-bottom: 0; }
   background: linear-gradient(135deg, var(--muted-gold), #c9a97a);
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
+  color: var(--midnight-navy);
   box-shadow: 0 2px 8px rgba(185,154,99,0.4);
+}
+.navbar-logo-icon i {
+  color: var(--midnight-navy);
+  line-height: 1;
 }
 .navbar-logo-text { display: flex; flex-direction: column; }
 .navbar-logo-name {
@@ -1246,7 +1251,31 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   transition: all var(--transition);
 }
 .journey-card:hover { box-shadow: var(--shadow-md); border-color: var(--muted-gold); transform: translateY(-2px); }
-.journey-icon { font-size: 2rem; flex-shrink: 0; }
+.journey-icon {
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: rgba(40,91,98,0.1);
+  color: var(--deep-teal);
+  transition: all var(--transition-fast);
+}
+[data-theme="dark"] .journey-icon {
+  background: rgba(185,154,99,0.15);
+  color: var(--muted-gold);
+}
+.journey-card:hover .journey-icon {
+  background: var(--deep-teal);
+  color: var(--white);
+}
+[data-theme="dark"] .journey-card:hover .journey-icon {
+  background: var(--muted-gold);
+  color: var(--midnight-navy);
+}
 .journey-card h4 { margin-bottom: 0.4rem; font-size: 1rem; }
 .journey-card p { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
 

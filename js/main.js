@@ -34,7 +34,7 @@
 
     // Update toggle buttons text/icon if present
     document.querySelectorAll('.theme-toggle').forEach(btn => {
-      btn.innerHTML = STATE.theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+      btn.innerHTML = STATE.theme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
     });
     document.querySelectorAll('.rtl-toggle').forEach(btn => {
       btn.innerHTML = STATE.dir === 'rtl' ? 'LTR' : 'RTL';
@@ -46,7 +46,7 @@
     localStorage.setItem('aeropack_theme', STATE.theme);
     document.documentElement.setAttribute('data-theme', STATE.theme);
     document.querySelectorAll('.theme-toggle').forEach(btn => {
-      btn.innerHTML = STATE.theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+      btn.innerHTML = STATE.theme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
     });
     showToast('Theme Changed', `Switched to ${STATE.theme} mode`, 'info');
   };
@@ -81,10 +81,10 @@
     const toast = document.createElement('div');
     toast.className = `toast toast-${type}`;
     
-    let icon = '✓';
-    if (type === 'error') icon = '✕';
-    if (type === 'warning') icon = '⚠';
-    if (type === 'info') icon = 'ℹ';
+    let icon = '<i class="fa-solid fa-check"></i>';
+    if (type === 'error') icon = '<i class="fa-solid fa-xmark"></i>';
+    if (type === 'warning') icon = '<i class="fa-solid fa-triangle-exclamation"></i>';
+    if (type === 'info') icon = '<i class="fa-solid fa-circle-info"></i>';
 
     toast.innerHTML = `
       <span class="toast-icon">${icon}</span>
@@ -190,7 +190,7 @@
       if (STATE.cart.length === 0) {
         cartList.innerHTML = `
           <div class="cart-empty">
-            <div class="cart-empty-icon">🧳</div>
+            <div class="cart-empty-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
             <h4>Your travel bag is empty</h4>
             <p class="text-sm text-secondary mt-1">Discover durable luggage designed for seamless global journeys.</p>
             <a href="${PAGES_BASE}services.html" class="btn btn-teal btn-sm mt-3" onclick="closeCart()">Explore Collections</a>
@@ -248,10 +248,10 @@
       const id = btn.getAttribute('data-wishlist-id');
       if (STATE.wishlist.includes(id)) {
         btn.classList.add('active');
-        btn.innerHTML = '❤️';
+        btn.innerHTML = '<i class="fa-solid fa-heart"></i>';
       } else {
         btn.classList.remove('active');
-        btn.innerHTML = '🤍';
+        btn.innerHTML = '<i class="fa-regular fa-heart"></i>';
       }
     });
   }
@@ -403,10 +403,10 @@
         const isOpen = mobileNav.classList.contains('open');
         if (isOpen) {
           mobileNav.classList.remove('open');
-          toggle.innerHTML = '☰';
+          toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
         } else {
           mobileNav.classList.add('open');
-          toggle.innerHTML = '✕';
+          toggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
         }
       });
     }
@@ -557,7 +557,7 @@
     if (filtered.length === 0) {
       container.innerHTML = `
         <div class="no-results" style="grid-column: 1 / -1;">
-          <div class="no-results-icon">🔍</div>
+          <div class="no-results-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
           <h3>No matching travel products found</h3>
           <p class="text-sm text-secondary mt-1">Try adjusting your filters, price range, or search keywords.</p>
           <button class="btn btn-outline btn-sm mt-3" onclick="resetFilters()">Reset All Filters</button>
@@ -574,8 +574,8 @@
             <span class="badge badge-${product.badgeType}">${product.badge}</span>
           </div>
           <div class="product-actions">
-            <button class="action-btn wishlist-btn" data-wishlist-id="${product.id}" onclick="toggleWishlist('${product.id}')" title="Save to wishlist" aria-label="Save to Wishlist">🤍</button>
-            <button class="action-btn" onclick="openLightbox('${product.image}')" title="Zoom image" aria-label="View photo">🔍</button>
+            <button class="action-btn wishlist-btn" data-wishlist-id="${product.id}" onclick="toggleWishlist('${product.id}')" title="Save to wishlist" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="action-btn" onclick="openLightbox('${product.image}')" title="Zoom image" aria-label="View photo"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
           </div>
         </div>
         <div class="product-card-body">

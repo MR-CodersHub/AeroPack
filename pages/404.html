@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body style="background: var(--midnight-navy); color: var(--white); min-height: 100vh; display: flex; flex-direction: column;">
@@ -15,14 +16,14 @@
   <!-- Minimal Header -->
   <header style="padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08);">
     <a href="../index.html" class="navbar-logo">
-      <div class="navbar-logo-icon">🧳</div>
+      <div class="navbar-logo-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
       <div class="navbar-logo-text">
         <span class="navbar-logo-name">AeroPack</span>
         <span class="navbar-logo-tagline">Travel Goods</span>
       </div>
     </a>
     <div class="flex gap-2">
-      <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark</button>
+      <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-regular fa-moon"></i> Dark</button>
       <button class="rtl-toggle" onclick="toggleDir()">RTL</button>
       <a href="services.html" class="btn btn-gold btn-sm">Shop Collections</a>
     </div>
@@ -32,7 +33,7 @@
     <div style="position: absolute; inset: 0; opacity: 0.15; background: url('https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=1920&q=80') center/cover;"></div>
     
     <div style="position: relative; z-index: 2; max-width: 620px;">
-      <div style="font-size: 4rem; margin-bottom: 0.5rem;">🧭</div>
+      <div style="font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--muted-gold);"><i class="fa-solid fa-compass"></i></div>
       <div class="error-code">404</div>
       <h1 class="error-title font-serif">Flight Path Not Found</h1>
       <p class="error-msg">
