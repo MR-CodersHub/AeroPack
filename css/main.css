@@ -2086,3 +2086,14 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   .map-hours { margin-left: 0; }
   .map-overlay { left: 0.85rem; right: 0.85rem; bottom: 0.85rem; }
 }
+
+
+/* Bestseller section header action */
+.bestsellers-head { align-items: flex-end; }
+.bestsellers-head .section-header { flex: 1 1 420px; min-width: 0; }
+.bestsellers-head > .btn { flex: 0 0 auto; }
+@media (max-width: 768px) {
+  .bestsellers-head { align-items: stretch; }
+  .bestsellers-head .section-header { flex: 1 1 100%; }
+  .bestsellers-head > .btn { width: 100%; justify-content: center; text-align: center; }
+}
