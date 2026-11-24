@@ -63,24 +63,48 @@
     </div>
   </header>
 
-  <!-- MOBILE NAVIGATION DRAWER -->
+      <!-- MOBILE NAVIGATION DRAWER -->
   <div class="mobile-nav" id="mobile-navigation">
-    <a href="index.html" class="mobile-nav-link">Home</a>
-    <a href="pages/home-2.html" class="mobile-nav-link">Home2</a>
-    <a href="pages/about.html" class="mobile-nav-link">About</a>
-    <div class="mobile-nav-group">
-      <button type="button" class="mobile-nav-link mobile-nav-group-toggle" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span></button>
-      <div class="mobile-nav-submenu">
-        <a href="pages/services.html" class="mobile-nav-link">Shop</a>
-        <a href="pages/services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
-        <a href="pages/services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Repair</a>
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-header">
+        <div class="mobile-nav-status"><span class="mobile-nav-pulse"></span><span>Flagship Concierge &bull; Global Dispatch Active</span></div>
+        <span class="mobile-nav-edition">Est. 2018 &bull; NYC</span>
       </div>
-    </div>
-    <a href="pages/blog.html" class="mobile-nav-link">Blog</a>
-    <a href="pages/pricing.html" class="mobile-nav-link">Pricing</a>
-    <a href="pages/contact.html" class="mobile-nav-link">Contact</a>
-    <div class="p-3">
-      <a href="pages/services.html" class="btn btn-teal w-100">Book now</a>
+      <div class="mobile-nav-list">
+        <a href="index.html" class="mobile-nav-item"><span class="mobile-nav-num">01</span><div class="mobile-nav-text"><span class="mobile-nav-title">Home</span><span class="mobile-nav-desc">Flagship Storefront &amp; Bestsellers</span></div><i class="fa-solid fa-arrow-right-long mobile-nav-arrow"></i></a>
+        <a href="pages/home-2.html" class="mobile-nav-item"><span class="mobile-nav-num">02</span><div class="mobile-nav-text"><span class="mobile-nav-title">Home2</span><span class="mobile-nav-desc">Travel Collections &amp; New Arrivals</span></div><i class="fa-solid fa-arrow-right-long mobile-nav-arrow"></i></a>
+        <a href="pages/about.html" class="mobile-nav-item"><span class="mobile-nav-num">03</span><div class="mobile-nav-text"><span class="mobile-nav-title">About</span><span class="mobile-nav-desc">Brand Story, Materials &amp; Philosophy</span></div><i class="fa-solid fa-arrow-right-long mobile-nav-arrow"></i></a>
+        <div class="mobile-nav-group">
+          <button type="button" class="mobile-nav-item mobile-nav-group-toggle" aria-expanded="false"><span class="mobile-nav-num">04</span><div class="mobile-nav-text"><span class="mobile-nav-title">Services</span><span class="mobile-nav-desc">Shop Collections, Warranty &amp; Repairs</span></div><span class="nav-caret"><i class="fa-solid fa-chevron-down"></i></span></button>
+          <div class="mobile-nav-submenu">
+            <a href="pages/services.html" class="mobile-submenu-item"><i class="fa-solid fa-bag-shopping"></i><span>All Luggage Catalog</span></a>
+            <a href="pages/services.html#shop-by-type" class="mobile-submenu-item"><i class="fa-solid fa-cubes-stacked"></i><span>10 Travel Categories</span></a>
+            <a href="pages/services.html#warranty-protection" class="mobile-submenu-item"><i class="fa-solid fa-shield-halved"></i><span>Warranty &amp; Protection</span></a>
+            <a href="pages/services.html#repair-services" class="mobile-submenu-item"><i class="fa-solid fa-screwdriver-wrench"></i><span>Luggage Repair Services</span></a>
+          </div>
+        </div>
+        <a href="pages/blog.html" class="mobile-nav-item"><span class="mobile-nav-num">05</span><div class="mobile-nav-text"><span class="mobile-nav-title">Blog</span><span class="mobile-nav-desc">The Modern Voyager Journal &amp; Guides</span></div><i class="fa-solid fa-arrow-right-long mobile-nav-arrow"></i></a>
+        <a href="pages/pricing.html" class="mobile-nav-item"><span class="mobile-nav-num">06</span><div class="mobile-nav-text"><span class="mobile-nav-title">Pricing</span><span class="mobile-nav-desc">Bundles, Luggage Sets &amp; Offers</span></div><i class="fa-solid fa-arrow-right-long mobile-nav-arrow"></i></a>
+        <a href="pages/contact.html" class="mobile-nav-item"><span class="mobile-nav-num">07</span><div class="mobile-nav-text"><span class="mobile-nav-title">Contact</span><span class="mobile-nav-desc">Manhattan Flagship &amp; Concierge Desk</span></div><i class="fa-solid fa-arrow-right-long mobile-nav-arrow"></i></a>
+      </div>
+      <div class="mobile-nav-quick-grid">
+        <button type="button" class="mobile-quick-card" onclick="window.location.href='pages/services.html'"><i class="fa-regular fa-heart"></i><span>Wishlist (<span class="wishlist-count-badge">0</span>)</span></button>
+        <button type="button" class="mobile-quick-card" onclick="openCart(); document.querySelector('.mobile-nav').classList.remove('open');"><i class="fa-solid fa-bag-shopping"></i><span>My Bag (<span class="cart-count-badge">0</span>)</span></button>
+        <a href="tel:+18005552376" class="mobile-quick-card"><i class="fa-solid fa-phone"></i><span>Call Desk</span></a>
+      </div>
+      <div class="mobile-nav-concierge-strip">
+        <div class="mobile-concierge-icon"><i class="fa-solid fa-headset"></i></div>
+        <div class="mobile-concierge-info"><strong>AeroPack 24/7 Concierge</strong><span>Toll-Free: +1 (800) 555-AERO &bull; NYC Flagship</span></div>
+        <a href="mailto:concierge@aeropack-travel.com" class="mobile-concierge-mail" aria-label="Email Concierge"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <div class="mobile-nav-cta-wrapper"><a href="pages/services.html" class="btn btn-teal w-100 mobile-nav-cta"><span>Book now</span><i class="fa-solid fa-arrow-right"></i></a></div>
+      <div class="mobile-nav-social">
+        <a href="https://www.instagram.com/" class="social-btn" title="Follow on Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/" class="social-btn" title="Follow on X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/" class="social-btn" title="Follow on Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/" class="social-btn" title="Follow on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/" class="social-btn" title="Subscribe on YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+      </div>
     </div>
   </div>
 
