@@ -1215,28 +1215,23 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 .sticky-top { position: sticky; top: calc(var(--navbar-height) + 1rem); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 
-/* Theme Toggle */
-.theme-toggle {
-  display: flex; align-items: center; gap: 0.4rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: var(--radius-full);
-  background: rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.8);
-  font-size: 0.75rem;
-  font-weight: 500;
-  transition: all var(--transition-fast);
-}
-.theme-toggle:hover { background: rgba(255,255,255,0.18); color: var(--white); }
+/* Theme & Direction Toggles */
+.theme-toggle,
 .rtl-toggle {
-  display: flex; align-items: center; gap: 0.4rem;
-  padding: 0.3rem 0.6rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  width: 2.75rem; height: 2.75rem;
+  padding: 0; gap: 0;
   border-radius: var(--radius-full);
   background: rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.8);
   font-size: 0.75rem;
   font-weight: 500;
+  line-height: 1;
   transition: all var(--transition-fast);
 }
+.theme-toggle i { font-size: 0.95rem; line-height: 1; }
+.theme-toggle:hover,
 .rtl-toggle:hover { background: rgba(255,255,255,0.18); color: var(--white); }
 
 /* Journey Travel Cards */
