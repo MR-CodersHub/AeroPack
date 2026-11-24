@@ -92,7 +92,7 @@
         <div class="toast-title">${title}</div>
         <div class="toast-msg">${message}</div>
       </div>
-      <button class="toast-close" aria-label="Close Notification">&times;</button>
+      <button class="toast-close" aria-label="Close Notification"><i class="fa-solid fa-xmark"></i></button>
     `;
 
     toast.querySelector('.toast-close').addEventListener('click', () => {
@@ -212,7 +212,7 @@
                 <button class="qty-btn" onclick="updateCartQty(${index}, 1)" aria-label="Increase">&plus;</button>
               </div>
             </div>
-            <button class="cart-item-remove" onclick="removeCartItem(${index})" title="Remove item">&times;</button>
+            <button class="cart-item-remove" onclick="removeCartItem(${index})" title="Remove item"><i class="fa-solid fa-xmark"></i></button>
           </div>
         `).join('');
       }
@@ -276,7 +276,7 @@
       <div class="cart-drawer open" style="width: min(520px, 94vw); padding: 2rem; overflow-y: auto;">
         <div class="flex-between mb-3">
           <h3>Simulated Travel Checkout</h3>
-          <button class="cart-close" onclick="document.getElementById('demo-checkout-modal').remove()">&times;</button>
+          <button class="cart-close" onclick="document.getElementById('demo-checkout-modal').remove()"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="p-3 mb-3" style="background: rgba(40,91,98,0.1); border-radius: var(--radius-md); border-inline-start: 4px solid var(--deep-teal);">
           <strong style="color: var(--deep-teal);">Demonstration Notice:</strong>
@@ -456,7 +456,7 @@
       overlay.className = 'lightbox-overlay';
       overlay.innerHTML = `
         <div class="lightbox-content">
-          <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+          <button class="lightbox-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
           <img src="" alt="Zoomed view">
         </div>
       `;
