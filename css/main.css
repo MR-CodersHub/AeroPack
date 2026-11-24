@@ -1068,13 +1068,14 @@ p:last-child {
 .mobile-nav {
   display: none;
   position: fixed;
-  top: var(--navbar-height);
+  top: calc(var(--navbar-height) - 1px);
   left: 0;
   right: 0;
   background: linear-gradient(180deg, rgba(23, 40, 61, 0.98) 0%, rgba(14, 26, 41, 0.99) 100%);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 2px solid var(--muted-gold);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
   z-index: 999;
@@ -5129,10 +5130,13 @@ select.form-control {
 
 /* ── 1. ULTRA-WIDE & 4K MONITORS (min-width: 1600px) ───────── */
 @media (min-width: 1600px) {
+  :root {
+    --navbar-height: 82px;
+  }
 
   /* Navbar */
   .navbar {
-    height: 82px;
+    height: var(--navbar-height);
   }
 
   .navbar-inner {
@@ -5315,10 +5319,13 @@ select.form-control {
 
 /* ── 2. DESKTOP & LAPTOPS (1200px - 1599px) ─────────────────── */
 @media (min-width: 1200px) and (max-width: 1599px) {
+  :root {
+    --navbar-height: 72px;
+  }
 
   /* Navbar */
   .navbar {
-    height: 72px;
+    height: var(--navbar-height);
   }
 
   .navbar-inner {
@@ -5418,10 +5425,13 @@ select.form-control {
 
 /* ── 3. SMALL LAPTOPS & TABLETS LANDSCAPE (992px - 1199px) ─── */
 @media (min-width: 992px) and (max-width: 1199px) {
+  :root {
+    --navbar-height: 68px;
+  }
 
   /* Navbar Compact Inline */
   .navbar {
-    height: 68px;
+    height: var(--navbar-height);
   }
 
   .navbar-inner {
@@ -5494,10 +5504,13 @@ select.form-control {
 
 /* ── 4. TABLETS PORTRAIT & IPADS (768px - 991px) ───────────── */
 @media (min-width: 768px) and (max-width: 991px) {
+  :root {
+    --navbar-height: 66px;
+  }
 
   /* Navbar */
   .navbar {
-    height: 66px;
+    height: var(--navbar-height);
   }
 
   .navbar-inner {
@@ -5644,10 +5657,13 @@ select.form-control {
 
 /* ── 5. PHABLETS & LARGE MOBILES (481px - 767px) ───────────── */
 @media (min-width: 481px) and (max-width: 767px) {
+  :root {
+    --navbar-height: 64px;
+  }
 
   /* Navbar */
   .navbar {
-    height: 64px;
+    height: var(--navbar-height);
   }
 
   .navbar-inner {
@@ -5853,10 +5869,13 @@ select.form-control {
 
 /* ── 6. COMPACT MOBILE & SMALL SMARTPHONES (<= 480px) ───────── */
 @media (max-width: 480px) {
+  :root {
+    --navbar-height: 58px;
+  }
 
   /* Navbar */
   .navbar {
-    height: 58px;
+    height: var(--navbar-height);
   }
 
   .navbar-inner {

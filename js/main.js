@@ -393,14 +393,30 @@
     }
   }
 
-  // ── 9. MOBILE NAVIGATION TOGGLE ────────────────────────────
+    // ── 9. MOBILE NAVIGATION TOGGLE ────────────────────────────
+  function syncNavbarHeight() {
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+      const h = Math.round(navbar.getBoundingClientRect().height);
+      if (h > 0) {
+        document.documentElement.style.setProperty('--navbar-height', `${h}px`);
+      }
+    }
+  }
+
   function initMobileNav() {
     const toggle = document.querySelector('.navbar-toggle');
     const mobileNav = document.querySelector('.mobile-nav');
 
     if (!toggle || !mobileNav) return;
 
+    // Synchronize navbar height dynamically on start
+    syncNavbarHeight();
+
     const setMenu = (open) => {
+      if (open) {
+        syncNavbarHeight();
+      }
       mobileNav.classList.toggle('open', open);
       document.body.classList.toggle('nav-open', open);
       document.body.style.overflow = open ? 'hidden' : '';
@@ -426,10 +442,20 @@
     });
 
     window.addEventListener('resize', () => {
+      syncNavbarHeight();
       if (window.innerWidth > 991 && mobileNav.classList.contains('open')) {
         setMenu(false);
       }
     });
+
+    // Observe navbar height changes dynamically
+    if (window.ResizeObserver) {
+      const nb = document.querySelector('.navbar');
+      if (nb) {
+        const ro = new ResizeObserver(() => syncNavbarHeight());
+        ro.observe(nb);
+      }
+    }
 
     // Keep the drawer scrollable while stopping touch scrolling behind it.
     document.addEventListener('touchmove', (e) => {
