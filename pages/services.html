@@ -112,132 +112,155 @@
          ============================================================ -->
     <section class="section section-offwhite" id="shop-by-type">
       <div class="container">
-        <div class="section-header centered">
-          <span class="section-label">Comprehensive Lineup</span>
-          <h2 class="section-title">Shop by Product Type</h2>
-          <p class="section-subtitle">
-            Select a specialized category to instantly filter matching travel gear on this page without reloading.
-          </p>
+        <div class="lineup-heading reveal">
+          <div class="section-header">
+            <span class="section-label">Comprehensive Lineup</span>
+            <h2 class="section-title">Shop by Product Type</h2>
+            <p class="section-subtitle">
+              Select a specialized category to instantly filter matching travel gear on this page without reloading.
+            </p>
+          </div>
+          <div class="lineup-count"><strong>10</strong> curated categories</div>
         </div>
 
-        <div class="grid cols-auto-fill-240 gap-3">
+        <div class="lineup-grid">
           <!-- 1. Cabin Luggage -->
-          <div class="category-card reveal" onclick="filterByCategory('cabin-luggage')">
+          <div class="lineup-card reveal" onclick="filterByCategory('cabin-luggage')" aria-label="Filter by Cabin Luggage">
             <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=600&q=80" alt="Cabin Luggage" loading="lazy">
-            <div class="category-card-overlay">
-              <div class="category-card-info">
-                <h3 class="category-card-title">1. Cabin Luggage</h3>
-                <p class="category-card-desc">Overhead compliant 20"-21" spinners.</p>
-                <span class="category-card-cta">Explore Category &rarr;</span>
-              </div>
+            <div class="lineup-top">
+              <span class="lineup-icon"><i class="fa-solid fa-suitcase-rolling"></i></span>
+              <span class="lineup-tag">Cabin</span>
+            </div>
+            <div class="lineup-info">
+              <h3 class="lineup-title">Cabin Luggage</h3>
+              <p class="lineup-desc">Overhead compliant 20"-21" spinners.</p>
+              <span class="lineup-cta">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 2. Check-in Suitcases -->
-          <div class="category-card reveal reveal-delay-1" onclick="filterByCategory('checkin-suitcases')">
+          <div class="lineup-card reveal reveal-delay-1" onclick="filterByCategory('checkin-suitcases')" aria-label="Filter by Check-in Suitcases">
             <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Check-in Suitcases" loading="lazy">
-            <div class="category-card-overlay">
-              <div class="category-card-info">
-                <h3 class="category-card-title">2. Check-in Suitcases</h3>
-                <p class="category-card-desc">Medium 24" &amp; Large 28" trunks.</p>
-                <span class="category-card-cta">Explore Category &rarr;</span>
-              </div>
+            <div class="lineup-top">
+              <span class="lineup-icon"><i class="fa-solid fa-suitcase"></i></span>
+              <span class="lineup-tag">Check-in</span>
+            </div>
+            <div class="lineup-info">
+              <h3 class="lineup-title">Check-in Suitcases</h3>
+              <p class="lineup-desc">Medium 24" &amp; Large 28" trunks.</p>
+              <span class="lineup-cta">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 3. Luggage Sets -->
-          <div class="category-card reveal reveal-delay-2" onclick="filterByCategory('luggage-sets')">
+          <div class="lineup-card reveal reveal-delay-2" onclick="filterByCategory('luggage-sets')" aria-label="Filter by Luggage Sets">
             <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=600&q=80" alt="Luggage Sets" loading="lazy">
-            <div class="category-card-overlay">
-              <div class="category-card-info">
-                <h3 class="category-card-title">3. Luggage Sets</h3>
-                <p class="category-card-desc">2-piece and 3-piece nested collections.</p>
-                <span class="category-card-cta">Explore Category &rarr;</span>
-              </div>
+            <div class="lineup-top">
+              <span class="lineup-icon"><i class="fa-solid fa-clipboard-list"></i></span>
+              <span class="lineup-tag">Sets</span>
+            </div>
+            <div class="lineup-info">
+              <h3 class="lineup-title">Luggage Sets</h3>
+              <p class="lineup-desc">2-piece and 3-piece nested collections.</p>
+              <span class="lineup-cta">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 4. Hard-Shell Suitcases -->
-          <div class="category-card reveal reveal-delay-3" onclick="filterByCategory('cabin-luggage')">
+          <div class="lineup-card reveal reveal-delay-3" onclick="filterByCategory('cabin-luggage')" aria-label="Filter by Hard-Shell Suitcases">
             <img src="https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=600&q=80" alt="Hard-Shell Suitcases" loading="lazy">
-            <div class="category-card-overlay">
-              <div class="category-card-info">
-                <h3 class="category-card-title">4. Hard-Shell Suitcases</h3>
-                <p class="category-card-desc">Aerospace polycarbonate shells.</p>
-                <span class="category-card-cta">Explore Category &rarr;</span>
-              </div>
+            <div class="lineup-top">
+              <span class="lineup-icon"><i class="fa-solid fa-shield-halved"></i></span>
+              <span class="lineup-tag">Shell</span>
+            </div>
+            <div class="lineup-info">
+              <h3 class="lineup-title">Hard-Shell Suitcases</h3>
+              <p class="lineup-desc">Aerospace polycarbonate shells.</p>
+              <span class="lineup-cta">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 5. Soft-Shell Suitcases -->
-          <div class="category-card reveal" onclick="filterByCategory('soft-shell-suitcases')">
+          <div class="lineup-card reveal" onclick="filterByCategory('soft-shell-suitcases')" aria-label="Filter by Soft-Shell Suitcases">
             <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=600&q=80" alt="Soft-Shell Suitcases" loading="lazy">
-            <div class="category-card-overlay">
-              <div class="category-card-info">
-                <h3 class="category-card-title">5. Soft-Shell Suitcases</h3>
-                <p class="category-card-desc">High-tenacity ballistic dobby fabric.</p>
-                <span class="category-card-cta">Explore Category &rarr;</span>
-              </div>
+            <div class="lineup-top">
+              <span class="lineup-icon"><i class="fa-solid fa-folder-open"></i></span>
+              <span class="lineup-tag">Soft</span>
+            </div>
+            <div class="lineup-info">
+              <h3 class="lineup-title">Soft-Shell Suitcases</h3>
+              <p class="lineup-desc">High-tenacity ballistic dobby fabric.</p>
+              <span class="lineup-cta">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 6. Travel Backpacks -->
-          <div class="category-card reveal reveal-delay-1" onclick="filterByCategory('travel-backpacks')">
+          <div class="lineup-card reveal reveal-delay-1" onclick="filterByCategory('travel-backpacks')" aria-label="Filter by Travel Backpacks">
             <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=600&q=80" alt="Travel Backpacks" loading="lazy">
-            <div class="category-card-overlay">
-              <div class="category-card-info">
-                <h3 class="category-card-title">6. Travel Backpacks</h3>
-                <p class="category-card-desc">180° clamshell one-bag packs.</p>
-                <span class="category-card-cta">Explore Category &rarr;</span>
-              </div>
+            <div class="lineup-top">
+              <span class="lineup-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+              <span class="lineup-tag">Packs</span>
+            </div>
+            <div class="lineup-info">
+              <h3 class="lineup-title">Travel Backpacks</h3>
+              <p class="lineup-desc">180° clamshell one-bag packs.</p>
+              <span class="lineup-cta">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 7. Duffel Bags -->
-          <div class="category-card reveal reveal-delay-2" onclick="filterByCategory('duffel-bags')">
+          <div class="lineup-card reveal reveal-delay-2" onclick="filterByCategory('duffel-bags')" aria-label="Filter by Duffel Bags">
             <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Duffel Bags" loading="lazy">
-            <div class="category-card-overlay">
-              <div class="category-card-info">
-                <h3 class="category-card-title">7. Duffel Bags</h3>
-                <p class="category-card-desc">Waterproof weekender bags &amp; shoe bays.</p>
-                <span class="category-card-cta">Explore Category &rarr;</span>
-              </div>
+            <div class="lineup-top">
+              <span class="lineup-icon"><i class="fa-solid fa-box"></i></span>
+              <span class="lineup-tag">Weekender</span>
+            </div>
+            <div class="lineup-info">
+              <h3 class="lineup-title">Duffel Bags</h3>
+              <p class="lineup-desc">Waterproof weekender bags &amp; shoe bays.</p>
+              <span class="lineup-cta">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 8. Business Bags -->
-          <div class="category-card reveal reveal-delay-3" onclick="filterByCategory('business-bags')">
+          <div class="lineup-card reveal reveal-delay-3" onclick="filterByCategory('business-bags')" aria-label="Filter by Business Bags">
             <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Business Bags" loading="lazy">
-            <div class="category-card-overlay">
-              <div class="category-card-info">
-                <h3 class="category-card-title">8. Business Bags</h3>
-                <p class="category-card-desc">Leather briefcases with trolley pass-through.</p>
-                <span class="category-card-cta">Explore Category &rarr;</span>
-              </div>
+            <div class="lineup-top">
+              <span class="lineup-icon"><i class="fa-solid fa-briefcase"></i></span>
+              <span class="lineup-tag">Business</span>
+            </div>
+            <div class="lineup-info">
+              <h3 class="lineup-title">Business Bags</h3>
+              <p class="lineup-desc">Leather briefcases with trolley pass-through.</p>
+              <span class="lineup-cta">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 9. Laptop Bags -->
-          <div class="category-card reveal" onclick="filterByCategory('business-bags')">
+          <div class="lineup-card reveal" onclick="filterByCategory('business-bags')" aria-label="Filter by Laptop Bags">
             <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=600&q=80" alt="Laptop Bags" loading="lazy">
-            <div class="category-card-overlay">
-              <div class="category-card-info">
-                <h3 class="category-card-title">9. Laptop Bags</h3>
-                <p class="category-card-desc">Padded tech vaults for 15.6" &amp; 16" devices.</p>
-                <span class="category-card-cta">Explore Category &rarr;</span>
-              </div>
+            <div class="lineup-top">
+              <span class="lineup-icon"><i class="fa-solid fa-briefcase"></i></span>
+              <span class="lineup-tag">Tech</span>
+            </div>
+            <div class="lineup-info">
+              <h3 class="lineup-title">Laptop Bags</h3>
+              <p class="lineup-desc">Padded tech vaults for 15.6" &amp; 16" devices.</p>
+              <span class="lineup-cta">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 10. Travel Accessories -->
-          <div class="category-card reveal reveal-delay-1" onclick="filterByCategory('travel-accessories')">
+          <div class="lineup-card reveal reveal-delay-1" onclick="filterByCategory('travel-accessories')" aria-label="Filter by Travel Accessories">
             <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Travel Accessories" loading="lazy">
-            <div class="category-card-overlay">
-              <div class="category-card-info">
-                <h3 class="category-card-title">10. Travel Accessories</h3>
-                <p class="category-card-desc">Compression cubes, locks, and tech folios.</p>
-                <span class="category-card-cta">Explore Category &rarr;</span>
-              </div>
+            <div class="lineup-top">
+              <span class="lineup-icon"><i class="fa-solid fa-lock"></i></span>
+              <span class="lineup-tag">Essentials</span>
+            </div>
+            <div class="lineup-info">
+              <h3 class="lineup-title">Travel Accessories</h3>
+              <p class="lineup-desc">Compression cubes, locks, and tech folios.</p>
+              <span class="lineup-cta">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
         </div>
