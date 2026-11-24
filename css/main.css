@@ -434,6 +434,18 @@ p:last-child { margin-bottom: 0; }
   color: var(--midnight-navy);
   line-height: 1;
 }
+.navbar-logo-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: block;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(185,154,99,0.35);
+  transition: transform var(--transition-fast);
+}
+.navbar-logo:hover .navbar-logo-img {
+  transform: scale(1.05);
+}
 .navbar-logo-text { display: flex; flex-direction: column; }
 .navbar-logo-name {
   font-family: 'Playfair Display', Georgia, serif;
@@ -444,12 +456,13 @@ p:last-child { margin-bottom: 0; }
   letter-spacing: -0.01em;
 }
 .navbar-logo-tagline {
-  font-size: 0.6rem;
+  font-size: 0.58rem;
   font-weight: 600;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted-gold);
-  line-height: 1;
+  line-height: 1.1;
+  margin-top: 3px;
 }
 .navbar-nav {
   display: flex;

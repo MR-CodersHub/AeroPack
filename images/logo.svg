@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 64" width="340" height="64">
+  <defs>
+    <linearGradient id="logoBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17283D"/>
+      <stop offset="100%" stop-color="#0E1A29"/>
+    </linearGradient>
+    <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C77D"/>
+      <stop offset="50%" stop-color="#B99A63"/>
+      <stop offset="100%" stop-color="#93753C"/>
+    </linearGradient>
+    <linearGradient id="logoTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A7E88"/>
+      <stop offset="100%" stop-color="#285B62"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem Mark Group -->
+  <g transform="translate(6, 4)">
+    <!-- Base Plate -->
+    <rect x="0" y="2" width="52" height="52" rx="12" fill="url(#logoBgGrad)" stroke="url(#logoGold)" stroke-width="2"/>
+    
+    <!-- Telescopic handle -->
+    <path d="M21 13 V8 C21 6.5 22.5 5.5 24 5.5 H28 C29.5 5.5 31 6.5 31 8 V13" fill="none" stroke="url(#logoGold)" stroke-width="2" stroke-linecap="round"/>
+    <rect x="23" y="4.5" width="6" height="2.5" rx="1" fill="url(#logoGold)"/>
+    
+    <!-- Suitcase Shell -->
+    <rect x="11" y="13" width="30" height="34" rx="5" fill="url(#logoTeal)" stroke="url(#logoGold)" stroke-width="1.5"/>
+    
+    <!-- Aero Dynamic Velocity Curves -->
+    <path d="M11 25 Q26 31 41 19" fill="none" stroke="url(#logoGold)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M11 33 Q26 39 41 27" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.2" stroke-linecap="round"/>
+    
+    <!-- Wheels -->
+    <circle cx="18" cy="48" r="2" fill="url(#logoGold)"/>
+    <circle cx="34" cy="48" r="2" fill="url(#logoGold)"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(70, 8)">
+    <!-- Wordmark -->
+    <text x="0" y="29" font-family="'Playfair Display', Georgia, serif" font-size="29" font-weight="700" fill="#FFFFFF" letter-spacing="-0.3">Aero<tspan fill="url(#logoGold)">Pack</tspan></text>
+    
+    <!-- Tagline -->
+    <text x="1" y="45" font-family="'Inter', -apple-system, sans-serif" font-size="7.5" font-weight="600" fill="url(#logoGold)" letter-spacing="2.8">ENGINEERED FOR THE MODERN VOYAGER</text>
+  </g>
+</svg>
