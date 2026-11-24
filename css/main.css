@@ -1495,6 +1495,7 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   font-size: 1.25rem; color: var(--muted-gold);
 }
 .lineup-grid { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 1rem; }
+.lineup-grid.home-lineup { grid-template-columns: repeat(4, minmax(0,1fr)); }
 .lineup-card {
   position: relative;
   aspect-ratio: 4/5;
@@ -1556,6 +1557,7 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .persona-layout { grid-template-columns: 1fr; }
   .lineup-grid { grid-template-columns: repeat(3, 1fr); }
+  .lineup-grid.home-lineup { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 900px) {
   .navbar-nav { display: none; }
@@ -1596,6 +1598,7 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 }
 @media (max-width: 480px) {
   .lineup-grid { grid-template-columns: 1fr; }
+  .lineup-grid.home-lineup { grid-template-columns: 1fr; }
 }
 
 /* ── 27. Smooth Page Transitions ─────────────────────────── */
