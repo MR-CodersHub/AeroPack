@@ -1620,3 +1620,96 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 
 /* ── 30. Selection ────────────────────────────────────────── */
 ::selection { background: var(--muted-gold); color: var(--white); }
+
+
+/* ── 27. Travel Philosophy Pillars ────────────────────────── */
+.principle-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.6fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: stretch;
+}
+.principle-intro {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 4vw, 3rem);
+  border-radius: var(--radius-lg);
+  background: var(--deep-teal);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.principle-intro::after {
+  content: '';
+  position: absolute;
+  width: 260px; height: 260px;
+  right: -120px; bottom: -120px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 48px rgba(255,255,255,0.03), 0 0 0 96px rgba(255,255,255,0.02);
+  pointer-events: none;
+}
+.principle-intro .section-label,
+.principle-intro .section-title,
+.principle-intro .section-subtitle,
+.principle-count { position: relative; z-index: 1; }
+.principle-intro .section-label { color: var(--muted-gold); }
+.principle-intro .section-label::before,
+.principle-intro .section-label::after { display: none; }
+.principle-intro .section-title { color: var(--white); font-size: clamp(1.9rem, 3vw, 2.7rem); }
+.principle-intro .section-subtitle { color: rgba(255,255,255,0.72); font-size: 1rem; margin-bottom: 2rem; }
+.principle-count {
+  display: inline-flex; align-items: baseline; gap: 0.6rem;
+  font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+.principle-count strong {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.5rem; line-height: 1; letter-spacing: 0;
+  color: var(--muted-gold);
+}
+.principle-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.principle-card {
+  position: relative;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.principle-card:last-child { grid-column: 1 / -1; }
+.principle-card::before {
+  content: '';
+  position: absolute; inset: 0 auto 0 0; width: 3px;
+  background: var(--muted-gold); opacity: 0;
+  transition: opacity var(--transition);
+}
+[dir="rtl"] .principle-card::before { inset: 0 0 0 auto; }
+.principle-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--muted-gold); }
+.principle-card:hover::before { opacity: 1; }
+.principle-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
+.principle-num { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; color: var(--muted-gold); }
+.principle-icon {
+  width: 48px; height: 48px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: var(--radius-md);
+  background: rgba(40,91,98,0.1);
+  color: var(--deep-teal);
+  font-size: 1.2rem;
+  transition: all var(--transition-fast);
+}
+[data-theme="dark"] .principle-icon { background: rgba(185,154,99,0.15); color: var(--muted-gold); }
+.principle-card:hover .principle-icon { background: var(--deep-teal); color: var(--white); }
+[data-theme="dark"] .principle-card:hover .principle-icon { background: var(--muted-gold); color: var(--midnight-navy); }
+.principle-card h4 { margin-bottom: 0.5rem; font-size: 1.05rem; }
+.principle-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin: 0; }
+
+@media (max-width: 1100px) {
+  .principle-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .principle-grid { grid-template-columns: 1fr; }
+  .principle-card:last-child { grid-column: auto; }
+}
