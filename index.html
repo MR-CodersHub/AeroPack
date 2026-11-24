@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroPack | Premium Luggage & Travel Goods</title>
+  <meta name="description" content="Engineered for seamless global journeys. Explore aerospace-grade luggage sets, spinner suitcases, executive bags, and travel essentials.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="navbar" id="site-header">
+    <div class="container navbar-inner">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-logo" aria-label="AeroPack Home">
+          <div class="navbar-logo-icon">🧳</div>
+          <div class="navbar-logo-text">
+            <span class="navbar-logo-name">AeroPack</span>
+            <span class="navbar-logo-tagline">Travel Goods</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="navbar-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active">Home 1</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Shop</a>
+        <a href="services.html#shop-by-type" class="nav-link">Travel Collections</a>
+        <a href="services.html#warranty-protection" class="nav-link">Warranty &amp; Repair</a>
+        <a href="blog.html" class="nav-link">Travel Journal</a>
+        <a href="pricing.html" class="nav-link">Offers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Sign In</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme">🌙 Dark</button>
+        <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
+        
+        <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='services.html'" title="Wishlist" aria-label="Wishlist">
+          🤍
+          <span class="navbar-badge wishlist-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="navbar-icon-btn cart-nav-btn" onclick="openCart()" title="View Cart" aria-label="Shopping Cart">
+          🛍️
+          <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
+
+        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav" id="mobile-navigation">
+    <a href="index.html" class="mobile-nav-link">Home 1 (General Store)</a>
+    <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="services.html" class="mobile-nav-link">Shop All Products</a>
+    <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
+    <a href="services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Product Care</a>
+    <a href="services.html#repair-services" class="mobile-nav-link">Luggage Repair Service</a>
+    <a href="blog.html" class="mobile-nav-link">Travel Journal &amp; Guides</a>
+    <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Sets</a>
+    <a href="contact.html" class="mobile-nav-link">Contact Store</a>
+    <a href="login.html" class="mobile-nav-link">Login / Register</a>
+    <div class="p-3">
+      <a href="services.html" class="btn btn-teal w-100">Shop Travel Essentials</a>
+    </div>
+  </div>
+
+  <main class="page-content">
+    
+    <!-- ============================================================
+         SECTION 1: HERO (General Luggage Store)
+         ============================================================ -->
+    <section class="hero" id="home-hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=1920&q=80" alt="Sophisticated traveler with premium luggage at international airport terminal">
+      </div>
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-label">Precision Engineering &bull; Global Journeys</span>
+        <h1 class="hero-title">Travel Smarter.<br>Voyage in <span class="accent">Timeless Style.</span></h1>
+        <p class="hero-subtitle">
+          Engineered for international flights, high-speed rail, and spontaneous weekend escapes. Discover aerospace-grade polycarbonate shells, whisper-quiet spinner wheels, and ergonomic travel systems built to withstand a lifetime of exploration.
+        </p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn btn-gold btn-lg">Shop Now &rarr;</a>
+          <a href="services.html#shop-by-type" class="btn btn-outline-white btn-lg">Explore Collections</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-label">Virgin Polycarbonate</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">360°</div>
+            <div class="hero-stat-label">Whisper-Glide Wheels</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">TSA</div>
+            <div class="hero-stat-label">Recessed Locks</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">5-Yr</div>
+            <div class="hero-stat-label">Global Warranty</div>
+          </div>
+        </div>
+      </div>
+      <a href="#bestsellers" class="hero-scroll" aria-label="Scroll to Bestsellers">
+        <span>Explore</span>
+        <span>&darr;</span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: BESTSELLING LUGGAGE SETS
+         ============================================================ -->
+    <section class="section section-offwhite" id="bestsellers">
+      <div class="container">
+        <div class="flex-between flex-wrap gap-2 mb-4">
+          <div class="section-header mb-0">
+            <span class="section-label">Most Coveted Bundles</span>
+            <h2 class="section-title">Bestselling Luggage Sets</h2>
+            <p class="section-subtitle">
+              Engineered matching sets built for harmonious airport transit, flexible capacities, and compact nested storage at home.
+            </p>
+          </div>
+          <a href="services.html?category=luggage-sets" class="btn btn-outline btn-sm">View All Sets &rarr;</a>
+        </div>
+
+        <div class="grid cols-auto-fill-280 gap-3">
+          <!-- Bestseller 1 -->
+          <article class="product-card reveal">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=800&q=80" alt="AeroVoyager Pro 3-Piece Luggage Set in Midnight Navy" loading="lazy">
+              <div class="product-badges">
+                <span class="badge badge-bestseller">Bestseller</span>
+                <span class="badge badge-featured">3 Pieces</span>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn" onclick="toggleWishlist('aero-voyager-set')" data-wishlist-id="aero-voyager-set" title="Save to Wishlist">🤍</button>
+                <button class="action-btn" onclick="openLightbox('https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=1200&q=80')" title="Zoom Image">🔍</button>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-type">Hard-Shell &bull; Polycarbonate &bull; 3 Pieces</div>
+              <h3 class="product-name">
+                <a href="service-details.html?id=aero-voyager-set">AeroVoyager Pro 3-Piece Luggage Set</a>
+              </h3>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">4.9 (142 reviews)</span>
+              </div>
+              <div class="product-colors">
+                <span class="color-dot active" style="background-color: #17283D;" title="Midnight Navy"></span>
+                <span class="color-dot" style="background-color: #30363D;" title="Graphite"></span>
+                <span class="color-dot" style="background-color: #E9DDCA;" title="Warm Sand"></span>
+              </div>
+              <div class="product-price">
+                $489 <span class="original">$599</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="service-details.html?id=aero-voyager-set" class="btn btn-outline btn-sm flex-1">View Details</a>
+              <button class="btn btn-teal btn-sm" onclick="addToCart('aero-voyager-set')">Add to Cart</button>
+            </div>
+          </article>
+
+          <!-- Bestseller 2 -->
+          <article class="product-card reveal reveal-delay-1">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=800&q=80" alt="Nomad Duo 2-Piece Carry-On and Check Set" loading="lazy">
+              <div class="product-badges">
+                <span class="badge badge-sale">Save $70</span>
+                <span class="badge badge-featured">2 Pieces</span>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn" onclick="toggleWishlist('aero-duo-set')" data-wishlist-id="aero-duo-set" title="Save to Wishlist">🤍</button>
+                <button class="action-btn" onclick="openLightbox('https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=1200&q=80')" title="Zoom Image">🔍</button>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-type">Hard-Shell &bull; Covestro Poly &bull; 2 Pieces</div>
+              <h3 class="product-name">
+                <a href="service-details.html?id=aero-duo-set">Nomad Duo 2-Piece Carry-On &amp; Check Set</a>
+              </h3>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">4.8 (88 reviews)</span>
+              </div>
+              <div class="product-colors">
+                <span class="color-dot active" style="background-color: #E9DDCA;" title="Warm Sand"></span>
+                <span class="color-dot" style="background-color: #285B62;" title="Deep Teal"></span>
+                <span class="color-dot" style="background-color: #17283D;" title="Midnight Navy"></span>
+              </div>
+              <div class="product-price">
+                $380 <span class="original">$450</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="service-details.html?id=aero-duo-set" class="btn btn-outline btn-sm flex-1">View Details</a>
+              <button class="btn btn-teal btn-sm" onclick="addToCart('aero-duo-set')">Add to Cart</button>
+            </div>
+          </article>
+
+          <!-- Bestseller 3 -->
+          <article class="product-card reveal reveal-delay-2">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=800&q=80" alt="Stratus Luxe Carbon Cabin Suitcase" loading="lazy">
+              <div class="product-badges">
+                <span class="badge badge-featured">Staff Pick</span>
+                <span class="badge badge-new">Cabin Pro</span>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn" onclick="toggleWishlist('stratus-carry-on')" data-wishlist-id="stratus-carry-on" title="Save to Wishlist">🤍</button>
+                <button class="action-btn" onclick="openLightbox('https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=1200&q=80')" title="Zoom Image">🔍</button>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-type">Hard-Shell &bull; Aluminum Frame &bull; 1 Piece</div>
+              <h3 class="product-name">
+                <a href="service-details.html?id=stratus-carry-on">Stratus Luxe Carbon Cabin Suitcase</a>
+              </h3>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">4.8 (98 reviews)</span>
+              </div>
+              <div class="product-colors">
+                <span class="color-dot active" style="background-color: #285B62;" title="Deep Teal"></span>
+                <span class="color-dot" style="background-color: #30363D;" title="Graphite"></span>
+                <span class="color-dot" style="background-color: #F8F8F5;" title="Off White"></span>
+              </div>
+              <div class="product-price">
+                $265 <span class="original">$310</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="service-details.html?id=stratus-carry-on" class="btn btn-outline btn-sm flex-1">View Details</a>
+              <button class="btn btn-teal btn-sm" onclick="addToCart('stratus-carry-on')">Add to Cart</button>
+            </div>
+          </article>
+
+          <!-- Bestseller 4 -->
+          <article class="product-card reveal reveal-delay-3">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" alt="Horizon Grand 28 inch Check-in Trunk" loading="lazy">
+              <div class="product-badges">
+                <span class="badge badge-bestseller">Long Voyage</span>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn" onclick="toggleWishlist('horizon-checkin-large')" data-wishlist-id="horizon-checkin-large" title="Save to Wishlist">🤍</button>
+                <button class="action-btn" onclick="openLightbox('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80')" title="Zoom Image">🔍</button>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-type">Hard-Shell &bull; Polycarbonate &bull; 96L Check-In</div>
+              <h3 class="product-name">
+                <a href="service-details.html?id=horizon-checkin-large">Horizon Grand 28" Check-in Trunk</a>
+              </h3>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">4.9 (76 reviews)</span>
+              </div>
+              <div class="product-colors">
+                <span class="color-dot active" style="background-color: #17283D;" title="Midnight Navy"></span>
+                <span class="color-dot" style="background-color: #B99A63;" title="Muted Gold"></span>
+              </div>
+              <div class="product-price">
+                $345 <span class="original">$395</span>
+              </div>
+            </div>
+            <div class="product-card-footer">
+              <a href="service-details.html?id=horizon-checkin-large" class="btn btn-outline btn-sm flex-1">View Details</a>
+              <button class="btn btn-teal btn-sm" onclick="addToCart('horizon-checkin-large')">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: SHOP BY TRAVEL ESSENTIALS
+         ============================================================ -->
+    <section class="section section-card" id="shop-essentials">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Categorized Precision</span>
+          <h2 class="section-title">Shop by Travel Essentials</h2>
+          <p class="section-subtitle">
+            Every piece is purpose-built to streamline a specific phase of your voyage, from airport security checkpoints to rugged destination commutes.
+          </p>
+        </div>
+
+        <div class="grid cols-auto-fill-280 gap-3">
+          <!-- 1. Cabin Suitcases -->
+          <div class="category-card reveal" onclick="window.location.href='services.html?category=cabin-luggage'">
+            <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=600&q=80" alt="Cabin Suitcases" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">Cabin Suitcases</h3>
+                <p class="category-card-desc">IATA compliant 20"-21" overhead carry-ons with front tech access.</p>
+                <span class="category-card-cta">Explore Cabin Bags &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Check-in Luggage -->
+          <div class="category-card reveal reveal-delay-1" onclick="window.location.href='services.html?category=checkin-suitcases'">
+            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Check-in Luggage" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">Check-in Luggage</h3>
+                <p class="category-card-desc">Medium 24" &amp; Large 28" trunks with shock-absorbing corners.</p>
+                <span class="category-card-cta">Explore Check-In &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Luggage Sets -->
+          <div class="category-card reveal reveal-delay-2" onclick="window.location.href='services.html?category=luggage-sets'">
+            <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=600&q=80" alt="Luggage Sets" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">Luggage Sets</h3>
+                <p class="category-card-desc">2-piece &amp; 3-piece nesting sets for cohesive family journeys.</p>
+                <span class="category-card-cta">Explore Sets &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Travel Backpacks -->
+          <div class="category-card reveal reveal-delay-3" onclick="window.location.href='services.html?category=travel-backpacks'">
+            <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=600&q=80" alt="Travel Backpacks" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">Travel Backpacks</h3>
+                <p class="category-card-desc">180° clamshell one-bag packs with dedicated 16" laptop vaults.</p>
+                <span class="category-card-cta">Explore Backpacks &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Duffel Bags -->
+          <div class="category-card reveal" onclick="window.location.href='services.html?category=duffel-bags'">
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Duffel Bags" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">Duffel Bags</h3>
+                <p class="category-card-desc">Waterproof ballistic weekender duffels with ventilated shoe bays.</p>
+                <span class="category-card-cta">Explore Duffels &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Business Travel Bags -->
+          <div class="category-card reveal reveal-delay-1" onclick="window.location.href='services.html?category=business-bags'">
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Business Travel Bags" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">Business Travel Bags</h3>
+                <p class="category-card-desc">Italian leather briefcases &amp; folios with trolley luggage pass-through.</p>
+                <span class="category-card-cta">Explore Business &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Travel Accessories -->
+          <div class="category-card reveal reveal-delay-2" onclick="window.location.href='services.html?category=travel-accessories'">
+            <img src="https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=600&q=80" alt="Travel Accessories" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">Travel Accessories</h3>
+                <p class="category-card-desc">Compression cube organizers, TSA inspection cable locks, and folio kits.</p>
+                <span class="category-card-cta">Explore Accessories &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: WHY CHOOSE OUR LUGGAGE
+         ============================================================ -->
+    <section class="section section-dark" id="why-choose-us">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">AeroPack Engineering</span>
+          <h2 class="section-title">Why Discerning Travelers Choose Our Luggage</h2>
+          <p class="section-subtitle">
+            Every millimeter is tested under rigorous real-world travel simulations to deliver effortless maneuverability, indestructible security, and modern aesthetic elegance.
+          </p>
+        </div>
+
+        <div class="grid cols-3 gap-3">
+          <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🛡️</div>
+            <h4>Durable Aerospace Materials</h4>
+            <p>100% pure virgin Makrolon® polycarbonate shells designed to flex under extreme baggage bay impacts and spring back without cracking or denting.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🗂️</div>
+            <h4>Functional Compartments</h4>
+            <p>Smart dual-sided packing architecture featuring zippered waterproof wet-pocket barriers, compression straps, and dedicated tech organization bays.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">⚙️</div>
+            <h4>Smooth-Rolling Wheels</h4>
+            <p>Japanese Hinomoto 360° silent caster wheels equipped with dual steel ball bearings for glide mobility across cobblestones, tarmac, and plush carpet.</p>
+          </div>
+
+          <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🔒</div>
+            <h4>Secure Locking Systems</h4>
+            <p>Integrated, flush-mounted TSA-approved combination locks and burst-proof double-coil zipper teeth that resist puncture intrusions from sharp objects.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">📐</div>
+            <h4>Thoughtful Design</h4>
+            <p>Ergonomic multi-stage aluminum handles that lock at three tailored heights to eliminate wrist fatigue during brisk sprints between airport gates.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🌍</div>
+            <h4>Practical Travel Features</h4>
+            <p>Includes built-in hidden AirTag/SmartTag locator slots, expandable gussets for unexpected souvenirs, and nesting storage footprint.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: DESIGNED FOR EVERY JOURNEY
+         ============================================================ -->
+    <section class="section section-offwhite" id="every-journey">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Tailored Itineraries</span>
+          <h2 class="section-title">Designed for Every Journey</h2>
+          <p class="section-subtitle">
+            Whether charting transatlantic flights or quick suburban train connections, find the precise volume, weight profile, and interior organization you need.
+          </p>
+        </div>
+
+        <div class="grid cols-3 gap-3">
+          <div class="journey-card reveal">
+            <span class="journey-icon">💼</span>
+            <div>
+              <h4>Business Travel</h4>
+              <p>Quick-access front laptop sleeves, wrinkle-resistant suiter loops, and compliant overhead carry-on dimensions for fast boarding.</p>
+            </div>
+          </div>
+
+          <div class="journey-card reveal reveal-delay-1">
+            <span class="journey-icon">🏖️</span>
+            <div>
+              <h4>Weekend Getaways</h4>
+              <p>Featherweight 45L ballistic duffels and expandable weekender packs tailored for 48-to-72-hour city and coastal retreats.</p>
+            </div>
+          </div>
+
+          <div class="journey-card reveal reveal-delay-2">
+            <span class="journey-icon">👨‍👩‍👧‍👦</span>
+            <div>
+              <h4>Family Vacations</h4>
+              <p>Synchronized 3-piece sets with high-volume 96L trunks and color-coded tags to keep everyone’s clothing organized in hotel rooms.</p>
+            </div>
+          </div>
+
+          <div class="journey-card reveal">
+            <span class="journey-icon">✈️</span>
+            <div>
+              <h4>International Journeys</h4>
+              <p>TSA combination security, puncture-resistant zippers, and reinforced aluminum corner caps engineered for brutal baggage carousels.</p>
+            </div>
+          </div>
+
+          <div class="journey-card reveal reveal-delay-1">
+            <span class="journey-icon">⛰️</span>
+            <div>
+              <h4>Adventure Travel</h4>
+              <p>Abrasion-proof ballistic weave fabrics, weatherproof polyurethane-sealed seams, and all-terrain oversized caster wheels.</p>
+            </div>
+          </div>
+
+          <div class="journey-card reveal reveal-delay-2">
+            <span class="journey-icon">🎓</span>
+            <div>
+              <h4>Student &amp; Study Abroad</h4>
+              <p>Durable modular storage packs, high packing-to-weight ratios, and lifetime repair support for multi-semester overseas living.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: SHOP YOUR NEXT JOURNEY (Promotional Banner)
+         ============================================================ -->
+    <section class="section section-card" id="shop-cta-banner">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <span class="section-label" style="color: var(--muted-gold);">Ready For Takeoff</span>
+          <h2 class="text-white mb-2 font-serif">Upgrade Your Next Journey With AeroPack</h2>
+          <p class="mb-4" style="max-width: 62ch; margin-inline: auto;">
+            Experience effortless glide, aerospace-certified durability, and sophisticated travel aesthetics backed by our 5-year global structural protection and dedicated repair support.
+          </p>
+          <div class="cta-banner-actions">
+            <a href="services.html" class="btn btn-gold btn-lg">Explore All Products &rarr;</a>
+            <a href="pricing.html" class="btn btn-outline-white btn-lg">View Collections &amp; Bundles</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo mb-2" aria-label="AeroPack">
+            <div class="navbar-logo-icon">🧳</div>
+            <div class="navbar-logo-text">
+              <span class="navbar-logo-name">AeroPack</span>
+              <span class="navbar-logo-tagline">Travel Goods</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            AeroPack creates premium travel goods, hard-shell suitcases, and versatile bags engineered to make every global journey seamless, durable, and stylish.
+          </p>
+          <div class="footer-social">
+            <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">📸</a>
+            <a href="https://twitter.com" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener">🐦</a>
+            <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+            <a href="https://linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (General Store)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Collections)</a></li>
+            <li><a href="about.html" class="footer-link">About Brand Story</a></li>
+            <li><a href="services.html" class="footer-link">Shop All Products</a></li>
+            <li><a href="services.html#shop-by-type" class="footer-link">Travel Collections</a></li>
+            <li><a href="services.html#warranty-protection" class="footer-link">Warranty Information</a></li>
+            <li><a href="services.html#repair-services" class="footer-link">Luggage Repair Service</a></li>
+            <li><a href="pricing.html" class="footer-link">Luggage Sets &amp; Offers</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Types & Journal -->
+        <div>
+          <h4 class="footer-col-title">Collections &amp; Tips</h4>
+          <ul class="footer-links">
+            <li><a href="services.html?category=cabin-luggage" class="footer-link">Cabin Suitcases</a></li>
+            <li><a href="services.html?category=checkin-suitcases" class="footer-link">Check-in Luggage</a></li>
+            <li><a href="services.html?category=luggage-sets" class="footer-link">Luggage Sets</a></li>
+            <li><a href="services.html?category=travel-backpacks" class="footer-link">Travel Backpacks</a></li>
+            <li><a href="services.html?category=duffel-bags" class="footer-link">Duffel Bags</a></li>
+            <li><a href="services.html?category=travel-accessories" class="footer-link">Travel Accessories</a></li>
+            <li><a href="blog.html" class="footer-link">Travel Journal &amp; Guides</a></li>
+            <li><a href="contact.html" class="footer-link">Customer Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Store Info & Newsletter -->
+        <div>
+          <h4 class="footer-col-title">AeroPack Concierge</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <div class="footer-contact-text">Terminal Flagship Store, 450 Concourse Way, New York, NY 10001</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <div class="footer-contact-text">+1 (800) 555-AERO (2376)</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <div class="footer-contact-text">concierge@aeropack-travel.com</div>
+          </div>
+
+          <div class="footer-newsletter">
+            <span class="text-xs" style="color: rgba(255,255,255,0.7); font-weight:600;">Subscribe to Travel Journal</span>
+            <form class="footer-newsletter-form" onsubmit="return handleNewsletterSubmit(event)">
+              <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+              <button type="submit" class="btn btn-gold btn-sm">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 AeroPack International Travel Goods. All rights reserved. Precision engineering for the modern voyager.
+        </div>
+        <div class="footer-legal">
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="services.html#warranty-protection">Warranty Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER OVERLAY -->
+  <div class="cart-overlay" onclick="closeCart()" aria-hidden="true"></div>
+  <div class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>Your Travel Bag</h3>
+      <button class="cart-close" onclick="closeCart()" aria-label="Close Cart">&times;</button>
+    </div>
+    <div class="cart-body cart-items-list">
+      <!-- Injected via Vanilla JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span class="cart-subtotal-label">Subtotal</span>
+        <span class="cart-subtotal-price">$0</span>
+      </div>
+      <p class="text-xs text-secondary mb-2">Taxes &amp; global freight calculated at simulated checkout.</p>
+      <button class="btn btn-teal w-100 py-3" onclick="triggerSimulatedCheckout()">Proceed to Simulated Checkout &rarr;</button>
+      <button class="btn btn-outline w-100 mt-2 btn-sm" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" aria-label="Back to Top">&uarr;</button>
+
+  <!-- TOAST CONTAINER -->
+  <div class="toast-container" aria-live="polite"></div>
+
+  <!-- SCRIPTS -->
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Luggage &amp; Travel Essentials | AeroPack Official Store</title>
+  <meta name="description" content="Shop premium travel suitcases, luggage sets, backpacks, duffel bags, and travel accessories. Complete warranty terms, repair services, and customer care.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="navbar" id="site-header">
+    <div class="container navbar-inner">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-logo" aria-label="AeroPack Home">
+          <div class="navbar-logo-icon">🧳</div>
+          <div class="navbar-logo-text">
+            <span class="navbar-logo-name">AeroPack</span>
+            <span class="navbar-logo-tagline">Travel Goods</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="navbar-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home 1</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link active">Shop</a>
+        <a href="#shop-by-type" class="nav-link">Travel Collections</a>
+        <a href="#warranty-protection" class="nav-link">Warranty &amp; Repair</a>
+        <a href="blog.html" class="nav-link">Travel Journal</a>
+        <a href="pricing.html" class="nav-link">Offers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Sign In</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme">🌙 Dark</button>
+        <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
+        
+        <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='#all-products'" title="Wishlist" aria-label="Wishlist">
+          🤍
+          <span class="navbar-badge wishlist-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="navbar-icon-btn cart-nav-btn" onclick="openCart()" title="View Cart" aria-label="Shopping Cart">
+          🛍️
+          <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <a href="#all-products" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
+        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav" id="mobile-navigation">
+    <a href="index.html" class="mobile-nav-link">Home 1 (General Store)</a>
+    <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="services.html" class="mobile-nav-link">Shop All Products</a>
+    <a href="#shop-by-type" class="mobile-nav-link">Travel Collections</a>
+    <a href="#warranty-protection" class="mobile-nav-link">Warranty &amp; Product Care</a>
+    <a href="#repair-services" class="mobile-nav-link">Luggage Repair Service</a>
+    <a href="blog.html" class="mobile-nav-link">Travel Journal &amp; Guides</a>
+    <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Sets</a>
+    <a href="contact.html" class="mobile-nav-link">Contact Store</a>
+    <a href="login.html" class="mobile-nav-link">Login / Register</a>
+  </div>
+
+  <main class="page-content">
+
+    <!-- ============================================================
+         SECTION 1: SHOP HERO
+         ============================================================ -->
+    <section class="page-hero" id="shop-hero">
+      <div class="page-hero-bg">
+        <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=1920&q=80" alt="Row of premium hard-shell luggage lined up in a bright modern terminal">
+      </div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> &gt; <span>Shop Luggage &amp; Travel Essentials</span>
+        </nav>
+        <span class="section-label">AeroPack Collections &amp; After-Sales</span>
+        <h1>Find the Perfect Travel Companion</h1>
+        <p>
+          Discover precision luggage engineered for effortless transit across global terminals. Explore full specifications, responsive catalog filters, certified product warranty, and dedicated luggage repair support.
+        </p>
+        <div class="mt-3">
+          <a href="#all-products" class="btn btn-gold">Explore Products &darr;</a>
+          <a href="#warranty-protection" class="btn btn-outline-white ms-2">Warranty &amp; Repairs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: SHOP BY PRODUCT TYPE (10 Category Cards)
+         ============================================================ -->
+    <section class="section section-offwhite" id="shop-by-type">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Comprehensive Lineup</span>
+          <h2 class="section-title">Shop by Product Type</h2>
+          <p class="section-subtitle">
+            Select a specialized category to instantly filter matching travel gear on this page without reloading.
+          </p>
+        </div>
+
+        <div class="grid cols-auto-fill-240 gap-3">
+          <!-- 1. Cabin Luggage -->
+          <div class="category-card reveal" onclick="filterByCategory('cabin-luggage')">
+            <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=600&q=80" alt="Cabin Luggage" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">1. Cabin Luggage</h3>
+                <p class="category-card-desc">Overhead compliant 20"-21" spinners.</p>
+                <span class="category-card-cta">Explore Category &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Check-in Suitcases -->
+          <div class="category-card reveal reveal-delay-1" onclick="filterByCategory('checkin-suitcases')">
+            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Check-in Suitcases" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">2. Check-in Suitcases</h3>
+                <p class="category-card-desc">Medium 24" &amp; Large 28" trunks.</p>
+                <span class="category-card-cta">Explore Category &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Luggage Sets -->
+          <div class="category-card reveal reveal-delay-2" onclick="filterByCategory('luggage-sets')">
+            <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=600&q=80" alt="Luggage Sets" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">3. Luggage Sets</h3>
+                <p class="category-card-desc">2-piece and 3-piece nested collections.</p>
+                <span class="category-card-cta">Explore Category &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Hard-Shell Suitcases -->
+          <div class="category-card reveal reveal-delay-3" onclick="filterByCategory('cabin-luggage')">
+            <img src="https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=600&q=80" alt="Hard-Shell Suitcases" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">4. Hard-Shell Suitcases</h3>
+                <p class="category-card-desc">Aerospace polycarbonate shells.</p>
+                <span class="category-card-cta">Explore Category &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Soft-Shell Suitcases -->
+          <div class="category-card reveal" onclick="filterByCategory('soft-shell-suitcases')">
+            <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=600&q=80" alt="Soft-Shell Suitcases" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">5. Soft-Shell Suitcases</h3>
+                <p class="category-card-desc">High-tenacity ballistic dobby fabric.</p>
+                <span class="category-card-cta">Explore Category &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Travel Backpacks -->
+          <div class="category-card reveal reveal-delay-1" onclick="filterByCategory('travel-backpacks')">
+            <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=600&q=80" alt="Travel Backpacks" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">6. Travel Backpacks</h3>
+                <p class="category-card-desc">180° clamshell one-bag packs.</p>
+                <span class="category-card-cta">Explore Category &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Duffel Bags -->
+          <div class="category-card reveal reveal-delay-2" onclick="filterByCategory('duffel-bags')">
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Duffel Bags" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">7. Duffel Bags</h3>
+                <p class="category-card-desc">Waterproof weekender bags &amp; shoe bays.</p>
+                <span class="category-card-cta">Explore Category &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Business Bags -->
+          <div class="category-card reveal reveal-delay-3" onclick="filterByCategory('business-bags')">
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Business Bags" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">8. Business Bags</h3>
+                <p class="category-card-desc">Leather briefcases with trolley pass-through.</p>
+                <span class="category-card-cta">Explore Category &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Laptop Bags -->
+          <div class="category-card reveal" onclick="filterByCategory('business-bags')">
+            <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=600&q=80" alt="Laptop Bags" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">9. Laptop Bags</h3>
+                <p class="category-card-desc">Padded tech vaults for 15.6" &amp; 16" devices.</p>
+                <span class="category-card-cta">Explore Category &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Travel Accessories -->
+          <div class="category-card reveal reveal-delay-1" onclick="filterByCategory('travel-accessories')">
+            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Travel Accessories" loading="lazy">
+            <div class="category-card-overlay">
+              <div class="category-card-info">
+                <h3 class="category-card-title">10. Travel Accessories</h3>
+                <p class="category-card-desc">Compression cubes, locks, and tech folios.</p>
+                <span class="category-card-cta">Explore Category &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: ALL PRODUCTS (Responsive Grid with Vanilla JS Filters)
+         ============================================================ -->
+    <section class="section section-card" id="all-products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Real-Time Catalog</span>
+          <h2 class="section-title">All Products &amp; Travel Collections</h2>
+          <p class="section-subtitle">
+            Filter by category, material, luggage dimensions, and price. All product interactions are powered natively using Vanilla JavaScript.
+          </p>
+        </div>
+
+        <!-- Filter Controls Bar -->
+        <div class="shop-controls">
+          <div class="shop-search">
+            <span class="shop-search-icon">🔍</span>
+            <input type="text" id="filter-search" placeholder="Search luggage by name, feature, or material..." aria-label="Search travel products">
+          </div>
+          <div class="shop-sort">
+            <select id="filter-sort" aria-label="Sort products">
+              <option value="newest">Sort by: Featured &amp; Newest</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Customer Rating</option>
+            </select>
+          </div>
+          <div class="shop-results-count" id="catalog-count">Showing 12 travel products</div>
+        </div>
+
+        <!-- Main Shop Layout -->
+        <div class="shop-layout">
+          <!-- Filter Sidebar -->
+          <aside class="filter-panel">
+            <form id="shop-filter-form" onsubmit="event.preventDefault();">
+              <div class="filter-title">Filter Catalog</div>
+
+              <!-- Category Filter -->
+              <div class="filter-section">
+                <div class="filter-section-label">Category</div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-all" name="category" value="all" checked>
+                  <label for="cat-all">All Collections</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-cabin" name="category" value="cabin-luggage">
+                  <label for="cat-cabin">Cabin Luggage</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-checkin" name="category" value="checkin-suitcases">
+                  <label for="cat-checkin">Check-in Suitcases</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-sets" name="category" value="luggage-sets">
+                  <label for="cat-sets">Luggage Sets</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-backpacks" name="category" value="travel-backpacks">
+                  <label for="cat-backpacks">Travel Backpacks</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-duffels" name="category" value="duffel-bags">
+                  <label for="cat-duffels">Duffel Bags</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-business" name="category" value="business-bags">
+                  <label for="cat-business">Business Bags</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="cat-accessories" name="category" value="travel-accessories">
+                  <label for="cat-accessories">Travel Accessories</label>
+                </div>
+              </div>
+
+              <!-- Price Filter -->
+              <div class="filter-section">
+                <div class="filter-section-label">Price Range ($)</div>
+                <div class="price-range-inputs">
+                  <input type="number" id="filter-min-price" placeholder="Min" min="0" max="1000" value="0">
+                  <span class="price-range-sep">&ndash;</span>
+                  <input type="number" id="filter-max-price" placeholder="Max" min="0" max="1000" value="600">
+                </div>
+              </div>
+
+              <!-- Material Filter -->
+              <div class="filter-section">
+                <div class="filter-section-label">Material &amp; Shell</div>
+                <div class="filter-option">
+                  <input type="checkbox" id="mat-poly" name="material" value="Polycarbonate">
+                  <label for="mat-poly">Polycarbonate Shell</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="mat-leather" name="material" value="Leather">
+                  <label for="mat-leather">Italian Leather</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="mat-nylon" name="material" value="Nylon">
+                  <label for="mat-nylon">Ballistic Nylon</label>
+                </div>
+              </div>
+
+              <!-- Luggage Size Filter -->
+              <div class="filter-section">
+                <div class="filter-section-label">Luggage Size</div>
+                <div class="filter-option">
+                  <input type="checkbox" id="sz-cabin" name="size" value="Cabin">
+                  <label for="sz-cabin">Cabin / Carry-On</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="sz-checkin" name="size" value="Check-in">
+                  <label for="sz-checkin">Check-in (24"-28")</label>
+                </div>
+                <div class="filter-option">
+                  <input type="checkbox" id="sz-set" name="size" value="Piece">
+                  <label for="sz-set">Multi-Piece Set</label>
+                </div>
+              </div>
+
+              <div class="filter-actions">
+                <button type="button" class="btn btn-outline btn-sm w-100" onclick="resetFilters()">Reset All Filters</button>
+              </div>
+            </form>
+          </aside>
+
+          <!-- Product Grid Container -->
+          <div class="grid cols-auto-fill-280 gap-3" id="services-product-grid">
+            <!-- Dynamically populated by Vanilla JS from AEROPACK_PRODUCTS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: WARRANTY & PRODUCT PROTECTION
+         ============================================================ -->
+    <section class="section section-offwhite" id="warranty-protection">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Certified Protection</span>
+          <h2 class="section-title">Warranty &amp; Product Protection</h2>
+          <p class="section-subtitle">
+            Our warranty coverage depends on the specific product line and its stated warranty terms. We ensure transparent support for genuine manufacturing defects throughout the specified period.
+          </p>
+        </div>
+
+        <div class="grid cols-3 gap-3">
+          <div class="feature-card reveal">
+            <div class="feature-icon">📜</div>
+            <h4>Warranty Overview</h4>
+            <p>Every authentic AeroPack item includes product-specific coverage against material failures and manufacturing craftsmanship anomalies under normal travel usage.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">🛡️</div>
+            <h4>Manufacturing Defect Support</h4>
+            <p>Coverage specifically addresses seam separation, shell cracking under normal usage, zipper slider malfunctions, and factory lock mechanism failures.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">📋</div>
+            <h4>Warranty Claim Enquiry Process</h4>
+            <p>Submit an enquiry via our Contact page with your model name, high-resolution photographs of the affected component, and description of the issue.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-icon">🧾</div>
+            <h4>Proof-of-Purchase Guidance</h4>
+            <p>Keep your original digital invoice, store receipt, or online order confirmation email as proof of acquisition to expedite warranty validation.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">🧽</div>
+            <h4>Product Care Recommendations</h4>
+            <p>Clean polycarbonate shells using mild soapy lukewarm water and a microfiber cloth. Avoid solvent-based abrasive chemicals that could degrade the UV outer coating.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">⚖️</div>
+            <h4>Coverage Disclaimers</h4>
+            <p>Warranty terms do not cover normal aesthetic scuffs, third-party airline baggage handler maltreatment, transport accidents, or unauthorized modifications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: LUGGAGE REPAIR & AFTER-SALES SERVICES
+         ============================================================ -->
+    <section class="section section-dark" id="repair-services">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Restoration &amp; Maintenance</span>
+          <h2 class="section-title">Luggage Repair &amp; After-Sales Services</h2>
+          <p class="section-subtitle">
+            Extend the lifespan of your luggage. All repair services are subject to physical component assessment and actual service parts availability.
+          </p>
+        </div>
+
+        <div class="grid cols-auto-fill-280 gap-3">
+          <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">⚙️</div>
+            <h4>Wheel Replacement Enquiries</h4>
+            <p>Inquire about replacement Hinomoto dual-bearing spinner wheel modules and caster assemblies compatible with your specific generation.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🪝</div>
+            <h4>Handle Repair Enquiries</h4>
+            <p>Telescopic pull-handle tube realignments, button release lock servicing, and top/side cushioned carry handle replacements.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🤐</div>
+            <h4>Zipper Repair Enquiries</h4>
+            <p>Assessment of damaged reverse-coil zipper teeth, slider replacements, and puller cord re-attachments for weather-sealed models.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-3" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🔐</div>
+            <h4>Lock-Related Support</h4>
+            <p>Guidance for resetting TSA 3-digit combination locks, key cylinder evaluations, and replacement recessed lock housings.</p>
+          </div>
+
+          <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🩺</div>
+            <h4>Shell &amp; Fabric Assessment</h4>
+            <p>Technical evaluation of exterior polycarbonate impact depressions or ballistic weave fabric tears to determine structural repairability.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🔧</div>
+            <h4>Spare Parts &amp; Self-Repair Kits</h4>
+            <p>Request authentic screws, interior compression straps, and modular caster parts for straightforward home installation.</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="contact.html?type=repair" class="btn btn-gold btn-lg">Submit a Repair Enquiry &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: SHOP & SUPPORT CTA
+         ============================================================ -->
+    <section class="section section-offwhite" id="shop-support-cta">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <span class="section-label" style="color: var(--muted-gold);">Complete Travel Care</span>
+          <h2 class="text-white mb-2 font-serif">Ready to Voyage With Complete Confidence?</h2>
+          <p class="mb-4" style="max-width: 62ch; margin-inline: auto;">
+            Shop our premium luggage collections, or speak directly with our concierge team regarding model specifications, replacement parts, and warranty verification.
+          </p>
+          <div class="cta-banner-actions">
+            <a href="#all-products" class="btn btn-gold btn-lg">Explore Luggage &rarr;</a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Support &amp; Enquiries</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo mb-2" aria-label="AeroPack">
+            <div class="navbar-logo-icon">🧳</div>
+            <div class="navbar-logo-text">
+              <span class="navbar-logo-name">AeroPack</span>
+              <span class="navbar-logo-tagline">Travel Goods</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            AeroPack creates premium travel goods, hard-shell suitcases, and versatile bags engineered to make every global journey seamless, durable, and stylish.
+          </p>
+          <div class="footer-social">
+            <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">📸</a>
+            <a href="https://twitter.com" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener">🐦</a>
+            <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+            <a href="https://linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (General Store)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Collections)</a></li>
+            <li><a href="about.html" class="footer-link">About Brand Story</a></li>
+            <li><a href="services.html" class="footer-link">Shop All Products</a></li>
+            <li><a href="#shop-by-type" class="footer-link">Travel Collections</a></li>
+            <li><a href="#warranty-protection" class="footer-link">Warranty Information</a></li>
+            <li><a href="#repair-services" class="footer-link">Luggage Repair Service</a></li>
+            <li><a href="pricing.html" class="footer-link">Luggage Sets &amp; Offers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Collections &amp; Tips</h4>
+          <ul class="footer-links">
+            <li><a href="services.html?category=cabin-luggage" class="footer-link">Cabin Suitcases</a></li>
+            <li><a href="services.html?category=checkin-suitcases" class="footer-link">Check-in Luggage</a></li>
+            <li><a href="services.html?category=luggage-sets" class="footer-link">Luggage Sets</a></li>
+            <li><a href="services.html?category=travel-backpacks" class="footer-link">Travel Backpacks</a></li>
+            <li><a href="services.html?category=duffel-bags" class="footer-link">Duffel Bags</a></li>
+            <li><a href="services.html?category=travel-accessories" class="footer-link">Travel Accessories</a></li>
+            <li><a href="blog.html" class="footer-link">Travel Journal &amp; Guides</a></li>
+            <li><a href="contact.html" class="footer-link">Customer Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">AeroPack Concierge</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <div class="footer-contact-text">Terminal Flagship Store, 450 Concourse Way, New York, NY 10001</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <div class="footer-contact-text">+1 (800) 555-AERO (2376)</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <div class="footer-contact-text">concierge@aeropack-travel.com</div>
+          </div>
+
+          <div class="footer-newsletter">
+            <span class="text-xs" style="color: rgba(255,255,255,0.7); font-weight:600;">Subscribe to Travel Journal</span>
+            <form class="footer-newsletter-form" onsubmit="return handleNewsletterSubmit(event)">
+              <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+              <button type="submit" class="btn btn-gold btn-sm">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 AeroPack International Travel Goods. All rights reserved.
+        </div>
+        <div class="footer-legal">
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="#warranty-protection">Warranty Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER OVERLAY -->
+  <div class="cart-overlay" onclick="closeCart()" aria-hidden="true"></div>
+  <div class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>Your Travel Bag</h3>
+      <button class="cart-close" onclick="closeCart()" aria-label="Close Cart">&times;</button>
+    </div>
+    <div class="cart-body cart-items-list"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span class="cart-subtotal-label">Subtotal</span>
+        <span class="cart-subtotal-price">$0</span>
+      </div>
+      <p class="text-xs text-secondary mb-2">Taxes &amp; global freight calculated at simulated checkout.</p>
+      <button class="btn btn-teal w-100 py-3" onclick="triggerSimulatedCheckout()">Proceed to Simulated Checkout &rarr;</button>
+      <button class="btn btn-outline w-100 mt-2 btn-sm" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to Top">&uarr;</button>
+  <div class="toast-container" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // In-page category card helper
+    function filterByCategory(category) {
+      const cb = document.querySelector(`input[name="category"][value="${category}"]`);
+      const allCb = document.getElementById('cat-all');
+      if (allCb) allCb.checked = false;
+      document.querySelectorAll('input[name="category"]').forEach(c => c.checked = false);
+      if (cb) cb.checked = true;
+      renderServicesCatalog();
+      document.getElementById('all-products').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Check URL params on load
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const catParam = urlParams.get('category');
+      if (catParam) {
+        filterByCategory(catParam);
+      }
+    });
+  </script>
+</body>
+</html>
