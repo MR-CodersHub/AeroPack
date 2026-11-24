@@ -28,11 +28,11 @@
       </div>
 
       <nav class="navbar-nav" aria-label="Primary Navigation">
-        <a href="../index.html" class="nav-link">Home 1</a>
-        <a href="home-2.html" class="nav-link active">Home 2</a>
-        <a href="about.html" class="nav-link">About Us</a>
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link active">Home2</a>
+        <a href="about.html" class="nav-link">About</a>
         <div class="nav-dropdown">
-          <button type="button" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true">▾</span></button>
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span></button>
           <div class="nav-dropdown-menu">
             <a href="services.html" class="nav-dropdown-link">Shop</a>
             <a href="services.html#shop-by-type" class="nav-dropdown-link">Travel Collections</a>
@@ -40,14 +40,11 @@
           </div>
         </div>
         <a href="blog.html" class="nav-link">Blog</a>
-        <a href="pricing.html" class="nav-link">Offers</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
       <div class="navbar-actions">
-        <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button>
-        <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
-        
         <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='services.html'" title="Wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i>
           <span class="navbar-badge wishlist-count-badge" style="display:none;">0</span>
         </button>
@@ -56,7 +53,13 @@
           <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
         </button>
 
-        <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
+        <a href="contact.html" class="navbar-icon-btn profile-nav-btn" title="User Profile" aria-label="User Profile"><i class="fa-regular fa-user"></i></a>
+
+        <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button>
+        <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
+
+        <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Book now</a>
+
         <button class="navbar-toggle" aria-label="Toggle Mobile Navigation"><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
@@ -64,11 +67,11 @@
 
   <!-- MOBILE NAVIGATION DRAWER -->
   <div class="mobile-nav" id="mobile-navigation">
-    <a href="../index.html" class="mobile-nav-link">Home 1 (General Store)</a>
-    <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
-    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="../index.html" class="mobile-nav-link">Home</a>
+    <a href="home-2.html" class="mobile-nav-link">Home2</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
     <div class="mobile-nav-group">
-      <button type="button" class="mobile-nav-link mobile-nav-group-toggle" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true">▾</span></button>
+      <button type="button" class="mobile-nav-link mobile-nav-group-toggle" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span></button>
       <div class="mobile-nav-submenu">
         <a href="services.html" class="mobile-nav-link">Shop</a>
         <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
@@ -76,10 +79,10 @@
       </div>
     </div>
     <a href="blog.html" class="mobile-nav-link">Blog</a>
-    <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Sets</a>
-    <a href="contact.html" class="mobile-nav-link">Contact Store</a>
+    <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
     <div class="p-3">
-      <a href="services.html" class="btn btn-teal w-100">Shop Travel Essentials</a>
+      <a href="services.html" class="btn btn-teal w-100">Book now</a>
     </div>
   </div>
 
