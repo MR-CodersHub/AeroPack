@@ -398,18 +398,45 @@
     const toggle = document.querySelector('.navbar-toggle');
     const mobileNav = document.querySelector('.mobile-nav');
 
-    if (toggle && mobileNav) {
-      toggle.addEventListener('click', () => {
-        const isOpen = mobileNav.classList.contains('open');
-        if (isOpen) {
-          mobileNav.classList.remove('open');
-          toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
-        } else {
-          mobileNav.classList.add('open');
-          toggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-        }
-      });
-    }
+    if (!toggle || !mobileNav) return;
+
+    const setMenu = (open) => {
+      mobileNav.classList.toggle('open', open);
+      document.body.classList.toggle('nav-open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+      document.documentElement.style.overflow = open ? 'hidden' : '';
+      toggle.innerHTML = open
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+      toggle.setAttribute('aria-expanded', String(open));
+    };
+
+    toggle.addEventListener('click', () => {
+      setMenu(!mobileNav.classList.contains('open'));
+    });
+
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => setMenu(false));
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+        setMenu(false);
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 991 && mobileNav.classList.contains('open')) {
+        setMenu(false);
+      }
+    });
+
+    // Keep the drawer scrollable while stopping touch scrolling behind it.
+    document.addEventListener('touchmove', (e) => {
+      if (mobileNav.classList.contains('open') && !e.target.closest('.mobile-nav')) {
+        e.preventDefault();
+      }
+    }, { passive: false });
   }
 
   // ── 9b. SERVICES NAVIGATION DROPDOWN ────────────────────────
