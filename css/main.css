@@ -1028,7 +1028,7 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 .pricing-price-from { font-size: 0.8rem; font-weight: 400; color: var(--text-secondary); display: block; margin-bottom: 0.25rem; }
 .pricing-list { margin: 1.25rem 0; }
 .pricing-list li { display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0; font-size: 0.88rem; }
-.pricing-list li::before { content: '✓'; color: var(--muted-gold); font-weight: 700; flex-shrink: 0; }
+.pricing-list li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: var(--muted-gold); flex-shrink: 0; }
 .pricing-card.featured .pricing-list li::before { color: var(--muted-gold); }
 
 /* ── 20. Blog Cards ───────────────────────────────────────── */
@@ -1098,9 +1098,9 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
   display: flex; align-items: center; gap: 0.4rem;
 }
 .footer-link:hover { color: var(--muted-gold); }
-.footer-link::before { content: '→'; font-size: 0.7rem; opacity: 0; transition: opacity var(--transition-fast); }
+.footer-link::before { content: '\f061'; font-family: 'Font Awesome 6 Free'; font-weight: 900; font-size: 0.7rem; opacity: 0; transition: opacity var(--transition-fast); }
 .footer-link:hover::before { opacity: 1; }
-[dir="rtl"] .footer-link::before { content: '←'; }
+[dir="rtl"] .footer-link::before { content: '\f060'; }
 .footer-contact-item { display: flex; gap: 0.75rem; margin-bottom: 0.75rem; align-items: flex-start; }
 .footer-contact-icon { color: var(--muted-gold); flex-shrink: 0; margin-top: 2px; }
 .footer-contact-text { font-size: 0.85rem; }
@@ -1210,28 +1210,23 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 .sticky-top { position: sticky; top: calc(var(--navbar-height) + 1rem); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 
-/* Theme Toggle */
-.theme-toggle {
-  display: flex; align-items: center; gap: 0.4rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: var(--radius-full);
-  background: rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.8);
-  font-size: 0.75rem;
-  font-weight: 500;
-  transition: all var(--transition-fast);
-}
-.theme-toggle:hover { background: rgba(255,255,255,0.18); color: var(--white); }
+/* Theme & Direction Toggles */
+.theme-toggle,
 .rtl-toggle {
-  display: flex; align-items: center; gap: 0.4rem;
-  padding: 0.3rem 0.6rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  width: 2.75rem; height: 2.75rem;
+  padding: 0; gap: 0;
   border-radius: var(--radius-full);
   background: rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.8);
   font-size: 0.75rem;
   font-weight: 500;
+  line-height: 1;
   transition: all var(--transition-fast);
 }
+.theme-toggle i { font-size: 0.95rem; line-height: 1; }
+.theme-toggle:hover,
 .rtl-toggle:hover { background: rgba(255,255,255,0.18); color: var(--white); }
 
 /* Journey Travel Cards */

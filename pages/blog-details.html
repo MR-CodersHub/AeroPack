@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
     <div class="container navbar-inner">
       <div class="navbar-brand">
         <a href="../index.html" class="navbar-logo" aria-label="AeroPack Home">
-          <div class="navbar-logo-icon">🧳</div>
+          <div class="navbar-logo-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
           <div class="navbar-logo-text">
             <span class="navbar-logo-name">AeroPack</span>
             <span class="navbar-logo-tagline">Travel Goods</span>
@@ -30,7 +31,7 @@
         <a href="home-2.html" class="nav-link">Home 2</a>
         <a href="about.html" class="nav-link">About Us</a>
         <div class="nav-dropdown">
-          <button type="button" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true">▾</span></button>
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span></button>
           <div class="nav-dropdown-menu">
             <a href="services.html" class="nav-dropdown-link">Shop</a>
             <a href="services.html#shop-by-type" class="nav-dropdown-link">Travel Collections</a>
@@ -43,21 +44,21 @@
       </nav>
 
       <div class="navbar-actions">
-        <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme">🌙 Dark</button>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
         <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
         
         <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='services.html'" title="Wishlist" aria-label="Wishlist">
-          🤍
+          <i class="fa-regular fa-heart"></i>
           <span class="navbar-badge wishlist-count-badge" style="display:none;">0</span>
         </button>
 
         <button class="navbar-icon-btn cart-nav-btn" onclick="openCart()" title="View Cart" aria-label="Shopping Cart">
-          🛍️
+          <i class="fa-solid fa-bag-shopping"></i>
           <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
         </button>
 
         <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
-        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation">☰</button>
+        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation"><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
   </header>
@@ -68,7 +69,7 @@
     <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
     <a href="about.html" class="mobile-nav-link">About Us</a>
     <div class="mobile-nav-group">
-      <button type="button" class="mobile-nav-link mobile-nav-group-toggle" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true">▾</span></button>
+      <button type="button" class="mobile-nav-link mobile-nav-group-toggle" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span></button>
       <div class="mobile-nav-submenu">
         <a href="services.html" class="mobile-nav-link">Shop</a>
         <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
@@ -99,11 +100,11 @@
         </h1>
         
         <div class="flex items-center gap-3 text-sm text-secondary mb-4 flex-wrap">
-          <span>✍️ <strong>Julien Mercer</strong>, Senior Travel Editor</span>
+          <span><i class="fa-solid fa-pen-nib"></i> <strong>Julien Mercer</strong>, Senior Travel Editor</span>
           <span>&bull;</span>
-          <span>📅 October 14, 2026</span>
+          <span><i class="fa-solid fa-calendar"></i> October 14, 2026</span>
           <span>&bull;</span>
-          <span>⏱️ 7 min read</span>
+          <span><i class="fa-solid fa-stopwatch"></i> 7 min read</span>
           <span>&bull;</span>
           <span style="color: var(--deep-teal);">Category: Packing Science</span>
         </div>
@@ -175,28 +176,28 @@
         
         <div class="grid cols-2 gap-4 mt-4">
           <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <h4 class="mb-2">✈️ Airport Concourse Wisdom</h4>
+            <h4 class="mb-2"><i class="fa-solid fa-plane"></i> Airport Concourse Wisdom</h4>
             <p class="text-sm text-secondary">
               Always roll four-wheel spinner luggage directly beside your hips on smooth terminal tile rather than tilting onto two wheels. This balances the center of gravity and extends caster bearing longevity.
             </p>
           </div>
 
           <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <h4 class="mb-2">🧼 Post-Voyage Shell Care</h4>
+            <h4 class="mb-2"><i class="fa-solid fa-broom"></i> Post-Voyage Shell Care</h4>
             <p class="text-sm text-secondary">
               After return flights, wipe your polycarbonate suitcase with a damp microfiber cloth. If baggage tags leave sticky adhesive residue, apply a drop of baby oil or citrus solvent before storing.
             </p>
           </div>
 
           <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <h4 class="mb-2">📦 Heavy Weight Placement</h4>
+            <h4 class="mb-2"><i class="fa-solid fa-box"></i> Heavy Weight Placement</h4>
             <p class="text-sm text-secondary">
               Position your heaviest items (shoes and tech charging bricks) toward the wheel base of the suitcase. This prevents the luggage from tipping forward when stood upright at taxi ranks.
             </p>
           </div>
 
           <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <h4 class="mb-2">🔒 Zipper Relief Strategy</h4>
+            <h4 class="mb-2"><i class="fa-solid fa-lock"></i> Zipper Relief Strategy</h4>
             <p class="text-sm text-secondary">
               Never force a strained zipper puller around corners. Press the two shell halves firmly together with your hand first to relieve tension on the teeth before sliding the runner.
             </p>
@@ -271,7 +272,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="../index.html" class="navbar-logo mb-2" aria-label="AeroPack">
-            <div class="navbar-logo-icon">🧳</div>
+            <div class="navbar-logo-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
             <div class="navbar-logo-text">
               <span class="navbar-logo-name">AeroPack</span>
               <span class="navbar-logo-tagline">Travel Goods</span>
@@ -281,10 +282,10 @@
             AeroPack creates premium travel goods, hard-shell suitcases, and versatile bags engineered to make every global journey seamless, durable, and stylish.
           </p>
           <div class="footer-social">
-            <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">📸</a>
-            <a href="https://twitter.com" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener">🐦</a>
-            <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
-            <a href="https://linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a>
+            <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
 
@@ -319,15 +320,15 @@
         <div>
           <h4 class="footer-col-title">AeroPack Concierge</h4>
           <div class="footer-contact-item">
-            <span class="footer-contact-icon">📍</span>
+            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
             <div class="footer-contact-text">Terminal Flagship Store, 450 Concourse Way, New York, NY 10001</div>
           </div>
           <div class="footer-contact-item">
-            <span class="footer-contact-icon">📞</span>
+            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
             <div class="footer-contact-text">+1 (800) 555-AERO (2376)</div>
           </div>
           <div class="footer-contact-item">
-            <span class="footer-contact-icon">✉️</span>
+            <span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span>
             <div class="footer-contact-text">concierge@aeropack-travel.com</div>
           </div>
 

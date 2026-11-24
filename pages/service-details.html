@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
     <div class="container navbar-inner">
       <div class="navbar-brand">
         <a href="../index.html" class="navbar-logo" aria-label="AeroPack Home">
-          <div class="navbar-logo-icon">🧳</div>
+          <div class="navbar-logo-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
           <div class="navbar-logo-text">
             <span class="navbar-logo-name">AeroPack</span>
             <span class="navbar-logo-tagline">Travel Goods</span>
@@ -30,7 +31,7 @@
         <a href="home-2.html" class="nav-link">Home 2</a>
         <a href="about.html" class="nav-link">About Us</a>
         <div class="nav-dropdown">
-          <button type="button" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true">▾</span></button>
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span></button>
           <div class="nav-dropdown-menu">
             <a href="services.html" class="nav-dropdown-link">Shop</a>
             <a href="services.html#shop-by-type" class="nav-dropdown-link">Travel Collections</a>
@@ -43,21 +44,21 @@
       </nav>
 
       <div class="navbar-actions">
-        <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme">🌙 Dark</button>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
         <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
         
         <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='services.html'" title="Wishlist" aria-label="Wishlist">
-          🤍
+          <i class="fa-regular fa-heart"></i>
           <span class="navbar-badge wishlist-count-badge" style="display:none;">0</span>
         </button>
 
         <button class="navbar-icon-btn cart-nav-btn" onclick="openCart()" title="View Cart" aria-label="Shopping Cart">
-          🛍️
+          <i class="fa-solid fa-bag-shopping"></i>
           <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
         </button>
 
         <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
-        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation">☰</button>
+        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation"><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
   </header>
@@ -68,7 +69,7 @@
     <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
     <a href="about.html" class="mobile-nav-link">About Us</a>
     <div class="mobile-nav-group">
-      <button type="button" class="mobile-nav-link mobile-nav-group-toggle" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true">▾</span></button>
+      <button type="button" class="mobile-nav-link mobile-nav-group-toggle" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span></button>
       <div class="mobile-nav-submenu">
         <a href="services.html" class="mobile-nav-link">Shop</a>
         <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
@@ -114,7 +115,7 @@
 
             <div class="product-main-img" id="detail-main-img-box" onclick="openLightbox(document.getElementById('detail-main-img').src)">
               <img id="detail-main-img" src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=1200&q=80" alt="AeroVoyager Pro 3-Piece Luggage Set">
-              <span style="position: absolute; bottom: 12px; right: 12px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem;">🔍 Click to Zoom</span>
+              <span style="position: absolute; bottom: 12px; right: 12px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem;"><i class="fa-solid fa-magnifying-glass"></i> Click to Zoom</span>
             </div>
           </div>
 
@@ -125,7 +126,7 @@
             
             <div class="flex items-center gap-3 mb-3">
               <div class="product-rating mb-0">
-                <span class="stars">★★★★★</span>
+                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 <span class="rating-count" id="detail-reviews">4.9 (142 verified traveler reviews)</span>
               </div>
               <span class="badge badge-bestseller" id="detail-badge">Bestseller</span>
@@ -161,22 +162,22 @@
 
               <button class="btn btn-teal btn-lg flex-1" id="detail-add-to-cart-btn" onclick="executeDetailAddToCart()">Add to Travel Bag</button>
               
-              <button class="action-btn" id="detail-wishlist-btn" onclick="toggleWishlist('aero-voyager-set')" style="width: 48px; height: 48px;" title="Save to Wishlist">🤍</button>
-              <button class="action-btn" onclick="shareCurrentProduct()" style="width: 48px; height: 48px;" title="Share Product Link">🔗</button>
+              <button class="action-btn" id="detail-wishlist-btn" onclick="toggleWishlist('aero-voyager-set')" style="width: 48px; height: 48px;" title="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="action-btn" onclick="shareCurrentProduct()" style="width: 48px; height: 48px;" title="Share Product Link"><i class="fa-solid fa-link"></i></button>
             </div>
 
             <!-- Micro Highlights -->
             <div class="p-3" style="background: rgba(40,91,98,0.06); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
               <div class="flex gap-2 items-center text-sm mb-1">
-                <span style="color: #059669;">✓</span>
+                <span style="color: #059669;"><i class="fa-solid fa-check"></i></span>
                 <span><strong>Complimentary Global Freight</strong> on luggage sets</span>
               </div>
               <div class="flex gap-2 items-center text-sm mb-1">
-                <span style="color: #059669;">✓</span>
+                <span style="color: #059669;"><i class="fa-solid fa-check"></i></span>
                 <span><strong>5-Year Limited Global Shell Warranty</strong> included</span>
               </div>
               <div class="flex gap-2 items-center text-sm">
-                <span style="color: #059669;">✓</span>
+                <span style="color: #059669;"><i class="fa-solid fa-check"></i></span>
                 <span><strong>100-Day Risk-Free Trial</strong> for verified flights</span>
               </div>
             </div>
@@ -298,37 +299,37 @@
 
         <div class="grid cols-3 gap-3">
           <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon">🔄</div>
+            <div class="feature-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
             <h4>360° Whisper-Glide Movement</h4>
             <p>Hinomoto dual-wheel casters rotate silently in all directions, dampening acoustic vibrations by 75% on terminal stone tiles.</p>
           </div>
 
           <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon">🎚️</div>
+            <div class="feature-icon"><i class="fa-solid fa-sliders"></i></div>
             <h4>3-Stage Telescopic Handle</h4>
             <p>Precision aluminum tube locks securely at 95 cm, 100 cm, and 105 cm heights to accommodate travelers of any stature.</p>
           </div>
 
           <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon">🗂️</div>
+            <div class="feature-icon"><i class="fa-solid fa-folder-open"></i></div>
             <h4>Dual Clamshell Organization</h4>
             <p>One side features a zippered mesh divider with waterproof toiletry pocket; the opposite side employs a buckled compression pad.</p>
           </div>
 
           <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon">🛡️</div>
+            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
             <h4>Reinforced Corner Caps</h4>
             <p>Riveted aluminum alloy corner shields protect vulnerable edges against violent baggage conveyor drops.</p>
           </div>
 
           <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon">🔒</div>
+            <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
             <h4>TSA Recessed Security Lock</h4>
             <p>Flush-mounted keyless 3-digit combination lock allows airport security agents to inspect without breaking your zipper pullers.</p>
           </div>
 
           <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon">🧲</div>
+            <div class="feature-icon"><i class="fa-solid fa-magnet"></i></div>
             <h4>Self-Retracting Carry Handles</h4>
             <p>Damped silicone-cushioned grab handles on both top and side automatically fold flat against the shell when released.</p>
           </div>
@@ -456,7 +457,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="../index.html" class="navbar-logo mb-2" aria-label="AeroPack">
-            <div class="navbar-logo-icon">🧳</div>
+            <div class="navbar-logo-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
             <div class="navbar-logo-text">
               <span class="navbar-logo-name">AeroPack</span>
               <span class="navbar-logo-tagline">Travel Goods</span>
@@ -466,10 +467,10 @@
             AeroPack creates premium travel goods, hard-shell suitcases, and versatile bags engineered to make every global journey seamless, durable, and stylish.
           </p>
           <div class="footer-social">
-            <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">📸</a>
-            <a href="https://twitter.com" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener">🐦</a>
-            <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
-            <a href="https://linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a>
+            <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
 
@@ -504,15 +505,15 @@
         <div>
           <h4 class="footer-col-title">AeroPack Concierge</h4>
           <div class="footer-contact-item">
-            <span class="footer-contact-icon">📍</span>
+            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
             <div class="footer-contact-text">Terminal Flagship Store, 450 Concourse Way, New York, NY 10001</div>
           </div>
           <div class="footer-contact-item">
-            <span class="footer-contact-icon">📞</span>
+            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
             <div class="footer-contact-text">+1 (800) 555-AERO (2376)</div>
           </div>
           <div class="footer-contact-item">
-            <span class="footer-contact-icon">✉️</span>
+            <span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span>
             <div class="footer-contact-text">concierge@aeropack-travel.com</div>
           </div>
 
