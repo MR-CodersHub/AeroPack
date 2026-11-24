@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sitemap &bull; AeroPack Luxury Luggage Directory</title>
+  <meta name="description" content="Comprehensive flight path and sitemap directory for AeroPack. Explore all luggage collections, travel accessories, warranty support, and customer concierge resources.">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="navbar" id="site-header">
+    <div class="container navbar-inner">
+      <div class="navbar-brand">
+        <a href="../index.html" class="navbar-logo" aria-label="AeroPack Home">
+          <img src="../images/favicon.svg" alt="AeroPack Logo" class="navbar-logo-img">
+          <div class="navbar-logo-text">
+            <span class="navbar-logo-name">AeroPack</span>
+            <span class="navbar-logo-tagline">Engineered for the Modern Voyager</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="navbar-nav" aria-label="Primary Navigation">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span></button>
+          <div class="nav-dropdown-menu">
+            <a href="services.html" class="nav-dropdown-link">Shop</a>
+            <a href="services.html#shop-by-type" class="nav-dropdown-link">Travel Collections</a>
+            <a href="services.html#warranty-protection" class="nav-dropdown-link">Warranty &amp; Repair</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='services.html'" title="Wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i>
+          <span class="navbar-badge wishlist-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="navbar-icon-btn cart-nav-btn" onclick="openCart()" title="View Cart" aria-label="Shopping Cart"><i class="fa-solid fa-bag-shopping"></i>
+          <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button>
+        <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
+
+        <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Book now</a>
+
+        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav" id="mobile-navigation">
+    <a href="../index.html" class="mobile-nav-link">Home</a>
+    <a href="home-2.html" class="mobile-nav-link">Home2</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <div class="mobile-nav-group">
+      <button type="button" class="mobile-nav-link mobile-nav-group-toggle" aria-expanded="false">Services <span class="nav-caret" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span></button>
+      <div class="mobile-nav-submenu">
+        <a href="services.html" class="mobile-nav-link">Shop</a>
+        <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
+        <a href="services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Repair</a>
+      </div>
+    </div>
+    <a href="blog.html" class="mobile-nav-link">Blog</a>
+    <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <div class="p-3">
+      <a href="services.html" class="btn btn-teal w-100">Book now</a>
+    </div>
+  </div>
+
+  <main class="page-content">
+
+    <!-- ============================================================
+         SECTION 1: SITEMAP HERO
+         ============================================================ -->
+    <section class="page-hero" id="sitemap-hero">
+      <div class="page-hero-bg">
+        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1920&q=80" alt="Aerial perspective of international travel terminal and departure routes">
+      </div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a> &gt; <span>Sitemap &bull; Global Directory</span>
+        </nav>
+        <span class="section-label">AeroPack Architecture &bull; Complete Sitemap</span>
+        <h1>Global Navigation &amp; Fleet Directory</h1>
+        <p>
+          Discover every terminal, luggage collection, warranty registry, and travel advisory resource across the AeroPack digital experience in one structured architectural overview.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: PRIMARY SHOWROOMS & CORE PAGES
+         ============================================================ -->
+    <section class="section section-offwhite" id="primary-showrooms">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto mb-5 reveal">
+          <span class="section-label">Showrooms &amp; Core Itineraries</span>
+          <h2 class="font-serif">Primary Portals</h2>
+          <p>The core experiential gateways powering your travel gear exploration and purchase journey.</p>
+        </div>
+
+        <div class="grid cols-3 gap-4">
+          <div class="card p-4 reveal">
+            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-house-chimney"></i></div>
+            <h4 class="font-serif mb-2"><a href="../index.html" class="text-white hover-gold">Home 1 &ndash; Flagship Store</a></h4>
+            <p class="text-sm text-secondary mb-3">Our general luggage store featuring bestselling luggage sets, essential gear grids, and engineering highlights.</p>
+            <a href="../index.html" class="btn btn-outline btn-sm">Visit Home 1 &rarr;</a>
+          </div>
+
+          <div class="card p-4 reveal">
+            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-compass"></i></div>
+            <h4 class="font-serif mb-2"><a href="home-2.html" class="text-white hover-gold">Home 2 &ndash; Collections &amp; Arrivals</a></h4>
+            <p class="text-sm text-secondary mb-3">Curated editorial photography, hard-shell vs soft-shell collections, cabin essentials, and latest new arrivals.</p>
+            <a href="home-2.html" class="btn btn-outline btn-sm">Visit Home 2 &rarr;</a>
+          </div>
+
+          <div class="card p-4 reveal">
+            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-feather-pointed"></i></div>
+            <h4 class="font-serif mb-2"><a href="about.html" class="text-white hover-gold">About Us &ndash; Heritage &amp; Philosophy</a></h4>
+            <p class="text-sm text-secondary mb-3">Our 2018 founding story, aerospace materials philosophy, stress testing protocols, and lifetime brand promise.</p>
+            <a href="about.html" class="btn btn-outline btn-sm">Discover Brand &rarr;</a>
+          </div>
+
+          <div class="card p-4 reveal">
+            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-store"></i></div>
+            <h4 class="font-serif mb-2"><a href="services.html" class="text-white hover-gold">Services &ndash; Main Shop &amp; Repair</a></h4>
+            <p class="text-sm text-secondary mb-3">Central store combining 10 product categories, live faceted filtering, warranty terms, and repair service requests.</p>
+            <a href="services.html" class="btn btn-outline btn-sm">Explore Shop &rarr;</a>
+          </div>
+
+          <div class="card p-4 reveal">
+            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-newspaper"></i></div>
+            <h4 class="font-serif mb-2"><a href="blog.html" class="text-white hover-gold">Blog &ndash; The Modern Voyager Journal</a></h4>
+            <p class="text-sm text-secondary mb-3">Expert travel packing guides, airline carry-on regulations, luggage maintenance tips, and destination spotlights.</p>
+            <a href="blog.html" class="btn btn-outline btn-sm">Read Journal &rarr;</a>
+          </div>
+
+          <div class="card p-4 reveal">
+            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-headset"></i></div>
+            <h4 class="font-serif mb-2"><a href="contact.html" class="text-white hover-gold">Contact Us &ndash; Flagship Concierge</a></h4>
+            <p class="text-sm text-secondary mb-3">Interactive 9-category customer enquiry form, NYC flagship showroom address, map coordinates, and support FAQs.</p>
+            <a href="contact.html" class="btn btn-outline btn-sm">Get in Touch &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: SHOP BY LUGGAGE & BAG CATEGORIES
+         ============================================================ -->
+    <section class="section" id="shopping-categories">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto mb-5 reveal">
+          <span class="section-label">Comprehensive Product Taxonomy</span>
+          <h2 class="font-serif">10 Travel Bag Categories</h2>
+          <p>Every piece in our catalog is mapped to a specific travel style and duration requirement.</p>
+        </div>
+
+        <div class="grid cols-5 gap-3">
+          <a href="services.html?category=cabin-luggage" class="card p-3 text-center hover-lift" style="text-decoration:none;">
+            <i class="fa-solid fa-suitcase-rolling text-gold mb-2" style="font-size: 1.75rem;"></i>
+            <h5 class="font-serif mb-1 text-white">Cabin Luggage</h5>
+            <span class="text-xs text-secondary">20" &ndash; 22" Carry-ons</span>
+          </a>
+
+          <a href="services.html?category=checkin-suitcases" class="card p-3 text-center hover-lift" style="text-decoration:none;">
+            <i class="fa-solid fa-plane-departure text-gold mb-2" style="font-size: 1.75rem;"></i>
+            <h5 class="font-serif mb-1 text-white">Check-in Luggage</h5>
+            <span class="text-xs text-secondary">26" &ndash; 30" Expeditions</span>
+          </a>
+
+          <a href="services.html?category=luggage-sets" class="card p-3 text-center hover-lift" style="text-decoration:none;">
+            <i class="fa-solid fa-cubes-stacked text-gold mb-2" style="font-size: 1.75rem;"></i>
+            <h5 class="font-serif mb-1 text-white">Luggage Sets</h5>
+            <span class="text-xs text-secondary">2-Piece &amp; 3-Piece Sets</span>
+          </a>
+
+          <a href="services.html?category=hard-shell" class="card p-3 text-center hover-lift" style="text-decoration:none;">
+            <i class="fa-solid fa-shield-halved text-gold mb-2" style="font-size: 1.75rem;"></i>
+            <h5 class="font-serif mb-1 text-white">Hard-Shell</h5>
+            <span class="text-xs text-secondary">Makrolon&reg; Polycarbonate</span>
+          </a>
+
+          <a href="services.html?category=soft-shell" class="card p-3 text-center hover-lift" style="text-decoration:none;">
+            <i class="fa-solid fa-feather text-gold mb-2" style="font-size: 1.75rem;"></i>
+            <h5 class="font-serif mb-1 text-white">Soft-Shell</h5>
+            <span class="text-xs text-secondary">Ballistic Nylon Weave</span>
+          </a>
+
+          <a href="services.html?category=travel-backpacks" class="card p-3 text-center hover-lift" style="text-decoration:none;">
+            <i class="fa-solid fa-vest-patches text-gold mb-2" style="font-size: 1.75rem;"></i>
+            <h5 class="font-serif mb-1 text-white">Travel Backpacks</h5>
+            <span class="text-xs text-secondary">Weekender Packs</span>
+          </a>
+
+          <a href="services.html?category=duffel-bags" class="card p-3 text-center hover-lift" style="text-decoration:none;">
+            <i class="fa-solid fa-briefcase text-gold mb-2" style="font-size: 1.75rem;"></i>
+            <h5 class="font-serif mb-1 text-white">Duffel Bags</h5>
+            <span class="text-xs text-secondary">Water-Resistant Weekenders</span>
+          </a>
+
+          <a href="services.html?category=business-bags" class="card p-3 text-center hover-lift" style="text-decoration:none;">
+            <i class="fa-solid fa-business-time text-gold mb-2" style="font-size: 1.75rem;"></i>
+            <h5 class="font-serif mb-1 text-white">Business Bags</h5>
+            <span class="text-xs text-secondary">Executive Organizers</span>
+          </a>
+
+          <a href="services.html?category=laptop-bags" class="card p-3 text-center hover-lift" style="text-decoration:none;">
+            <i class="fa-solid fa-laptop text-gold mb-2" style="font-size: 1.75rem;"></i>
+            <h5 class="font-serif mb-1 text-white">Laptop Bags</h5>
+            <span class="text-xs text-secondary">Padded 16" Sleeves</span>
+          </a>
+
+          <a href="services.html?category=travel-accessories" class="card p-3 text-center hover-lift" style="text-decoration:none;">
+            <i class="fa-solid fa-tag text-gold mb-2" style="font-size: 1.75rem;"></i>
+            <h5 class="font-serif mb-1 text-white">Travel Accessories</h5>
+            <span class="text-xs text-secondary">Compression Cubes &amp; Locks</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: CARE, WARRANTY & AFTER-SALES DIRECTORY
+         ============================================================ -->
+    <section class="section section-offwhite" id="care-warranty-directory">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto mb-5 reveal">
+          <span class="section-label">Lifecycle Protection &amp; After-Sales</span>
+          <h2 class="font-serif">Warranty &amp; Repair Infrastructure</h2>
+          <p>Integrated directly within our Services experience to keep your travel gear in peak flying condition.</p>
+        </div>
+
+        <div class="grid cols-3 gap-4">
+          <div class="card p-4 reveal">
+            <i class="fa-solid fa-certificate text-gold mb-2" style="font-size: 1.5rem;"></i>
+            <h4 class="font-serif mb-2">Warranty Claim Protocol</h4>
+            <p class="text-sm text-secondary mb-3">Coverage for structural shell cracks, broken handles, zipper teeth malfunction, and defective TSA locks.</p>
+            <a href="services.html#warranty-protection" class="btn btn-outline btn-sm">Review Warranty &rarr;</a>
+          </div>
+
+          <div class="card p-4 reveal">
+            <i class="fa-solid fa-screwdriver-wrench text-gold mb-2" style="font-size: 1.5rem;"></i>
+            <h4 class="font-serif mb-2">Hinomoto Wheel Replacements</h4>
+            <p class="text-sm text-secondary mb-3">Genuine Japanese Hinomoto 360 caster wheel assemblies and axle bolt kits dispatched globally.</p>
+            <a href="services.html#repair-services" class="btn btn-outline btn-sm">Request Spare Parts &rarr;</a>
+          </div>
+
+          <div class="card p-4 reveal">
+            <i class="fa-solid fa-shield-cat text-gold mb-2" style="font-size: 1.5rem;"></i>
+            <h4 class="font-serif mb-2">Lock &amp; Zipper Servicing</h4>
+            <p class="text-sm text-secondary mb-3">Guidance for TSA 007 combination resets, slider replacements, and airport security inspection damage assessment.</p>
+            <a href="services.html#repair-services" class="btn btn-outline btn-sm">Get Lock Support &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: SYSTEM DIRECTORIES & LEGAL
+         ============================================================ -->
+    <section class="section" id="system-directories">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto mb-5 reveal">
+          <span class="section-label">Compliance &amp; System Utilities</span>
+          <h2 class="font-serif">Legal &amp; System Architecture</h2>
+          <p>Transparent agreements, pricing hierarchies, and operational status pages.</p>
+        </div>
+
+        <div class="grid cols-4 gap-4">
+          <div class="card p-4 reveal">
+            <i class="fa-solid fa-tags text-gold mb-2" style="font-size: 1.25rem;"></i>
+            <h5 class="font-serif mb-1"><a href="pricing.html" class="text-white hover-gold">Pricing &amp; Sets</a></h5>
+            <p class="text-xs text-secondary">Complete tiered breakdown of individual luggage, sets, and special offers.</p>
+          </div>
+
+          <div class="card p-4 reveal">
+            <i class="fa-solid fa-scale-balanced text-gold mb-2" style="font-size: 1.25rem;"></i>
+            <h5 class="font-serif mb-1"><a href="terms.html" class="text-white hover-gold">Terms of Service</a></h5>
+            <p class="text-xs text-secondary">Customer agreements, simulated checkout processing, and shipping terms.</p>
+          </div>
+
+          <div class="card p-4 reveal">
+            <i class="fa-solid fa-user-shield text-gold mb-2" style="font-size: 1.25rem;"></i>
+            <h5 class="font-serif mb-1"><a href="privacy.html" class="text-white hover-gold">Privacy Policy</a></h5>
+            <p class="text-xs text-secondary">GDPR/CCPA compliance, cookies, and local data persistence standards.</p>
+          </div>
+
+          <div class="card p-4 reveal">
+            <i class="fa-solid fa-wrench text-gold mb-2" style="font-size: 1.25rem;"></i>
+            <h5 class="font-serif mb-1"><a href="maintenance.html" class="text-white hover-gold">Fleet Maintenance</a></h5>
+            <p class="text-xs text-secondary">Real-time system calibration status, countdown timer, and vector telemetry.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: CONCIERGE NAVIGATION CTA
+         ============================================================ -->
+    <section class="section section-navy" id="sitemap-cta">
+      <div class="container text-center max-w-700 mx-auto reveal">
+        <div class="text-gold mb-3" style="font-size: 2.5rem;"><i class="fa-solid fa-headset"></i></div>
+        <span class="section-label">AeroPack Concierge Team</span>
+        <h2 class="font-serif text-white mb-3">Cannot Find Your Desired Destination?</h2>
+        <p class="text-secondary mb-4" style="font-size: 1.05rem;">
+          Our 24/7 dedicated travel concierge is ready to guide you to the exact luggage dimensions, airline compatibility standards, or repair parts your voyage requires.
+        </p>
+        <div class="flex justify-center gap-3">
+          <a href="services.html" class="btn btn-gold"><i class="fa-solid fa-bag-shopping mr-1"></i> Browse All Luggage</a>
+          <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-envelope mr-1"></i> Contact Concierge</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="navbar-logo mb-2" aria-label="AeroPack">
+            <img src="../images/favicon.svg" alt="AeroPack Logo" class="navbar-logo-img">
+            <div class="navbar-logo-text">
+              <span class="navbar-logo-name">AeroPack</span>
+              <span class="navbar-logo-tagline">Engineered for the Modern Voyager</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            AeroPack creates premium travel goods, hard-shell suitcases, and versatile bags engineered to make every global journey seamless, durable, and stylish.
+          </p>
+          <div class="footer-social">
+            <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="home-2.html" class="footer-link">Home2</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Collections &amp; Tips</h4>
+          <ul class="footer-links">
+            <li><a href="services.html?category=cabin-luggage" class="footer-link">Cabin Suitcases</a></li>
+            <li><a href="services.html?category=checkin-suitcases" class="footer-link">Check-in Luggage</a></li>
+            <li><a href="services.html?category=luggage-sets" class="footer-link">Luggage Sets</a></li>
+            <li><a href="services.html?category=travel-backpacks" class="footer-link">Travel Backpacks</a></li>
+            <li><a href="services.html?category=duffel-bags" class="footer-link">Duffel Bags</a></li>
+            <li><a href="services.html?category=travel-accessories" class="footer-link">Travel Accessories</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Customer Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">AeroPack Concierge</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <div class="footer-contact-text">Terminal Flagship Store, 450 Concourse Way, New York, NY 10001</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <div class="footer-contact-text">+1 (800) 555-AERO (2376)</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <div class="footer-contact-text">concierge@aeropack-travel.com</div>
+          </div>
+
+          <div class="footer-newsletter">
+            <span class="text-xs" style="color: rgba(255,255,255,0.7); font-weight:600;">Subscribe to Blog</span>
+            <form class="footer-newsletter-form" onsubmit="return handleNewsletterSubmit(event)">
+              <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+              <button type="submit" class="btn btn-gold btn-sm">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 AeroPack International Travel Goods. All rights reserved.
+        </div>
+        <div class="footer-legal">
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="services.html#warranty-protection">Warranty Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER OVERLAY -->
+  <div class="cart-overlay" onclick="closeCart()" aria-hidden="true"></div>
+  <div class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>Your Travel Bag</h3>
+      <button class="cart-close" onclick="closeCart()" aria-label="Close Cart">&times;</button>
+    </div>
+    <div class="cart-body cart-items-list"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span class="cart-subtotal-label">Subtotal</span>
+        <span class="cart-subtotal-price">$0</span>
+      </div>
+      <p class="text-xs text-secondary mb-2">Taxes &amp; global freight calculated at simulated checkout.</p>
+      <button class="btn btn-teal w-100 py-3" onclick="triggerSimulatedCheckout()">Proceed to Simulated Checkout &rarr;</button>
+      <button class="btn btn-outline w-100 mt-2 btn-sm" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to Top">&uarr;</button>
+  <div class="toast-container" aria-live="polite"></div>
+
+  <script src="../js/products.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
