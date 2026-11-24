@@ -207,9 +207,9 @@
               <div class="cart-item-meta">Color: ${item.color}</div>
               <div class="cart-item-price">$${item.price}</div>
               <div class="qty-control">
-                <button class="qty-btn" onclick="updateCartQty(${index}, -1)" aria-label="Decrease">&minus;</button>
+                <button class="qty-btn" onclick="updateCartQty(${index}, -1)" aria-label="Decrease"><i class="fa-solid fa-minus" aria-hidden="true"></i></button>
                 <span class="qty-value">${item.quantity}</span>
-                <button class="qty-btn" onclick="updateCartQty(${index}, 1)" aria-label="Increase">&plus;</button>
+                <button class="qty-btn" onclick="updateCartQty(${index}, 1)" aria-label="Increase"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
               </div>
             </div>
             <button class="cart-item-remove" onclick="removeCartItem(${index})" title="Remove item"><i class="fa-solid fa-xmark"></i></button>

@@ -121,7 +121,7 @@
 
           <!-- Product Overview & Buying Controls -->
           <div>
-            <div class="product-type" id="detail-category">Luggage Sets &bull; Polycarbonate Hard-Shell</div>
+            <div class="product-type" id="detail-category">Luggage Sets <i class="fa-solid fa-circle fa-sep" aria-hidden="true"></i> Polycarbonate Hard-Shell</div>
             <h1 class="mb-2 font-serif" id="detail-title">AeroVoyager Pro 3-Piece Luggage Set</h1>
             
             <div class="flex items-center gap-3 mb-3">
@@ -155,9 +155,9 @@
             <!-- Quantity & Actions -->
             <div class="flex gap-3 mb-4 flex-wrap">
               <div class="flex items-center" style="border: 1.5px solid var(--border-color); border-radius: var(--radius-md); padding: 0.25rem 0.5rem;">
-                <button type="button" class="qty-btn" onclick="adjustDetailQty(-1)" aria-label="Decrease quantity">&minus;</button>
+                <button type="button" class="qty-btn" onclick="adjustDetailQty(-1)" aria-label="Decrease quantity"><i class="fa-solid fa-minus" aria-hidden="true"></i></button>
                 <span class="qty-value px-3" id="detail-qty-val" style="min-width: 32px; text-align: center; font-weight: 700;">1</span>
-                <button type="button" class="qty-btn" onclick="adjustDetailQty(1)" aria-label="Increase quantity">&plus;</button>
+                <button type="button" class="qty-btn" onclick="adjustDetailQty(1)" aria-label="Increase quantity"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
               </div>
 
               <button class="btn btn-teal btn-lg flex-1" id="detail-add-to-cart-btn" onclick="executeDetailAddToCart()">Add to Travel Bag</button>
@@ -398,7 +398,7 @@
               </div>
             </div>
             <div class="product-card-body">
-              <div class="product-type">Duffel Bags &bull; 45L</div>
+              <div class="product-type">Duffel Bags <i class="fa-solid fa-circle fa-sep" aria-hidden="true"></i> 45L</div>
               <h3 class="product-name"><a href="service-details.html?id=apex-flight-duffel">Apex Ballistic Weekender Duffel</a></h3>
               <div class="product-price">$185 <span class="original">$220</span></div>
             </div>
@@ -417,7 +417,7 @@
               </div>
             </div>
             <div class="product-card-body">
-              <div class="product-type">Travel Accessories &bull; 6-Pack</div>
+              <div class="product-type">Travel Accessories <i class="fa-solid fa-circle fa-sep" aria-hidden="true"></i> 6-Pack</div>
               <h3 class="product-name"><a href="service-details.html?id=meridian-packing-cubes">Meridian 6-Piece Compression Cubes</a></h3>
               <div class="product-price">$68 <span class="original">$85</span></div>
             </div>
@@ -436,7 +436,7 @@
               </div>
             </div>
             <div class="product-card-body">
-              <div class="product-type">Travel Backpacks &bull; 35L</div>
+              <div class="product-type">Travel Backpacks <i class="fa-solid fa-circle fa-sep" aria-hidden="true"></i> 35L</div>
               <h3 class="product-name"><a href="service-details.html?id=traverse-travel-backpack">Traverse Pro 35L Expandable Pack</a></h3>
               <div class="product-price">$195 <span class="original">$240</span></div>
             </div>
@@ -614,7 +614,7 @@
           currentProductId = product.id;
           document.title = `${product.name} | AeroPack Details`;
           document.getElementById('detail-breadcrumb-title').textContent = product.name;
-          document.getElementById('detail-category').textContent = `${product.categoryName} • ${product.shellType}`;
+          document.getElementById('detail-category').innerHTML = `${product.categoryName} <i class="fa-solid fa-circle fa-sep" aria-hidden="true"></i> ${product.shellType}`;
           document.getElementById('detail-title').textContent = product.name;
           document.getElementById('detail-reviews').textContent = `${product.rating} (${product.reviewsCount} verified traveler reviews)`;
           document.getElementById('detail-badge').textContent = product.badge;
