@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us &amp; Concierge Support | AeroPack Official Store</title>
+  <meta name="description" content="Reach the AeroPack concierge desk for product enquiries, warranty claims, luggage repairs, store hours, and order support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="navbar" id="site-header">
+    <div class="container navbar-inner">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-logo" aria-label="AeroPack Home">
+          <div class="navbar-logo-icon">🧳</div>
+          <div class="navbar-logo-text">
+            <span class="navbar-logo-name">AeroPack</span>
+            <span class="navbar-logo-tagline">Travel Goods</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="navbar-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home 1</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Shop</a>
+        <a href="services.html#shop-by-type" class="nav-link">Travel Collections</a>
+        <a href="services.html#warranty-protection" class="nav-link">Warranty &amp; Repair</a>
+        <a href="blog.html" class="nav-link">Travel Journal</a>
+        <a href="pricing.html" class="nav-link">Offers</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="login.html" class="nav-link">Sign In</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme">🌙 Dark</button>
+        <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
+        
+        <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='services.html'" title="Wishlist" aria-label="Wishlist">
+          🤍
+          <span class="navbar-badge wishlist-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="navbar-icon-btn cart-nav-btn" onclick="openCart()" title="View Cart" aria-label="Shopping Cart">
+          🛍️
+          <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
+        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav" id="mobile-navigation">
+    <a href="index.html" class="mobile-nav-link">Home 1 (General Store)</a>
+    <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="services.html" class="mobile-nav-link">Shop All Products</a>
+    <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
+    <a href="services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Product Care</a>
+    <a href="services.html#repair-services" class="mobile-nav-link">Luggage Repair Service</a>
+    <a href="blog.html" class="mobile-nav-link">Travel Journal &amp; Guides</a>
+    <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Sets</a>
+    <a href="contact.html" class="mobile-nav-link">Contact Store</a>
+    <a href="login.html" class="mobile-nav-link">Login / Register</a>
+  </div>
+
+  <main class="page-content">
+
+    <!-- ============================================================
+         SECTION 1: CONTACT HERO
+         ============================================================ -->
+    <section class="page-hero" id="contact-hero">
+      <div class="page-hero-bg">
+        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1920&q=80" alt="Sophisticated retail boutique interior showcasing premium travel bags and suitcases">
+      </div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> &gt; <span>Contact &amp; Concierge Support</span>
+        </nav>
+        <span class="section-label">AeroPack Concierge</span>
+        <h1>We Are Here for Every Leg of Your Voyage</h1>
+        <p>
+          Reach our customer care specialists regarding luggage specifications, order assistance, warranty claims, repair assessments, or to schedule a flagship store appointment.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: STORE INFORMATION
+         ============================================================ -->
+    <section class="section section-offwhite" id="store-information">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Direct Communication</span>
+          <h2 class="section-title">Flagship Store &amp; Support Channels</h2>
+          <p class="section-subtitle">
+            Visit our physical retail showroom or reach out via phone, email, and live messaging.
+          </p>
+        </div>
+
+        <div class="grid cols-auto-fill-280 gap-3">
+          <!-- Card 1: Flagship Store Address -->
+          <div class="feature-card reveal">
+            <div class="feature-icon">📍</div>
+            <h4>Flagship Retail Store</h4>
+            <p class="text-sm text-secondary mb-2">
+              AeroPack Terminal Showroom<br>
+              450 Concourse Way, Suite 12B<br>
+              New York, NY 10001, USA
+            </p>
+            <span class="text-xs font-semibold text-teal">Valet Parking Available</span>
+          </div>
+
+          <!-- Card 2: Contact Hours -->
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">⏰</div>
+            <h4>Showroom &amp; Support Hours</h4>
+            <p class="text-sm text-secondary mb-1"><strong>Monday – Friday:</strong> 09:00 – 20:00 EST</p>
+            <p class="text-sm text-secondary mb-1"><strong>Saturday:</strong> 10:00 – 19:00 EST</p>
+            <p class="text-sm text-secondary"><strong>Sunday:</strong> 11:00 – 17:00 EST</p>
+          </div>
+
+          <!-- Card 3: Direct Phone Support -->
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">📞</div>
+            <h4>Direct Telephone Line</h4>
+            <p class="text-sm text-secondary mb-1"><strong>Toll-Free USA:</strong> +1 (800) 555-AERO (2376)</p>
+            <p class="text-sm text-secondary mb-2"><strong>International:</strong> +1 (212) 555-0198</p>
+            <span class="text-xs font-semibold" style="color: #059669;">Average Wait Time: &lt; 2 minutes</span>
+          </div>
+
+          <!-- Card 4: Email & Digital Concierge -->
+          <div class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon">✉️</div>
+            <h4>Email &amp; Warranty Desk</h4>
+            <p class="text-sm text-secondary mb-1"><strong>General Enquiries:</strong> concierge@aeropack-travel.com</p>
+            <p class="text-sm text-secondary mb-2"><strong>Warranty &amp; Repairs:</strong> service@aeropack-travel.com</p>
+            <span class="text-xs text-secondary">Guaranteed response within 24 hours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: CONTACT & ENQUIRY FORM
+         ============================================================ -->
+    <section class="section section-card" id="contact-form-section">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-header centered">
+          <span class="section-label">Online Enquiry</span>
+          <h2 class="section-title">Send a Message to Our Concierge</h2>
+          <p class="section-subtitle">
+            Whether inquiring about product availability, filing a warranty request, or seeking repair guidance, complete the form below for prompt assistance.
+          </p>
+        </div>
+
+        <div class="p-4" style="background: var(--bg-secondary); border-radius: var(--radius-xl); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+          <!-- Feedback Alert Box -->
+          <div id="contact-alert" class="p-3 mb-3 d-none" style="border-radius: var(--radius-md);"></div>
+
+          <form id="aeropack-contact-form" onsubmit="return handleContactFormSubmit(event)">
+            <div class="grid cols-2 gap-3 mb-3">
+              <div class="form-group mb-0">
+                <label class="form-label" for="contact-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" class="form-control" required placeholder="Elena Rostova">
+                <div class="form-error" id="err-name">Please provide your full name.</div>
+              </div>
+
+              <div class="form-group mb-0">
+                <label class="form-label" for="contact-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="contact-email" class="form-control" required placeholder="elena@example.com">
+                <div class="form-error" id="err-email">Please provide a valid email address.</div>
+              </div>
+            </div>
+
+            <div class="grid cols-2 gap-3 mb-3">
+              <div class="form-group mb-0">
+                <label class="form-label" for="contact-phone">Phone Number</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+
+              <div class="form-group mb-0">
+                <label class="form-label" for="contact-enquiry-type">Enquiry Type <span class="required">*</span></label>
+                <select id="contact-enquiry-type" class="form-control" required>
+                  <option value="" disabled selected>Select enquiry category...</option>
+                  <option value="Product Enquiry">Product Enquiry</option>
+                  <option value="Product Availability">Product Availability</option>
+                  <option value="Order Support">Order Support</option>
+                  <option value="Warranty Claim">Warranty Claim</option>
+                  <option value="Repair Request">Repair Request</option>
+                  <option value="Shipping & Delivery">Shipping &amp; Delivery</option>
+                  <option value="Return / Exchange">Return / Exchange</option>
+                  <option value="Bulk Order">Bulk Order</option>
+                  <option value="General Enquiry">General Enquiry</option>
+                </select>
+                <div class="form-error" id="err-type">Please select an enquiry category.</div>
+              </div>
+            </div>
+
+            <div class="grid cols-2 gap-3 mb-3">
+              <div class="form-group mb-0">
+                <label class="form-label" for="contact-product">Product Name <span class="text-xs text-secondary">(Optional)</span></label>
+                <input type="text" id="contact-product" class="form-control" placeholder="e.g. AeroVoyager Pro 3-Piece Set">
+              </div>
+
+              <div class="form-group mb-0">
+                <label class="form-label" for="contact-order-ref">Order Reference <span class="text-xs text-secondary">(Optional)</span></label>
+                <input type="text" id="contact-order-ref" class="form-control" placeholder="e.g. AERO-78491">
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <label class="form-label" for="contact-subject">Subject <span class="required">*</span></label>
+              <input type="text" id="contact-subject" class="form-control" required placeholder="Brief summary of your enquiry">
+              <div class="form-error" id="err-subject">Please enter a subject line.</div>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label" for="contact-message">Detailed Message <span class="required">*</span></label>
+              <textarea id="contact-message" class="form-control" required placeholder="Please describe your question, warranty enquiry, or repair details..."></textarea>
+              <div class="form-error" id="err-message">Please provide message details (minimum 10 characters).</div>
+            </div>
+
+            <button type="submit" id="contact-submit-btn" class="btn btn-teal btn-lg w-100">Submit Travel Enquiry &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: STORE LOCATION
+         ============================================================ -->
+    <section class="section section-offwhite" id="store-location">
+      <div class="container">
+        <div class="grid cols-2 gap-6" style="align-items: center;">
+          <div class="reveal">
+            <span class="section-label">Showroom Experience</span>
+            <h2 class="section-title">Visit Our Manhattan Flagship</h2>
+            <div class="gold-line"></div>
+            <p class="text-secondary mb-3">
+              Experience the glide smoothness of Hinomoto wheels and test different trunk capacities in person. Our travel advisors are on hand to fit you with the ideal cabin carry-on or multi-piece set for your upcoming itinerary.
+            </p>
+            <div class="mb-3">
+              <strong>Address:</strong><br>
+              450 Concourse Way, Midtown Manhattan, New York, NY 10001
+            </div>
+            <div class="mb-4">
+              <strong>Transit Directions:</strong><br>
+              Subway: Lines A, C, E to 34th St - Penn Station (3 min walk).<br>
+              Parking: Dedicated valet curb drop-off on Concourse Way.
+            </div>
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Open in Google Maps &rarr;</a>
+          </div>
+
+          <div class="reveal reveal-right">
+            <!-- Simulated Map Canvas Display -->
+            <div style="background: var(--midnight-navy); border-radius: var(--radius-xl); overflow: hidden; height: 360px; position: relative; border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white); padding: 2rem;">
+              <div style="position: absolute; inset: 0; opacity: 0.25; background: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80') center/cover;"></div>
+              <div style="position: relative; z-index: 2;">
+                <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📍</div>
+                <h3 class="text-white font-serif mb-1">AeroPack Flagship</h3>
+                <p class="text-xs" style="color: var(--muted-gold); letter-spacing: 0.08em; text-transform: uppercase;">450 Concourse Way &bull; NYC</p>
+                <div class="mt-3">
+                  <span class="badge badge-featured">Open Today Until 20:00 EST</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: CUSTOMER SUPPORT & AFTER-SALES ASSISTANCE
+         ============================================================ -->
+    <section class="section section-dark" id="after-sales-assistance">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">End-to-End Care</span>
+          <h2 class="section-title">Customer Support &amp; After-Sales Assistance</h2>
+          <p class="section-subtitle">
+            Our responsibility begins the moment your luggage arrives. Discover our support workflows for orders, returns, and repairs.
+          </p>
+        </div>
+
+        <div class="grid cols-auto-fill-240 gap-3">
+          <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🛡️</div>
+            <h4>Warranty Inquiries</h4>
+            <p>Our claims desk evaluates photos of damaged zippers or cracked shells within 24-48 business hours.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🔧</div>
+            <h4>Repair Support</h4>
+            <p>Ship your luggage to our central facility or order certified self-replacement wheel and handle parts.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🧼</div>
+            <h4>Product Care Advice</h4>
+            <p>Consult with our technicians regarding stubborn stains, zipper track waxing, or proper seasonal storage.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-3" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">📦</div>
+            <h4>Order Tracking</h4>
+            <p>Track simulated delivery routes and freight times for express international shipments worldwide.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-4" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="feature-icon">🔄</div>
+            <h4>Returns &amp; Exchanges</h4>
+            <p>Enjoy a 100-day trial period on unused luggage in its original packaging with complimentary return shipping.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: FREQUENTLY ASKED QUESTIONS (Accordion)
+         ============================================================ -->
+    <section class="section section-offwhite" id="contact-faq">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-header centered">
+          <span class="section-label">Common Inquiries</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Quick answers regarding sizing, warranties, repair processes, and international shipping.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What sizes qualify as compliant carry-on luggage for international flights?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Most international airlines adhering to IATA recommendations allow carry-on baggage dimensions up to 55 x 35 x 23 cm (approx. 21.5 x 14 x 9 inches), including wheels and handles. Our Stratus Luxe Cabin Suitcase is designed strictly within these measurements to ensure compliant fit in overhead lockers across North America, Europe, and Asia.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does the 5-Year Limited Global Shell Warranty work?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Our warranty specifically covers functional manufacturing defects in the polycarbonate shell, aluminum telescopic pull handles, wheel casters, and zippers under standard travel usage. It does not cover cosmetic scuffs, airline mishandling (which must be filed with the carrier at the airport), or unauthorized modifications.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I replace worn wheels or broken handles myself?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes! Every AeroPack suitcase is engineered with modular hardware. Our Hinomoto silent wheel casters and telescopic handle tubes can be easily detached and replaced using a standard screwdriver. Replacement kits with step-by-step video instructions can be requested through our repair enquiry service.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do I set or reset the TSA combination lock?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                All AeroPack locks arrive preset to factory default 0-0-0. To set your personal code: push the small reset button with a ballpoint pen until it clicks, roll the dials to your preferred 3 digits, then slide the opening latch. The reset button will click back into place, securing your new combination.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you offer international freight and delivery?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes, AeroPack ships to over 85 countries worldwide. Full 2-piece and 3-piece luggage sets qualify for complimentary express freight. Estimated transit times range from 2 to 4 business days for North America and Western Europe, and 4 to 7 business days for other global territories.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo mb-2" aria-label="AeroPack">
+            <div class="navbar-logo-icon">🧳</div>
+            <div class="navbar-logo-text">
+              <span class="navbar-logo-name">AeroPack</span>
+              <span class="navbar-logo-tagline">Travel Goods</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            AeroPack creates premium travel goods, hard-shell suitcases, and versatile bags engineered to make every global journey seamless, durable, and stylish.
+          </p>
+          <div class="footer-social">
+            <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">📸</a>
+            <a href="https://twitter.com" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener">🐦</a>
+            <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+            <a href="https://linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (General Store)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Collections)</a></li>
+            <li><a href="about.html" class="footer-link">About Brand Story</a></li>
+            <li><a href="services.html" class="footer-link">Shop All Products</a></li>
+            <li><a href="services.html#shop-by-type" class="footer-link">Travel Collections</a></li>
+            <li><a href="services.html#warranty-protection" class="footer-link">Warranty Information</a></li>
+            <li><a href="services.html#repair-services" class="footer-link">Luggage Repair Service</a></li>
+            <li><a href="pricing.html" class="footer-link">Luggage Sets &amp; Offers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Collections &amp; Tips</h4>
+          <ul class="footer-links">
+            <li><a href="services.html?category=cabin-luggage" class="footer-link">Cabin Suitcases</a></li>
+            <li><a href="services.html?category=checkin-suitcases" class="footer-link">Check-in Luggage</a></li>
+            <li><a href="services.html?category=luggage-sets" class="footer-link">Luggage Sets</a></li>
+            <li><a href="services.html?category=travel-backpacks" class="footer-link">Travel Backpacks</a></li>
+            <li><a href="services.html?category=duffel-bags" class="footer-link">Duffel Bags</a></li>
+            <li><a href="services.html?category=travel-accessories" class="footer-link">Travel Accessories</a></li>
+            <li><a href="blog.html" class="footer-link">Travel Journal &amp; Guides</a></li>
+            <li><a href="contact.html" class="footer-link">Customer Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">AeroPack Concierge</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <div class="footer-contact-text">Terminal Flagship Store, 450 Concourse Way, New York, NY 10001</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <div class="footer-contact-text">+1 (800) 555-AERO (2376)</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <div class="footer-contact-text">concierge@aeropack-travel.com</div>
+          </div>
+
+          <div class="footer-newsletter">
+            <span class="text-xs" style="color: rgba(255,255,255,0.7); font-weight:600;">Subscribe to Travel Journal</span>
+            <form class="footer-newsletter-form" onsubmit="return handleNewsletterSubmit(event)">
+              <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+              <button type="submit" class="btn btn-gold btn-sm">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 AeroPack International Travel Goods. All rights reserved.
+        </div>
+        <div class="footer-legal">
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="services.html#warranty-protection">Warranty Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER OVERLAY -->
+  <div class="cart-overlay" onclick="closeCart()" aria-hidden="true"></div>
+  <div class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>Your Travel Bag</h3>
+      <button class="cart-close" onclick="closeCart()" aria-label="Close Cart">&times;</button>
+    </div>
+    <div class="cart-body cart-items-list"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span class="cart-subtotal-label">Subtotal</span>
+        <span class="cart-subtotal-price">$0</span>
+      </div>
+      <p class="text-xs text-secondary mb-2">Taxes &amp; global freight calculated at simulated checkout.</p>
+      <button class="btn btn-teal w-100 py-3" onclick="triggerSimulatedCheckout()">Proceed to Simulated Checkout &rarr;</button>
+      <button class="btn btn-outline w-100 mt-2 btn-sm" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to Top">&uarr;</button>
+  <div class="toast-container" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function handleContactFormSubmit(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('contact-name').value.trim();
+      const email = document.getElementById('contact-email').value.trim();
+      const type = document.getElementById('contact-enquiry-type').value;
+      const subject = document.getElementById('contact-subject').value.trim();
+      const message = document.getElementById('contact-message').value.trim();
+      const alertBox = document.getElementById('contact-alert');
+
+      // Reset errors
+      document.querySelectorAll('.form-error').forEach(e => e.classList.remove('visible'));
+
+      let isValid = true;
+      if (!name) {
+        document.getElementById('err-name').classList.add('visible');
+        isValid = false;
+      }
+      if (!email || !email.includes('@')) {
+        document.getElementById('err-email').classList.add('visible');
+        isValid = false;
+      }
+      if (!type) {
+        document.getElementById('err-type').classList.add('visible');
+        isValid = false;
+      }
+      if (!subject) {
+        document.getElementById('err-subject').classList.add('visible');
+        isValid = false;
+      }
+      if (!message || message.length < 10) {
+        document.getElementById('err-message').classList.add('visible');
+        isValid = false;
+      }
+
+      if (!isValid) return false;
+
+      // Submit feedback simulation
+      alertBox.className = 'p-3 mb-3';
+      alertBox.style.background = '#ECFDF5';
+      alertBox.style.color = '#065F46';
+      alertBox.style.border = '1px solid #A7F3D0';
+      alertBox.innerHTML = `
+        <strong>✓ Enquiry Transmitted Successfully!</strong><br>
+        Thank you, ${name}. Your ${type} has been logged under reference <strong>#AERO-${Math.floor(10000 + Math.random() * 90000)}</strong>. A travel concierge specialist will reply to <em>${email}</em> within 24 business hours.
+      `;
+      alertBox.classList.remove('d-none');
+
+      showToast('Enquiry Sent', `Thank you ${name}! Ref: #AERO-${Math.floor(10000 + Math.random() * 90000)}`, 'success');
+      document.getElementById('aeropack-contact-form').reset();
+      alertBox.scrollIntoView({ behavior: 'smooth' });
+
+      return false;
+    }
+
+    // URL parameter auto-select for enquiry type
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const typeParam = urlParams.get('type');
+      if (typeParam === 'repair') {
+        const select = document.getElementById('contact-enquiry-type');
+        if (select) select.value = 'Repair Request';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Authentication | AeroPack Travel Goods</title>
+  <meta name="description" content="Sign in to your AeroPack customer account or create a new profile for expedited simulated checkout and luggage warranty registration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="navbar" id="site-header">
+    <div class="container navbar-inner">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-logo" aria-label="AeroPack Home">
+          <div class="navbar-logo-icon">🧳</div>
+          <div class="navbar-logo-text">
+            <span class="navbar-logo-name">AeroPack</span>
+            <span class="navbar-logo-tagline">Travel Goods</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="navbar-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home 1</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Shop</a>
+        <a href="services.html#shop-by-type" class="nav-link">Travel Collections</a>
+        <a href="services.html#warranty-protection" class="nav-link">Warranty &amp; Repair</a>
+        <a href="blog.html" class="nav-link">Travel Journal</a>
+        <a href="pricing.html" class="nav-link">Offers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link active">Sign In</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme">🌙 Dark</button>
+        <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
+        
+        <button class="navbar-icon-btn cart-nav-btn" onclick="openCart()" title="View Cart" aria-label="Shopping Cart">
+          🛍️
+          <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
+        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav" id="mobile-navigation">
+    <a href="index.html" class="mobile-nav-link">Home 1 (General Store)</a>
+    <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="services.html" class="mobile-nav-link">Shop All Products</a>
+    <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
+    <a href="services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Product Care</a>
+    <a href="services.html#repair-services" class="mobile-nav-link">Luggage Repair Service</a>
+    <a href="blog.html" class="mobile-nav-link">Travel Journal &amp; Guides</a>
+    <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Sets</a>
+    <a href="contact.html" class="mobile-nav-link">Contact Store</a>
+    <a href="login.html" class="mobile-nav-link">Login / Register</a>
+  </div>
+
+  <main class="page-content" style="padding-top: var(--navbar-height);">
+
+    <div class="auth-wrapper">
+      <!-- Visual Side Panel -->
+      <div class="auth-panel-visual">
+        <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=1200&q=80" alt="Traveler with luggage in modern airport departures hall">
+        <div class="auth-panel-visual-overlay">
+          <div class="navbar-logo-icon mb-3" style="width: 56px; height: 56px; font-size: 2rem;">🧳</div>
+          <h2 class="text-white font-serif mb-2" style="font-size: 2.2rem;">Voyage With Confidence</h2>
+          <p class="text-sm" style="color: rgba(255,255,255,0.8); max-width: 38ch; line-height: 1.7;">
+            Authenticate your customer profile for streamlined luggage orders, warranty certificates, and personalized travel recommendations.
+          </p>
+          <div class="mt-4 flex gap-4 text-xs" style="color: var(--muted-gold);">
+            <span>✓ 5-Year Global Warranty</span>
+            <span>✓ Order Support Desk</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Auth Form Panel -->
+      <div class="auth-form-panel">
+        <div class="auth-form-box">
+
+          <!-- Tab Switcher -->
+          <div class="auth-tabs">
+            <button type="button" class="auth-tab active" id="tab-login" onclick="switchAuthTab('login')">Sign In</button>
+            <button type="button" class="auth-tab" id="tab-register" onclick="switchAuthTab('register')">Create Account</button>
+          </div>
+
+          <!-- Alert feedback box -->
+          <div id="auth-alert" class="p-3 mb-3 d-none" style="border-radius: var(--radius-md); font-size: 0.85rem;"></div>
+
+          <!-- LOGIN FORM -->
+          <div class="auth-panel active" id="panel-login">
+            <h2 class="font-serif mb-1" style="font-size: 1.6rem;">Welcome Back</h2>
+            <p class="text-sm text-secondary mb-4">Access your AeroPack customer profile.</p>
+
+            <form id="form-login" onsubmit="return handleLoginSubmit(event)">
+              <div class="form-group">
+                <label class="form-label" for="login-email">Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <span class="input-icon">✉️</span>
+                  <input type="email" id="login-email" class="form-control" required placeholder="name@example.com" value="traveler@aeropack.com">
+                </div>
+                <div class="form-error" id="err-login-email">Please enter a valid email.</div>
+              </div>
+
+              <div class="form-group">
+                <div class="flex-between mb-1">
+                  <label class="form-label mb-0" for="login-password">Password <span class="required">*</span></label>
+                  <a href="#" onclick="showToast('Password Reset', 'A password reset instruction email has been sent (Demo).', 'info'); return false;" class="text-xs text-teal">Forgot Password?</a>
+                </div>
+                <div class="input-wrapper">
+                  <span class="input-icon">🔒</span>
+                  <input type="password" id="login-password" class="form-control" required placeholder="••••••••" value="Voyage2026!">
+                  <span class="input-toggle" onclick="togglePasswordVis('login-password', this)" title="Show/Hide password">👁️</span>
+                </div>
+                <div class="form-error" id="err-login-password">Please enter your password.</div>
+              </div>
+
+              <div class="form-group">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="remember-me" checked>
+                  <label for="remember-me" class="checkbox-label">Remember me on this browser</label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-teal w-100 py-3 font-semibold">Sign In to Account &rarr;</button>
+            </form>
+
+            <div class="text-center mt-4">
+              <span class="text-sm text-secondary">Don't have an AeroPack account? </span>
+              <a href="#" onclick="switchAuthTab('register'); return false;" class="text-sm font-semibold text-teal">Create one now</a>
+            </div>
+          </div>
+
+          <!-- REGISTER FORM -->
+          <div class="auth-panel" id="panel-register">
+            <h2 class="font-serif mb-1" style="font-size: 1.6rem;">Join AeroPack</h2>
+            <p class="text-sm text-secondary mb-4">Register for seamless orders &amp; product care.</p>
+
+            <form id="form-register" onsubmit="return handleRegisterSubmit(event)">
+              <div class="form-group mb-2">
+                <label class="form-label" for="reg-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="reg-name" class="form-control" required placeholder="Marcus Vance">
+                <div class="form-error" id="err-reg-name">Please provide your full name.</div>
+              </div>
+
+              <div class="form-group mb-2">
+                <label class="form-label" for="reg-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="reg-email" class="form-control" required placeholder="marcus@example.com">
+                <div class="form-error" id="err-reg-email">Please enter a valid email.</div>
+              </div>
+
+              <div class="form-group mb-2">
+                <label class="form-label" for="reg-phone">Phone Number <span class="text-xs text-secondary">(For delivery alerts)</span></label>
+                <input type="tel" id="reg-phone" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+
+              <div class="grid cols-2 gap-2 mb-2">
+                <div class="form-group mb-0">
+                  <label class="form-label" for="reg-password">Password <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="password" id="reg-password" class="form-control" required placeholder="••••••••">
+                    <span class="input-toggle" onclick="togglePasswordVis('reg-password', this)" title="Show/Hide">👁️</span>
+                  </div>
+                </div>
+
+                <div class="form-group mb-0">
+                  <label class="form-label" for="reg-confirm">Confirm Password <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="password" id="reg-confirm" class="form-control" required placeholder="••••••••">
+                    <span class="input-toggle" onclick="togglePasswordVis('reg-confirm', this)" title="Show/Hide">👁️</span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-error mb-2" id="err-reg-password">Passwords do not match or are under 6 characters.</div>
+
+              <div class="form-group mb-3">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="accept-terms" required>
+                  <label for="accept-terms" class="checkbox-label">
+                    I accept the <a href="contact.html">Terms of Service</a> &amp; <a href="contact.html">Privacy Policy</a>.
+                  </label>
+                </div>
+                <div class="form-error" id="err-reg-terms">You must agree to the Terms of Service.</div>
+              </div>
+
+              <button type="submit" class="btn btn-gold w-100 py-3 font-semibold">Create Customer Account &rarr;</button>
+            </form>
+
+            <div class="text-center mt-3">
+              <span class="text-sm text-secondary">Already have an account? </span>
+              <a href="#" onclick="switchAuthTab('login'); return false;" class="text-sm font-semibold text-teal">Sign in here</a>
+            </div>
+          </div>
+
+          <div class="p-3 mt-4 text-center" style="background: rgba(0,0,0,0.03); border-radius: var(--radius-md);">
+            <p class="text-xs text-secondary mb-0">
+              🔒 <strong>Simulated Authentication:</strong> Kept strictly to customer verification without unnecessary dashboard modules.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="toast-container" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function switchAuthTab(tab) {
+      document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.auth-panel').forEach(p => p.classList.remove('active'));
+      const alertBox = document.getElementById('auth-alert');
+      if (alertBox) alertBox.classList.add('d-none');
+
+      if (tab === 'login') {
+        document.getElementById('tab-login').classList.add('active');
+        document.getElementById('panel-login').classList.add('active');
+      } else {
+        document.getElementById('tab-register').classList.add('active');
+        document.getElementById('panel-register').classList.add('active');
+      }
+    }
+
+    function togglePasswordVis(inputId, toggleEl) {
+      const input = document.getElementById(inputId);
+      if (input.type === 'password') {
+        input.type = 'text';
+        toggleEl.textContent = '🙈';
+      } else {
+        input.type = 'password';
+        toggleEl.textContent = '👁️';
+      }
+    }
+
+    function handleLoginSubmit(event) {
+      event.preventDefault();
+      const email = document.getElementById('login-email').value.trim();
+      const pass = document.getElementById('login-password').value;
+      const alertBox = document.getElementById('auth-alert');
+
+      if (!email.includes('@') || !pass) {
+        alertBox.className = 'p-3 mb-3';
+        alertBox.style.background = '#FEE2E2';
+        alertBox.style.color = '#991B1B';
+        alertBox.innerHTML = '<strong>Error:</strong> Please provide a valid email and password.';
+        alertBox.classList.remove('d-none');
+        return false;
+      }
+
+      alertBox.className = 'p-3 mb-3';
+      alertBox.style.background = '#ECFDF5';
+      alertBox.style.color = '#065F46';
+      alertBox.innerHTML = `<strong>✓ Welcome Back!</strong> Successfully authenticated as <em>${email}</em>. You can now shop collections with saved shipping preferences.`;
+      alertBox.classList.remove('d-none');
+      showToast('Authentication Successful', `Welcome back, ${email}!`, 'success');
+
+      setTimeout(() => {
+        window.location.href = 'services.html';
+      }, 1500);
+
+      return false;
+    }
+
+    function handleRegisterSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('reg-name').value.trim();
+      const email = document.getElementById('reg-email').value.trim();
+      const pass = document.getElementById('reg-password').value;
+      const confirm = document.getElementById('reg-confirm').value;
+      const terms = document.getElementById('accept-terms').checked;
+      const alertBox = document.getElementById('auth-alert');
+
+      if (pass !== confirm || pass.length < 6) {
+        document.getElementById('err-reg-password').classList.add('visible');
+        return false;
+      }
+      if (!terms) {
+        document.getElementById('err-reg-terms').classList.add('visible');
+        return false;
+      }
+
+      alertBox.className = 'p-3 mb-3';
+      alertBox.style.background = '#ECFDF5';
+      alertBox.style.color = '#065F46';
+      alertBox.innerHTML = `<strong>✓ Account Created!</strong> Welcome to AeroPack, ${name}. Your profile is active.`;
+      alertBox.classList.remove('d-none');
+      showToast('Registration Complete', `Welcome, ${name}!`, 'success');
+
+      setTimeout(() => {
+        window.location.href = 'services.html';
+      }, 1500);
+
+      return false;
+    }
+  </script>
+</body>
+</html>

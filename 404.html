@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Terminal Departure Not Found | AeroPack</title>
+  <meta name="description" content="The page you are looking for has been rerouted or does not exist. Explore AeroPack premium travel luggage collections.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body style="background: var(--midnight-navy); color: var(--white); min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Minimal Header -->
+  <header style="padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-icon">🧳</div>
+      <div class="navbar-logo-text">
+        <span class="navbar-logo-name">AeroPack</span>
+        <span class="navbar-logo-tagline">Travel Goods</span>
+      </div>
+    </a>
+    <div class="flex gap-2">
+      <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark</button>
+      <button class="rtl-toggle" onclick="toggleDir()">RTL</button>
+      <a href="services.html" class="btn btn-gold btn-sm">Shop Collections</a>
+    </div>
+  </header>
+
+  <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 3rem 1.5rem; text-align: center; position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; opacity: 0.15; background: url('https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=1920&q=80') center/cover;"></div>
+    
+    <div style="position: relative; z-index: 2; max-width: 620px;">
+      <div style="font-size: 4rem; margin-bottom: 0.5rem;">🧭</div>
+      <div class="error-code">404</div>
+      <h1 class="error-title font-serif">Flight Path Not Found</h1>
+      <p class="error-msg">
+        The destination terminal or itinerary you requested has either departed, been reassigned to a new gate, or never existed in our flight schedules.
+      </p>
+      
+      <div class="flex gap-3 justify-center flex-wrap">
+        <a href="index.html" class="btn btn-gold btn-lg">Return to Terminal Home &rarr;</a>
+        <a href="services.html" class="btn btn-outline-white btn-lg">Shop All Travel Collections</a>
+      </div>
+
+      <div class="mt-4 text-xs" style="color: rgba(255,255,255,0.5);">
+        Need assistance? Speak to our concierge desk at <a href="contact.html" style="color: var(--muted-gold); text-decoration: underline;">Customer Support</a>.
+      </div>
+    </div>
+  </main>
+
+  <footer style="padding: 1.25rem; text-align: center; font-size: 0.8rem; color: rgba(255,255,255,0.4); border-top: 1px solid rgba(255,255,255,0.08);">
+    &copy; 2026 AeroPack International Travel Goods. All rights reserved.
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

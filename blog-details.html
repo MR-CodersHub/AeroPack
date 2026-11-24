@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Art of Carry-On Travel | AeroPack Travel Journal</title>
+  <meta name="description" content="Discover how to pack 14 days of wardrobe into a 21-inch cabin suitcase using compression cubes and dual-sided clamshell organization.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="navbar" id="site-header">
+    <div class="container navbar-inner">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-logo" aria-label="AeroPack Home">
+          <div class="navbar-logo-icon">🧳</div>
+          <div class="navbar-logo-text">
+            <span class="navbar-logo-name">AeroPack</span>
+            <span class="navbar-logo-tagline">Travel Goods</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="navbar-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home 1</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Shop</a>
+        <a href="services.html#shop-by-type" class="nav-link">Travel Collections</a>
+        <a href="services.html#warranty-protection" class="nav-link">Warranty &amp; Repair</a>
+        <a href="blog.html" class="nav-link active">Travel Journal</a>
+        <a href="pricing.html" class="nav-link">Offers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Sign In</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme">🌙 Dark</button>
+        <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
+        
+        <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='services.html'" title="Wishlist" aria-label="Wishlist">
+          🤍
+          <span class="navbar-badge wishlist-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="navbar-icon-btn cart-nav-btn" onclick="openCart()" title="View Cart" aria-label="Shopping Cart">
+          🛍️
+          <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
+        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav" id="mobile-navigation">
+    <a href="index.html" class="mobile-nav-link">Home 1 (General Store)</a>
+    <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="services.html" class="mobile-nav-link">Shop All Products</a>
+    <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
+    <a href="services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Product Care</a>
+    <a href="services.html#repair-services" class="mobile-nav-link">Luggage Repair Service</a>
+    <a href="blog.html" class="mobile-nav-link">Travel Journal &amp; Guides</a>
+    <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Sets</a>
+    <a href="contact.html" class="mobile-nav-link">Contact Store</a>
+    <a href="login.html" class="mobile-nav-link">Login / Register</a>
+  </div>
+
+  <main class="page-content">
+
+    <!-- ============================================================
+         SECTION 1: ARTICLE HEADER
+         ============================================================ -->
+    <section class="section section-offwhite pb-0" id="article-header">
+      <div class="container" style="max-width: 900px;">
+        <nav class="page-hero-breadcrumb mb-3" style="color: var(--text-secondary);" aria-label="Breadcrumb">
+          <a href="index.html" style="color: var(--text-secondary);">Home</a> &gt; 
+          <a href="blog.html" style="color: var(--text-secondary);">Travel Journal</a> &gt; 
+          <span class="text-gold">Carry-On Packing Guide</span>
+        </nav>
+
+        <span class="blog-category">Master Packing Guide</span>
+        <h1 class="font-serif mb-3" style="font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.2;">
+          The Art of Carry-On Travel: How to Pack 14 Days into a 21" Suitcase
+        </h1>
+        
+        <div class="flex items-center gap-3 text-sm text-secondary mb-4 flex-wrap">
+          <span>✍️ <strong>Julien Mercer</strong>, Senior Travel Editor</span>
+          <span>&bull;</span>
+          <span>📅 October 14, 2026</span>
+          <span>&bull;</span>
+          <span>⏱️ 7 min read</span>
+          <span>&bull;</span>
+          <span style="color: var(--deep-teal);">Category: Packing Science</span>
+        </div>
+
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl); aspect-ratio: 16/9; margin-bottom: 2rem;">
+          <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=1200&q=80" alt="Traveler with sleek luggage walking through sunny airport terminal concourse" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: ARTICLE INTRODUCTION
+         ============================================================ -->
+    <section class="section section-offwhite pt-0 pb-2" id="article-intro">
+      <div class="container" style="max-width: 900px;">
+        <div class="p-4 mb-4" style="background: rgba(40,91,98,0.06); border-radius: var(--radius-lg); border-inline-start: 4px solid var(--deep-teal);">
+          <h3 class="font-serif mb-2" style="font-size: 1.25rem;">Executive Summary</h3>
+          <p class="text-secondary mb-0" style="font-size: 1.05rem; line-height: 1.7;">
+            Few feelings match the quiet satisfaction of stepping off a 10-hour flight, bypassing the chaotic baggage carousel crowds, and gliding directly into the city rail terminal with nothing more than an overhead carry-on. By leveraging a strict 5-4-3-2-1 capsule rule and high-compression modular organizers, you can travel for two full weeks with zero lost luggage anxiety.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: MAIN ARTICLE CONTENT
+         ============================================================ -->
+    <section class="section section-offwhite pt-0 pb-4" id="article-main-content">
+      <div class="container" style="max-width: 900px;">
+        <div class="blog-body-text" style="font-size: 1.05rem; line-height: 1.8; color: var(--text-primary);">
+          <h2 class="font-serif mb-3 mt-4">1. The 5-4-3-2-1 Wardrobe Rule</h2>
+          <p class="text-secondary mb-3">
+            The foundation of prolonged carry-on travel is color cohesion. Choose a three-tone palette—such as midnight navy, graphite gray, and off-white. When every garment harmonizes with every pair of trousers, you generate 30 distinct outfits from a minimal inventory:
+          </p>
+          <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><strong>5 Tops:</strong> 3 merino wool t-shirts, 1 tailored oxford shirt, 1 lightweight linen knit.</li>
+            <li><strong>4 Bottoms:</strong> 2 technical travel chinos, 1 pair of dark denim, 1 tailored linen short or skirt.</li>
+            <li><strong>3 Accessories:</strong> 1 lightweight travel scarf, 1 reversible leather belt, 1 compact packable umbrella.</li>
+            <li><strong>2 Pairs of Footwear:</strong> 1 pair of minimalist dress sneakers (worn during transit), 1 pair of leather loafers or sandals.</li>
+            <li><strong>1 Outer Layer:</strong> 1 unstructured travel blazer or weather-resistant trench coat.</li>
+          </ul>
+
+          <div style="margin: 2.5rem 0; border-radius: var(--radius-lg); overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80" alt="Suitcase interior organized with compression cubes and toiletries" style="width:100%; max-height:400px; object-fit:cover;">
+            <span class="text-xs text-secondary mt-1 block">Figure 1: Dual-sided clamshell packing maximizes volumetric displacement.</span>
+          </div>
+
+          <h2 class="font-serif mb-3 mt-4">2. The Clamshell Split: Left vs. Right Geometry</h2>
+          <p class="text-secondary mb-3">
+            In standard luggage, heavy shoes shift and crush delicate shirts. In an AeroPack hard-shell suitcase, the internal volume is bifurcated:
+          </p>
+          <p class="text-secondary mb-3">
+            <strong>The Left Enclosure:</strong> Reserved for footwear, electronic charging folios, and toiletries sealed inside waterproof barrier pouches. Once zipped shut behind the heavy mesh gate, these denser items remain completely immobilized.
+          </p>
+          <p class="text-secondary mb-4">
+            <strong>The Right Enclosure:</strong> Houses your garment compression cubes secured under the adjustable compression pad. By cinching the nylon straps down, air is expelled from the weave, locking garments in place to prevent friction creases.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: PRACTICAL TRAVEL TIPS
+         ============================================================ -->
+    <section class="section section-card" id="practical-tips">
+      <div class="container" style="max-width: 900px;">
+        <span class="section-label">Field-Tested Advice</span>
+        <h2 class="section-title">Practical Travel &amp; Luggage Care Tips</h2>
+        
+        <div class="grid cols-2 gap-4 mt-4">
+          <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <h4 class="mb-2">✈️ Airport Concourse Wisdom</h4>
+            <p class="text-sm text-secondary">
+              Always roll four-wheel spinner luggage directly beside your hips on smooth terminal tile rather than tilting onto two wheels. This balances the center of gravity and extends caster bearing longevity.
+            </p>
+          </div>
+
+          <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <h4 class="mb-2">🧼 Post-Voyage Shell Care</h4>
+            <p class="text-sm text-secondary">
+              After return flights, wipe your polycarbonate suitcase with a damp microfiber cloth. If baggage tags leave sticky adhesive residue, apply a drop of baby oil or citrus solvent before storing.
+            </p>
+          </div>
+
+          <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <h4 class="mb-2">📦 Heavy Weight Placement</h4>
+            <p class="text-sm text-secondary">
+              Position your heaviest items (shoes and tech charging bricks) toward the wheel base of the suitcase. This prevents the luggage from tipping forward when stood upright at taxi ranks.
+            </p>
+          </div>
+
+          <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <h4 class="mb-2">🔒 Zipper Relief Strategy</h4>
+            <p class="text-sm text-secondary">
+              Never force a strained zipper puller around corners. Press the two shell halves firmly together with your hand first to relieve tension on the teeth before sliding the runner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: RELATED ARTICLES
+         ============================================================ -->
+    <section class="section section-offwhite" id="related-articles">
+      <div class="container" style="max-width: 900px;">
+        <div class="flex-between flex-wrap gap-2 mb-4">
+          <div class="section-header mb-0">
+            <span class="section-label">Continue Reading</span>
+            <h2 class="section-title">Related Travel Guides</h2>
+          </div>
+          <a href="blog.html" class="btn btn-outline btn-sm">All Articles &rarr;</a>
+        </div>
+
+        <div class="grid cols-2 gap-4">
+          <article class="blog-card reveal">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=600&q=80" alt="Overhead luggage comparison" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-category">Guide</div>
+              <h3 class="blog-title"><a href="blog-details.html">Understanding IATA Overhead Bin Limits Across Airlines</a></h3>
+              <p class="blog-excerpt">Compare cabin dimensions across 25 major international carriers.</p>
+            </div>
+          </article>
+
+          <article class="blog-card reveal reveal-delay-1">
+            <div class="blog-card-img">
+              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Business traveler in lounge" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-category">Business Travel</div>
+              <h3 class="blog-title"><a href="blog-details.html">The 48-Hour Corporate Itinerary: One Bag, Two Boardrooms</a></h3>
+              <p class="blog-excerpt">Seamless executive gear organization for short layovers.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: PRODUCT DISCOVERY CTA
+         ============================================================ -->
+    <section class="section section-card" id="blog-details-cta">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <span class="section-label" style="color: var(--muted-gold);">Curated Equipment</span>
+          <h2 class="text-white mb-2 font-serif">Explore The Cabin &amp; Carry-On Collection</h2>
+          <p class="mb-4" style="max-width: 60ch; margin-inline: auto;">
+            Put these packing principles into practice with our Stratus Luxe Carbon Cabin Suitcase and Meridian 6-Piece Compression Cube System.
+          </p>
+          <div class="cta-banner-actions">
+            <a href="service-details.html?id=stratus-carry-on" class="btn btn-gold btn-lg">View Cabin Suitcase &rarr;</a>
+            <a href="services.html?category=travel-accessories" class="btn btn-outline-white btn-lg">Shop Compression Cubes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo mb-2" aria-label="AeroPack">
+            <div class="navbar-logo-icon">🧳</div>
+            <div class="navbar-logo-text">
+              <span class="navbar-logo-name">AeroPack</span>
+              <span class="navbar-logo-tagline">Travel Goods</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            AeroPack creates premium travel goods, hard-shell suitcases, and versatile bags engineered to make every global journey seamless, durable, and stylish.
+          </p>
+          <div class="footer-social">
+            <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">📸</a>
+            <a href="https://twitter.com" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener">🐦</a>
+            <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+            <a href="https://linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (General Store)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Collections)</a></li>
+            <li><a href="about.html" class="footer-link">About Brand Story</a></li>
+            <li><a href="services.html" class="footer-link">Shop All Products</a></li>
+            <li><a href="services.html#shop-by-type" class="footer-link">Travel Collections</a></li>
+            <li><a href="services.html#warranty-protection" class="footer-link">Warranty Information</a></li>
+            <li><a href="services.html#repair-services" class="footer-link">Luggage Repair Service</a></li>
+            <li><a href="pricing.html" class="footer-link">Luggage Sets &amp; Offers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Collections &amp; Tips</h4>
+          <ul class="footer-links">
+            <li><a href="services.html?category=cabin-luggage" class="footer-link">Cabin Suitcases</a></li>
+            <li><a href="services.html?category=checkin-suitcases" class="footer-link">Check-in Luggage</a></li>
+            <li><a href="services.html?category=luggage-sets" class="footer-link">Luggage Sets</a></li>
+            <li><a href="services.html?category=travel-backpacks" class="footer-link">Travel Backpacks</a></li>
+            <li><a href="services.html?category=duffel-bags" class="footer-link">Duffel Bags</a></li>
+            <li><a href="services.html?category=travel-accessories" class="footer-link">Travel Accessories</a></li>
+            <li><a href="blog.html" class="footer-link">Travel Journal &amp; Guides</a></li>
+            <li><a href="contact.html" class="footer-link">Customer Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">AeroPack Concierge</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <div class="footer-contact-text">Terminal Flagship Store, 450 Concourse Way, New York, NY 10001</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <div class="footer-contact-text">+1 (800) 555-AERO (2376)</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <div class="footer-contact-text">concierge@aeropack-travel.com</div>
+          </div>
+
+          <div class="footer-newsletter">
+            <span class="text-xs" style="color: rgba(255,255,255,0.7); font-weight:600;">Subscribe to Travel Journal</span>
+            <form class="footer-newsletter-form" onsubmit="return handleNewsletterSubmit(event)">
+              <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+              <button type="submit" class="btn btn-gold btn-sm">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 AeroPack International Travel Goods. All rights reserved.
+        </div>
+        <div class="footer-legal">
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="services.html#warranty-protection">Warranty Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER OVERLAY -->
+  <div class="cart-overlay" onclick="closeCart()" aria-hidden="true"></div>
+  <div class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>Your Travel Bag</h3>
+      <button class="cart-close" onclick="closeCart()" aria-label="Close Cart">&times;</button>
+    </div>
+    <div class="cart-body cart-items-list"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span class="cart-subtotal-label">Subtotal</span>
+        <span class="cart-subtotal-price">$0</span>
+      </div>
+      <p class="text-xs text-secondary mb-2">Taxes &amp; global freight calculated at simulated checkout.</p>
+      <button class="btn btn-teal w-100 py-3" onclick="triggerSimulatedCheckout()">Proceed to Simulated Checkout &rarr;</button>
+      <button class="btn btn-outline w-100 mt-2 btn-sm" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to Top">&uarr;</button>
+  <div class="toast-container" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

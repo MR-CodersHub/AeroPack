@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing &amp; Travel Collections | AeroPack Luggage Bundles</title>
+  <meta name="description" content="Transparent pricing on premium cabin spinners, check-in trunks, nested luggage sets, and curated travel bundles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="navbar" id="site-header">
+    <div class="container navbar-inner">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-logo" aria-label="AeroPack Home">
+          <div class="navbar-logo-icon">🧳</div>
+          <div class="navbar-logo-text">
+            <span class="navbar-logo-name">AeroPack</span>
+            <span class="navbar-logo-tagline">Travel Goods</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="navbar-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home 1</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Shop</a>
+        <a href="services.html#shop-by-type" class="nav-link">Travel Collections</a>
+        <a href="services.html#warranty-protection" class="nav-link">Warranty &amp; Repair</a>
+        <a href="blog.html" class="nav-link">Travel Journal</a>
+        <a href="pricing.html" class="nav-link active">Offers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Sign In</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Switch dark/light theme" aria-label="Toggle Theme">🌙 Dark</button>
+        <button class="rtl-toggle" onclick="toggleDir()" title="Toggle RTL/LTR" aria-label="Toggle Direction">RTL</button>
+        
+        <button class="navbar-icon-btn wishlist-nav-btn" onclick="window.location.href='services.html'" title="Wishlist" aria-label="Wishlist">
+          🤍
+          <span class="navbar-badge wishlist-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="navbar-icon-btn cart-nav-btn" onclick="openCart()" title="View Cart" aria-label="Shopping Cart">
+          🛍️
+          <span class="navbar-badge cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <a href="services.html" class="btn btn-teal btn-sm d-none d-md-flex">Shop Now</a>
+        <button class="navbar-toggle" aria-label="Toggle Mobile Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav" id="mobile-navigation">
+    <a href="index.html" class="mobile-nav-link">Home 1 (General Store)</a>
+    <a href="home-2.html" class="mobile-nav-link">Home 2 (Collections)</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="services.html" class="mobile-nav-link">Shop All Products</a>
+    <a href="services.html#shop-by-type" class="mobile-nav-link">Travel Collections</a>
+    <a href="services.html#warranty-protection" class="mobile-nav-link">Warranty &amp; Product Care</a>
+    <a href="services.html#repair-services" class="mobile-nav-link">Luggage Repair Service</a>
+    <a href="blog.html" class="mobile-nav-link">Travel Journal &amp; Guides</a>
+    <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Sets</a>
+    <a href="contact.html" class="mobile-nav-link">Contact Store</a>
+    <a href="login.html" class="mobile-nav-link">Login / Register</a>
+  </div>
+
+  <main class="page-content">
+
+    <!-- ============================================================
+         SECTION 1: PRICING HERO
+         ============================================================ -->
+    <section class="page-hero" id="pricing-hero">
+      <div class="page-hero-bg">
+        <img src="https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=1920&q=80" alt="Collection of luxury hard-shell suitcases and matching travel bags">
+      </div>
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> &gt; <span>Travel Collections &amp; Pricing</span>
+        </nav>
+        <span class="section-label">Transparent Value</span>
+        <h1>Travel Collections, Sets &amp; Offers</h1>
+        <p>
+          Invest in precision luggage engineered for decades of exploration. Discover clear tiered pricing for solo carry-on bags, checked trunks, and bundled multi-piece family sets with complimentary global freight.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: CABIN & CARRY-ON COLLECTIONS
+         ============================================================ -->
+    <section class="section section-offwhite" id="cabin-pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Cabin Tier</span>
+          <h2 class="section-title">Cabin &amp; Carry-On Collections</h2>
+          <p class="section-subtitle">
+            Engineered within IATA overhead guidelines. Ideal for 1-to-4 day business trips, commuter flights, and weekend escapes.
+          </p>
+        </div>
+
+        <div class="grid cols-3 gap-3">
+          <!-- Card 1: Entry Level Cabin -->
+          <div class="pricing-card reveal">
+            <span class="text-xs font-bold text-teal uppercase" style="letter-spacing: 0.08em;">Lightweight Commuter</span>
+            <h3 class="font-serif mt-1 mb-2">Aerolight Softshell Trolley</h3>
+            <span class="pricing-price-from">Starting at</span>
+            <div class="pricing-price">$215</div>
+            <p class="text-sm text-secondary">Featherweight 2.2 kg softshell carry-on with front boarding pass pockets.</p>
+            <ul class="pricing-list">
+              <li>21" IATA Compliant Size (41L)</li>
+              <li>High-Tenacity 600D Dobby Fabric</li>
+              <li>Dual Omni-Directional Glide Wheels</li>
+              <li>3-Year Limited Material Guarantee</li>
+            </ul>
+            <div class="mt-4">
+              <button class="btn btn-outline w-100" onclick="addToCart('ultralight-soft-cabin')">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Card 2: Premium Cabin (Featured) -->
+          <div class="pricing-card featured reveal reveal-delay-1">
+            <span class="pricing-featured-badge">Most Popular Cabin</span>
+            <span class="text-xs font-bold text-gold uppercase" style="letter-spacing: 0.08em;">Polycarbonate &amp; Aluminum</span>
+            <h3 class="font-serif mt-1 mb-2">Stratus Luxe Cabin Spinner</h3>
+            <span class="pricing-price-from" style="color: rgba(255,255,255,0.7);">Starting at</span>
+            <div class="pricing-price">$265</div>
+            <p class="text-sm" style="color: rgba(255,255,255,0.8);">Indestructible Makrolon® polycarbonate shell with front tech vault.</p>
+            <ul class="pricing-list">
+              <li>21" Universal Overhead Fit (42L)</li>
+              <li>Integrated Recessed Dual TSA Lock</li>
+              <li>Japanese Hinomoto Silent 360° Wheels</li>
+              <li>5-Year Global Travel Protection</li>
+            </ul>
+            <div class="mt-4">
+              <button class="btn btn-gold w-100" onclick="addToCart('stratus-carry-on')">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Card 3: Compact Travel Pack -->
+          <div class="pricing-card reveal reveal-delay-2">
+            <span class="text-xs font-bold text-teal uppercase" style="letter-spacing: 0.08em;">One-Bag Mobility</span>
+            <h3 class="font-serif mt-1 mb-2">Traverse Pro 35L Backpack</h3>
+            <span class="pricing-price-from">Starting at</span>
+            <div class="pricing-price">$195</div>
+            <p class="text-sm text-secondary">Clamshell opening backpack with suspended 16" laptop vault.</p>
+            <ul class="pricing-list">
+              <li>Fits Under Any Airline Seat</li>
+              <li>Expands from 35L to 42L Capacity</li>
+              <li>Concealed Anti-Theft Passport Pocket</li>
+              <li>Luggage Trolley Stacking Sleeve</li>
+            </ul>
+            <div class="mt-4">
+              <button class="btn btn-outline w-100" onclick="addToCart('traverse-travel-backpack')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: CHECK-IN & LARGE SUITCASES
+         ============================================================ -->
+    <section class="section section-card" id="checkin-pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Check-In Tier</span>
+          <h2 class="section-title">Check-in &amp; Large Suitcases</h2>
+          <p class="section-subtitle">
+            Substantial packing volume, corner armor shields, and water-repellent dividers for extended voyages.
+          </p>
+        </div>
+
+        <div class="grid cols-3 gap-3">
+          <!-- Medium Check-in -->
+          <div class="pricing-card reveal">
+            <span class="text-xs font-bold text-teal uppercase" style="letter-spacing: 0.08em;">5 to 9 Day Voyages</span>
+            <h3 class="font-serif mt-1 mb-2">Horizon Mid 24" Spinner</h3>
+            <span class="pricing-price-from">Starting at</span>
+            <div class="pricing-price">$295</div>
+            <p class="text-sm text-secondary">The gold standard medium trunk for balanced vacation packing.</p>
+            <ul class="pricing-list">
+              <li>68L Volumetric Capacity</li>
+              <li>Pure Polycarbonate Impact Shell</li>
+              <li>Built-In Zippered Expansion Gusset</li>
+              <li>5-Year Global Shell Guarantee</li>
+            </ul>
+            <div class="mt-4">
+              <a href="services.html?category=checkin-suitcases" class="btn btn-outline w-100">Explore Mid Trunks</a>
+            </div>
+          </div>
+
+          <!-- Large Check-in (Featured) -->
+          <div class="pricing-card featured reveal reveal-delay-1">
+            <span class="pricing-featured-badge">Maximum Capacity</span>
+            <span class="text-xs font-bold text-gold uppercase" style="letter-spacing: 0.08em;">10+ Day Long Haul</span>
+            <h3 class="font-serif mt-1 mb-2">Horizon Grand 28" Trunk</h3>
+            <span class="pricing-price-from" style="color: rgba(255,255,255,0.7);">Starting at</span>
+            <div class="pricing-price">$345</div>
+            <p class="text-sm" style="color: rgba(255,255,255,0.8);">High-volume check-in case built to survive international baggage hubs.</p>
+            <ul class="pricing-list">
+              <li>Massive 96L Volumetric Storage</li>
+              <li>Corner Aluminum Protective Armor</li>
+              <li>Dual TSA Recessed Latch System</li>
+              <li>Waterproof Wet-Pocket Internal Divider</li>
+            </ul>
+            <div class="mt-4">
+              <button class="btn btn-gold w-100" onclick="addToCart('horizon-checkin-large')">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Ballistic Weekender Duffel -->
+          <div class="pricing-card reveal reveal-delay-2">
+            <span class="text-xs font-bold text-teal uppercase" style="letter-spacing: 0.08em;">Flexible Storage</span>
+            <h3 class="font-serif mt-1 mb-2">Apex Ballistic Duffel 45L</h3>
+            <span class="pricing-price-from">Starting at</span>
+            <div class="pricing-price">$185</div>
+            <p class="text-sm text-secondary">1680D Ballistic Cordura nylon with ventilated shoe garage.</p>
+            <ul class="pricing-list">
+              <li>Weatherproof DWR Water Coating</li>
+              <li>Full-Grain Leather Padded Grips</li>
+              <li>Pass-Through Suitcase Sleeve</li>
+              <li>3-Year Craftsmanship Warranty</li>
+            </ul>
+            <div class="mt-4">
+              <button class="btn btn-outline w-100" onclick="addToCart('apex-flight-duffel')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: LUGGAGE SETS (Bundled Savings)
+         ============================================================ -->
+    <section class="section section-offwhite" id="luggage-sets-pricing">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Synchronized Bundles</span>
+          <h2 class="section-title">Luggage Sets &amp; Nested Collections</h2>
+          <p class="section-subtitle">
+            Save up to $110 when purchasing synchronized matching luggage sets. All pieces nest neatly inside the largest trunk for compact home storage.
+          </p>
+        </div>
+
+        <div class="grid cols-2 gap-4">
+          <!-- 2-Piece Set -->
+          <div class="pricing-card reveal">
+            <span class="badge badge-sale mb-2">Save $70</span>
+            <h3 class="font-serif mb-1">Nomad Duo 2-Piece Carry-On &amp; Check Set</h3>
+            <div class="pricing-price">$380 <span class="original" style="font-size: 1.1rem; text-decoration: line-through; color: var(--text-secondary);">$450</span></div>
+            <p class="text-sm text-secondary mb-3">Includes 20" Cabin Spinner (39L) and 26" Medium Check-In Case (72L).</p>
+            <ul class="pricing-list">
+              <li>Complete 2-piece synchronized colorway</li>
+              <li>Nesting storage footprint inside closet</li>
+              <li>Japanese Hinomoto 360° whisper casters on both</li>
+              <li>Individual TSA locks on each suitcase</li>
+            </ul>
+            <div class="mt-4">
+              <button class="btn btn-teal w-100" onclick="addToCart('aero-duo-set')">Add 2-Piece Set to Cart &rarr;</button>
+            </div>
+          </div>
+
+          <!-- 3-Piece Set (Featured) -->
+          <div class="pricing-card featured reveal reveal-delay-1">
+            <span class="pricing-featured-badge">Best Value Suite</span>
+            <span class="badge badge-bestseller mb-2">Save $110</span>
+            <h3 class="font-serif mb-1">AeroVoyager Pro 3-Piece Family Set</h3>
+            <div class="pricing-price">$489 <span class="original" style="font-size: 1.1rem; text-decoration: line-through; color: var(--muted-gold);">$599</span></div>
+            <p class="text-sm mb-3" style="color: rgba(255,255,255,0.85);">Includes 20" Cabin (38L), 24" Medium (68L), and 28" Extended Trunk (102L).</p>
+            <ul class="pricing-list">
+              <li>Full 3-piece suite covering every voyage</li>
+              <li>Triple nesting design (fits within 28" footprint)</li>
+              <li>Complimentary Express Global Freight included</li>
+              <li>5-Year Limited Global Shell Warranty</li>
+            </ul>
+            <div class="mt-4">
+              <button class="btn btn-gold w-100" onclick="addToCart('aero-voyager-set')">Add 3-Piece Suite to Cart &rarr;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: FEATURED OFFERS
+         ============================================================ -->
+    <section class="section section-dark" id="featured-offers">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Promotional Highlights</span>
+          <h2 class="section-title">Seasonal Travel Offers &amp; Bundles</h2>
+          <p class="section-subtitle">
+            Selected offers on accessories, compression cube systems, and leather heritage duffels.
+          </p>
+        </div>
+
+        <div class="grid cols-3 gap-3">
+          <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="flex-between mb-2">
+              <span class="badge badge-sale">Bundle -20%</span>
+              <span class="text-gold font-bold">$68</span>
+            </div>
+            <h4>Meridian 6-Piece Cube System</h4>
+            <p>Double-zip compression cubes in ripstop silicone nylon that reduce clothing bulk by 50%.</p>
+            <div class="mt-3">
+              <button class="btn btn-outline-white btn-sm w-100" onclick="addToCart('meridian-packing-cubes')">Add Cubes to Cart</button>
+            </div>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="flex-between mb-2">
+              <span class="badge badge-featured">Heritage Offer</span>
+              <span class="text-gold font-bold">$295</span>
+            </div>
+            <h4>Albatross Leather Duffel</h4>
+            <p>Full-grain Italian vegetable-tanned leather with antiqued solid brass hardware and shoe vault.</p>
+            <div class="mt-3">
+              <button class="btn btn-outline-white btn-sm w-100" onclick="addToCart('albatross-leather-weekender')">Add Leather Bag</button>
+            </div>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+            <div class="flex-between mb-2">
+              <span class="badge badge-new">Security Bundle</span>
+              <span class="text-gold font-bold">$34</span>
+            </div>
+            <h4>Zenith TSA Lock &amp; ID Tag</h4>
+            <p>Open-inspection alert indicator, flexible high-tensile braided steel cable, and laser-etched tag.</p>
+            <div class="mt-3">
+              <button class="btn btn-outline-white btn-sm w-100" onclick="addToCart('zenith-security-lock-kit')">Add Lock Kit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: SHOPPING FAQS & CTA
+         ============================================================ -->
+    <section class="section section-offwhite" id="pricing-faq-cta">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-header centered">
+          <span class="section-label">Purchasing Clarity</span>
+          <h2 class="section-title">Pricing &amp; Shipping FAQs</h2>
+        </div>
+
+        <div class="faq-list mb-6">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are there additional customs duties or import taxes on international orders?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                All prices displayed include standard duties for shipments to North America, the European Union, the United Kingdom, and Australia. For other international destinations, local value-added taxes may be calculated at simulated checkout.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is included in the complimentary global freight offer?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                All 2-piece and 3-piece luggage sets automatically qualify for complimentary express global air courier delivery with door-to-door tracking and protective outer shipping cartons.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What if I wish to return or exchange my luggage after receiving it?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                We offer a 100-day trial period on all unused luggage in original condition with tags intact. If the sizing is not ideal for your journey, contact our concierge to arrange a complimentary exchange.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-banner reveal">
+          <span class="section-label" style="color: var(--muted-gold);">Ready to Voyage?</span>
+          <h2 class="text-white mb-2 font-serif">Discover the Full AeroPack Catalog</h2>
+          <p class="mb-4" style="max-width: 58ch; margin-inline: auto;">
+            Explore all 12 precision travel products with real-time category, size, and material filters on our Shop page.
+          </p>
+          <div class="cta-banner-actions">
+            <a href="services.html" class="btn btn-gold btn-lg">Explore All Luggage &rarr;</a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">Inquire About Bulk Orders</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo mb-2" aria-label="AeroPack">
+            <div class="navbar-logo-icon">🧳</div>
+            <div class="navbar-logo-text">
+              <span class="navbar-logo-name">AeroPack</span>
+              <span class="navbar-logo-tagline">Travel Goods</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            AeroPack creates premium travel goods, hard-shell suitcases, and versatile bags engineered to make every global journey seamless, durable, and stylish.
+          </p>
+          <div class="footer-social">
+            <a href="https://instagram.com" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">📸</a>
+            <a href="https://twitter.com" class="social-btn" aria-label="Twitter / X" target="_blank" rel="noopener">🐦</a>
+            <a href="https://facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+            <a href="https://linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home 1 (General Store)</a></li>
+            <li><a href="home-2.html" class="footer-link">Home 2 (Collections)</a></li>
+            <li><a href="about.html" class="footer-link">About Brand Story</a></li>
+            <li><a href="services.html" class="footer-link">Shop All Products</a></li>
+            <li><a href="services.html#shop-by-type" class="footer-link">Travel Collections</a></li>
+            <li><a href="services.html#warranty-protection" class="footer-link">Warranty Information</a></li>
+            <li><a href="services.html#repair-services" class="footer-link">Luggage Repair Service</a></li>
+            <li><a href="pricing.html" class="footer-link">Luggage Sets &amp; Offers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Collections &amp; Tips</h4>
+          <ul class="footer-links">
+            <li><a href="services.html?category=cabin-luggage" class="footer-link">Cabin Suitcases</a></li>
+            <li><a href="services.html?category=checkin-suitcases" class="footer-link">Check-in Luggage</a></li>
+            <li><a href="services.html?category=luggage-sets" class="footer-link">Luggage Sets</a></li>
+            <li><a href="services.html?category=travel-backpacks" class="footer-link">Travel Backpacks</a></li>
+            <li><a href="services.html?category=duffel-bags" class="footer-link">Duffel Bags</a></li>
+            <li><a href="services.html?category=travel-accessories" class="footer-link">Travel Accessories</a></li>
+            <li><a href="blog.html" class="footer-link">Travel Journal &amp; Guides</a></li>
+            <li><a href="contact.html" class="footer-link">Customer Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">AeroPack Concierge</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <div class="footer-contact-text">Terminal Flagship Store, 450 Concourse Way, New York, NY 10001</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <div class="footer-contact-text">+1 (800) 555-AERO (2376)</div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <div class="footer-contact-text">concierge@aeropack-travel.com</div>
+          </div>
+
+          <div class="footer-newsletter">
+            <span class="text-xs" style="color: rgba(255,255,255,0.7); font-weight:600;">Subscribe to Travel Journal</span>
+            <form class="footer-newsletter-form" onsubmit="return handleNewsletterSubmit(event)">
+              <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+              <button type="submit" class="btn btn-gold btn-sm">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 AeroPack International Travel Goods. All rights reserved.
+        </div>
+        <div class="footer-legal">
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="services.html#warranty-protection">Warranty Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER OVERLAY -->
+  <div class="cart-overlay" onclick="closeCart()" aria-hidden="true"></div>
+  <div class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>Your Travel Bag</h3>
+      <button class="cart-close" onclick="closeCart()" aria-label="Close Cart">&times;</button>
+    </div>
+    <div class="cart-body cart-items-list"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span class="cart-subtotal-label">Subtotal</span>
+        <span class="cart-subtotal-price">$0</span>
+      </div>
+      <p class="text-xs text-secondary mb-2">Taxes &amp; global freight calculated at simulated checkout.</p>
+      <button class="btn btn-teal w-100 py-3" onclick="triggerSimulatedCheckout()">Proceed to Simulated Checkout &rarr;</button>
+      <button class="btn btn-outline w-100 mt-2 btn-sm" onclick="closeCart()">Continue Shopping</button>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to Top">&uarr;</button>
+  <div class="toast-container" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
