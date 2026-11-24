@@ -1741,3 +1741,13 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 @media (max-width: 480px) {
   .lineup-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Home lineup variant */
+.lineup-grid.home-lineup { grid-template-columns: repeat(4, minmax(0,1fr)); }
+@media (max-width: 1100px) {
+  .lineup-grid.home-lineup { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .lineup-grid.home-lineup { grid-template-columns: 1fr; }
+}
