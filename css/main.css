@@ -1879,3 +1879,135 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 @media (max-width: 640px) {
   .warranty-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ── 32. Luggage Repair Services ─────────────────────────── */
+.repair-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.6fr);
+  gap: 2rem;
+  align-items: start;
+}
+.repair-intro {
+  position: sticky;
+  top: 100px;
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.04);
+}
+.repair-intro .section-label { color: var(--muted-gold); }
+.repair-intro .section-label::before,
+.repair-intro .section-label::after { display: none; }
+.repair-intro .section-title { color: var(--white); margin-bottom: 1rem; }
+.repair-intro .section-subtitle { color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.repair-note {
+  display: flex; gap: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 2px solid var(--muted-gold);
+  background: rgba(197,164,95,0.08);
+  color: rgba(255,255,255,0.75);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+[dir="rtl"] .repair-note { border-left: 0; border-right: 2px solid var(--muted-gold); }
+.repair-note i { color: var(--muted-gold); margin-top: 0.15rem; }
+.repair-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.repair-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.04);
+  transition: transform var(--transition), border-color var(--transition), background var(--transition);
+}
+.repair-card:hover { transform: translateY(-3px); border-color: var(--muted-gold); background: rgba(255,255,255,0.07); }
+.repair-icon {
+  width: 48px; height: 48px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: var(--radius-md);
+  background: rgba(197,164,95,0.14);
+  color: var(--muted-gold);
+  font-size: 1.15rem;
+  margin-bottom: 1.1rem;
+}
+.repair-card h4 { color: var(--white); margin-bottom: 0.5rem; font-size: 1.05rem; }
+.repair-card p { color: rgba(255,255,255,0.65); font-size: 0.85rem; line-height: 1.6; margin: 0; }
+@media (max-width: 1000px) {
+  .repair-layout { grid-template-columns: 1fr; }
+  .repair-intro { position: static; }
+}
+@media (max-width: 640px) {
+  .repair-grid { grid-template-columns: 1fr; }
+}
+
+/* ── 33. Customer Support Pathways ───────────────────────── */
+.support-header {
+  display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+.support-header .section-label { color: var(--muted-gold); }
+.support-header .section-label::before,
+.support-header .section-label::after { display: none; }
+.support-header .section-title { color: var(--white); margin-bottom: 0.75rem; }
+.support-header .section-subtitle { color: rgba(255,255,255,0.7); font-size: 1rem; margin: 0; max-width: 70ch; }
+.support-count {
+  flex-shrink: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-width: 110px;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,0.05);
+}
+.support-count strong { font-family: 'Playfair Display', Georgia, serif; font-size: 2rem; line-height: 1; color: var(--muted-gold); }
+.support-count span { margin-top: 0.35rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.6); text-align: center; }
+.support-grid { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 1rem; }
+.support-grid::before {
+  content: '';
+  position: absolute; top: 24px; left: 5%; right: 5%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.16), transparent);
+}
+.support-card {
+  position: relative;
+  padding: 1.5rem 1.25rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.04);
+  transition: transform var(--transition), border-color var(--transition), background var(--transition);
+}
+.support-card:hover { transform: translateY(-4px); border-color: var(--muted-gold); background: rgba(255,255,255,0.07); }
+.support-step {
+  position: relative; z-index: 1;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(197,164,95,0.4);
+  border-radius: 50%;
+  background: var(--midnight-navy);
+  color: var(--muted-gold);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+}
+.support-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px;
+  margin-bottom: 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(197,164,95,0.12);
+  color: var(--muted-gold);
+  font-size: 1rem;
+}
+.support-card h4 { color: var(--white); margin-bottom: 0.5rem; font-size: 1rem; }
+.support-card p { color: rgba(255,255,255,0.65); font-size: 0.82rem; line-height: 1.55; margin: 0; }
+@media (max-width: 1100px) {
+  .support-grid { grid-template-columns: repeat(3, 1fr); }
+  .support-grid::before { display: none; }
+}
+@media (max-width: 760px) {
+  .support-grid { grid-template-columns: repeat(2, 1fr); }
+  .support-header { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
+  .support-grid { grid-template-columns: 1fr; }
+}
