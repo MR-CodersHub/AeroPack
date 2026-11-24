@@ -492,6 +492,19 @@
     return false;
   };
 
+  // ── 11b. ARTICLE SOCIAL SHARING ─────────────────────────────
+  window.copyCurrentArticleLink = function () {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        showToast('Link Copied', 'Travel guide link copied to your clipboard!', 'info');
+      }).catch(() => {
+        showToast('Link Copied', window.location.href, 'info');
+      });
+    } else {
+      showToast('Article Link', window.location.href, 'info');
+    }
+  };
+
   // ── 12. SERVICES PAGE FILTER & SORT ENGINE ─────────────────
   window.renderServicesCatalog = function () {
     const container = document.getElementById('services-product-grid');
