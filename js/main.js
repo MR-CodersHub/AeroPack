@@ -831,6 +831,114 @@
     bindSwatches(editions[0]);
   }
 
+  // ── 12c. HOME 2 INTERACTIVE EXPERIENCES ─────────────────
+  function initHome2Experiences() {
+    // 1. Section 3 Cabin Essentials Live Filter
+    const filterBar = document.getElementById('home2-cabin-filters');
+    const cabinGrid = document.getElementById('home2-cabin-grid');
+    if (filterBar && cabinGrid) {
+      const pills = filterBar.querySelectorAll('.h2-filter-pill');
+      const cards = cabinGrid.querySelectorAll('.h2-horiz-card');
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          const target = pill.dataset.h2Filter || 'all';
+          pills.forEach(p => {
+            const active = p === pill;
+            p.classList.toggle('active', active);
+            p.setAttribute('aria-selected', String(active));
+          });
+          cards.forEach(card => {
+            const match = target === 'all' || card.dataset.h2Cat === target;
+            card.classList.toggle('is-hidden', !match);
+          });
+        });
+      });
+    }
+
+    // 2. Section 4 Craftsmanship Interactive Stage
+    const stageWrap = document.getElementById('home2-craft-stage');
+    if (stageWrap) {
+      const items = [
+        {
+          id: 'executive-briefcase',
+          img: '../images/category-business-bags.jpg',
+          alt: 'Vanguard Executive Briefcase',
+          badge: 'Executive Edition • $175',
+          mat: 'Italian Full-Grain Leather',
+          prot: '15.6" Shock-Absorbed Bay',
+          wt: '1.1 kg Unpacked',
+          war: '2-Year Quality Care'
+        },
+        {
+          id: 'traverse-travel-backpack',
+          img: '../images/product-traverse-pack.jpg',
+          alt: 'Traverse Pro Tech Backpack',
+          badge: 'Top Rated • $195',
+          mat: 'Recycled Oxford Nylon & TPU',
+          prot: 'Suspended 16" Laptop Vault',
+          wt: '1.35 kg Unpacked',
+          war: '3-Year Craftsmanship'
+        },
+        {
+          id: 'voyage-tech-organizer',
+          img: '../images/category-travel-accessories.jpg',
+          alt: 'Atlas Tech and Cable Folio',
+          badge: 'Tech Essential • $52',
+          mat: 'Weatherproof Matte Tarpaulin',
+          prot: 'Padded Power & Cord Bays',
+          wt: '220 Grams',
+          war: '2-Year Quality Care'
+        }
+      ];
+
+      const tabs = stageWrap.querySelectorAll('.h2-craft-tab');
+      const imgEl = document.getElementById('h2-craft-img');
+      const badgeEl = document.getElementById('h2-craft-badge');
+      const matEl = document.getElementById('h2-craft-mat');
+      const protEl = document.getElementById('h2-craft-prot');
+      const wtEl = document.getElementById('h2-craft-wt');
+      const warEl = document.getElementById('h2-craft-war');
+      const addEl = document.getElementById('h2-craft-add');
+      const linkEl = document.getElementById('h2-craft-link');
+
+      if (imgEl) {
+        imgEl.addEventListener('error', () => {
+          if (!imgEl.src.includes('category-business-bags.jpg')) {
+            imgEl.src = '../images/category-business-bags.jpg';
+          }
+        });
+      }
+
+      tabs.forEach((tab, idx) => {
+        tab.addEventListener('click', () => {
+          const item = items[idx];
+          if (!item) return;
+          tabs.forEach((t, i) => {
+            const active = i === idx;
+            t.classList.toggle('active', active);
+            t.setAttribute('aria-selected', String(active));
+          });
+          if (imgEl) {
+            imgEl.classList.add('is-fading');
+            setTimeout(() => {
+              imgEl.src = item.img;
+              imgEl.alt = item.alt;
+              imgEl.classList.remove('is-fading');
+            }, 130);
+          }
+          if (badgeEl) badgeEl.textContent = item.badge;
+          if (matEl) matEl.textContent = item.mat;
+          if (protEl) protEl.textContent = item.prot;
+          if (wtEl) wtEl.textContent = item.wt;
+          if (warEl) warEl.textContent = item.war;
+          if (addEl) addEl.setAttribute('onclick', "addToCart('" + item.id + "')");
+          if (linkEl) linkEl.href = 'service-details.html?id=' + item.id;
+        });
+      });
+    }
+  }
+
   // ── 13. DOM READY INITIALIZATION ───────────────────────────
   document.addEventListener('DOMContentLoaded', () => {
     initThemeAndDir();
@@ -841,6 +949,7 @@
     initMobileNav();
     initNavDropdowns();
     initHeroAtelier();
+    initHome2Experiences();
 
     // If services page
     if (document.getElementById('services-product-grid')) {

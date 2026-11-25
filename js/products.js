@@ -134,9 +134,9 @@ const AEROPACK_PRODUCTS = [
       { name: "Graphite", hex: "#30363D", active: true },
       { name: "Midnight Navy", hex: "#17283D" }
     ],
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+    image: "images/product-apex-duffel.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80",
+      "images/product-apex-duffel.jpg",
       "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80"
     ],
     badge: "New",
@@ -171,9 +171,9 @@ const AEROPACK_PRODUCTS = [
       { name: "Deep Teal", hex: "#285B62" },
       { name: "Graphite", hex: "#30363D" }
     ],
-    image: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+    image: "images/product-traverse-pack.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=1000&q=80",
+      "images/product-traverse-pack.jpg",
       "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80"
     ],
     badge: "Top Rated",
@@ -279,9 +279,9 @@ const AEROPACK_PRODUCTS = [
       { name: "Graphite", hex: "#30363D", active: true },
       { name: "Midnight Navy", hex: "#17283D" }
     ],
-    image: "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=800&q=80",
+    image: "images/product-aerolight-trolley.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=1000&q=80"
+      "images/product-aerolight-trolley.jpg"
     ],
     badge: "Ultralight",
     badgeType: "new",
@@ -315,9 +315,9 @@ const AEROPACK_PRODUCTS = [
       { name: "Graphite", hex: "#30363D" },
       { name: "Warm Sand", hex: "#E9DDCA" }
     ],
-    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+    image: "images/product-meridian-cubes.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80"
+      "images/product-meridian-cubes.jpg"
     ],
     badge: "Essential",
     badgeType: "bestseller",
@@ -350,9 +350,9 @@ const AEROPACK_PRODUCTS = [
       { name: "Warm Sand", hex: "#E9DDCA", active: true },
       { name: "Midnight Navy", hex: "#17283D" }
     ],
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+    image: "images/product-albatross-duffel.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80"
+      "images/product-albatross-duffel.jpg"
     ],
     badge: "Heritage",
     badgeType: "featured",
@@ -385,9 +385,9 @@ const AEROPACK_PRODUCTS = [
       { name: "Graphite", hex: "#30363D", active: true },
       { name: "Muted Gold", hex: "#B99A63" }
     ],
-    image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=800&q=80",
+    image: "images/product-zenith-lock.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=1000&q=80"
+      "images/product-zenith-lock.jpg"
     ],
     badge: "Safety",
     badgeType: "bestseller",
