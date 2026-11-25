@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-theme="dark">
+<html lang="en" dir="ltr" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,23 +115,60 @@
     <!-- ============================================================
          SECTION 1: SITEMAP HERO
          ============================================================ -->
-    <section class="page-hero" id="sitemap-hero">
+    <section class="page-hero smap-hero" id="sitemap-hero">
       <div class="page-hero-bg">
-        <img src="../images/hero-sitemap.jpg" alt="">
+        <img src="../images/hero-sitemap.jpg" alt="AeroPack global luggage network and navigation backdrop">
       </div>
-      <div class="page-hero-overlay"></div>
-      <div class="hero-side-image page-hero-side-image" aria-hidden="true">
-        <img src="../images/hero-sitemap-side.jpg" alt="">
-      </div>
-      <div class="container page-hero-content">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a> &gt; <span>Sitemap &bull; Global Directory</span>
-        </nav>
-        <span class="section-label">AeroPack Architecture &bull; Complete Sitemap</span>
-        <h1>Global Navigation &amp; Fleet Directory</h1>
-        <p>
-          Discover every terminal, luggage collection, warranty registry, and travel advisory resource across the AeroPack digital experience in one structured architectural overview.
-        </p>
+      <div class="page-hero-overlay smap-hero-overlay"></div>
+
+      <div class="container smap-hero-container">
+        <div class="smap-hero-grid">
+          <div class="smap-hero-copy">
+            <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+              <a href="../index.html">Home</a>
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              <span>Sitemap &bull; Global Directory</span>
+            </nav>
+            <span class="smap-hero-pill">
+              <i class="fa-solid fa-compass" aria-hidden="true"></i> AeroPack Architecture &bull; Complete Sitemap
+            </span>
+            <h1>Global Navigation <span class="smap-hero-accent">&amp; Fleet Directory.</span></h1>
+            <p class="smap-hero-lead">
+              Discover every terminal, luggage collection, warranty registry, and travel advisory resource across the AeroPack digital experience in one structured architectural overview.
+            </p>
+            <div class="smap-hero-actions">
+              <a href="#primary-showrooms" class="btn btn-gold smap-btn-primary">
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i> Browse Portals
+              </a>
+              <a href="#shopping-categories" class="btn btn-outline">10 Bag Categories</a>
+            </div>
+            <div class="smap-hero-metrics">
+              <div class="smap-metric-item">
+                <strong>06</strong>
+                <span>Primary Portals</span>
+              </div>
+              <div class="smap-metric-item">
+                <strong>10</strong>
+                <span>Bag Categories</span>
+              </div>
+              <div class="smap-metric-item">
+                <strong>04</strong>
+                <span>Legal &amp; Utilities</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="smap-hero-media-col">
+            <div class="smap-hero-frame">
+              <img src="../images/hero-sitemap-side.jpg" alt="Colorful ribbed AeroPack cabin and medium suitcases outdoors">
+              <div class="smap-frame-scrim"></div>
+              <div class="smap-frame-caption">
+                <span class="smap-frame-kicker">Fleet Index</span>
+                <strong>Full Site Architecture</strong>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -140,53 +177,89 @@
          ============================================================ -->
     <section class="section section-offwhite" id="primary-showrooms">
       <div class="container">
-        <div class="section-header text-center max-w-700 mx-auto mb-5 reveal">
+        <div class="section-header centered reveal">
           <span class="section-label">Showrooms &amp; Core Itineraries</span>
-          <h2 class="font-serif">Primary Portals</h2>
-          <p>The core experiential gateways powering your travel gear exploration and purchase journey.</p>
+          <h2 class="section-title">Primary Portals</h2>
+          <p class="section-subtitle">The core experiential gateways powering your travel gear exploration and purchase journey.</p>
         </div>
 
-        <div class="grid cols-3 gap-4">
-          <div class="card p-4 reveal">
-            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-house-chimney"></i></div>
-            <h4 class="font-serif mb-2"><a href="../index.html" class="text-white hover-gold">Home 1 &ndash; Flagship Store</a></h4>
-            <p class="text-sm text-secondary mb-3">Our general luggage store featuring bestselling luggage sets, essential gear grids, and engineering highlights.</p>
-            <a href="../index.html" class="btn btn-outline btn-sm">Visit Home 1 &rarr;</a>
+        <div class="grid cols-3 gap-3">
+          <div class="smap-portal-card reveal">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i></span>
+              <span class="smap-card-code">PRT-01</span>
+            </div>
+            <h4><a href="../index.html" class="smap-title-link">Home 1 &ndash; Flagship Store</a></h4>
+            <p>Our general luggage store featuring bestselling luggage sets, essential gear grids, and engineering highlights.</p>
+            <a href="../index.html" class="btn btn-outline btn-sm smap-btn-arrow">
+              <span>Visit Home 1</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
 
-          <div class="card p-4 reveal">
-            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-compass"></i></div>
-            <h4 class="font-serif mb-2"><a href="home-2.html" class="text-white hover-gold">Home 2 &ndash; Collections &amp; Arrivals</a></h4>
-            <p class="text-sm text-secondary mb-3">Curated editorial photography, hard-shell vs soft-shell collections, cabin essentials, and latest new arrivals.</p>
-            <a href="home-2.html" class="btn btn-outline btn-sm">Visit Home 2 &rarr;</a>
+          <div class="smap-portal-card reveal reveal-delay-1">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-compass" aria-hidden="true"></i></span>
+              <span class="smap-card-code">PRT-02</span>
+            </div>
+            <h4><a href="home-2.html" class="smap-title-link">Home 2 &ndash; Collections &amp; Arrivals</a></h4>
+            <p>Curated editorial photography, hard-shell vs soft-shell collections, cabin essentials, and latest new arrivals.</p>
+            <a href="home-2.html" class="btn btn-outline btn-sm smap-btn-arrow">
+              <span>Visit Home 2</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
 
-          <div class="card p-4 reveal">
-            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-feather-pointed"></i></div>
-            <h4 class="font-serif mb-2"><a href="about.html" class="text-white hover-gold">About Us &ndash; Heritage &amp; Philosophy</a></h4>
-            <p class="text-sm text-secondary mb-3">Our 2018 founding story, aerospace materials philosophy, stress testing protocols, and lifetime brand promise.</p>
-            <a href="about.html" class="btn btn-outline btn-sm">Discover Brand &rarr;</a>
+          <div class="smap-portal-card reveal reveal-delay-2">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-feather-pointed" aria-hidden="true"></i></span>
+              <span class="smap-card-code">PRT-03</span>
+            </div>
+            <h4><a href="about.html" class="smap-title-link">About Us &ndash; Heritage &amp; Philosophy</a></h4>
+            <p>Our 2018 founding story, aerospace materials philosophy, stress testing protocols, and lifetime brand promise.</p>
+            <a href="about.html" class="btn btn-outline btn-sm smap-btn-arrow">
+              <span>Discover Brand</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
 
-          <div class="card p-4 reveal">
-            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-store"></i></div>
-            <h4 class="font-serif mb-2"><a href="services.html" class="text-white hover-gold">Services &ndash; Main Shop &amp; Repair</a></h4>
-            <p class="text-sm text-secondary mb-3">Central store combining 10 product categories, live faceted filtering, warranty terms, and repair service requests.</p>
-            <a href="services.html" class="btn btn-outline btn-sm">Explore Shop &rarr;</a>
+          <div class="smap-portal-card reveal">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-store" aria-hidden="true"></i></span>
+              <span class="smap-card-code">PRT-04</span>
+            </div>
+            <h4><a href="services.html" class="smap-title-link">Services &ndash; Main Shop &amp; Repair</a></h4>
+            <p>Central store combining 10 product categories, live faceted filtering, warranty terms, and repair service requests.</p>
+            <a href="services.html" class="btn btn-outline btn-sm smap-btn-arrow">
+              <span>Explore Shop</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
 
-          <div class="card p-4 reveal">
-            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-newspaper"></i></div>
-            <h4 class="font-serif mb-2"><a href="blog.html" class="text-white hover-gold">Blog &ndash; The Modern Voyager Journal</a></h4>
-            <p class="text-sm text-secondary mb-3">Expert travel packing guides, airline carry-on regulations, luggage maintenance tips, and destination spotlights.</p>
-            <a href="blog.html" class="btn btn-outline btn-sm">Read Journal &rarr;</a>
+          <div class="smap-portal-card reveal reveal-delay-1">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-newspaper" aria-hidden="true"></i></span>
+              <span class="smap-card-code">PRT-05</span>
+            </div>
+            <h4><a href="blog.html" class="smap-title-link">Blog &ndash; The Modern Voyager Journal</a></h4>
+            <p>Expert travel packing guides, airline carry-on regulations, luggage maintenance tips, and destination spotlights.</p>
+            <a href="blog.html" class="btn btn-outline btn-sm smap-btn-arrow">
+              <span>Read Journal</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
 
-          <div class="card p-4 reveal">
-            <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-headset"></i></div>
-            <h4 class="font-serif mb-2"><a href="contact.html" class="text-white hover-gold">Contact Us &ndash; Flagship Concierge</a></h4>
-            <p class="text-sm text-secondary mb-3">Interactive 9-category customer enquiry form, NYC flagship showroom address, map coordinates, and support FAQs.</p>
-            <a href="contact.html" class="btn btn-outline btn-sm">Get in Touch &rarr;</a>
+          <div class="smap-portal-card reveal reveal-delay-2">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-headset" aria-hidden="true"></i></span>
+              <span class="smap-card-code">PRT-06</span>
+            </div>
+            <h4><a href="contact.html" class="smap-title-link">Contact Us &ndash; Flagship Concierge</a></h4>
+            <p>Interactive 9-category customer enquiry form, NYC flagship showroom address, map coordinates, and support FAQs.</p>
+            <a href="contact.html" class="btn btn-outline btn-sm smap-btn-arrow">
+              <span>Get in Touch</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -195,73 +268,83 @@
     <!-- ============================================================
          SECTION 3: SHOP BY LUGGAGE & BAG CATEGORIES
          ============================================================ -->
-    <section class="section" id="shopping-categories">
+    <section class="section section-card" id="shopping-categories">
       <div class="container">
-        <div class="section-header text-center max-w-700 mx-auto mb-5 reveal">
+        <div class="section-header centered reveal">
           <span class="section-label">Comprehensive Product Taxonomy</span>
-          <h2 class="font-serif">10 Travel Bag Categories</h2>
-          <p>Every piece in our catalog is mapped to a specific travel style and duration requirement.</p>
+          <h2 class="section-title">10 Travel Bag Categories</h2>
+          <p class="section-subtitle">Every piece in our catalog is mapped to a specific travel style and duration requirement.</p>
         </div>
 
-        <div class="grid cols-5 gap-3">
-          <a href="services.html?category=cabin-luggage" class="card p-3 text-center hover-lift" style="text-decoration:none;">
-            <i class="fa-solid fa-suitcase-rolling text-gold mb-2" style="font-size: 1.75rem;"></i>
-            <h5 class="font-serif mb-1 text-white">Cabin Luggage</h5>
-            <span class="text-xs text-secondary">20" &ndash; 22" Carry-ons</span>
+        <div class="smap-cat-grid">
+          <a href="services.html?category=cabin-luggage" class="smap-cat-card reveal">
+            <span class="smap-cat-num">01</span>
+            <span class="smap-icon-box"><i class="fa-solid fa-suitcase-rolling" aria-hidden="true"></i></span>
+            <h5>Cabin Luggage</h5>
+            <span>20" &ndash; 22" Carry-ons</span>
           </a>
 
-          <a href="services.html?category=checkin-suitcases" class="card p-3 text-center hover-lift" style="text-decoration:none;">
-            <i class="fa-solid fa-plane-departure text-gold mb-2" style="font-size: 1.75rem;"></i>
-            <h5 class="font-serif mb-1 text-white">Check-in Luggage</h5>
-            <span class="text-xs text-secondary">26" &ndash; 30" Expeditions</span>
+          <a href="services.html?category=checkin-suitcases" class="smap-cat-card reveal">
+            <span class="smap-cat-num">02</span>
+            <span class="smap-icon-box"><i class="fa-solid fa-plane-departure" aria-hidden="true"></i></span>
+            <h5>Check-in Luggage</h5>
+            <span>26" &ndash; 30" Expeditions</span>
           </a>
 
-          <a href="services.html?category=luggage-sets" class="card p-3 text-center hover-lift" style="text-decoration:none;">
-            <i class="fa-solid fa-cubes-stacked text-gold mb-2" style="font-size: 1.75rem;"></i>
-            <h5 class="font-serif mb-1 text-white">Luggage Sets</h5>
-            <span class="text-xs text-secondary">2-Piece &amp; 3-Piece Sets</span>
+          <a href="services.html?category=luggage-sets" class="smap-cat-card reveal">
+            <span class="smap-cat-num">03</span>
+            <span class="smap-icon-box"><i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i></span>
+            <h5>Luggage Sets</h5>
+            <span>2-Piece &amp; 3-Piece Sets</span>
           </a>
 
-          <a href="services.html?category=hard-shell" class="card p-3 text-center hover-lift" style="text-decoration:none;">
-            <i class="fa-solid fa-shield-halved text-gold mb-2" style="font-size: 1.75rem;"></i>
-            <h5 class="font-serif mb-1 text-white">Hard-Shell</h5>
-            <span class="text-xs text-secondary">Makrolon&reg; Polycarbonate</span>
+          <a href="services.html?category=hard-shell" class="smap-cat-card reveal">
+            <span class="smap-cat-num">04</span>
+            <span class="smap-icon-box"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+            <h5>Hard-Shell</h5>
+            <span>Makrolon&reg; Polycarbonate</span>
           </a>
 
-          <a href="services.html?category=soft-shell" class="card p-3 text-center hover-lift" style="text-decoration:none;">
-            <i class="fa-solid fa-feather text-gold mb-2" style="font-size: 1.75rem;"></i>
-            <h5 class="font-serif mb-1 text-white">Soft-Shell</h5>
-            <span class="text-xs text-secondary">Ballistic Nylon Weave</span>
+          <a href="services.html?category=soft-shell" class="smap-cat-card reveal">
+            <span class="smap-cat-num">05</span>
+            <span class="smap-icon-box"><i class="fa-solid fa-feather" aria-hidden="true"></i></span>
+            <h5>Soft-Shell</h5>
+            <span>Ballistic Nylon Weave</span>
           </a>
 
-          <a href="services.html?category=travel-backpacks" class="card p-3 text-center hover-lift" style="text-decoration:none;">
-            <i class="fa-solid fa-vest-patches text-gold mb-2" style="font-size: 1.75rem;"></i>
-            <h5 class="font-serif mb-1 text-white">Travel Backpacks</h5>
-            <span class="text-xs text-secondary">Weekender Packs</span>
+          <a href="services.html?category=travel-backpacks" class="smap-cat-card reveal">
+            <span class="smap-cat-num">06</span>
+            <span class="smap-icon-box"><i class="fa-solid fa-vest-patches" aria-hidden="true"></i></span>
+            <h5>Travel Backpacks</h5>
+            <span>Weekender Packs</span>
           </a>
 
-          <a href="services.html?category=duffel-bags" class="card p-3 text-center hover-lift" style="text-decoration:none;">
-            <i class="fa-solid fa-briefcase text-gold mb-2" style="font-size: 1.75rem;"></i>
-            <h5 class="font-serif mb-1 text-white">Duffel Bags</h5>
-            <span class="text-xs text-secondary">Water-Resistant Weekenders</span>
+          <a href="services.html?category=duffel-bags" class="smap-cat-card reveal">
+            <span class="smap-cat-num">07</span>
+            <span class="smap-icon-box"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span>
+            <h5>Duffel Bags</h5>
+            <span>Water-Resistant Weekenders</span>
           </a>
 
-          <a href="services.html?category=business-bags" class="card p-3 text-center hover-lift" style="text-decoration:none;">
-            <i class="fa-solid fa-business-time text-gold mb-2" style="font-size: 1.75rem;"></i>
-            <h5 class="font-serif mb-1 text-white">Business Bags</h5>
-            <span class="text-xs text-secondary">Executive Organizers</span>
+          <a href="services.html?category=business-bags" class="smap-cat-card reveal">
+            <span class="smap-cat-num">08</span>
+            <span class="smap-icon-box"><i class="fa-solid fa-business-time" aria-hidden="true"></i></span>
+            <h5>Business Bags</h5>
+            <span>Executive Organizers</span>
           </a>
 
-          <a href="services.html?category=laptop-bags" class="card p-3 text-center hover-lift" style="text-decoration:none;">
-            <i class="fa-solid fa-laptop text-gold mb-2" style="font-size: 1.75rem;"></i>
-            <h5 class="font-serif mb-1 text-white">Laptop Bags</h5>
-            <span class="text-xs text-secondary">Padded 16" Sleeves</span>
+          <a href="services.html?category=laptop-bags" class="smap-cat-card reveal">
+            <span class="smap-cat-num">09</span>
+            <span class="smap-icon-box"><i class="fa-solid fa-laptop" aria-hidden="true"></i></span>
+            <h5>Laptop Bags</h5>
+            <span>Padded 16" Sleeves</span>
           </a>
 
-          <a href="services.html?category=travel-accessories" class="card p-3 text-center hover-lift" style="text-decoration:none;">
-            <i class="fa-solid fa-tag text-gold mb-2" style="font-size: 1.75rem;"></i>
-            <h5 class="font-serif mb-1 text-white">Travel Accessories</h5>
-            <span class="text-xs text-secondary">Compression Cubes &amp; Locks</span>
+          <a href="services.html?category=travel-accessories" class="smap-cat-card reveal">
+            <span class="smap-cat-num">10</span>
+            <span class="smap-icon-box"><i class="fa-solid fa-tag" aria-hidden="true"></i></span>
+            <h5>Travel Accessories</h5>
+            <span>Compression Cubes &amp; Locks</span>
           </a>
         </div>
       </div>
@@ -272,32 +355,50 @@
          ============================================================ -->
     <section class="section section-offwhite" id="care-warranty-directory">
       <div class="container">
-        <div class="section-header text-center max-w-700 mx-auto mb-5 reveal">
+        <div class="section-header centered reveal">
           <span class="section-label">Lifecycle Protection &amp; After-Sales</span>
-          <h2 class="font-serif">Warranty &amp; Repair Infrastructure</h2>
-          <p>Integrated directly within our Services experience to keep your travel gear in peak flying condition.</p>
+          <h2 class="section-title">Warranty &amp; Repair Infrastructure</h2>
+          <p class="section-subtitle">Integrated directly within our Services experience to keep your travel gear in peak flying condition.</p>
         </div>
 
-        <div class="grid cols-3 gap-4">
-          <div class="card p-4 reveal">
-            <i class="fa-solid fa-certificate text-gold mb-2" style="font-size: 1.5rem;"></i>
-            <h4 class="font-serif mb-2">Warranty Claim Protocol</h4>
-            <p class="text-sm text-secondary mb-3">Coverage for structural shell cracks, broken handles, zipper teeth malfunction, and defective TSA locks.</p>
-            <a href="services.html#warranty-protection" class="btn btn-outline btn-sm">Review Warranty &rarr;</a>
+        <div class="grid cols-3 gap-3">
+          <div class="smap-portal-card reveal">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-certificate" aria-hidden="true"></i></span>
+              <span class="smap-card-code">CARE-01</span>
+            </div>
+            <h4>Warranty Claim Protocol</h4>
+            <p>Coverage for structural shell cracks, broken handles, zipper teeth malfunction, and defective TSA locks.</p>
+            <a href="services.html#warranty-protection" class="btn btn-outline btn-sm smap-btn-arrow">
+              <span>Review Warranty</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
 
-          <div class="card p-4 reveal">
-            <i class="fa-solid fa-screwdriver-wrench text-gold mb-2" style="font-size: 1.5rem;"></i>
-            <h4 class="font-serif mb-2">Hinomoto Wheel Replacements</h4>
-            <p class="text-sm text-secondary mb-3">Genuine Japanese Hinomoto 360 caster wheel assemblies and axle bolt kits dispatched globally.</p>
-            <a href="services.html#repair-services" class="btn btn-outline btn-sm">Request Spare Parts &rarr;</a>
+          <div class="smap-portal-card reveal reveal-delay-1">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></span>
+              <span class="smap-card-code">CARE-02</span>
+            </div>
+            <h4>Hinomoto Wheel Replacements</h4>
+            <p>Genuine Japanese Hinomoto 360 caster wheel assemblies and axle bolt kits dispatched globally.</p>
+            <a href="services.html#repair-services" class="btn btn-outline btn-sm smap-btn-arrow">
+              <span>Request Spare Parts</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
 
-          <div class="card p-4 reveal">
-            <i class="fa-solid fa-shield-cat text-gold mb-2" style="font-size: 1.5rem;"></i>
-            <h4 class="font-serif mb-2">Lock &amp; Zipper Servicing</h4>
-            <p class="text-sm text-secondary mb-3">Guidance for TSA 007 combination resets, slider replacements, and airport security inspection damage assessment.</p>
-            <a href="services.html#repair-services" class="btn btn-outline btn-sm">Get Lock Support &rarr;</a>
+          <div class="smap-portal-card reveal reveal-delay-2">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-shield-cat" aria-hidden="true"></i></span>
+              <span class="smap-card-code">CARE-03</span>
+            </div>
+            <h4>Lock &amp; Zipper Servicing</h4>
+            <p>Guidance for TSA 007 combination resets, slider replacements, and airport security inspection damage assessment.</p>
+            <a href="services.html#repair-services" class="btn btn-outline btn-sm smap-btn-arrow">
+              <span>Get Lock Support</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -306,37 +407,49 @@
     <!-- ============================================================
          SECTION 5: SYSTEM DIRECTORIES & LEGAL
          ============================================================ -->
-    <section class="section" id="system-directories">
+    <section class="section section-card" id="system-directories">
       <div class="container">
-        <div class="section-header text-center max-w-700 mx-auto mb-5 reveal">
+        <div class="section-header centered reveal">
           <span class="section-label">Compliance &amp; System Utilities</span>
-          <h2 class="font-serif">Legal &amp; System Architecture</h2>
-          <p>Transparent agreements, pricing hierarchies, and operational status pages.</p>
+          <h2 class="section-title">Legal &amp; System Architecture</h2>
+          <p class="section-subtitle">Transparent agreements, pricing hierarchies, and operational status pages.</p>
         </div>
 
-        <div class="grid cols-4 gap-4">
-          <div class="card p-4 reveal">
-            <i class="fa-solid fa-tags text-gold mb-2" style="font-size: 1.25rem;"></i>
-            <h5 class="font-serif mb-1"><a href="pricing.html" class="text-white hover-gold">Pricing &amp; Sets</a></h5>
-            <p class="text-xs text-secondary">Complete tiered breakdown of individual luggage, sets, and special offers.</p>
+        <div class="grid cols-4 gap-3">
+          <div class="smap-util-card reveal">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-tags" aria-hidden="true"></i></span>
+              <span class="smap-card-code">SYS-01</span>
+            </div>
+            <h5><a href="pricing.html" class="smap-title-link">Pricing &amp; Sets</a></h5>
+            <p>Complete tiered breakdown of individual luggage, sets, and special offers.</p>
           </div>
 
-          <div class="card p-4 reveal">
-            <i class="fa-solid fa-scale-balanced text-gold mb-2" style="font-size: 1.25rem;"></i>
-            <h5 class="font-serif mb-1"><a href="terms.html" class="text-white hover-gold">Terms of Service</a></h5>
-            <p class="text-xs text-secondary">Customer agreements, simulated checkout processing, and shipping terms.</p>
+          <div class="smap-util-card reveal reveal-delay-1">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span>
+              <span class="smap-card-code">SYS-02</span>
+            </div>
+            <h5><a href="terms.html" class="smap-title-link">Terms of Service</a></h5>
+            <p>Customer agreements, simulated checkout processing, and shipping terms.</p>
           </div>
 
-          <div class="card p-4 reveal">
-            <i class="fa-solid fa-user-shield text-gold mb-2" style="font-size: 1.25rem;"></i>
-            <h5 class="font-serif mb-1"><a href="privacy.html" class="text-white hover-gold">Privacy Policy</a></h5>
-            <p class="text-xs text-secondary">GDPR/CCPA compliance, cookies, and local data persistence standards.</p>
+          <div class="smap-util-card reveal reveal-delay-2">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-user-shield" aria-hidden="true"></i></span>
+              <span class="smap-card-code">SYS-03</span>
+            </div>
+            <h5><a href="privacy.html" class="smap-title-link">Privacy Policy</a></h5>
+            <p>GDPR/CCPA compliance, cookies, and local data persistence standards.</p>
           </div>
 
-          <div class="card p-4 reveal">
-            <i class="fa-solid fa-wrench text-gold mb-2" style="font-size: 1.25rem;"></i>
-            <h5 class="font-serif mb-1"><a href="maintenance.html" class="text-white hover-gold">Fleet Maintenance</a></h5>
-            <p class="text-xs text-secondary">Real-time system calibration status, countdown timer, and vector telemetry.</p>
+          <div class="smap-util-card reveal reveal-delay-3">
+            <div class="smap-card-top">
+              <span class="smap-icon-box"><i class="fa-solid fa-wrench" aria-hidden="true"></i></span>
+              <span class="smap-card-code">SYS-04</span>
+            </div>
+            <h5><a href="maintenance.html" class="smap-title-link">Fleet Maintenance</a></h5>
+            <p>Real-time system calibration status, countdown timer, and vector telemetry.</p>
           </div>
         </div>
       </div>
@@ -345,17 +458,24 @@
     <!-- ============================================================
          SECTION 6: CONCIERGE NAVIGATION CTA
          ============================================================ -->
-    <section class="section section-navy" id="sitemap-cta">
-      <div class="container text-center max-w-700 mx-auto reveal">
-        <div class="text-gold mb-3" style="font-size: 2.5rem;"><i class="fa-solid fa-headset"></i></div>
-        <span class="section-label">AeroPack Concierge Team</span>
-        <h2 class="font-serif text-white mb-3">Cannot Find Your Desired Destination?</h2>
-        <p class="text-secondary mb-4" style="font-size: 1.05rem;">
-          Our 24/7 dedicated travel concierge is ready to guide you to the exact luggage dimensions, airline compatibility standards, or repair parts your voyage requires.
-        </p>
-        <div class="flex justify-center gap-3">
-          <a href="services.html" class="btn btn-gold"><i class="fa-solid fa-bag-shopping mr-1"></i> Browse All Luggage</a>
-          <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-envelope mr-1"></i> Contact Concierge</a>
+    <section class="section section-offwhite" id="sitemap-cta">
+      <div class="container">
+        <div class="cta-banner leg-cta-maison reveal">
+          <span class="smap-hero-pill">
+            <i class="fa-solid fa-headset" aria-hidden="true"></i> AeroPack Concierge Team
+          </span>
+          <h2 class="text-white mb-2 font-serif">Cannot Find Your <span class="smap-hero-accent">Desired Destination?</span></h2>
+          <p class="mb-4 leg-cta-subtitle">
+            Our 24/7 dedicated travel concierge is ready to guide you to the exact luggage dimensions, airline compatibility standards, or repair parts your voyage requires.
+          </p>
+          <div class="cta-banner-actions">
+            <a href="services.html" class="btn btn-gold smap-btn-primary">
+              <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Browse All Luggage
+            </a>
+            <a href="contact.html" class="btn btn-outline-white smap-btn-primary">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Concierge
+            </a>
+          </div>
         </div>
       </div>
     </section>

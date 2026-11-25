@@ -8,6 +8,13 @@
 
   // All pages except index.html live in /pages
   const PAGES_BASE = window.location.pathname.replace(/\\/g, '/').includes('/pages/') ? '' : 'pages/';
+  const ASSETS_BASE = window.location.pathname.replace(/\\/g, '/').includes('/pages/') ? '../' : '';
+
+  function resolveAssetPath(src) {
+    if (!src) return '';
+    if (/^(https?:|data:|\/|\.\.\/)/i.test(src)) return src;
+    return ASSETS_BASE + src;
+  }
 
   // ── 1. GLOBAL STATE & LOCAL STORAGE ────────────────────────
   const STATE = {
@@ -200,7 +207,7 @@
         cartList.innerHTML = STATE.cart.map((item, index) => `
           <div class="cart-item">
             <div class="cart-item-img">
-              <img src="${item.image}" alt="${item.name}">
+              <img src="${resolveAssetPath(item.image)}" alt="${item.name}">
             </div>
             <div class="cart-item-info">
               <div class="cart-item-name">${item.name}</div>
@@ -635,13 +642,13 @@
     container.innerHTML = filtered.map(product => `
       <div class="product-card reveal visible">
         <div class="product-card-image">
-          <img src="${product.image}" alt="${product.name}" loading="lazy">
+          <img src="${resolveAssetPath(product.image)}" alt="${product.name}" loading="lazy">
           <div class="product-badges">
             <span class="badge badge-${product.badgeType}">${product.badge}</span>
           </div>
           <div class="product-actions">
             <button class="action-btn wishlist-btn" data-wishlist-id="${product.id}" onclick="toggleWishlist('${product.id}')" title="Save to wishlist" aria-label="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
-            <button class="action-btn" onclick="openLightbox('${product.image}')" title="Zoom image" aria-label="View photo"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            <button class="action-btn" onclick="openLightbox('${resolveAssetPath(product.image)}')" title="Zoom image" aria-label="View photo"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
           </div>
         </div>
         <div class="product-card-body">
@@ -650,7 +657,7 @@
             <a href="${PAGES_BASE}service-details.html?id=${product.id}">${product.name}</a>
           </h3>
           <div class="product-rating">
-            <span class="stars">★★★★★</span>
+            <span class="stars-fa" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
             <span class="rating-count">(${product.reviewsCount})</span>
           </div>
           <div class="product-colors">

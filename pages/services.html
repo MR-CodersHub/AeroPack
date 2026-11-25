@@ -103,31 +103,67 @@
     </div>
   </div>
 
-  <main class="page-content">
+  <main class="page-content svc-maison-page">
 
     <!-- ============================================================
-         SECTION 1: SHOP HERO
+         SECTION 1: ATELIER SHOP & CONCIERGE HERO
          ============================================================ -->
-    <section class="page-hero" id="shop-hero">
+    <section class="page-hero svc-hero" id="shop-hero">
       <div class="page-hero-bg">
-        <img src="../images/hero-services.jpg" alt="">
+        <img src="../images/hero-services.jpg" alt="AeroPack luggage trio staged at an international terminal apron">
       </div>
-      <div class="page-hero-overlay"></div>
-      <div class="hero-side-image page-hero-side-image" aria-hidden="true">
-        <img src="../images/hero-services-side.jpg" alt="">
-      </div>
-      <div class="container page-hero-content">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a> &gt; <span>Shop Luggage &amp; Travel Essentials</span>
-        </nav>
-        <span class="section-label">AeroPack Collections &amp; After-Sales</span>
-        <h1>Find the Perfect Travel Companion</h1>
-        <p>
-          Discover precision luggage engineered for effortless transit across global terminals. Explore full specifications, responsive catalog filters, certified product warranty, and dedicated luggage repair support.
-        </p>
-        <div class="mt-3">
-          <a href="#all-products" class="btn btn-gold">Explore Products &darr;</a>
-          <a href="#warranty-protection" class="btn btn-outline-white ms-2">Warranty &amp; Repairs</a>
+      <div class="page-hero-overlay svc-hero-overlay"></div>
+
+      <div class="container svc-hero-container">
+        <div class="svc-hero-grid">
+          <div class="svc-hero-copy">
+            <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+              <a href="../index.html">Home</a> <i class="fa-solid fa-chevron-right" aria-hidden="true"></i> <span>Shop Luggage &amp; Essentials</span>
+            </nav>
+            <div class="svc-hero-pill">
+              <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+              <span>Atelier Storefront &amp; After-Sales</span>
+            </div>
+            <h1>Find the <span class="svc-hero-accent">Perfect Companion</span></h1>
+            <p class="svc-hero-lead">
+              Discover precision luggage engineered for effortless transit across global terminals. Explore live catalog filtering, certified warranty protection, and component-level restoration care.
+            </p>
+            <div class="svc-hero-actions">
+              <a href="#all-products" class="btn btn-gold btn-lg svc-btn-primary">
+                <span>Explore Catalog</span>
+                <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+              </a>
+              <a href="#warranty-protection" class="btn btn-outline-white btn-lg">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                <span>Warranty &amp; Repairs</span>
+              </a>
+            </div>
+            <div class="svc-hero-metrics" aria-label="Storefront Specifications">
+              <div class="svc-metric-item">
+                <strong>12</strong>
+                <span>Signature Editions</span>
+              </div>
+              <div class="svc-metric-item">
+                <strong>10</strong>
+                <span>Travel Categories</span>
+              </div>
+              <div class="svc-metric-item">
+                <strong>5-Yr</strong>
+                <span>Shell Protection</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-hero-media-col">
+            <div class="svc-hero-frame">
+              <img src="../images/hero-services-side.jpg" alt="Studio architectural stack of AeroPack hard-shell luggage">
+              <div class="svc-frame-scrim"></div>
+              <div class="svc-frame-caption">
+                <span class="svc-frame-kicker">Atelier Catalog</span>
+                <strong>Ready for Global Dispatch</strong>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -135,52 +171,52 @@
     <!-- ============================================================
          SECTION 2: SHOP BY PRODUCT TYPE (10 Category Cards)
          ============================================================ -->
-    <section class="section section-offwhite" id="shop-by-type">
+    <section class="section section-offwhite svc-console-section" id="shop-by-type">
       <div class="container">
-        <div class="console-header reveal">
+        <div class="console-header svc-console-header reveal">
           <div>
             <span class="section-label">Comprehensive Lineup</span>
             <h2 class="section-title">Shop by Product Type</h2>
             <p class="section-subtitle">
-              Select a specialized category to instantly filter matching travel gear on this page without reloading.
+              Select any specialized category below to filter matching travel gear instantaneously without reloading.
             </p>
           </div>
           <div class="console-count"><strong>10</strong><span>curated categories</span></div>
         </div>
 
         <div class="console-grid">
-          <button type="button" class="console-card reveal" onclick="filterByCategory('cabin-luggage')" aria-label="Filter by Cabin Luggage">
-            <span class="console-card-media"><img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy"></span>
+          <button type="button" class="console-card svc-console-card reveal" onclick="filterByCategory('cabin-luggage')" aria-label="Filter by Cabin Luggage">
+            <span class="console-card-media"><img src="../images/category-services-cabin.jpg" alt="Cabin Luggage" loading="lazy"></span>
             <span class="console-card-body">
               <span class="console-card-top">
                 <span class="console-card-icon"><i class="fa-solid fa-suitcase-rolling"></i></span>
-                <span class="console-card-tag">Cabin</span>
+                <span class="console-card-tag">01 &bull; Cabin</span>
               </span>
               <span class="console-card-title">Cabin Luggage</span>
-              <span class="console-card-desc">Overhead compliant 20"-21" spinners.</span>
+              <span class="console-card-desc">Overhead compliant 20&quot;&ndash;21&quot; spinners.</span>
               <span class="console-card-action">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </span>
           </button>
 
-          <button type="button" class="console-card reveal reveal-delay-1" onclick="filterByCategory('checkin-suitcases')" aria-label="Filter by Check-in Suitcases">
-            <span class="console-card-media"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy"></span>
+          <button type="button" class="console-card svc-console-card reveal reveal-delay-1" onclick="filterByCategory('checkin-suitcases')" aria-label="Filter by Check-in Suitcases">
+            <span class="console-card-media"><img src="../images/category-services-checkin.jpg" alt="Check-in Suitcases" loading="lazy"></span>
             <span class="console-card-body">
               <span class="console-card-top">
                 <span class="console-card-icon"><i class="fa-solid fa-suitcase"></i></span>
-                <span class="console-card-tag">Check-in</span>
+                <span class="console-card-tag">02 &bull; Check-in</span>
               </span>
               <span class="console-card-title">Check-in Suitcases</span>
-              <span class="console-card-desc">Medium 24" &amp; Large 28" trunks.</span>
+              <span class="console-card-desc">Medium 24&quot; &amp; Large 28&quot; trunks.</span>
               <span class="console-card-action">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </span>
           </button>
 
-          <button type="button" class="console-card reveal reveal-delay-2" onclick="filterByCategory('luggage-sets')" aria-label="Filter by Luggage Sets">
-            <span class="console-card-media"><img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy"></span>
+          <button type="button" class="console-card svc-console-card reveal reveal-delay-2" onclick="filterByCategory('luggage-sets')" aria-label="Filter by Luggage Sets">
+            <span class="console-card-media"><img src="../images/category-services-sets.jpg" alt="Luggage Sets" loading="lazy"></span>
             <span class="console-card-body">
               <span class="console-card-top">
-                <span class="console-card-icon"><i class="fa-solid fa-clipboard-list"></i></span>
-                <span class="console-card-tag">Sets</span>
+                <span class="console-card-icon"><i class="fa-solid fa-cubes-stacked"></i></span>
+                <span class="console-card-tag">03 &bull; Sets</span>
               </span>
               <span class="console-card-title">Luggage Sets</span>
               <span class="console-card-desc">2-piece and 3-piece nested collections.</span>
@@ -188,12 +224,12 @@
             </span>
           </button>
 
-          <button type="button" class="console-card reveal reveal-delay-3" onclick="filterByCategory('cabin-luggage')" aria-label="Filter by Hard-Shell Suitcases">
-            <span class="console-card-media"><img src="https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy"></span>
+          <button type="button" class="console-card svc-console-card reveal reveal-delay-3" onclick="filterByCategory('cabin-luggage')" aria-label="Filter by Hard-Shell Suitcases">
+            <span class="console-card-media"><img src="../images/category-services-hard-shell.jpg" alt="Hard-Shell Suitcases" loading="lazy"></span>
             <span class="console-card-body">
               <span class="console-card-top">
                 <span class="console-card-icon"><i class="fa-solid fa-shield-halved"></i></span>
-                <span class="console-card-tag">Shell</span>
+                <span class="console-card-tag">04 &bull; Shell</span>
               </span>
               <span class="console-card-title">Hard-Shell Suitcases</span>
               <span class="console-card-desc">Aerospace polycarbonate shells.</span>
@@ -201,12 +237,12 @@
             </span>
           </button>
 
-          <button type="button" class="console-card reveal" onclick="filterByCategory('soft-shell-suitcases')" aria-label="Filter by Soft-Shell Suitcases">
-            <span class="console-card-media"><img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy"></span>
+          <button type="button" class="console-card svc-console-card reveal" onclick="filterByCategory('soft-shell-suitcases')" aria-label="Filter by Soft-Shell Suitcases">
+            <span class="console-card-media"><img src="../images/category-services-soft-shell.jpg" alt="Soft-Shell Suitcases" loading="lazy"></span>
             <span class="console-card-body">
               <span class="console-card-top">
                 <span class="console-card-icon"><i class="fa-solid fa-folder-open"></i></span>
-                <span class="console-card-tag">Soft</span>
+                <span class="console-card-tag">05 &bull; Soft</span>
               </span>
               <span class="console-card-title">Soft-Shell Suitcases</span>
               <span class="console-card-desc">High-tenacity ballistic dobby fabric.</span>
@@ -214,25 +250,25 @@
             </span>
           </button>
 
-          <button type="button" class="console-card reveal reveal-delay-1" onclick="filterByCategory('travel-backpacks')" aria-label="Filter by Travel Backpacks">
-            <span class="console-card-media"><img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy"></span>
+          <button type="button" class="console-card svc-console-card reveal reveal-delay-1" onclick="filterByCategory('travel-backpacks')" aria-label="Filter by Travel Backpacks">
+            <span class="console-card-media"><img src="../images/category-services-packs.jpg" alt="Travel Backpacks" loading="lazy"></span>
             <span class="console-card-body">
               <span class="console-card-top">
                 <span class="console-card-icon"><i class="fa-solid fa-bag-shopping"></i></span>
-                <span class="console-card-tag">Packs</span>
+                <span class="console-card-tag">06 &bull; Packs</span>
               </span>
               <span class="console-card-title">Travel Backpacks</span>
-              <span class="console-card-desc">180° clamshell one-bag packs.</span>
+              <span class="console-card-desc">180&deg; clamshell one-bag packs.</span>
               <span class="console-card-action">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </span>
           </button>
 
-          <button type="button" class="console-card reveal reveal-delay-2" onclick="filterByCategory('duffel-bags')" aria-label="Filter by Duffel Bags">
-            <span class="console-card-media"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy"></span>
+          <button type="button" class="console-card svc-console-card reveal reveal-delay-2" onclick="filterByCategory('duffel-bags')" aria-label="Filter by Duffel Bags">
+            <span class="console-card-media"><img src="../images/category-services-duffel.jpg" alt="Duffel Bags" loading="lazy"></span>
             <span class="console-card-body">
               <span class="console-card-top">
                 <span class="console-card-icon"><i class="fa-solid fa-box"></i></span>
-                <span class="console-card-tag">Weekender</span>
+                <span class="console-card-tag">07 &bull; Weekender</span>
               </span>
               <span class="console-card-title">Duffel Bags</span>
               <span class="console-card-desc">Waterproof weekender bags &amp; shoe bays.</span>
@@ -240,12 +276,12 @@
             </span>
           </button>
 
-          <button type="button" class="console-card reveal reveal-delay-3" onclick="filterByCategory('business-bags')" aria-label="Filter by Business Bags">
-            <span class="console-card-media"><img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy"></span>
+          <button type="button" class="console-card svc-console-card reveal reveal-delay-3" onclick="filterByCategory('business-bags')" aria-label="Filter by Business Bags">
+            <span class="console-card-media"><img src="../images/category-services-business.jpg" alt="Business Bags" loading="lazy"></span>
             <span class="console-card-body">
               <span class="console-card-top">
                 <span class="console-card-icon"><i class="fa-solid fa-briefcase"></i></span>
-                <span class="console-card-tag">Business</span>
+                <span class="console-card-tag">08 &bull; Business</span>
               </span>
               <span class="console-card-title">Business Bags</span>
               <span class="console-card-desc">Leather briefcases with trolley pass-through.</span>
@@ -253,25 +289,25 @@
             </span>
           </button>
 
-          <button type="button" class="console-card reveal" onclick="filterByCategory('business-bags')" aria-label="Filter by Laptop Bags">
-            <span class="console-card-media"><img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy"></span>
+          <button type="button" class="console-card svc-console-card reveal" onclick="filterByCategory('business-bags')" aria-label="Filter by Laptop Bags">
+            <span class="console-card-media"><img src="../images/category-services-laptop.jpg" alt="Laptop Bags" loading="lazy"></span>
             <span class="console-card-body">
               <span class="console-card-top">
-                <span class="console-card-icon"><i class="fa-solid fa-briefcase"></i></span>
-                <span class="console-card-tag">Tech</span>
+                <span class="console-card-icon"><i class="fa-solid fa-laptop"></i></span>
+                <span class="console-card-tag">09 &bull; Tech</span>
               </span>
               <span class="console-card-title">Laptop Bags</span>
-              <span class="console-card-desc">Padded tech vaults for 15.6" &amp; 16" devices.</span>
+              <span class="console-card-desc">Padded tech vaults for 15.6&quot; &amp; 16&quot; devices.</span>
               <span class="console-card-action">Filter now <i class="fa-solid fa-arrow-right"></i></span>
             </span>
           </button>
 
-          <button type="button" class="console-card reveal reveal-delay-1" onclick="filterByCategory('travel-accessories')" aria-label="Filter by Travel Accessories">
-            <span class="console-card-media"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy"></span>
+          <button type="button" class="console-card svc-console-card reveal reveal-delay-1" onclick="filterByCategory('travel-accessories')" aria-label="Filter by Travel Accessories">
+            <span class="console-card-media"><img src="../images/category-services-accessories.jpg" alt="Travel Accessories" loading="lazy"></span>
             <span class="console-card-body">
               <span class="console-card-top">
                 <span class="console-card-icon"><i class="fa-solid fa-lock"></i></span>
-                <span class="console-card-tag">Essentials</span>
+                <span class="console-card-tag">10 &bull; Essentials</span>
               </span>
               <span class="console-card-title">Travel Accessories</span>
               <span class="console-card-desc">Compression cubes, locks, and tech folios.</span>
@@ -285,18 +321,18 @@
     <!-- ============================================================
          SECTION 3: ALL PRODUCTS (Responsive Grid with Vanilla JS Filters)
          ============================================================ -->
-    <section class="section section-card" id="all-products">
+    <section class="section section-card svc-catalog-section" id="all-products">
       <div class="container">
         <div class="section-header">
           <span class="section-label">Real-Time Catalog</span>
           <h2 class="section-title">All Products &amp; Travel Collections</h2>
           <p class="section-subtitle">
-            Filter by category, material, luggage dimensions, and price. All product interactions are powered natively using Vanilla JavaScript.
+            Refine our complete travel collection by category, shell architecture, cabin size, and investment tier.
           </p>
         </div>
 
         <!-- Filter Controls Bar -->
-        <div class="shop-controls">
+        <div class="shop-controls svc-shop-controls">
           <div class="shop-search">
             <span class="shop-search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
             <input type="text" id="filter-search" placeholder="Search luggage by name, feature, or material..." aria-label="Search travel products">
@@ -309,15 +345,15 @@
               <option value="rating">Highest Customer Rating</option>
             </select>
           </div>
-          <div class="shop-results-count" id="catalog-count">Showing 12 travel products</div>
+          <div class="shop-results-count svc-results-pill" id="catalog-count">Showing 12 travel products</div>
         </div>
 
         <!-- Main Shop Layout -->
         <div class="shop-layout">
           <!-- Filter Sidebar -->
-          <aside class="filter-panel">
+          <aside class="filter-panel svc-filter-panel">
             <form id="shop-filter-form" onsubmit="event.preventDefault();">
-              <div class="filter-title">Filter Catalog</div>
+              <div class="filter-title">Refine Collection</div>
 
               <!-- Category Filter -->
               <div class="filter-section">
@@ -392,7 +428,7 @@
                 </div>
                 <div class="filter-option">
                   <input type="checkbox" id="sz-checkin" name="size" value="Check-in">
-                  <label for="sz-checkin">Check-in (24"-28")</label>
+                  <label for="sz-checkin">Check-in (24&quot;&ndash;28&quot;)</label>
                 </div>
                 <div class="filter-option">
                   <input type="checkbox" id="sz-set" name="size" value="Piece">
@@ -419,12 +455,12 @@
          ============================================================ -->
     <section class="section section-offwhite" id="warranty-protection">
       <div class="container">
-        <div class="warranty-header reveal">
+        <div class="warranty-header svc-warranty-header reveal">
           <div>
             <span class="section-label">Certified Protection</span>
             <h2 class="section-title">Warranty &amp; Product Protection</h2>
             <p class="section-subtitle">
-              Our warranty coverage depends on the specific product line and its stated warranty terms. We ensure transparent support for genuine manufacturing defects throughout the specified period.
+              Our warranty coverage reflects each product line&rsquo;s engineering tier, ensuring transparent support for manufacturing craftsmanship throughout the covered period.
             </p>
           </div>
           <div class="warranty-badge">
@@ -495,55 +531,76 @@
     <!-- ============================================================
          SECTION 5: LUGGAGE REPAIR & AFTER-SALES SERVICES
          ============================================================ -->
-    <section class="section section-dark" id="repair-services">
-      <div class="container">
+    <section class="section section-dark svc-repair-section" id="repair-services">
+      <div class="container svc-repair-container">
         <div class="repair-layout">
-          <aside class="repair-intro reveal">
+          <aside class="repair-intro svc-repair-intro reveal">
             <span class="section-label">Restoration &amp; Maintenance</span>
             <h2 class="section-title">Luggage Repair &amp; After-Sales Services</h2>
             <p class="section-subtitle">
-              Extend the lifespan of your luggage with component-level assessment and certified part replacement guidance.
+              Extend the lifespan of your luggage with component-level assessment and certified replacement part guidance.
             </p>
             <div class="repair-note">
               <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
-              <span>All repair services are subject to physical component assessment and actual service parts availability.</span>
+              <span>All repair services are subject to physical component assessment and authentic replacement part availability.</span>
             </div>
-            <a href="contact.html?type=repair" class="btn btn-gold btn-lg">Submit a Repair Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="contact.html?type=repair" class="btn btn-gold btn-lg hero-btn-primary">
+              <span>Submit a Repair Enquiry</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
           </aside>
 
           <div class="repair-grid">
-            <article class="repair-card reveal">
-              <span class="repair-icon"><i class="fa-solid fa-gear"></i></span>
+            <article class="repair-card svc-repair-card reveal">
+              <div class="svc-repair-top">
+                <span class="svc-repair-code">SRV-01</span>
+                <span class="repair-icon"><i class="fa-solid fa-gear"></i></span>
+              </div>
               <h4>Wheel Replacement Enquiries</h4>
               <p>Inquire about replacement Hinomoto dual-bearing spinner wheel modules and caster assemblies compatible with your specific generation.</p>
             </article>
 
-            <article class="repair-card reveal reveal-delay-1">
-              <span class="repair-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+            <article class="repair-card svc-repair-card reveal reveal-delay-1">
+              <div class="svc-repair-top">
+                <span class="svc-repair-code">SRV-02</span>
+                <span class="repair-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+              </div>
               <h4>Handle Repair Enquiries</h4>
               <p>Telescopic pull-handle tube realignments, button release lock servicing, and top/side cushioned carry handle replacements.</p>
             </article>
 
-            <article class="repair-card reveal reveal-delay-2">
-              <span class="repair-icon"><i class="fa-solid fa-link"></i></span>
+            <article class="repair-card svc-repair-card reveal reveal-delay-2">
+              <div class="svc-repair-top">
+                <span class="svc-repair-code">SRV-03</span>
+                <span class="repair-icon"><i class="fa-solid fa-link"></i></span>
+              </div>
               <h4>Zipper Repair Enquiries</h4>
               <p>Assessment of damaged reverse-coil zipper teeth, slider replacements, and puller cord re-attachments for weather-sealed models.</p>
             </article>
 
-            <article class="repair-card reveal reveal-delay-3">
-              <span class="repair-icon"><i class="fa-solid fa-lock"></i></span>
+            <article class="repair-card svc-repair-card reveal reveal-delay-3">
+              <div class="svc-repair-top">
+                <span class="svc-repair-code">SRV-04</span>
+                <span class="repair-icon"><i class="fa-solid fa-lock"></i></span>
+              </div>
               <h4>Lock-Related Support</h4>
               <p>Guidance for resetting TSA 3-digit combination locks, key cylinder evaluations, and replacement recessed lock housings.</p>
             </article>
 
-            <article class="repair-card reveal">
-              <span class="repair-icon"><i class="fa-solid fa-clipboard-check"></i></span>
+            <article class="repair-card svc-repair-card reveal">
+              <div class="svc-repair-top">
+                <span class="svc-repair-code">SRV-05</span>
+                <span class="repair-icon"><i class="fa-solid fa-clipboard-check"></i></span>
+              </div>
               <h4>Shell &amp; Fabric Assessment</h4>
               <p>Technical evaluation of exterior polycarbonate impact depressions or ballistic weave fabric tears to determine structural repairability.</p>
             </article>
 
-            <article class="repair-card reveal reveal-delay-1">
-              <span class="repair-icon"><i class="fa-solid fa-wrench"></i></span>
+            <article class="repair-card svc-repair-card reveal reveal-delay-1">
+              <div class="svc-repair-top">
+                <span class="svc-repair-code">SRV-06</span>
+                <span class="repair-icon"><i class="fa-solid fa-wrench"></i></span>
+              </div>
               <h4>Spare Parts &amp; Self-Repair Kits</h4>
               <p>Request authentic screws, interior compression straps, and modular caster parts for straightforward home installation.</p>
             </article>
@@ -557,15 +614,29 @@
          ============================================================ -->
     <section class="section section-offwhite" id="shop-support-cta">
       <div class="container">
-        <div class="cta-banner reveal">
-          <span class="section-label" style="color: var(--muted-gold);">Complete Travel Care</span>
-          <h2 class="text-white mb-2 font-serif">Ready to Voyage With Complete Confidence?</h2>
-          <p class="mb-4" style="max-width: 62ch; margin-inline: auto;">
-            Shop our premium luggage collections, or speak directly with our concierge team regarding model specifications, replacement parts, and warranty verification.
+        <div class="cta-banner svc-cta-maison reveal">
+          <div class="about-cta-eyebrow">
+            <i class="fa-solid fa-compass" aria-hidden="true"></i>
+            <span>Complete Travel Care</span>
+          </div>
+          <h2 class="text-white mb-2 font-serif">Ready to Voyage With <span class="about-cta-accent">Complete Confidence?</span></h2>
+          <p class="about-cta-desc">
+            Shop our flagship luggage collections or speak directly with our concierge team regarding model sizing, replacement parts, and warranty verification.
           </p>
+          <div class="about-cta-seals" aria-label="Service Standards">
+            <span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 5-Year Shell Coverage</span>
+            <span><i class="fa-solid fa-truck-fast" aria-hidden="true"></i> Same-Day Dispatch</span>
+            <span><i class="fa-solid fa-headset" aria-hidden="true"></i> Dedicated Parts Support</span>
+          </div>
           <div class="cta-banner-actions">
-            <a href="#all-products" class="btn btn-gold btn-lg">Explore Luggage &rarr;</a>
-            <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Support &amp; Enquiries</a>
+            <a href="#all-products" class="btn btn-gold btn-lg hero-btn-primary">
+              <span>Explore Luggage</span>
+              <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+            </a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span>Contact Support &amp; Enquiries</span>
+            </a>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-theme="light">
+<html lang="en" dir="ltr" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,45 +12,70 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
-<body style="background: var(--midnight-navy); color: var(--white); min-height: 100vh; display: flex; flex-direction: column;">
+<body class="err-page">
 
   <!-- Minimal Header -->
-  <header style="padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08);">
-    <a href="../index.html" class="navbar-logo">
+  <header class="err-header">
+    <a href="../index.html" class="navbar-logo" aria-label="AeroPack Home">
       <img src="../images/favicon.svg" alt="AeroPack Logo" class="navbar-logo-img">
       <div class="navbar-logo-text">
         <span class="navbar-logo-name">AeroPack</span>
         <span class="navbar-logo-tagline">Travel Smarter</span>
       </div>
     </a>
-    <div class="flex gap-2">
-    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button>
-    <button class="rtl-toggle" onclick="toggleDir()">RTL</button>
-  </div>
+    <div class="err-header-actions">
+      <a href="sitemap.html" class="btn btn-outline btn-sm err-map-btn">
+        <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+        <span>Full Directory</span>
+      </a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="rtl-toggle" onclick="toggleDir()" aria-label="Toggle Direction">RTL</button>
+    </div>
   </header>
 
-  <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 3rem 1.5rem; text-align: center; position: relative; overflow: hidden;">
-    <div style="position: absolute; inset: 0; opacity: 0.15; background: url('../images/hero-404-bg.jpg') center/cover;"></div>
-    
-    <div style="position: relative; z-index: 2; max-width: 620px;">
-      <div style="font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--muted-gold);"><i class="fa-solid fa-compass"></i></div>
-      <div class="error-code">404</div>
-      <h1 class="error-title font-serif">Flight Path Not Found</h1>
-      <p class="error-msg">
-        The destination terminal or itinerary you requested has either departed, been reassigned to a new gate, or never existed in our flight schedules.
-      </p>
-      
-      <div class="flex gap-3 justify-center flex-wrap">
-        <a href="../index.html" class="btn btn-gold btn-lg">Return to Terminal Home &rarr;</a>
-        <a href="services.html" class="btn btn-outline-white btn-lg">Shop All Travel Collections</a>
+  <main class="err-main">
+    <section class="err-stage" aria-labelledby="err-heading">
+      <div class="err-backdrop" aria-hidden="true">
+        <img src="../images/hero-404-bg.jpg" alt="">
       </div>
+      <div class="err-overlay" aria-hidden="true"></div>
 
-      <div class="mt-4 text-xs" style="color: rgba(255,255,255,0.5);">
-        Need immediate assistance? Contact our concierge desk at <a href="contact.html" style="color: var(--muted-gold); text-decoration: underline;">Customer Support</a> or call <a href="tel:+18005552376" style="color: var(--muted-gold); text-decoration: underline;">+1 (800) 555-AERO</a>.
+      <div class="container err-container">
+        <div class="err-card">
+          <div class="err-emblem" aria-hidden="true">
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <span class="err-pill">Flight Telemetry &bull; Route Code TER-404</span>
+          <div class="error-code err-display-code">404</div>
+          <h1 id="err-heading" class="error-title font-serif">Flight Path <span class="err-accent">Not Found.</span></h1>
+          <p class="error-msg err-desc">
+            The destination terminal or itinerary you requested has either departed, been reassigned to a new gate, or never existed in our flight schedules.
+          </p>
+
+          <div class="err-actions">
+            <a href="../index.html" class="btn btn-gold btn-lg err-btn-arrow">
+              <span>Return to Terminal Home</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="services.html" class="btn btn-outline-white btn-lg">Shop All Travel Collections</a>
+          </div>
+
+          <div class="err-quick-links" aria-label="Suggested destinations">
+            <a href="home-2.html" class="err-quick-link">Home 2 Atelier</a>
+            <a href="pricing.html" class="err-quick-link">Pricing &amp; Suites</a>
+            <a href="sitemap.html" class="err-quick-link">Sitemap Index</a>
+            <a href="contact.html" class="err-quick-link">24/7 Concierge</a>
+          </div>
+
+          <p class="err-support-note">
+            Need immediate assistance? Contact our concierge desk at
+            <a href="contact.html">Customer Support</a> or call
+            <a href="tel:+18005552376">+1 (800) 555-AERO</a>.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
-
 
   <script src="../js/products.js"></script>
   <script src="../js/main.js"></script>

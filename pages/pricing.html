@@ -108,23 +108,60 @@
     <!-- ============================================================
          SECTION 1: PRICING HERO
          ============================================================ -->
-    <section class="page-hero" id="pricing-hero">
+    <section class="page-hero prc-hero" id="pricing-hero">
       <div class="page-hero-bg">
-        <img src="../images/hero-pricing.jpg" alt="">
+        <img src="../images/hero-pricing.jpg" alt="AeroPack cabin luggage beside airport departure window">
       </div>
-      <div class="page-hero-overlay"></div>
-      <div class="hero-side-image page-hero-side-image" aria-hidden="true">
-        <img src="../images/hero-pricing-side.jpg" alt="">
-      </div>
-      <div class="container page-hero-content">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a> &gt; <span>Travel Collections &amp; Pricing</span>
-        </nav>
-        <span class="section-label">Transparent Value</span>
-        <h1>Travel Collections, Sets &amp; Offers</h1>
-        <p>
-          Invest in precision luggage engineered for decades of exploration. Discover clear tiered pricing for solo carry-on bags, checked trunks, and bundled multi-piece family sets with complimentary global freight.
-        </p>
+      <div class="page-hero-overlay prc-hero-overlay"></div>
+
+      <div class="container prc-hero-container">
+        <div class="prc-hero-grid">
+          <div class="prc-hero-copy">
+            <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+              <a href="../index.html">Home</a>
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              <span>Travel Collections &amp; Pricing</span>
+            </nav>
+            <span class="prc-hero-pill">
+              <i class="fa-solid fa-tags" aria-hidden="true"></i> Transparent Atelier Value
+            </span>
+            <h1>Travel Collections, <span class="prc-hero-accent">Sets &amp; Offers.</span></h1>
+            <p class="prc-hero-lead">
+              Invest in precision luggage engineered for decades of exploration. Discover clear tiered pricing for solo carry-on bags, checked trunks, and bundled multi-piece family sets with complimentary global freight.
+            </p>
+            <div class="prc-hero-actions">
+              <a href="#cabin-pricing" class="btn btn-gold prc-btn-primary">
+                <i class="fa-solid fa-suitcase-rolling" aria-hidden="true"></i> Explore Pricing Tiers
+              </a>
+              <a href="#luggage-sets-pricing" class="btn btn-outline">Save Up to $110 on Sets</a>
+            </div>
+            <div class="prc-hero-metrics">
+              <div class="prc-metric-item">
+                <strong>06</strong>
+                <span>Curated Tiers</span>
+              </div>
+              <div class="prc-metric-item">
+                <strong>$110</strong>
+                <span>Max Bundle Savings</span>
+              </div>
+              <div class="prc-metric-item">
+                <strong>100-Day</strong>
+                <span>Home Voyage Trial</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="prc-hero-media-col">
+            <div class="prc-hero-frame">
+              <img src="../images/hero-pricing-side.jpg" alt="Matched three-piece AeroPack luggage suite">
+              <div class="prc-frame-scrim"></div>
+              <div class="prc-frame-caption">
+                <span class="prc-frame-kicker">Matched Suites</span>
+                <strong>Up to 18% Bundle Privilege</strong>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -133,66 +170,78 @@
          ============================================================ -->
     <section class="section section-offwhite" id="cabin-pricing">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Cabin Tier</span>
-          <h2 class="section-title">Cabin &amp; Carry-On Collections</h2>
-          <p class="section-subtitle">
-            Engineered within IATA overhead guidelines. Ideal for 1-to-4 day business trips, commuter flights, and weekend escapes.
-          </p>
+        <div class="prc-section-head">
+          <div class="section-header">
+            <span class="section-label">Cabin Tier</span>
+            <h2 class="section-title">Cabin &amp; Carry-On Collections</h2>
+            <p class="section-subtitle">
+              Engineered within IATA overhead guidelines. Ideal for 1-to-4 day business trips, commuter flights, and weekend escapes.
+            </p>
+          </div>
+          <span class="prc-tier-badge">IATA Overhead Ready</span>
         </div>
 
         <div class="grid cols-3 gap-3">
           <!-- Card 1: Entry Level Cabin -->
-          <div class="pricing-card reveal">
-            <span class="text-xs font-bold text-teal uppercase" style="letter-spacing: 0.08em;">Lightweight Commuter</span>
-            <h3 class="font-serif mt-1 mb-2">Aerolight Softshell Trolley</h3>
+          <div class="pricing-card prc-card reveal">
+            <div class="prc-card-top">
+              <span class="prc-tier-kicker">Lightweight Commuter</span>
+              <span class="prc-card-code">CAB-01</span>
+            </div>
+            <h3 class="font-serif">Aerolight Softshell Trolley</h3>
             <span class="pricing-price-from">Starting at</span>
             <div class="pricing-price">$215</div>
-            <p class="text-sm text-secondary">Featherweight 2.2 kg softshell carry-on with front boarding pass pockets.</p>
+            <p class="prc-card-desc">Featherweight 2.2 kg softshell carry-on with front boarding pass pockets.</p>
             <ul class="pricing-list">
               <li>21" IATA Compliant Size (41L)</li>
               <li>High-Tenacity 600D Dobby Fabric</li>
               <li>Dual Omni-Directional Glide Wheels</li>
               <li>3-Year Limited Material Guarantee</li>
             </ul>
-            <div class="mt-4">
+            <div class="prc-card-cta">
               <button class="btn btn-outline w-100" onclick="addToCart('ultralight-soft-cabin')">Add to Cart</button>
             </div>
           </div>
 
           <!-- Card 2: Premium Cabin (Featured) -->
-          <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-card featured prc-card prc-card-featured reveal reveal-delay-1">
             <span class="pricing-featured-badge">Most Popular Cabin</span>
-            <span class="text-xs font-bold text-gold uppercase" style="letter-spacing: 0.08em;">Polycarbonate &amp; Aluminum</span>
-            <h3 class="font-serif mt-1 mb-2">Stratus Luxe Cabin Spinner</h3>
-            <span class="pricing-price-from" style="color: rgba(255,255,255,0.7);">Starting at</span>
+            <div class="prc-card-top">
+              <span class="prc-tier-kicker prc-tier-kicker-gold">Polycarbonate &amp; Aluminum</span>
+              <span class="prc-card-code">CAB-02</span>
+            </div>
+            <h3 class="font-serif">Stratus Luxe Cabin Spinner</h3>
+            <span class="pricing-price-from">Starting at</span>
             <div class="pricing-price">$265</div>
-            <p class="text-sm" style="color: rgba(255,255,255,0.8);">Indestructible Makrolon® polycarbonate shell with front tech vault.</p>
+            <p class="prc-card-desc">Indestructible Makrolon® polycarbonate shell with front tech vault.</p>
             <ul class="pricing-list">
               <li>21" Universal Overhead Fit (42L)</li>
               <li>Integrated Recessed Dual TSA Lock</li>
               <li>Japanese Hinomoto Silent 360° Wheels</li>
               <li>5-Year Global Travel Protection</li>
             </ul>
-            <div class="mt-4">
+            <div class="prc-card-cta">
               <button class="btn btn-gold w-100" onclick="addToCart('stratus-carry-on')">Add to Cart</button>
             </div>
           </div>
 
           <!-- Card 3: Compact Travel Pack -->
-          <div class="pricing-card reveal reveal-delay-2">
-            <span class="text-xs font-bold text-teal uppercase" style="letter-spacing: 0.08em;">One-Bag Mobility</span>
-            <h3 class="font-serif mt-1 mb-2">Traverse Pro 35L Backpack</h3>
+          <div class="pricing-card prc-card reveal reveal-delay-2">
+            <div class="prc-card-top">
+              <span class="prc-tier-kicker">One-Bag Mobility</span>
+              <span class="prc-card-code">CAB-03</span>
+            </div>
+            <h3 class="font-serif">Traverse Pro 35L Backpack</h3>
             <span class="pricing-price-from">Starting at</span>
             <div class="pricing-price">$195</div>
-            <p class="text-sm text-secondary">Clamshell opening backpack with suspended 16" laptop vault.</p>
+            <p class="prc-card-desc">Clamshell opening backpack with suspended 16" laptop vault.</p>
             <ul class="pricing-list">
               <li>Fits Under Any Airline Seat</li>
               <li>Expands from 35L to 42L Capacity</li>
               <li>Concealed Anti-Theft Passport Pocket</li>
               <li>Luggage Trolley Stacking Sleeve</li>
             </ul>
-            <div class="mt-4">
+            <div class="prc-card-cta">
               <button class="btn btn-outline w-100" onclick="addToCart('traverse-travel-backpack')">Add to Cart</button>
             </div>
           </div>
@@ -205,66 +254,78 @@
          ============================================================ -->
     <section class="section section-card" id="checkin-pricing">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Check-In Tier</span>
-          <h2 class="section-title">Check-in &amp; Large Suitcases</h2>
-          <p class="section-subtitle">
-            Substantial packing volume, corner armor shields, and water-repellent dividers for extended voyages.
-          </p>
+        <div class="prc-section-head">
+          <div class="section-header">
+            <span class="section-label">Check-In Tier</span>
+            <h2 class="section-title">Check-in &amp; Large Suitcases</h2>
+            <p class="section-subtitle">
+              Substantial packing volume, corner armor shields, and water-repellent dividers for extended voyages.
+            </p>
+          </div>
+          <span class="prc-tier-badge">Long-Haul Armor</span>
         </div>
 
         <div class="grid cols-3 gap-3">
           <!-- Medium Check-in -->
-          <div class="pricing-card reveal">
-            <span class="text-xs font-bold text-teal uppercase" style="letter-spacing: 0.08em;">5 to 9 Day Voyages</span>
-            <h3 class="font-serif mt-1 mb-2">Horizon Mid 24" Spinner</h3>
+          <div class="pricing-card prc-card reveal">
+            <div class="prc-card-top">
+              <span class="prc-tier-kicker">5 to 9 Day Voyages</span>
+              <span class="prc-card-code">CHK-01</span>
+            </div>
+            <h3 class="font-serif">Horizon Mid 24" Spinner</h3>
             <span class="pricing-price-from">Starting at</span>
             <div class="pricing-price">$295</div>
-            <p class="text-sm text-secondary">The gold standard medium trunk for balanced vacation packing.</p>
+            <p class="prc-card-desc">The gold standard medium trunk for balanced vacation packing.</p>
             <ul class="pricing-list">
               <li>68L Volumetric Capacity</li>
               <li>Pure Polycarbonate Impact Shell</li>
               <li>Built-In Zippered Expansion Gusset</li>
               <li>5-Year Global Shell Guarantee</li>
             </ul>
-            <div class="mt-4">
+            <div class="prc-card-cta">
               <a href="services.html?category=checkin-suitcases" class="btn btn-outline w-100">Explore Mid Trunks</a>
             </div>
           </div>
 
           <!-- Large Check-in (Featured) -->
-          <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-card featured prc-card prc-card-featured reveal reveal-delay-1">
             <span class="pricing-featured-badge">Maximum Capacity</span>
-            <span class="text-xs font-bold text-gold uppercase" style="letter-spacing: 0.08em;">10+ Day Long Haul</span>
-            <h3 class="font-serif mt-1 mb-2">Horizon Grand 28" Trunk</h3>
-            <span class="pricing-price-from" style="color: rgba(255,255,255,0.7);">Starting at</span>
+            <div class="prc-card-top">
+              <span class="prc-tier-kicker prc-tier-kicker-gold">10+ Day Long Haul</span>
+              <span class="prc-card-code">CHK-02</span>
+            </div>
+            <h3 class="font-serif">Horizon Grand 28" Trunk</h3>
+            <span class="pricing-price-from">Starting at</span>
             <div class="pricing-price">$345</div>
-            <p class="text-sm" style="color: rgba(255,255,255,0.8);">High-volume check-in case built to survive international baggage hubs.</p>
+            <p class="prc-card-desc">High-volume check-in case built to survive international baggage hubs.</p>
             <ul class="pricing-list">
               <li>Massive 96L Volumetric Storage</li>
               <li>Corner Aluminum Protective Armor</li>
               <li>Dual TSA Recessed Latch System</li>
               <li>Waterproof Wet-Pocket Internal Divider</li>
             </ul>
-            <div class="mt-4">
+            <div class="prc-card-cta">
               <button class="btn btn-gold w-100" onclick="addToCart('horizon-checkin-large')">Add to Cart</button>
             </div>
           </div>
 
           <!-- Ballistic Weekender Duffel -->
-          <div class="pricing-card reveal reveal-delay-2">
-            <span class="text-xs font-bold text-teal uppercase" style="letter-spacing: 0.08em;">Flexible Storage</span>
-            <h3 class="font-serif mt-1 mb-2">Apex Ballistic Duffel 45L</h3>
+          <div class="pricing-card prc-card reveal reveal-delay-2">
+            <div class="prc-card-top">
+              <span class="prc-tier-kicker">Flexible Storage</span>
+              <span class="prc-card-code">CHK-03</span>
+            </div>
+            <h3 class="font-serif">Apex Ballistic Duffel 45L</h3>
             <span class="pricing-price-from">Starting at</span>
             <div class="pricing-price">$185</div>
-            <p class="text-sm text-secondary">1680D Ballistic Cordura nylon with ventilated shoe garage.</p>
+            <p class="prc-card-desc">1680D Ballistic Cordura nylon with ventilated shoe garage.</p>
             <ul class="pricing-list">
               <li>Weatherproof DWR Water Coating</li>
               <li>Full-Grain Leather Padded Grips</li>
               <li>Pass-Through Suitcase Sleeve</li>
               <li>3-Year Craftsmanship Warranty</li>
             </ul>
-            <div class="mt-4">
+            <div class="prc-card-cta">
               <button class="btn btn-outline w-100" onclick="addToCart('apex-flight-duffel')">Add to Cart</button>
             </div>
           </div>
@@ -287,37 +348,49 @@
 
         <div class="grid cols-2 gap-4">
           <!-- 2-Piece Set -->
-          <div class="pricing-card reveal">
-            <span class="badge badge-sale mb-2">Save $70</span>
-            <h3 class="font-serif mb-1">Nomad Duo 2-Piece Carry-On &amp; Check Set</h3>
-            <div class="pricing-price">$380 <span class="original" style="font-size: 1.1rem; text-decoration: line-through; color: var(--text-secondary);">$450</span></div>
-            <p class="text-sm text-secondary mb-3">Includes 20" Cabin Spinner (39L) and 26" Medium Check-In Case (72L).</p>
+          <div class="pricing-card prc-card prc-bundle-card reveal">
+            <div class="prc-card-top">
+              <span class="badge badge-sale">Save $70</span>
+              <span class="prc-spec-chip">20" + 26" Nested</span>
+            </div>
+            <h3 class="font-serif">Nomad Duo 2-Piece Carry-On &amp; Check Set</h3>
+            <div class="pricing-price">$380 <span class="prc-price-original">$450</span></div>
+            <p class="prc-card-desc">Includes 20" Cabin Spinner (39L) and 26" Medium Check-In Case (72L).</p>
             <ul class="pricing-list">
               <li>Complete 2-piece synchronized colorway</li>
               <li>Nesting storage footprint inside closet</li>
               <li>Japanese Hinomoto 360° whisper casters on both</li>
               <li>Individual TSA locks on each suitcase</li>
             </ul>
-            <div class="mt-4">
-              <button class="btn btn-teal w-100" onclick="addToCart('aero-duo-set')">Add 2-Piece Set to Cart &rarr;</button>
+            <div class="prc-card-cta">
+              <button class="btn btn-teal w-100 prc-btn-arrow" onclick="addToCart('aero-duo-set')">
+                <span>Add 2-Piece Set to Cart</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
             </div>
           </div>
 
           <!-- 3-Piece Set (Featured) -->
-          <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-card featured prc-card prc-card-featured prc-bundle-card reveal reveal-delay-1">
             <span class="pricing-featured-badge">Best Value Suite</span>
-            <span class="badge badge-bestseller mb-2">Save $110</span>
-            <h3 class="font-serif mb-1">AeroVoyager Pro 3-Piece Family Set</h3>
-            <div class="pricing-price">$489 <span class="original" style="font-size: 1.1rem; text-decoration: line-through; color: var(--muted-gold);">$599</span></div>
-            <p class="text-sm mb-3" style="color: rgba(255,255,255,0.85);">Includes 20" Cabin (38L), 24" Medium (68L), and 28" Extended Trunk (102L).</p>
+            <div class="prc-card-top">
+              <span class="badge badge-bestseller">Save $110</span>
+              <span class="prc-spec-chip prc-spec-chip-dark">20" + 24" + 28" Nested</span>
+            </div>
+            <h3 class="font-serif">AeroVoyager Pro 3-Piece Family Set</h3>
+            <div class="pricing-price">$489 <span class="prc-price-original">$599</span></div>
+            <p class="prc-card-desc">Includes 20" Cabin (38L), 24" Medium (68L), and 28" Extended Trunk (102L).</p>
             <ul class="pricing-list">
               <li>Full 3-piece suite covering every voyage</li>
               <li>Triple nesting design (fits within 28" footprint)</li>
               <li>Complimentary Express Global Freight included</li>
               <li>5-Year Limited Global Shell Warranty</li>
             </ul>
-            <div class="mt-4">
-              <button class="btn btn-gold w-100" onclick="addToCart('aero-voyager-set')">Add 3-Piece Suite to Cart &rarr;</button>
+            <div class="prc-card-cta">
+              <button class="btn btn-gold w-100 prc-btn-arrow" onclick="addToCart('aero-voyager-set')">
+                <span>Add 3-Piece Suite to Cart</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -327,8 +400,8 @@
     <!-- ============================================================
          SECTION 5: FEATURED OFFERS
          ============================================================ -->
-    <section class="section section-dark" id="featured-offers">
-      <div class="container">
+    <section class="section section-dark prc-offers-section" id="featured-offers">
+      <div class="container prc-offers-container">
         <div class="section-header centered">
           <span class="section-label">Promotional Highlights</span>
           <h2 class="section-title">Seasonal Travel Offers &amp; Bundles</h2>
@@ -338,38 +411,38 @@
         </div>
 
         <div class="grid cols-3 gap-3">
-          <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="flex-between mb-2">
+          <div class="feature-card prc-offer-card reveal">
+            <div class="prc-offer-top">
               <span class="badge badge-sale">Bundle -20%</span>
-              <span class="text-gold font-bold">$68</span>
+              <span class="prc-offer-price">$68</span>
             </div>
             <h4>Meridian 6-Piece Cube System</h4>
             <p>Double-zip compression cubes in ripstop silicone nylon that reduce clothing bulk by 50%.</p>
-            <div class="mt-3">
+            <div class="prc-offer-action">
               <button class="btn btn-outline-white btn-sm w-100" onclick="addToCart('meridian-packing-cubes')">Add Cubes to Cart</button>
             </div>
           </div>
 
-          <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="flex-between mb-2">
+          <div class="feature-card prc-offer-card reveal reveal-delay-1">
+            <div class="prc-offer-top">
               <span class="badge badge-featured">Heritage Offer</span>
-              <span class="text-gold font-bold">$295</span>
+              <span class="prc-offer-price">$295</span>
             </div>
             <h4>Albatross Leather Duffel</h4>
             <p>Full-grain Italian vegetable-tanned leather with antiqued solid brass hardware and shoe vault.</p>
-            <div class="mt-3">
+            <div class="prc-offer-action">
               <button class="btn btn-outline-white btn-sm w-100" onclick="addToCart('albatross-leather-weekender')">Add Leather Bag</button>
             </div>
           </div>
 
-          <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="flex-between mb-2">
+          <div class="feature-card prc-offer-card reveal reveal-delay-2">
+            <div class="prc-offer-top">
               <span class="badge badge-new">Security Bundle</span>
-              <span class="text-gold font-bold">$34</span>
+              <span class="prc-offer-price">$34</span>
             </div>
             <h4>Zenith TSA Lock &amp; ID Tag</h4>
             <p>Open-inspection alert indicator, flexible high-tensile braided steel cable, and laser-etched tag.</p>
-            <div class="mt-3">
+            <div class="prc-offer-action">
               <button class="btn btn-outline-white btn-sm w-100" onclick="addToCart('zenith-security-lock-kit')">Add Lock Kit</button>
             </div>
           </div>
@@ -381,17 +454,17 @@
          SECTION 6: SHOPPING FAQS & CTA
          ============================================================ -->
     <section class="section section-offwhite" id="pricing-faq-cta">
-      <div class="container" style="max-width: 900px;">
+      <div class="container prc-faq-container">
         <div class="section-header centered">
           <span class="section-label">Purchasing Clarity</span>
           <h2 class="section-title">Pricing &amp; Shipping FAQs</h2>
         </div>
 
-        <div class="faq-list mb-6">
+        <div class="faq-list prc-faq-list mb-6">
           <div class="faq-item">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               <span>Are there additional customs duties or import taxes on international orders?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
@@ -401,9 +474,9 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               <span>What is included in the complimentary global freight offer?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
@@ -413,9 +486,9 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               <span>What if I wish to return or exchange my luggage after receiving it?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
@@ -425,14 +498,19 @@
           </div>
         </div>
 
-        <div class="cta-banner reveal">
-          <span class="section-label" style="color: var(--muted-gold);">Ready to Voyage?</span>
-          <h2 class="text-white mb-2 font-serif">Discover the Full AeroPack Catalog</h2>
-          <p class="mb-4" style="max-width: 58ch; margin-inline: auto;">
+        <div class="cta-banner prc-cta-maison reveal">
+          <span class="prc-hero-pill">
+            <i class="fa-regular fa-compass" aria-hidden="true"></i> Ready to Voyage?
+          </span>
+          <h2 class="text-white mb-2 font-serif">Discover the Full <span class="prc-hero-accent">AeroPack Catalog</span></h2>
+          <p class="mb-4 prc-cta-subtitle">
             Explore all 12 precision travel products with real-time category, size, and material filters on our Shop page.
           </p>
           <div class="cta-banner-actions">
-            <a href="services.html" class="btn btn-gold btn-lg">Explore All Luggage &rarr;</a>
+            <a href="services.html" class="btn btn-gold btn-lg prc-btn-arrow">
+              <span>Explore All Luggage</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
             <a href="contact.html" class="btn btn-outline-white btn-lg">Inquire About Bulk Orders</a>
           </div>
         </div>

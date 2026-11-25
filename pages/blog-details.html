@@ -106,33 +106,48 @@
   <main class="page-content">
 
     <!-- ============================================================
-         SECTION 1: ARTICLE HEADER
+         SECTION 1: ARTICLE HEADER (Editorial Masthead)
          ============================================================ -->
-    <section class="section section-offwhite pb-0" id="article-header">
-      <div class="container" style="max-width: 900px;">
-        <nav class="page-hero-breadcrumb mb-3" style="color: var(--text-secondary);" aria-label="Breadcrumb">
-          <a href="../index.html" style="color: var(--text-secondary);">Home</a> &gt; 
-          <a href="blog.html" style="color: var(--text-secondary);">Blog</a> &gt; 
-          <span class="text-gold">Carry-On Packing Guide</span>
+    <section class="section bld-hero-band" id="article-header">
+      <div class="container bld-narrow-container bld-hero-inner">
+        <nav class="page-hero-breadcrumb bld-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <a href="blog.html">Blog</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <span class="bld-breadcrumb-current" id="article-breadcrumb">Carry-On Packing Guide</span>
         </nav>
 
-        <span class="blog-category">Master Packing Guide</span>
-        <h1 class="font-serif mb-3" style="font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.2;">
-          The Art of Carry-On Travel: How to Pack 14 Days into a 21" Suitcase
-        </h1>
-        
-        <div class="flex items-center gap-3 text-sm text-secondary mb-4 flex-wrap">
-          <span><i class="fa-solid fa-pen-nib"></i> <strong>Julien Mercer</strong>, Senior Travel Editor</span>
-          <span>&bull;</span>
-          <span><i class="fa-regular fa-calendar"></i> October 14, 2026</span>
-          <span>&bull;</span>
-          <span><i class="fa-regular fa-clock"></i> 7 min read</span>
-          <span>&bull;</span>
-          <span style="color: var(--deep-teal);">Category: Packing Science</span>
+        <div class="bld-header-badges">
+          <span class="bld-category-pill" id="article-category">Master Packing Guide</span>
+          <span class="bld-topic-pill" id="article-topic">Category: Packing Science</span>
         </div>
 
-        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl); aspect-ratio: 16/9; margin-bottom: 2rem;">
-          <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=1200&q=80" alt="Traveler with sleek luggage walking through sunny airport terminal concourse" style="width: 100%; height: 100%; object-fit: cover;">
+        <h1 class="font-serif bld-title" id="article-title">
+          The Art of Carry-On Travel: How to Pack 14 Days into a 21" Suitcase
+        </h1>
+
+        <div class="bld-byline-strip">
+          <div class="bld-byline-meta">
+            <span><i class="fa-solid fa-pen-nib" aria-hidden="true"></i> <strong id="article-author">Julien Mercer</strong>, <span id="article-author-role">Senior Travel Editor</span></span>
+            <span class="bld-dot" aria-hidden="true">&bull;</span>
+            <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> <span id="article-date">October 14, 2026</span></span>
+            <span class="bld-dot" aria-hidden="true">&bull;</span>
+            <span><i class="fa-regular fa-clock" aria-hidden="true"></i> <span id="article-read-time">7 min read</span></span>
+          </div>
+          <div class="bld-jump-links">
+            <a href="#article-intro" class="bld-jump-link">Summary</a>
+            <a href="#practical-tips" class="bld-jump-link">Field Tips</a>
+            <a href="#related-articles" class="bld-jump-link">Related</a>
+          </div>
+        </div>
+
+        <div class="bld-cover-frame">
+          <img id="article-image" src="../images/blog-carry-on-guide.jpg" alt="The Art of Carry-On Travel packing guide">
+          <div class="bld-cover-scrim" aria-hidden="true"></div>
+          <span class="bld-cover-tag">
+            <i class="fa-solid fa-feather-pointed" aria-hidden="true"></i> AeroPack Travel Journal
+          </span>
         </div>
       </div>
     </section>
@@ -140,11 +155,16 @@
     <!-- ============================================================
          SECTION 2: ARTICLE INTRODUCTION
          ============================================================ -->
-    <section class="section section-offwhite pt-0 pb-2" id="article-intro">
-      <div class="container" style="max-width: 900px;">
-        <div class="p-4 mb-4" style="background: rgba(40,91,98,0.06); border-radius: var(--radius-lg); border-inline-start: 4px solid var(--deep-teal);">
-          <h3 class="font-serif mb-2" style="font-size: 1.25rem;">Executive Summary</h3>
-          <p class="text-secondary mb-0" style="font-size: 1.05rem; line-height: 1.7;">
+    <section class="section section-offwhite bld-intro-section" id="article-intro">
+      <div class="container bld-narrow-container">
+        <div class="bld-summary-card reveal">
+          <div class="bld-summary-head">
+            <span class="bld-summary-eyebrow">
+              <i class="fa-solid fa-quote-left" aria-hidden="true"></i> Executive Summary
+            </span>
+            <span class="bld-summary-code">Briefing</span>
+          </div>
+          <p class="bld-summary-text" id="article-summary">
             Few feelings match the quiet satisfaction of stepping off a 10-hour flight, bypassing the chaotic baggage carousel crowds, and gliding directly into the city rail terminal with nothing more than an overhead carry-on. By leveraging a strict 5-4-3-2-1 capsule rule and high-compression modular organizers, you can travel for two full weeks with zero lost luggage anxiety.
           </p>
         </div>
@@ -154,51 +174,55 @@
     <!-- ============================================================
          SECTION 3: MAIN ARTICLE CONTENT
          ============================================================ -->
-    <section class="section section-offwhite pt-0 pb-4" id="article-main-content">
-      <div class="container" style="max-width: 900px;">
-        <div class="blog-body-text" style="font-size: 1.05rem; line-height: 1.8; color: var(--text-primary);">
-          <h2 class="font-serif mb-3 mt-4">1. The 5-4-3-2-1 Wardrobe Rule</h2>
-          <p class="text-secondary mb-3">
-            The foundation of prolonged carry-on travel is color cohesion. Choose a three-tone palette—such as midnight navy, graphite gray, and off-white. When every garment harmonizes with every pair of trousers, you generate 30 distinct outfits from a minimal inventory:
-          </p>
-          <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
-            <li><strong>5 Tops:</strong> 3 merino wool t-shirts, 1 tailored oxford shirt, 1 lightweight linen knit.</li>
-            <li><strong>4 Bottoms:</strong> 2 technical travel chinos, 1 pair of dark denim, 1 tailored linen short or skirt.</li>
-            <li><strong>3 Accessories:</strong> 1 lightweight travel scarf, 1 reversible leather belt, 1 compact packable umbrella.</li>
-            <li><strong>2 Pairs of Footwear:</strong> 1 pair of minimalist dress sneakers (worn during transit), 1 pair of leather loafers or sandals.</li>
-            <li><strong>1 Outer Layer:</strong> 1 unstructured travel blazer or weather-resistant trench coat.</li>
-          </ul>
-
-          <div style="margin: 2.5rem 0; border-radius: var(--radius-lg); overflow: hidden;">
-            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80" alt="Suitcase interior organized with compression cubes and toiletries" style="width:100%; max-height:400px; object-fit:cover;">
-            <span class="text-xs text-secondary mt-1 block">Figure 1: Dual-sided clamshell packing maximizes volumetric displacement.</span>
+    <section class="section section-offwhite bld-body-section" id="article-main-content">
+      <div class="container bld-narrow-container">
+        <article class="blog-body-text bld-prose" id="article-body">
+          <div class="bld-prose-block">
+            <h2 class="font-serif bld-h2">1. The 5-4-3-2-1 Wardrobe Rule</h2>
+            <p class="bld-p">
+              The foundation of prolonged carry-on travel is color cohesion. Choose a three-tone palette—such as midnight navy, graphite gray, and off-white. When every garment harmonizes with every pair of trousers, you generate 30 distinct outfits from a minimal inventory:
+            </p>
+            <ul class="bld-list">
+              <li><strong>5 Tops:</strong> 3 merino wool t-shirts, 1 tailored oxford shirt, 1 lightweight linen knit.</li>
+              <li><strong>4 Bottoms:</strong> 2 technical travel chinos, 1 pair of dark denim, 1 tailored linen short or skirt.</li>
+              <li><strong>3 Accessories:</strong> 1 lightweight travel scarf, 1 reversible leather belt, 1 compact packable umbrella.</li>
+              <li><strong>2 Pairs of Footwear:</strong> 1 pair of minimalist dress sneakers (worn during transit), 1 pair of leather loafers or sandals.</li>
+              <li><strong>1 Outer Layer:</strong> 1 unstructured travel blazer or weather-resistant trench coat.</li>
+            </ul>
           </div>
 
-          <h2 class="font-serif mb-3 mt-4">2. The Clamshell Split: Left vs. Right Geometry</h2>
-          <p class="text-secondary mb-3">
-            In standard luggage, heavy shoes shift and crush delicate shirts. In an AeroPack hard-shell suitcase, the internal volume is bifurcated:
-          </p>
-          <p class="text-secondary mb-3">
-            <strong>The Left Enclosure:</strong> Reserved for footwear, electronic charging folios, and toiletries sealed inside waterproof barrier pouches. Once zipped shut behind the heavy mesh gate, these denser items remain completely immobilized.
-          </p>
-          <p class="text-secondary mb-4">
-            <strong>The Right Enclosure:</strong> Houses your garment compression cubes secured under the adjustable compression pad. By cinching the nylon straps down, air is expelled from the weave, locking garments in place to prevent friction creases.
-          </p>
+          <div class="bld-prose-block">
+            <h2 class="font-serif bld-h2">2. The Clamshell Split: Left vs. Right Geometry</h2>
+            <p class="bld-p">
+              In standard luggage, heavy shoes shift and crush delicate shirts. In an AeroPack hard-shell suitcase, the internal volume is bifurcated:
+            </p>
+            <p class="bld-p">
+              <strong>The Left Enclosure:</strong> Reserved for footwear, electronic charging folios, and toiletries sealed inside waterproof barrier pouches. Once zipped shut behind the heavy mesh gate, these denser items remain completely immobilized.
+            </p>
+            <p class="bld-p">
+              <strong>The Right Enclosure:</strong> Houses your garment compression cubes secured under the adjustable compression pad. By cinching the nylon straps down, air is expelled from the weave, locking garments in place to prevent friction creases.
+            </p>
+            <figure class="bld-figure">
+              <img src="../images/blog-compression-cubes.jpg" alt="Suitcase interior organized with compression cubes and toiletries" loading="lazy">
+              <figcaption>Figure 1: Dual-sided clamshell packing maximizes volumetric displacement.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Social Share Bar -->
+        <div class="article-share-bar bld-share-bar">
+          <div class="bld-share-label">
+            <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+            <span>Share this Guide</span>
+          </div>
+          <div class="bld-share-actions">
+            <a href="https://twitter.com/intent/tweet" id="share-x" target="_blank" rel="noopener noreferrer" class="social-btn" title="Share on X" aria-label="Share on X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/sharer/sharer.php" id="share-facebook" target="_blank" rel="noopener noreferrer" class="social-btn" title="Share on Facebook" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/" id="share-linkedin" target="_blank" rel="noopener noreferrer" class="social-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send" id="share-whatsapp" target="_blank" rel="noopener noreferrer" class="social-btn" title="Share on WhatsApp" aria-label="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <button type="button" onclick="copyCurrentArticleLink()" class="social-btn" title="Copy Guide Link" aria-label="Copy Guide Link"><i class="fa-solid fa-link"></i></button>
+          </div>
         </div>
-
-          <!-- Social Share Bar -->
-          <div class="article-share-bar p-3 mt-4" style="background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
-            <div class="flex items-center gap-2">
-              <span class="text-sm font-semibold text-white"><i class="fa-solid fa-share-nodes text-gold mr-1"></i> Share this Guide:</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <a href="https://twitter.com/intent/tweet?text=The+Art+of+Packing+Light%3A+Mastering+the+Carry-On&amp;url=https%3A%2F%2Fwww.aeropack-travel.com%2Fblog-details.html" target="_blank" rel="noopener noreferrer" class="social-btn" title="Share on X" aria-label="Share on X"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.aeropack-travel.com%2Fblog-details.html" target="_blank" rel="noopener noreferrer" class="social-btn" title="Share on Facebook" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.aeropack-travel.com%2Fblog-details.html" target="_blank" rel="noopener noreferrer" class="social-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="https://api.whatsapp.com/send?text=Check%20out%20this%20carry-on%20packing%20guide%3A%20https%3A%2F%2Fwww.aeropack-travel.com%2Fblog-details.html" target="_blank" rel="noopener noreferrer" class="social-btn" title="Share on WhatsApp" aria-label="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-              <button onclick="copyCurrentArticleLink()" class="social-btn" title="Copy Guide Link" aria-label="Copy Guide Link"><i class="fa-solid fa-link"></i></button>
-            </div>
-          </div>
       </div>
     </section>
 
@@ -206,35 +230,56 @@
          SECTION 4: PRACTICAL TRAVEL TIPS
          ============================================================ -->
     <section class="section section-card" id="practical-tips">
-      <div class="container" style="max-width: 900px;">
-        <span class="section-label">Field-Tested Advice</span>
-        <h2 class="section-title">Practical Travel &amp; Luggage Care Tips</h2>
-        
-        <div class="grid cols-2 gap-4 mt-4">
-          <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <h4 class="mb-2"><i class="fa-solid fa-plane"></i> Airport Concourse Wisdom</h4>
-            <p class="text-sm text-secondary">
+      <div class="container bld-narrow-container">
+        <div class="bld-section-head">
+          <div>
+            <span class="section-label">Field-Tested Advice</span>
+            <h2 class="section-title">Practical Travel &amp; Luggage Care Tips</h2>
+          </div>
+          <span class="bld-section-pill">04 Field Protocols</span>
+        </div>
+
+        <div class="grid cols-2 gap-3" id="article-tips">
+          <div class="bld-tip-card reveal">
+            <div class="bld-tip-top">
+              <span class="bld-tip-icon"><i class="fa-solid fa-plane" aria-hidden="true"></i></span>
+              <span class="bld-tip-code">TIP-01</span>
+            </div>
+            <h4>Airport Concourse Wisdom</h4>
+            <p>
               Always roll four-wheel spinner luggage directly beside your hips on smooth terminal tile rather than tilting onto two wheels. This balances the center of gravity and extends caster bearing longevity.
             </p>
           </div>
 
-          <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <h4 class="mb-2"><i class="fa-solid fa-soap"></i> Post-Voyage Shell Care</h4>
-            <p class="text-sm text-secondary">
-              After return flights, wipe your polycarbonate suitcase with a damp microfiber cloth. If baggage tags leave sticky adhesive residue, apply a drop of baby oil or citrus solvent before storing.
+          <div class="bld-tip-card reveal reveal-delay-1">
+            <div class="bld-tip-top">
+              <span class="bld-tip-icon"><i class="fa-solid fa-soap" aria-hidden="true"></i></span>
+              <span class="bld-tip-code">TIP-02</span>
+            </div>
+            <h4>Post-Voyage Shell Care</h4>
+            <p>
+              After return flights, wipe your polycarbonate suitcase with a damp microfiber cloth. If baggage tags leave sticky adhesive residue, apply a drop of citrus solvent before storing.
             </p>
           </div>
 
-          <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <h4 class="mb-2"><i class="fa-solid fa-box-archive"></i> Heavy Weight Placement</h4>
-            <p class="text-sm text-secondary">
+          <div class="bld-tip-card reveal">
+            <div class="bld-tip-top">
+              <span class="bld-tip-icon"><i class="fa-solid fa-box-archive" aria-hidden="true"></i></span>
+              <span class="bld-tip-code">TIP-03</span>
+            </div>
+            <h4>Heavy Weight Placement</h4>
+            <p>
               Position your heaviest items (shoes and tech charging bricks) toward the wheel base of the suitcase. This prevents the luggage from tipping forward when stood upright at taxi ranks.
             </p>
           </div>
 
-          <div class="p-3" style="background: var(--bg-primary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <h4 class="mb-2"><i class="fa-solid fa-lock"></i> Zipper Relief Strategy</h4>
-            <p class="text-sm text-secondary">
+          <div class="bld-tip-card reveal reveal-delay-1">
+            <div class="bld-tip-top">
+              <span class="bld-tip-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></span>
+              <span class="bld-tip-code">TIP-04</span>
+            </div>
+            <h4>Zipper Relief Strategy</h4>
+            <p>
               Never force a strained zipper puller around corners. Press the two shell halves firmly together with your hand first to relieve tension on the teeth before sliding the runner.
             </p>
           </div>
@@ -246,35 +291,54 @@
          SECTION 5: RELATED ARTICLES
          ============================================================ -->
     <section class="section section-offwhite" id="related-articles">
-      <div class="container" style="max-width: 900px;">
-        <div class="flex-between flex-wrap gap-2 mb-4">
-          <div class="section-header mb-0">
+      <div class="container bld-narrow-container">
+        <div class="bld-section-head">
+          <div>
             <span class="section-label">Continue Reading</span>
             <h2 class="section-title">Related Travel Guides</h2>
           </div>
-          <a href="blog.html" class="btn btn-outline btn-sm">All Articles &rarr;</a>
+          <a href="blog.html" class="btn btn-outline btn-sm bld-btn-arrow">
+            <span>All Articles</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
 
-        <div class="grid cols-2 gap-4">
-          <article class="blog-card reveal">
+        <div class="grid cols-2 gap-4" id="related-articles-grid">
+          <article class="blog-card blg-guide-card reveal">
             <div class="blog-card-img">
-              <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=600&q=80" alt="Overhead luggage comparison" loading="lazy">
+              <img src="../images/blog-iata-limits.jpg" alt="IATA overhead bin limits guide" loading="lazy">
+              <span class="blg-guide-num">01</span>
             </div>
             <div class="blog-card-body">
               <div class="blog-category">Guide</div>
-              <h3 class="blog-title"><a href="blog-details.html">Understanding IATA Overhead Bin Limits Across Airlines</a></h3>
+              <h3 class="blog-title"><a href="blog-details.html?id=iata-overhead-limits">Understanding IATA Overhead Bin Limits Across Airlines</a></h3>
               <p class="blog-excerpt">Compare cabin dimensions across 25 major international carriers.</p>
+              <div class="blg-card-footer">
+                <span class="blog-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min read</span>
+                <a href="blog-details.html?id=iata-overhead-limits" class="blg-read-link">
+                  <span>Read</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </article>
 
-          <article class="blog-card reveal reveal-delay-1">
+          <article class="blog-card blg-guide-card reveal reveal-delay-1">
             <div class="blog-card-img">
-              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Business traveler in lounge" loading="lazy">
+              <img src="../images/blog-corporate-itinerary.jpg" alt="48-hour corporate travel itinerary guide" loading="lazy">
+              <span class="blg-guide-num">02</span>
             </div>
             <div class="blog-card-body">
               <div class="blog-category">Business Travel</div>
-              <h3 class="blog-title"><a href="blog-details.html">The 48-Hour Corporate Itinerary: One Bag, Two Boardrooms</a></h3>
+              <h3 class="blog-title"><a href="blog-details.html?id=corporate-itinerary">The 48-Hour Corporate Itinerary: One Bag, Two Boardrooms</a></h3>
               <p class="blog-excerpt">Seamless executive gear organization for short layovers.</p>
+              <div class="blg-card-footer">
+                <span class="blog-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min read</span>
+                <a href="blog-details.html?id=corporate-itinerary" class="blg-read-link">
+                  <span>Read</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -285,16 +349,21 @@
          SECTION 6: PRODUCT DISCOVERY CTA
          ============================================================ -->
     <section class="section section-card" id="blog-details-cta">
-      <div class="container">
-        <div class="cta-banner reveal">
-          <span class="section-label" style="color: var(--muted-gold);">Curated Equipment</span>
-          <h2 class="text-white mb-2 font-serif">Explore The Cabin &amp; Carry-On Collection</h2>
-          <p class="mb-4" style="max-width: 60ch; margin-inline: auto;">
+      <div class="container bld-narrow-container">
+        <div class="cta-banner bld-cta-maison reveal">
+          <span class="bld-hero-pill">
+            <i class="fa-solid fa-suitcase-rolling" aria-hidden="true"></i> Curated Equipment
+          </span>
+          <h2 class="text-white mb-2 font-serif" id="article-cta-title">Explore The Cabin &amp; Carry-On Collection</h2>
+          <p class="mb-4 bld-cta-subtitle" id="article-cta-text">
             Put these packing principles into practice with our Stratus Luxe Carbon Cabin Suitcase and Meridian 6-Piece Compression Cube System.
           </p>
           <div class="cta-banner-actions">
-            <a href="service-details.html?id=stratus-carry-on" class="btn btn-gold btn-lg">View Cabin Suitcase &rarr;</a>
-            <a href="services.html?category=travel-accessories" class="btn btn-outline-white btn-lg">Shop Compression Cubes</a>
+            <a href="service-details.html?id=stratus-carry-on" id="article-cta-primary" class="btn btn-gold btn-lg bld-btn-arrow">
+              <span>View Cabin Suitcase</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="services.html?category=travel-accessories" id="article-cta-secondary" class="btn btn-outline-white btn-lg">Shop Compression Cubes</a>
           </div>
         </div>
       </div>
@@ -414,6 +483,142 @@
   <button class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
   <div class="toast-container" aria-live="polite"></div>
 
+  <script src="../js/blog-articles.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      var articles = window.BLOG_ARTICLES || {};
+      var requestedId = new URLSearchParams(window.location.search).get('id');
+      var articleId = articles[requestedId] ? requestedId : 'carry-on-guide';
+      var article = articles[articleId];
+      if (!article) return;
+
+      var iconFallbackMap = {
+        'fa-cloth': 'fa-hand-sparkles',
+        'fa-cable': 'fa-link'
+      };
+
+      function byId(id) { return document.getElementById(id); }
+      function setText(id, value) {
+        var el = byId(id);
+        if (el && value != null) el.textContent = value;
+      }
+
+      document.title = article.title + ' | AeroPack Travel Journal';
+
+      setText('article-breadcrumb', article.breadcrumb);
+      setText('article-category', article.category);
+      setText('article-title', article.title);
+      setText('article-author', article.author);
+      setText('article-author-role', article.role);
+      setText('article-date', article.date);
+      setText('article-read-time', article.readTime);
+      setText('article-topic', article.topic);
+      setText('article-summary', article.summary);
+
+      var image = byId('article-image');
+      if (image) {
+        image.setAttribute('src', article.image);
+        image.setAttribute('alt', article.imageAlt || article.title);
+      }
+
+      var body = byId('article-body');
+      if (body) {
+        body.innerHTML = article.sections.map(function (section) {
+          var paragraphs = (section.paragraphs || []).map(function (paragraph) {
+            return '<p class="bld-p">' + paragraph + '</p>';
+          }).join('');
+
+          var list = section.list
+            ? '<ul class="bld-list">' +
+              section.list.map(function (item) {
+                return '<li>' + item + '</li>';
+              }).join('') + '</ul>'
+            : '';
+
+          var figure = section.figure
+            ? '<figure class="bld-figure">' +
+              '<img src="' + section.figure.src + '" alt="' + section.figure.alt + '" loading="lazy">' +
+              '<figcaption>' + section.figure.caption + '</figcaption></figure>'
+            : '';
+
+          return '<div class="bld-prose-block"><h2 class="font-serif bld-h2">' + section.heading + '</h2>' +
+            paragraphs + list + figure + '</div>';
+        }).join('');
+      }
+
+      var tips = byId('article-tips');
+      if (tips) {
+        tips.innerHTML = article.tips.map(function (tip, idx) {
+          var iconClass = iconFallbackMap[tip.icon] || tip.icon;
+          var delay = idx % 2 === 1 ? ' reveal-delay-1' : '';
+          var code = 'TIP-0' + (idx + 1);
+          return '<div class="bld-tip-card reveal' + delay + '">' +
+            '<div class="bld-tip-top">' +
+            '<span class="bld-tip-icon"><i class="fa-solid ' + iconClass + '" aria-hidden="true"></i></span>' +
+            '<span class="bld-tip-code">' + code + '</span>' +
+            '</div>' +
+            '<h4>' + tip.title + '</h4>' +
+            '<p>' + tip.text + '</p></div>';
+        }).join('');
+      }
+
+      var related = byId('related-articles-grid');
+      if (related) {
+        related.innerHTML = article.related.map(function (relatedId, index) {
+          var item = articles[relatedId];
+          if (!item) return '';
+          var num = String(index + 1).padStart(2, '0');
+          var delay = index > 0 ? ' reveal-delay-' + Math.min(index, 3) : '';
+          return '<article class="blog-card blg-guide-card reveal' + delay + '">' +
+            '<div class="blog-card-img">' +
+            '<img src="' + item.image + '" alt="' + item.imageAlt + '" loading="lazy">' +
+            '<span class="blg-guide-num">' + num + '</span>' +
+            '</div>' +
+            '<div class="blog-card-body">' +
+            '<div class="blog-category">' + item.category + '</div>' +
+            '<h3 class="blog-title"><a href="blog-details.html?id=' + relatedId + '">' + (item.shortTitle || item.title) + '</a></h3>' +
+            '<p class="blog-excerpt">' + item.summary + '</p>' +
+            '<div class="blg-card-footer">' +
+            '<span class="blog-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> ' + (item.readTime || '4 min read') + '</span>' +
+            '<a href="blog-details.html?id=' + relatedId + '" class="blg-read-link"><span>Read</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>' +
+            '</div></div></article>';
+        }).join('');
+      }
+
+      if (article.cta) {
+        setText('article-cta-title', article.cta.title);
+        setText('article-cta-text', article.cta.text);
+
+        var primary = byId('article-cta-primary');
+        if (primary) {
+          var label = (article.cta.primaryLabel || 'Explore Collection').replace(/s*[→→]s*$/, '');
+          primary.innerHTML = '<span>' + label + '</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>';
+          primary.setAttribute('href', article.cta.primaryHref);
+        }
+
+        var secondary = byId('article-cta-secondary');
+        if (secondary) {
+          secondary.textContent = article.cta.secondaryLabel;
+          secondary.setAttribute('href', article.cta.secondaryHref);
+        }
+      }
+
+      var pageUrl = encodeURIComponent(window.location.href);
+      var pageTitle = encodeURIComponent(article.title);
+      var shareLinks = {
+        'share-x': 'https://twitter.com/intent/tweet?text=' + pageTitle + '&url=' + pageUrl,
+        'share-facebook': 'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl,
+        'share-linkedin': 'https://www.linkedin.com/sharing/share-offsite/?url=' + pageUrl,
+        'share-whatsapp': 'https://api.whatsapp.com/send?text=' + pageTitle + '%20' + pageUrl
+      };
+      Object.keys(shareLinks).forEach(function (id) {
+        var link = byId(id);
+        if (link) link.setAttribute('href', shareLinks[id]);
+      });
+    })();
+  </script>
   <script src="../js/products.js"></script>
   <script src="../js/main.js"></script>
 </body>

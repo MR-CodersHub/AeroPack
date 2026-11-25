@@ -18,214 +18,110 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="../css/main.css">
-  <style>
-    .maintenance-hero {
-      min-height: calc(100vh - 80px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 4rem 1.5rem;
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 50% 30%, rgba(40, 91, 98, 0.35) 0%, rgba(23, 40, 61, 0.85) 55%, rgba(12, 22, 34, 0.96) 100%),
-        url('../images/hero-maintenance-bg.jpg') center / cover no-repeat;
-    }
-    .maintenance-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3.5rem;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 2;
-    }
-    .maintenance-img-box {
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(185,154,99,0.25);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      box-shadow: 0 24px 60px rgba(0,0,0,0.45);
-      position: relative;
-    }
-    .maintenance-img-box img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: var(--radius-md);
-    }
-    .maintenance-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.4rem 1rem;
-      border-radius: 50px;
-      background: rgba(185,154,99,0.15);
-      border: 1px solid var(--muted-gold);
-      color: var(--muted-gold);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 1.25rem;
-    }
-    .pulse-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #4E9CA7;
-      box-shadow: 0 0 10px #4E9CA7;
-      animation: pulse 1.8s infinite;
-    }
-    @keyframes pulse {
-      0% { opacity: 0.4; transform: scale(0.9); }
-      50% { opacity: 1; transform: scale(1.2); }
-      100% { opacity: 0.4; transform: scale(0.9); }
-    }
-    .countdown-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      margin: 2rem 0;
-    }
-    .countdown-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: var(--radius-sm);
-      padding: 1rem 0.5rem;
-      text-align: center;
-    }
-    .countdown-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: var(--muted-gold);
-      line-height: 1;
-    }
-    .countdown-label {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: rgba(255,255,255,0.6);
-      margin-top: 0.35rem;
-    }
-    .progress-track {
-      width: 100%;
-      height: 8px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 4px;
-      overflow: hidden;
-      margin-top: 0.5rem;
-    }
-    .progress-fill {
-      width: 86%;
-      height: 100%;
-      background: linear-gradient(90deg, var(--deep-teal), var(--muted-gold));
-      border-radius: 4px;
-    }
-    .maintenance-subscribe {
-      display: flex;
-      gap: 0.5rem;
-      margin-top: 1.5rem;
-      max-width: 480px;
-    }
-    @media (max-width: 991px) {
-      .maintenance-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2.5rem;
-      }
-      .maintenance-subscribe {
-        margin: 1.5rem auto 0 auto;
-      }
-    }
-  </style>
 </head>
-<body>
+<body class="mnt-page">
 
   <!-- MINIMAL HEADER -->
-  <header style="padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08);">
-    <a href="../index.html" class="navbar-logo">
+  <header class="mnt-header">
+    <a href="../index.html" class="navbar-logo" aria-label="AeroPack Home">
       <img src="../images/favicon.svg" alt="AeroPack Logo" class="navbar-logo-img">
       <div class="navbar-logo-text">
         <span class="navbar-logo-name">AeroPack</span>
         <span class="navbar-logo-tagline">Engineered for the Modern Voyager</span>
       </div>
     </a>
-  <div class="flex gap-2">
-    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button>
-    <button class="rtl-toggle" onclick="toggleDir()">RTL</button>
-  </div>
+    <div class="mnt-header-actions">
+      <a href="../index.html" class="btn btn-outline btn-sm mnt-back-btn">
+        <i class="fa-solid fa-house" aria-hidden="true"></i>
+        <span>Flagship Home</span>
+      </a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="rtl-toggle" onclick="toggleDir()" aria-label="Toggle Direction">RTL</button>
+    </div>
   </header>
 
-  <main class="page-content">
-    <div class="maintenance-hero">
+  <main class="mnt-main">
+    <section class="mnt-hero" aria-labelledby="mnt-heading">
       <div class="container">
-        <div class="maintenance-grid">
-          <div>
-            <div class="maintenance-badge">
-              <span class="pulse-dot"></span> Scheduled Fleet Calibration
-            </div>
-            <h1 class="font-serif mb-3" style="font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.15; color: var(--white);">
-              Upgrading Our Digital Travel Infrastructure
+        <div class="mnt-grid">
+          <div class="mnt-copy">
+            <span class="mnt-badge">
+              <span class="mnt-pulse-dot" aria-hidden="true"></span>
+              <span>Scheduled Fleet Calibration</span>
+            </span>
+            <h1 id="mnt-heading" class="font-serif">
+              Upgrading Our Digital <span class="mnt-accent">Travel Infrastructure.</span>
             </h1>
-            <p style="color: rgba(255,255,255,0.8); font-size: 1.05rem; line-height: 1.65;" class="mb-4">
+            <p class="mnt-lead">
               We are carrying out scheduled engineering calibrations and global inventory synchronization to guarantee ultra-secure checkouts, real-time luggage telemetry, and faster international dispatch for your future expeditions.
             </p>
 
             <!-- Progress Meter -->
-            <div class="mb-4">
-              <div class="flex justify-between text-xs" style="color: var(--muted-gold); font-weight: 600;">
+            <div class="mnt-progress-block">
+              <div class="mnt-progress-head">
                 <span>System Recalibration Status</span>
-                <span>86% Completed</span>
+                <span class="mnt-progress-pct">86% Completed</span>
               </div>
-              <div class="progress-track">
-                <div class="progress-fill"></div>
+              <div class="mnt-progress-track">
+                <div class="mnt-progress-fill"></div>
               </div>
             </div>
 
             <!-- Countdown Timer -->
-            <div class="countdown-grid">
-              <div class="countdown-card">
-                <div class="countdown-num" id="cd-hours">02</div>
-                <div class="countdown-label">Hours</div>
+            <div class="mnt-countdown-grid" aria-label="Estimated Resume Countdown">
+              <div class="mnt-countdown-card">
+                <div class="mnt-countdown-num" id="cd-hours">02</div>
+                <div class="mnt-countdown-label">Hours</div>
               </div>
-              <div class="countdown-card">
-                <div class="countdown-num" id="cd-mins">45</div>
-                <div class="countdown-label">Minutes</div>
+              <div class="mnt-countdown-card">
+                <div class="mnt-countdown-num" id="cd-mins">45</div>
+                <div class="mnt-countdown-label">Minutes</div>
               </div>
-              <div class="countdown-card">
-                <div class="countdown-num" id="cd-secs">18</div>
-                <div class="countdown-label">Seconds</div>
+              <div class="mnt-countdown-card">
+                <div class="mnt-countdown-num" id="cd-secs">18</div>
+                <div class="mnt-countdown-label">Seconds</div>
               </div>
-              <div class="countdown-card">
-                <div class="countdown-num" id="cd-ms">80</div>
-                <div class="countdown-label">Sub-sec</div>
+              <div class="mnt-countdown-card">
+                <div class="mnt-countdown-num" id="cd-ms">80</div>
+                <div class="mnt-countdown-label">Sub-sec</div>
               </div>
             </div>
 
             <!-- Notification Form -->
-            <form class="maintenance-subscribe" onsubmit="return handleMaintenanceNotify(event)">
-              <input type="email" placeholder="Enter your email for takeoff notification" required class="form-control" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); color: var(--white);" aria-label="Email Address">
-              <button type="submit" class="btn btn-gold text-nowrap"><i class="fa-solid fa-paper-plane mr-1"></i> Notify Me</button>
+            <form class="mnt-subscribe" onsubmit="return handleMaintenanceNotify(event)">
+              <input type="email" placeholder="Enter your email for takeoff notification" required class="form-control mnt-input" aria-label="Email Address">
+              <button type="submit" class="btn btn-gold text-nowrap mnt-notify-btn">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                <span>Notify Me</span>
+              </button>
             </form>
 
-            <div class="mt-4 flex gap-4 items-center flex-wrap" style="font-size: 0.85rem; color: rgba(255,255,255,0.85);">
-              <a href="tel:+18005552376" class="text-white hover-gold font-semibold" style="text-decoration:none;"><i class="fa-solid fa-phone text-gold mr-1"></i> Urgent Concierge: +1 (800) 555-AERO</a>
-              <a href="mailto:concierge@aeropack-travel.com" class="text-white hover-gold font-semibold" style="text-decoration:none;"><i class="fa-solid fa-envelope text-gold mr-1"></i> concierge@aeropack-travel.com</a>
+            <div class="mnt-concierge-strip">
+              <a href="tel:+18005552376" class="mnt-concierge-link">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <span>Urgent Concierge: +1 (800) 555-AERO</span>
+              </a>
+              <a href="mailto:concierge@aeropack-travel.com" class="mnt-concierge-link">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <span>concierge@aeropack-travel.com</span>
+              </a>
             </div>
           </div>
 
           <!-- Vector Illustration Container -->
-          <div class="maintenance-img-box">
-            <img src="../images/maintenance.svg" alt="AeroPack Fleet Calibration and Engineering Vector Illustration">
+          <div class="mnt-visual-frame">
+            <div class="mnt-visual-topbar">
+              <span>SYSTEM TELEMETRY &bull; NODE 04</span>
+              <span class="mnt-visual-status"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> ACTIVE SYNC</span>
+            </div>
+            <div class="mnt-visual-media">
+              <img src="../images/maintenance.svg" alt="AeroPack Fleet Calibration and Engineering Vector Illustration">
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
-
 
   <div class="toast-container" aria-live="polite"></div>
 

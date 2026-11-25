@@ -108,23 +108,60 @@
     <!-- ============================================================
          SECTION 1: BLOG HERO
          ============================================================ -->
-    <section class="page-hero" id="blog-hero">
+    <section class="page-hero blg-hero" id="blog-hero">
       <div class="page-hero-bg">
-        <img src="../images/hero-blog.jpg" alt="">
+        <img src="../images/hero-blog.jpg" alt="Sunset airport terminal with AeroPack yellow carry-on luggage">
       </div>
-      <div class="page-hero-overlay"></div>
-      <div class="hero-side-image page-hero-side-image" aria-hidden="true">
-        <img src="../images/hero-blog-side.jpg" alt="">
-      </div>
-      <div class="container page-hero-content">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a> &gt; <span>Blog</span>
-        </nav>
-        <span class="section-label">AeroPack Editorial</span>
-        <h1>Travel Better. Pack Smarter.</h1>
-        <p>
-          Expert packing guides, airline luggage dimension regulations, suitcase maintenance advice, and global destination dispatches curated for modern travelers.
-        </p>
+      <div class="page-hero-overlay blg-hero-overlay"></div>
+
+      <div class="container blg-hero-container">
+        <div class="blg-hero-grid">
+          <div class="blg-hero-copy">
+            <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+              <a href="../index.html">Home</a>
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              <span>Blog</span>
+            </nav>
+            <span class="blg-hero-pill">
+              <i class="fa-solid fa-feather-pointed" aria-hidden="true"></i> AeroPack Editorial &bull; Volume IV
+            </span>
+            <h1>Travel Better. <span class="blg-hero-accent">Pack Smarter.</span></h1>
+            <p class="blg-hero-lead">
+              Expert packing guides, airline luggage dimension regulations, suitcase maintenance advice, and global destination dispatches curated for modern travelers.
+            </p>
+            <div class="blg-hero-actions">
+              <a href="#featured-article" class="btn btn-gold blg-btn-primary">
+                <i class="fa-solid fa-book-open" aria-hidden="true"></i> Read Featured Dispatch
+              </a>
+              <a href="#latest-guides" class="btn btn-outline">Explore Travel Guides</a>
+            </div>
+            <div class="blg-hero-metrics">
+              <div class="blg-metric-item">
+                <strong>04</strong>
+                <span>Curated Guides</span>
+              </div>
+              <div class="blg-metric-item">
+                <strong>45K+</strong>
+                <span>Voyager Readers</span>
+              </div>
+              <div class="blg-metric-item">
+                <strong>06 Min</strong>
+                <span>Avg Dispatch Read</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blg-hero-media-col">
+            <div class="blg-hero-frame">
+              <img src="../images/hero-blog-side.jpg" alt="Studio stack of colorful concentric-ribbed AeroPack hard-shell suitcases">
+              <div class="blg-frame-scrim"></div>
+              <div class="blg-frame-caption">
+                <span class="blg-frame-kicker">Atelier Journal</span>
+                <strong>The Colorway &amp; Craft Dispatch</strong>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -133,31 +170,42 @@
          ============================================================ -->
     <section class="section section-offwhite" id="featured-article">
       <div class="container">
-        <span class="section-label">Editorial Feature</span>
-        <div class="card reveal" style="display: grid; grid-template-columns: 1.2fr 1fr; overflow: hidden;">
-          <div style="aspect-ratio: 16/10; overflow: hidden;">
-            <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=1000&q=80" alt="Traveler with suitcase navigating airport terminal concourse" style="width:100%; height:100%; object-fit:cover;">
-          </div>
-          <div class="p-4 flex flex-col justify-center">
-            <span class="blog-category">Master Packing Guide</span>
-            <h2 class="font-serif mb-3" style="font-size: 1.8rem; line-height: 1.25;">
-              The Art of Carry-On Travel: How to Pack 14 Days of Wardrobe into a 21" Suitcase
-            </h2>
-            <p class="text-secondary mb-4">
-              Eliminate baggage carousel waits and airline lost-luggage anxieties. Learn the capsule wardrobe formula, compression cube compression ratios, and dual-sided clamshell organization strategies utilized by international flight crews.
-            </p>
-            <div class="flex items-center gap-3 text-xs text-secondary mb-4">
-              <span><i class="fa-solid fa-pen-nib"></i> By Julien Mercer</span>
-              <span>&bull;</span>
-              <span><i class="fa-regular fa-calendar"></i> October 14, 2026</span>
-              <span>&bull;</span>
-              <span><i class="fa-regular fa-clock"></i> 7 min read</span>
-            </div>
-            <div>
-              <a href="blog-details.html" class="btn btn-teal">Read Full Article &rarr;</a>
-            </div>
-          </div>
+        <div class="blg-section-head">
+          <span class="section-label">Editorial Feature</span>
+          <h2 class="section-title">Featured Dispatch</h2>
         </div>
+
+        <article class="blg-featured-card reveal">
+          <div class="blg-featured-media">
+            <img src="../images/blog-carry-on-guide.jpg" alt="The Art of Carry-On Travel packing guide">
+            <span class="blg-featured-badge">
+              <i class="fa-solid fa-star" aria-hidden="true"></i> Cover Story
+            </span>
+          </div>
+          <div class="blg-featured-body">
+            <div class="blg-featured-meta-top">
+              <span class="blog-category">Packing Mastery</span>
+              <span class="blg-issue-tag">Issue No. 01</span>
+            </div>
+            <h3>The Art of Carry-On Travel: 7 Days in 38 Liters</h3>
+            <p class="blg-featured-excerpt">
+              Skip baggage claim queues and airline check-in delays forever. Learn the 3-3-3 modular wardrobe method paired with compression packing cubes so you travel lighter, smarter, and completely unrestricted.
+            </p>
+            <div class="blog-meta blg-featured-meta">
+              <span class="blog-meta-item"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Mar 18, 2026</span>
+              <span aria-hidden="true">&bull;</span>
+              <span class="blog-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min read</span>
+              <span aria-hidden="true">&bull;</span>
+              <span class="blog-meta-item"><i class="fa-regular fa-user" aria-hidden="true"></i> Julien Mercer</span>
+            </div>
+            <div class="blg-featured-actions">
+              <a href="blog-details.html?id=carry-on-guide" class="btn btn-teal blg-btn-read">
+                <span>Read Full Article</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -166,62 +214,86 @@
          ============================================================ -->
     <section class="section section-card" id="latest-guides">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Essential Knowledge</span>
-          <h2 class="section-title">Latest Travel Guides</h2>
-          <p class="section-subtitle">
-            Curated dispatches focusing on airport efficiency, family travel logistics, and technical luggage selection.
-          </p>
+        <div class="blg-guides-header">
+          <div class="section-header">
+            <span class="section-label">Essential Knowledge</span>
+            <h2 class="section-title">Latest Travel Guides</h2>
+            <p class="section-subtitle">
+              Curated dispatches focusing on airport efficiency, family travel logistics, and technical luggage selection.
+            </p>
+          </div>
+          <span class="blg-archive-pill">03 Field Dispatches</span>
         </div>
 
         <div class="grid cols-3 gap-3">
           <!-- Guide 1 -->
-          <article class="blog-card reveal">
+          <article class="blog-card blg-guide-card reveal">
             <div class="blog-card-img">
-              <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=600&q=80" alt="Cabin suitcase sizing diagram" loading="lazy">
+              <img src="../images/blog-iata-limits.jpg" alt="IATA overhead bin limits guide" loading="lazy">
+              <span class="blg-guide-num">01</span>
             </div>
             <div class="blog-card-body">
               <div class="blog-category">Buying Advice</div>
-              <h3 class="blog-title"><a href="blog-details.html">Understanding IATA Overhead Bin Limits Across Major Airlines</a></h3>
+              <h3 class="blog-title"><a href="blog-details.html?id=iata-overhead-limits">Understanding IATA Overhead Bin Limits Across Major Airlines</a></h3>
               <p class="blog-excerpt">A comprehensive breakdown of cabin luggage allowances across European, North American, and Asian carriers.</p>
-              <div class="blog-meta">
-                <span class="blog-meta-item"><i class="fa-regular fa-clock"></i> 5 min</span>
-                <span>&bull;</span>
-                <span class="blog-meta-item">Luggage Sizing</span>
+              <div class="blg-card-footer">
+                <div class="blog-meta">
+                  <span class="blog-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span class="blog-meta-item">Luggage Sizing</span>
+                </div>
+                <a href="blog-details.html?id=iata-overhead-limits" class="blg-read-link">
+                  <span>Read</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
           </article>
 
           <!-- Guide 2 -->
-          <article class="blog-card reveal reveal-delay-1">
+          <article class="blog-card blg-guide-card reveal reveal-delay-1">
             <div class="blog-card-img">
-              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Compression cubes inside suitcase" loading="lazy">
+              <img src="../images/blog-compression-cubes.jpg" alt="Compression packing cubes organization guide" loading="lazy">
+              <span class="blg-guide-num">02</span>
             </div>
             <div class="blog-card-body">
               <div class="blog-category">Organization</div>
-              <h3 class="blog-title"><a href="blog-details.html">How Compression Packing Cubes Save 50% Internal Luggage Space</a></h3>
+              <h3 class="blog-title"><a href="blog-details.html?id=compression-cubes">How Compression Packing Cubes Save 50% Internal Luggage Space</a></h3>
               <p class="blog-excerpt">Why rolling versus folding clothes in silicone ripstop compression cubes keeps dress shirts wrinkle-free.</p>
-              <div class="blog-meta">
-                <span class="blog-meta-item"><i class="fa-regular fa-clock"></i> 4 min</span>
-                <span>&bull;</span>
-                <span class="blog-meta-item">Packing Tips</span>
+              <div class="blg-card-footer">
+                <div class="blog-meta">
+                  <span class="blog-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 min</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span class="blog-meta-item">Packing Tips</span>
+                </div>
+                <a href="blog-details.html?id=compression-cubes" class="blg-read-link">
+                  <span>Read</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
           </article>
 
           <!-- Guide 3 -->
-          <article class="blog-card reveal reveal-delay-2">
+          <article class="blog-card blg-guide-card reveal reveal-delay-2">
             <div class="blog-card-img">
-              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Business travel briefing in lounge" loading="lazy">
+              <img src="../images/blog-corporate-itinerary.jpg" alt="48-hour corporate travel itinerary guide" loading="lazy">
+              <span class="blg-guide-num">03</span>
             </div>
             <div class="blog-card-body">
               <div class="blog-category">Business Travel</div>
-              <h3 class="blog-title"><a href="blog-details.html">The 48-Hour Corporate Itinerary: One Bag, Two Boardrooms</a></h3>
+              <h3 class="blog-title"><a href="blog-details.html?id=corporate-itinerary">The 48-Hour Corporate Itinerary: One Bag, Two Boardrooms</a></h3>
               <p class="blog-excerpt">Streamline tech storage, transit charging, and suit wrinkle prevention for high-stakes business sprints.</p>
-              <div class="blog-meta">
-                <span class="blog-meta-item"><i class="fa-regular fa-clock"></i> 6 min</span>
-                <span>&bull;</span>
-                <span class="blog-meta-item">Corporate Travel</span>
+              <div class="blg-card-footer">
+                <div class="blog-meta">
+                  <span class="blog-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span class="blog-meta-item">Corporate Travel</span>
+                </div>
+                <a href="blog-details.html?id=corporate-itinerary" class="blg-read-link">
+                  <span>Read</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
           </article>
@@ -232,8 +304,8 @@
     <!-- ============================================================
          SECTION 4: LUGGAGE KNOWLEDGE & TIPS
          ============================================================ -->
-    <section class="section section-dark" id="luggage-knowledge">
-      <div class="container">
+    <section class="section section-dark blg-knowledge-section" id="luggage-knowledge">
+      <div class="container blg-knowledge-container">
         <div class="section-header centered">
           <span class="section-label">Hardware &amp; Care</span>
           <h2 class="section-title">Luggage Knowledge &amp; Expert Advice</h2>
@@ -242,30 +314,82 @@
           </p>
         </div>
 
-        <div class="grid cols-auto-fill-280 gap-3">
-          <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <h4>Hard-Shell vs. Soft-Shell</h4>
-            <p>Polycarbonate provides unbeatable impact resistance against rain and baggage drops; ballistic fabric delivers flexible exterior pockets for immediate transit access.</p>
-          </div>
+        <div class="grid cols-2 gap-4 blg-knowledge-grid">
+          <article class="feature-card blg-knowledge-card reveal">
+            <div class="blg-knowledge-media">
+              <img src="../images/blog-knowledge-materials.jpg" alt="Hard-shell and soft-shell luggage materials" loading="lazy">
+              <span class="blg-knowledge-code">MAT-01</span>
+              <span class="blg-knowledge-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+            </div>
+            <div class="blg-knowledge-content">
+              <h4>Hard-Shell vs. Soft-Shell</h4>
+              <p>Polycarbonate provides unbeatable impact resistance against rain and baggage drops; ballistic fabric delivers flexible exterior pockets for immediate transit access.</p>
+              <div class="blg-knowledge-footer">
+                <a href="blog-details.html?id=materials-shells" class="blg-spec-pill blg-spec-link"><span>Makrolon vs. Ballistic</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="blog-details.html?id=materials-shells" class="blg-knowledge-btn">
+                  <span>Read More</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
 
-          <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon"><i class="fa-solid fa-ruler-combined"></i></div>
-            <h4>Understanding Suitcase Sizes</h4>
-            <p>From 20" carry-ons (38L) to 24" mid-size trunks (68L) and 28" expedition bags (102L), choose the exact volume for your voyage duration.</p>
-          </div>
+          <article class="feature-card blg-knowledge-card reveal reveal-delay-1">
+            <div class="blg-knowledge-media">
+              <img src="../images/blog-knowledge-sizes.jpg" alt="Check-in suitcase size comparison" loading="lazy">
+              <span class="blg-knowledge-code">MAT-02</span>
+              <span class="blg-knowledge-icon"><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i></span>
+            </div>
+            <div class="blg-knowledge-content">
+              <h4>Understanding Suitcase Sizes</h4>
+              <p>From 20" carry-ons (38L) to 24" mid-size trunks (68L) and 28" expedition bags (102L), choose the exact volume for your voyage duration.</p>
+              <div class="blg-knowledge-footer">
+                <a href="blog-details.html?id=suitcase-sizes" class="blg-spec-pill blg-spec-link"><span>38L / 68L / 102L Tiers</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="blog-details.html?id=suitcase-sizes" class="blg-knowledge-btn">
+                  <span>Read More</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
 
-          <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
-            <h4>Prolonging Polycarbonate Life</h4>
-            <p>Remove airport baggage conveyor marks with gentle microfiber blocks and lubricate wheel axles with silicone spray twice a year.</p>
-          </div>
+          <article class="feature-card blg-knowledge-card reveal reveal-delay-2">
+            <div class="blg-knowledge-media">
+              <img src="../images/blog-knowledge-care.jpg" alt="Polycarbonate check-in trunk shell" loading="lazy">
+              <span class="blg-knowledge-code">MAT-03</span>
+              <span class="blg-knowledge-icon"><i class="fa-solid fa-spray-can-sparkles" aria-hidden="true"></i></span>
+            </div>
+            <div class="blg-knowledge-content">
+              <h4>Prolonging Polycarbonate Life</h4>
+              <p>Remove airport baggage conveyor marks with gentle microfiber blocks and lubricate wheel axles with silicone spray twice a year.</p>
+              <div class="blg-knowledge-footer">
+                <a href="blog-details.html?id=polycarbonate-care" class="blg-spec-pill blg-spec-link"><span>Biannual Axle Care</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="blog-details.html?id=polycarbonate-care" class="blg-knowledge-btn">
+                  <span>Read More</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
 
-          <div class="feature-card reveal reveal-delay-3" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
-            <h4>TSA Lock Protocol Explained</h4>
-            <p>Why modern customs authorities require TSA007 locks, how master keys operate, and how to reset your personal 3-digit combination.</p>
-          </div>
+          <article class="feature-card blg-knowledge-card reveal reveal-delay-3">
+            <div class="blg-knowledge-media">
+              <img src="../images/blog-knowledge-tsa.jpg" alt="TSA-approved luggage cable lock set" loading="lazy">
+              <span class="blg-knowledge-code">MAT-04</span>
+              <span class="blg-knowledge-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></span>
+            </div>
+            <div class="blg-knowledge-content">
+              <h4>TSA Lock Protocol Explained</h4>
+              <p>Why modern customs authorities require TSA007 locks, how master keys operate, and how to reset your personal 3-digit combination.</p>
+              <div class="blg-knowledge-footer">
+                <a href="blog-details.html?id=tsa-lock-protocol" class="blg-spec-pill blg-spec-link"><span>TSA007 Master Spec</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="blog-details.html?id=tsa-lock-protocol" class="blg-knowledge-btn">
+                  <span>Read More</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -284,27 +408,57 @@
         </div>
 
         <div class="grid cols-3 gap-3">
-          <div class="journey-card reveal">
-            <span class="journey-icon"><i class="fa-solid fa-mountain-sun"></i></span>
-            <div>
-              <h4>Alpine Rail Journeys</h4>
-              <p>Packing for variable mountain weather: thermal compression cubes, weather-sealed ballistic bags, and nimble spinner wheels.</p>
+          <div class="journey-card blg-itinerary-card reveal">
+            <div class="blg-itinerary-image">
+              <img src="../images/blog-itinerary-alpine.jpg" alt="Travel pack for an alpine rail journey" loading="lazy">
+            </div>
+            <div class="blg-itinerary-content">
+              <span class="journey-icon"><i class="fa-solid fa-mountain-sun" aria-hidden="true"></i></span>
+              <div class="blg-itinerary-body">
+                <span class="blg-itinerary-kicker">Switzerland &bull; Alpine</span>
+                <h4>Alpine Rail Journeys</h4>
+                <p>Packing for variable mountain weather: thermal compression cubes, weather-sealed ballistic bags, and nimble spinner wheels.</p>
+                <a href="blog-details.html?id=alpine-rail" class="blg-read-link">
+                  <span>Read Dispatch</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="journey-card reveal reveal-delay-1">
-            <span class="journey-icon"><i class="fa-solid fa-train"></i></span>
-            <div>
-              <h4>Kyoto Shinkansen Transit</h4>
-              <p>Navigating bullet trains with luggage reservation limits: why 24" medium trunks fit perfectly in overhead baggage racks.</p>
+          <div class="journey-card blg-itinerary-card reveal reveal-delay-1">
+            <div class="blg-itinerary-image">
+              <img src="../images/blog-itinerary-kyoto.jpg" alt="Cabin suitcase for Shinkansen transit" loading="lazy">
+            </div>
+            <div class="blg-itinerary-content">
+              <span class="journey-icon"><i class="fa-solid fa-train" aria-hidden="true"></i></span>
+              <div class="blg-itinerary-body">
+                <span class="blg-itinerary-kicker">Kyoto &bull; Shinkansen</span>
+                <h4>Kyoto Shinkansen Transit</h4>
+                <p>Navigating bullet trains with luggage reservation limits: why 24" medium trunks fit perfectly in overhead baggage racks.</p>
+                <a href="blog-details.html?id=kyoto-shinkansen" class="blg-read-link">
+                  <span>Read Dispatch</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="journey-card reveal reveal-delay-2">
-            <span class="journey-icon"><i class="fa-solid fa-sailboat"></i></span>
-            <div>
-              <h4>Mediterranean Coastal Getaways</h4>
-              <p>Durable duffel bags and lightweight carry-ons crafted for ferry boarding ramps and cobblestone seaside alleys.</p>
+          <div class="journey-card blg-itinerary-card reveal reveal-delay-2">
+            <div class="blg-itinerary-image">
+              <img src="../images/blog-itinerary-riviera.jpg" alt="Duffel bag for a coastal getaway" loading="lazy">
+            </div>
+            <div class="blg-itinerary-content">
+              <span class="journey-icon"><i class="fa-solid fa-sailboat" aria-hidden="true"></i></span>
+              <div class="blg-itinerary-body">
+                <span class="blg-itinerary-kicker">Riviera &bull; Coast</span>
+                <h4>Mediterranean Coastal Getaways</h4>
+                <p>Durable duffel bags and lightweight carry-ons crafted for ferry boarding ramps and cobblestone seaside alleys.</p>
+                <a href="blog-details.html?id=mediterranean-coastal" class="blg-read-link">
+                  <span>Read Dispatch</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -316,17 +470,19 @@
          ============================================================ -->
     <section class="section section-card" id="newsletter-cta">
       <div class="container">
-        <div class="cta-banner reveal">
-          <span class="section-label" style="color: var(--muted-gold);">AeroPack Dispatch</span>
-          <h2 class="text-white mb-2 font-serif">Receive Curated Travel &amp; Product Updates</h2>
-          <p class="mb-4" style="max-width: 58ch; margin-inline: auto;">
+        <div class="cta-banner blg-cta-maison reveal">
+          <span class="blg-hero-pill">
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i> AeroPack Dispatch
+          </span>
+          <h2 class="text-white mb-2 font-serif">Receive Curated Travel <span class="blg-hero-accent">&amp; Product Updates</span></h2>
+          <p class="mb-4 blg-cta-subtitle">
             Join over 45,000 discerning travelers who receive our monthly packing guides, new product drops, and exclusive seasonal luggage offers.
           </p>
-          <form class="footer-newsletter-form" style="max-width: 480px; margin: 0 auto;" onsubmit="return handleNewsletterSubmit(event)">
+          <form class="footer-newsletter-form blg-newsletter-form" onsubmit="return handleNewsletterSubmit(event)">
             <input type="email" placeholder="Enter your email address" required aria-label="Email for travel journal">
             <button type="submit" class="btn btn-gold">Subscribe Free</button>
           </form>
-          <p class="text-xs mt-3" style="color: rgba(255,255,255,0.6);">
+          <p class="text-xs mt-3 blg-cta-note">
             No spam. Unsubscribe anytime with a single click.
           </p>
         </div>

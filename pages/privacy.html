@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-theme="dark">
+<html lang="en" dir="ltr" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,23 +115,60 @@
     <!-- ============================================================
          SECTION 1: PRIVACY HERO
          ============================================================ -->
-    <section class="page-hero" id="privacy-hero">
+    <section class="page-hero leg-hero" id="privacy-hero">
       <div class="page-hero-bg">
-        <img src="../images/hero-privacy.jpg" alt="">
+        <img src="../images/hero-privacy.jpg" alt="AeroPack architectural luggage workshop environment">
       </div>
-      <div class="page-hero-overlay"></div>
-      <div class="hero-side-image page-hero-side-image" aria-hidden="true">
-        <img src="../images/hero-privacy-side.jpg" alt="">
-      </div>
-      <div class="container page-hero-content">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a> &gt; <span>Privacy Policy</span>
-        </nav>
-        <span class="section-label">Data Protection &bull; Privacy Standards</span>
-        <h1>Global Privacy Policy &amp; Confidentiality</h1>
-        <p>
-          At AeroPack, we protect your personal travel data with the same uncompromising rigor and precision we engineer into our aerospace-grade suitcases.
-        </p>
+      <div class="page-hero-overlay leg-hero-overlay"></div>
+
+      <div class="container leg-hero-container">
+        <div class="leg-hero-grid">
+          <div class="leg-hero-copy">
+            <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+              <a href="../index.html">Home</a>
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              <span>Privacy Policy</span>
+            </nav>
+            <span class="leg-hero-pill">
+              <i class="fa-solid fa-user-lock" aria-hidden="true"></i> Data Protection &bull; Privacy Standards
+            </span>
+            <h1>Global Privacy Policy <span class="leg-hero-accent">&amp; Confidentiality.</span></h1>
+            <p class="leg-hero-lead">
+              At AeroPack, we protect your personal travel data with the same uncompromising rigor and precision we engineer into our aerospace-grade suitcases.
+            </p>
+            <div class="leg-hero-actions">
+              <a href="#privacy-collection" class="btn btn-gold leg-btn-primary">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Explore Data Practices
+              </a>
+              <a href="#privacy-rights" class="btn btn-outline">Your GDPR / CCPA Rights</a>
+            </div>
+            <div class="leg-hero-metrics">
+              <div class="leg-metric-item">
+                <strong>Zero</strong>
+                <span>Third-Party Brokers</span>
+              </div>
+              <div class="leg-metric-item">
+                <strong>Local</strong>
+                <span>Browser State Vault</span>
+              </div>
+              <div class="leg-metric-item">
+                <strong>Global</strong>
+                <span>GDPR &amp; CCPA Scope</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="leg-hero-media-col">
+            <div class="leg-hero-frame">
+              <img src="../images/hero-privacy-side.jpg" alt="AeroPack precision-stacked polycarbonate suitcases">
+              <div class="leg-frame-scrim"></div>
+              <div class="leg-frame-caption">
+                <span class="leg-frame-kicker">Privacy First</span>
+                <strong>Zero Behavioral Telemetry</strong>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -139,25 +176,36 @@
          SECTION 2: DATA WE COLLECT
          ============================================================ -->
     <section class="section section-offwhite" id="privacy-collection">
-      <div class="container">
-        <div class="max-w-900 mx-auto">
-          <div class="section-header mb-4 reveal">
+      <div class="container leg-narrow-container">
+        <div class="leg-section-head reveal">
+          <div>
             <span class="section-label">01. Information Taxonomy</span>
-            <h2 class="font-serif">Data We Collect &amp; Process</h2>
+            <h2 class="section-title">Data We Collect &amp; Process</h2>
           </div>
-          <div class="grid cols-2 gap-4">
-            <div class="card p-4 reveal">
-              <h4 class="font-serif mb-2 text-gold"><i class="fa-solid fa-address-card mr-2"></i> Information You Provide</h4>
-              <p class="text-sm text-secondary">
-                When submitting warranty repair forms, booking concierge inquiries, or joining our travel journal newsletter, we collect your name, email, phone number, shipping address, and proof of purchase documents.
-              </p>
+          <span class="leg-clause-badge">Policy DP-01</span>
+        </div>
+
+        <div class="grid cols-2 gap-4">
+          <div class="leg-card reveal">
+            <div class="leg-card-top">
+              <span class="leg-icon-box"><i class="fa-solid fa-address-card" aria-hidden="true"></i></span>
+              <span class="leg-card-code">PR-01</span>
             </div>
-            <div class="card p-4 reveal">
-              <h4 class="font-serif mb-2 text-gold"><i class="fa-solid fa-hard-drive mr-2"></i> Client-Side Preferences</h4>
-              <p class="text-sm text-secondary">
-                We store your shopping cart contents, saved wishlist luggage items, dark/light theme choice, and RTL layout selection strictly in your browser's LocalStorage. This data never leaves your device unprompted.
-              </p>
+            <h4>Information You Provide</h4>
+            <p class="leg-copy mb-0">
+              When submitting warranty repair forms, booking concierge inquiries, or joining our travel journal newsletter, we collect your name, email, phone number, shipping address, and proof of purchase documents.
+            </p>
+          </div>
+
+          <div class="leg-card reveal reveal-delay-1">
+            <div class="leg-card-top">
+              <span class="leg-icon-box"><i class="fa-solid fa-hard-drive" aria-hidden="true"></i></span>
+              <span class="leg-card-code">PR-02</span>
             </div>
+            <h4>Client-Side Preferences</h4>
+            <p class="leg-copy mb-0">
+              We store your shopping cart contents, saved wishlist luggage items, dark/light theme choice, and RTL layout selection strictly in your browser's LocalStorage. This data never leaves your device unprompted.
+            </p>
           </div>
         </div>
       </div>
@@ -166,21 +214,23 @@
     <!-- ============================================================
          SECTION 3: HOW WE UTILIZE YOUR DATA
          ============================================================ -->
-    <section class="section" id="privacy-usage">
-      <div class="container">
-        <div class="max-w-900 mx-auto">
-          <div class="section-header mb-4 reveal">
+    <section class="section section-card" id="privacy-usage">
+      <div class="container leg-narrow-container">
+        <div class="leg-section-head reveal">
+          <div>
             <span class="section-label">02. Purposeful Processing</span>
-            <h2 class="font-serif">How Your Data Powers Seamless Travel</h2>
+            <h2 class="section-title">How Your Data Powers Seamless Travel</h2>
           </div>
-          <div class="card p-4 reveal">
-            <ul class="text-secondary" style="padding-left: 1.25rem; line-height: 1.85;">
-              <li><strong>Fulfillment &amp; Dispatch:</strong> Coordinating with certified couriers to deliver carry-on suitcases and replacement Hinomoto wheel sets to your exact home or hotel address.</li>
-              <li><strong>Warranty Registration &amp; Traceability:</strong> Maintaining serial number records for our limited lifetime warranties to ensure rapid replacement during verified defect assessments.</li>
-              <li><strong>Concierge Communication:</strong> Responding directly to your sizing, airline cabin compliance, or international freight queries.</li>
-              <li><strong>Zero Data Monetization:</strong> We never sell, lease, or broker your personal information to third-party ad brokers or data aggregators.</li>
-            </ul>
-          </div>
+          <span class="leg-clause-badge">Policy DP-02</span>
+        </div>
+
+        <div class="leg-panel reveal">
+          <ul class="leg-bullet-list">
+            <li><strong>Fulfillment &amp; Dispatch:</strong> Coordinating with certified couriers to deliver carry-on suitcases and replacement Hinomoto wheel sets to your exact home or hotel address.</li>
+            <li><strong>Warranty Registration &amp; Traceability:</strong> Maintaining serial number records for our limited lifetime warranties to ensure rapid replacement during verified defect assessments.</li>
+            <li><strong>Concierge Communication:</strong> Responding directly to your sizing, airline cabin compliance, or international freight queries.</li>
+            <li><strong>Zero Data Monetization:</strong> We never sell, lease, or broker your personal information to third-party ad brokers or data aggregators.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -189,28 +239,32 @@
          SECTION 4: LOCALSTORAGE, COOKIES & TELEMETRY
          ============================================================ -->
     <section class="section section-offwhite" id="privacy-cookies">
-      <div class="container">
-        <div class="max-w-900 mx-auto">
-          <div class="section-header mb-4 reveal">
+      <div class="container leg-narrow-container">
+        <div class="leg-section-head reveal">
+          <div>
             <span class="section-label">03. Local Technologies</span>
-            <h2 class="font-serif">Cookies, LocalStorage &amp; Analytics</h2>
+            <h2 class="section-title">Cookies, LocalStorage &amp; Analytics</h2>
           </div>
-          <div class="grid cols-3 gap-3">
-            <div class="card p-4 reveal text-center">
-              <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-cookie-bite"></i></div>
-              <h5 class="font-serif mb-1">Essential Storage</h5>
-              <p class="text-xs text-secondary">Persists cart items across page navigations without requiring account logins.</p>
-            </div>
-            <div class="card p-4 reveal text-center">
-              <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-sliders"></i></div>
-              <h5 class="font-serif mb-1">UI State Memory</h5>
-              <p class="text-xs text-secondary">Remembers your dark mode preference and RTL/LTR reading configuration.</p>
-            </div>
-            <div class="card p-4 reveal text-center">
-              <div class="text-gold mb-2" style="font-size: 1.5rem;"><i class="fa-solid fa-shield-virus"></i></div>
-              <h5 class="font-serif mb-1">Zero Third-Party Trackers</h5>
-              <p class="text-xs text-secondary">No intrusive advertising pixels or behavioral profiling beacons.</p>
-            </div>
+          <span class="leg-clause-badge">Policy DP-03</span>
+        </div>
+
+        <div class="grid cols-3 gap-3">
+          <div class="leg-pill-card reveal">
+            <span class="leg-icon-box"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i></span>
+            <h5>Essential Storage</h5>
+            <p>Persists cart items across page navigations without requiring account logins.</p>
+          </div>
+
+          <div class="leg-pill-card reveal reveal-delay-1">
+            <span class="leg-icon-box"><i class="fa-solid fa-sliders" aria-hidden="true"></i></span>
+            <h5>UI State Memory</h5>
+            <p>Remembers your dark mode preference and RTL/LTR reading configuration.</p>
+          </div>
+
+          <div class="leg-pill-card reveal reveal-delay-2">
+            <span class="leg-icon-box"><i class="fa-solid fa-shield-virus" aria-hidden="true"></i></span>
+            <h5>Zero Third-Party Trackers</h5>
+            <p>No intrusive advertising pixels or behavioral profiling beacons.</p>
           </div>
         </div>
       </div>
@@ -219,34 +273,36 @@
     <!-- ============================================================
          SECTION 5: YOUR PRIVACY RIGHTS (GDPR & CCPA)
          ============================================================ -->
-    <section class="section" id="privacy-rights">
-      <div class="container">
-        <div class="max-w-900 mx-auto">
-          <div class="section-header mb-4 reveal">
+    <section class="section section-card" id="privacy-rights">
+      <div class="container leg-narrow-container">
+        <div class="leg-section-head reveal">
+          <div>
             <span class="section-label">04. Sovereign Control</span>
-            <h2 class="font-serif">Your Rights Under GDPR, CCPA &amp; Global Standards</h2>
+            <h2 class="section-title">Your Rights Under GDPR, CCPA &amp; Global Standards</h2>
           </div>
-          <div class="card p-4 reveal">
-            <p class="text-secondary mb-3">
-              Regardless of your citizenship or destination airport, AeroPack affords all global voyagers universal privacy protections:
-            </p>
-            <div class="grid cols-2 gap-4">
-              <div>
-                <h5 class="font-serif mb-1 text-white"><i class="fa-solid fa-circle-check text-gold mr-1"></i> Right to Access &amp; Portability</h5>
-                <p class="text-sm text-secondary">You may request an export of all warranty and order records associated with your email address.</p>
-              </div>
-              <div>
-                <h5 class="font-serif mb-1 text-white"><i class="fa-solid fa-circle-check text-gold mr-1"></i> Right to Erasure ("To Be Forgotten")</h5>
-                <p class="text-sm text-secondary">You can request full deletion of inquiry communications and marketing newsletter subscriptions.</p>
-              </div>
-              <div>
-                <h5 class="font-serif mb-1 text-white"><i class="fa-solid fa-circle-check text-gold mr-1"></i> Right to Rectification</h5>
-                <p class="text-sm text-secondary">Update your registered delivery destination or contact details at any point prior to carrier dispatch.</p>
-              </div>
-              <div>
-                <h5 class="font-serif mb-1 text-white"><i class="fa-solid fa-circle-check text-gold mr-1"></i> Right to Non-Discrimination</h5>
-                <p class="text-sm text-secondary">Exercising your privacy rights will never alter product pricing, warranty support, or concierge priority.</p>
-              </div>
+          <span class="leg-clause-badge">Policy DP-04</span>
+        </div>
+
+        <div class="leg-panel reveal">
+          <p class="leg-copy mb-4">
+            Regardless of your citizenship or destination airport, AeroPack affords all global voyagers universal privacy protections:
+          </p>
+          <div class="grid cols-2 gap-4">
+            <div class="leg-right-item">
+              <h5><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Right to Access &amp; Portability</h5>
+              <p>You may request an export of all warranty and order records associated with your email address.</p>
+            </div>
+            <div class="leg-right-item">
+              <h5><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Right to Erasure ("To Be Forgotten")</h5>
+              <p>You can request full deletion of inquiry communications and marketing newsletter subscriptions.</p>
+            </div>
+            <div class="leg-right-item">
+              <h5><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Right to Rectification</h5>
+              <p>Update your registered delivery destination or contact details at any point prior to carrier dispatch.</p>
+            </div>
+            <div class="leg-right-item">
+              <h5><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Right to Non-Discrimination</h5>
+              <p>Exercising your privacy rights will never alter product pricing, warranty support, or concierge priority.</p>
             </div>
           </div>
         </div>
@@ -256,17 +312,24 @@
     <!-- ============================================================
          SECTION 6: DATA SECURITY & DPO CONTACT CTA
          ============================================================ -->
-    <section class="section section-navy" id="privacy-cta">
-      <div class="container text-center max-w-700 mx-auto reveal">
-        <div class="text-gold mb-3" style="font-size: 2.5rem;"><i class="fa-solid fa-user-lock"></i></div>
-        <span class="section-label">Data Protection Officer &bull; AeroPack Global</span>
-        <h2 class="font-serif text-white mb-3">Exercise Your Privacy Rights</h2>
-        <p class="text-secondary mb-4" style="font-size: 1.05rem;">
-          To request data deletion, verify stored warranty records, or consult our Data Protection Officer regarding cross-border compliance, please contact our privacy desk.
-        </p>
-        <div class="flex justify-center gap-3">
-          <a href="contact.html" class="btn btn-gold"><i class="fa-solid fa-envelope mr-1"></i> Contact Privacy Desk</a>
-          <a href="terms.html" class="btn btn-outline"><i class="fa-solid fa-file-contract mr-1"></i> View Terms of Service</a>
+    <section class="section section-offwhite" id="privacy-cta">
+      <div class="container">
+        <div class="cta-banner leg-cta-maison reveal">
+          <span class="leg-hero-pill">
+            <i class="fa-solid fa-user-lock" aria-hidden="true"></i> Data Protection Officer &bull; AeroPack Global
+          </span>
+          <h2 class="text-white mb-2 font-serif">Exercise Your <span class="leg-hero-accent">Privacy Rights</span></h2>
+          <p class="mb-4 leg-cta-subtitle">
+            To request data deletion, verify stored warranty records, or consult our Data Protection Officer regarding cross-border compliance, please contact our privacy desk.
+          </p>
+          <div class="cta-banner-actions">
+            <a href="contact.html" class="btn btn-gold leg-btn-primary">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Privacy Desk
+            </a>
+            <a href="terms.html" class="btn btn-outline-white leg-btn-primary">
+              <i class="fa-solid fa-file-contract" aria-hidden="true"></i> View Terms of Service
+            </a>
+          </div>
         </div>
       </div>
     </section>
