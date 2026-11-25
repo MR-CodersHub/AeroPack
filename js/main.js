@@ -679,6 +679,158 @@
     renderServicesCatalog();
   };
 
+  // ── 12b. MAISON HERO ATELIER SHOWCASE ───────────────────
+  function initHeroAtelier() {
+    const showcase = document.getElementById('hero-atelier-showcase');
+    if (!showcase) return;
+
+    const editions = [
+      {
+        id: 'aero-voyager-set',
+        title: 'AeroVoyager Pro Set',
+        kicker: 'Featured Bestseller • 3-Piece Set',
+        badge: 'Signature Edition',
+        badgeIcon: 'fa-award',
+        spec: '2.9 kg Cabin Spec',
+        specIcon: 'fa-plane-departure',
+        rating: '4.9 (142)',
+        price: '$489',
+        oldPrice: '$599',
+        sizeNote: '20"/24"/28"',
+        image: 'images/hero-home-side.jpg',
+        alt: 'AeroVoyager Pro 3-Piece Luggage Set architectural showcase',
+        colors: [
+          { name: 'Midnight Navy', hex: '#17283D' },
+          { name: 'Graphite', hex: '#30363D' },
+          { name: 'Warm Sand', hex: '#E9DDCA' }
+        ]
+      },
+      {
+        id: 'stratus-carry-on',
+        title: 'Stratus Luxe Cabin',
+        kicker: 'Staff Pick • Carbon & Alloy Frame',
+        badge: 'IATA Cabin Pro',
+        badgeIcon: 'fa-gem',
+        spec: '3.1 kg • 42L',
+        specIcon: 'fa-plane-departure',
+        rating: '4.8 (98)',
+        price: '$265',
+        oldPrice: '$310',
+        sizeNote: '21" Carry-On',
+        image: 'images/hero-atelier-stratus.jpg',
+        alt: 'Stratus Luxe Carbon Cabin Suitcase in sleek metallic finish',
+        colors: [
+          { name: 'Deep Teal', hex: '#285B62' },
+          { name: 'Graphite', hex: '#30363D' },
+          { name: 'Off White', hex: '#F8F8F5' }
+        ]
+      },
+      {
+        id: 'horizon-checkin-large',
+        title: 'Horizon Grand 28" Trunk',
+        kicker: 'Long-Haul Flagship • 96L Capacity',
+        badge: 'Expedition Grade',
+        badgeIcon: 'fa-crown',
+        spec: '4.7 kg • 96L',
+        specIcon: 'fa-suitcase-rolling',
+        rating: '4.9 (76)',
+        price: '$345',
+        oldPrice: '$395',
+        sizeNote: '28" Check-In',
+        image: 'images/hero-atelier-horizon.jpg',
+        alt: 'Horizon Grand 28-inch Check-In Trunk for extended voyages',
+        colors: [
+          { name: 'Midnight Navy', hex: '#17283D' },
+          { name: 'Muted Gold', hex: '#B99A63' }
+        ]
+      }
+    ];
+
+    const imgEl = document.getElementById('hero-atelier-img');
+    const badgeEl = document.getElementById('hero-atelier-badge');
+    const specEl = document.getElementById('hero-atelier-spec');
+    const kickerEl = document.getElementById('hero-atelier-kicker');
+    const ratingEl = document.getElementById('hero-atelier-rating');
+    const titleEl = document.getElementById('hero-atelier-title');
+    const swatchesEl = document.getElementById('hero-atelier-swatches');
+    const oldEl = document.getElementById('hero-atelier-old');
+    const priceEl = document.getElementById('hero-atelier-price');
+    const addBtn = document.getElementById('hero-atelier-add');
+    const detailsLink = document.getElementById('hero-atelier-details');
+    const tabs = showcase.querySelectorAll('.hero-atelier-tab');
+
+    if (imgEl) {
+      imgEl.addEventListener('error', () => {
+        if (!imgEl.src.endsWith('images/hero-home-side.jpg')) {
+          imgEl.src = 'images/hero-home-side.jpg';
+        }
+      });
+    }
+
+    function bindSwatches(edition) {
+      if (!swatchesEl) return;
+      const finishLabel = document.getElementById('hero-atelier-finish');
+      swatchesEl.querySelectorAll('.hero-swatch').forEach(btn => {
+        btn.addEventListener('click', () => {
+          swatchesEl.querySelectorAll('.hero-swatch').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          if (finishLabel) {
+            finishLabel.textContent = btn.dataset.finish + ' • ' + edition.sizeNote;
+          }
+        });
+      });
+    }
+
+    function renderEdition(idx) {
+      const edition = editions[idx];
+      if (!edition) return;
+
+      tabs.forEach((tab, i) => {
+        const isActive = i === idx;
+        tab.classList.toggle('active', isActive);
+        tab.setAttribute('aria-selected', String(isActive));
+      });
+
+      if (imgEl) {
+        imgEl.classList.add('is-fading');
+        setTimeout(() => {
+          imgEl.src = edition.image;
+          imgEl.alt = edition.alt;
+          imgEl.classList.remove('is-fading');
+        }, 140);
+      }
+
+      if (badgeEl) badgeEl.innerHTML = '<i class="fa-solid ' + edition.badgeIcon + '" aria-hidden="true"></i><span>' + edition.badge + '</span>';
+      if (specEl) specEl.innerHTML = '<i class="fa-solid ' + edition.specIcon + '" aria-hidden="true"></i><span>' + edition.spec + '</span>';
+      if (kickerEl) kickerEl.textContent = edition.kicker;
+      if (ratingEl) ratingEl.innerHTML = '<i class="fa-solid fa-star" aria-hidden="true"></i><span>' + edition.rating + '</span>';
+
+      const detailUrl = 'pages/service-details.html?id=' + edition.id;
+      if (titleEl) {
+        titleEl.textContent = edition.title;
+        titleEl.href = detailUrl;
+      }
+      if (detailsLink) detailsLink.href = detailUrl;
+      if (oldEl) oldEl.textContent = edition.oldPrice;
+      if (priceEl) priceEl.textContent = edition.price;
+      if (addBtn) addBtn.setAttribute('onclick', "addToCart('" + edition.id + "')");
+
+      if (swatchesEl) {
+        const dotsHtml = edition.colors.map((c, i) =>
+          '<button type="button" class="hero-swatch ' + (i === 0 ? 'active' : '') + '" style="background-color: ' + c.hex + ';" data-finish="' + c.name + '" aria-label="' + c.name + ' finish" title="' + c.name + '"></button>'
+        ).join('');
+        swatchesEl.innerHTML = dotsHtml + '<span class="hero-swatch-label" id="hero-atelier-finish">' + edition.colors[0].name + ' • ' + edition.sizeNote + '</span>';
+        bindSwatches(edition);
+      }
+    }
+
+    tabs.forEach((tab, idx) => {
+      tab.addEventListener('click', () => renderEdition(idx));
+    });
+
+    bindSwatches(editions[0]);
+  }
+
   // ── 13. DOM READY INITIALIZATION ───────────────────────────
   document.addEventListener('DOMContentLoaded', () => {
     initThemeAndDir();
@@ -688,6 +840,7 @@
     initScrollEffects();
     initMobileNav();
     initNavDropdowns();
+    initHeroAtelier();
 
     // If services page
     if (document.getElementById('services-product-grid')) {

@@ -87,11 +87,6 @@
         <a href="pages/pricing.html" class="mobile-nav-item"><span class="mobile-nav-num">06</span><div class="mobile-nav-text"><span class="mobile-nav-title">Pricing</span><span class="mobile-nav-desc">Bundles, Luggage Sets &amp; Offers</span></div><i class="fa-solid fa-arrow-right-long mobile-nav-arrow"></i></a>
         <a href="pages/contact.html" class="mobile-nav-item"><span class="mobile-nav-num">07</span><div class="mobile-nav-text"><span class="mobile-nav-title">Contact</span><span class="mobile-nav-desc">Manhattan Flagship &amp; Concierge Desk</span></div><i class="fa-solid fa-arrow-right-long mobile-nav-arrow"></i></a>
       </div>
-      <div class="mobile-nav-quick-grid">
-        <button type="button" class="mobile-quick-card" onclick="window.location.href='pages/services.html'"><i class="fa-regular fa-heart"></i><span>Wishlist (<span class="wishlist-count-badge">0</span>)</span></button>
-        <button type="button" class="mobile-quick-card" onclick="openCart(); document.querySelector('.mobile-nav').classList.remove('open');"><i class="fa-solid fa-bag-shopping"></i><span>My Bag (<span class="cart-count-badge">0</span>)</span></button>
-        <a href="tel:+18005552376" class="mobile-quick-card"><i class="fa-solid fa-phone"></i><span>Call Desk</span></a>
-      </div>
       <div class="mobile-nav-concierge-strip">
         <div class="mobile-concierge-icon"><i class="fa-solid fa-headset"></i></div>
         <div class="mobile-concierge-info"><strong>AeroPack 24/7 Concierge</strong><span>Toll-Free: +1 (800) 555-AERO &bull; NYC Flagship</span></div>
@@ -111,76 +106,194 @@
   <main class="page-content">
     
     <!-- ============================================================
-         SECTION 1: HERO (General Luggage Store)
+         SECTION 1: HERO (Maison Flagship Showcase)
          ============================================================ -->
-    <section class="hero" id="home-hero">
+    <section class="hero hero-flagship" id="home-hero">
       <div class="hero-bg">
-        <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=1920&q=80" alt="Sophisticated traveler with premium luggage at international airport terminal">
+        <img src="images/hero-home-bg.jpg" alt="Aerospace-grade polycarbonate luggage collection staged along dramatic coastal cliffs">
       </div>
-      <div class="hero-bg-overlay"></div>
-      <div class="container hero-content">
-        <span class="hero-label">Precision Engineering &bull; Global Journeys</span>
-        <h1 class="hero-title">Travel Smarter.<br>Voyage in <span class="accent">Timeless Style.</span></h1>
-        <p class="hero-subtitle">
-          Engineered for international flights, high-speed rail, and spontaneous weekend escapes. Discover aerospace-grade polycarbonate shells, whisper-quiet spinner wheels, and ergonomic travel systems built to withstand a lifetime of exploration.
-        </p>
-        <div class="hero-actions">
-          <a href="pages/services.html" class="btn btn-gold btn-lg">Shop Now &rarr;</a>
-          <a href="pages/services.html#shop-by-type" class="btn btn-outline-white btn-lg">Explore Collections</a>
-        </div>
-        <div class="hero-stats">
-          <div>
-            <div class="hero-stat-num">100%</div>
-            <div class="hero-stat-label">Virgin Polycarbonate</div>
+      <div class="hero-bg-overlay hero-flagship-overlay"></div>
+      <div class="hero-atelier-grid-pattern" aria-hidden="true"></div>
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+
+      <div class="container hero-flagship-container">
+        <div class="hero-grid">
+          <!-- Left Editorial Column -->
+          <div class="hero-content hero-flagship-content">
+            <div class="hero-eyebrow-row">
+              <div class="hero-eyebrow-pill">
+                <span class="hero-eyebrow-dot" aria-hidden="true"></span>
+                <span>Manhattan Atelier &bull; Est. 2018</span>
+              </div>
+              <span class="hero-atelier-series">German Makrolon&reg; Series</span>
+            </div>
+
+            <h1 class="hero-title">Travel Smarter.<br>Voyage in <span class="accent">Timeless Style.</span></h1>
+
+            <p class="hero-subtitle">
+              Precision-crafted for transcontinental flights, private rail, and spontaneous weekend escapes. Aerospace-grade polycarbonate shells paired with Japanese Hinomoto&reg; whisper wheels and hand-finished anodized hardware.
+            </p>
+
+            <div class="hero-actions">
+              <a href="pages/services.html" class="btn btn-gold btn-lg hero-btn-primary">
+                <span>Acquire Flagship Sets</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="pages/services.html#shop-by-type" class="btn btn-outline-white btn-lg hero-btn-secondary">
+                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                <span>Explore Collections</span>
+              </a>
+            </div>
+
+            <div class="hero-trust-row">
+              <span class="hero-trust-item"><i class="fa-solid fa-earth-americas" aria-hidden="true"></i> Complimentary Global Dispatch</span>
+              <span class="hero-trust-sep" aria-hidden="true"></span>
+              <span class="hero-trust-item"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 100-Day Trial &amp; 5-Year Concierge</span>
+            </div>
+
+            <div class="hero-spec-strip" aria-label="Engineering Highlights">
+              <div class="hero-spec-item">
+                <span class="hero-spec-kicker"><i class="fa-solid fa-gem" aria-hidden="true"></i> Shell</span>
+                <div class="hero-stat-num">100%</div>
+                <div class="hero-stat-label">Virgin Polycarbonate</div>
+              </div>
+              <div class="hero-spec-item">
+                <span class="hero-spec-kicker"><i class="fa-solid fa-circle-notch" aria-hidden="true"></i> Casters</span>
+                <div class="hero-stat-num">360&deg;</div>
+                <div class="hero-stat-label">Whisper-Glide Wheels</div>
+              </div>
+              <div class="hero-spec-item">
+                <span class="hero-spec-kicker"><i class="fa-solid fa-lock" aria-hidden="true"></i> Security</span>
+                <div class="hero-stat-num">TSA-008</div>
+                <div class="hero-stat-label">Recessed Dual Locks</div>
+              </div>
+              <div class="hero-spec-item">
+                <span class="hero-spec-kicker"><i class="fa-solid fa-award" aria-hidden="true"></i> Guarantee</span>
+                <div class="hero-stat-num">5-Yr</div>
+                <div class="hero-stat-label">Global Atelier Care</div>
+              </div>
+            </div>
           </div>
-          <div>
-            <div class="hero-stat-num">360°</div>
-            <div class="hero-stat-label">Whisper-Glide Wheels</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">TSA</div>
-            <div class="hero-stat-label">Recessed Locks</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">5-Yr</div>
-            <div class="hero-stat-label">Global Warranty</div>
+
+          <!-- Right Interactive Atelier Showcase Column -->
+          <div class="hero-showcase-col">
+            <div class="hero-showcase-card" id="hero-atelier-showcase">
+              <span class="hero-corner-bracket hero-corner-tl" aria-hidden="true"></span>
+              <span class="hero-corner-bracket hero-corner-br" aria-hidden="true"></span>
+
+              <!-- Interactive Edition Switcher -->
+              <div class="hero-atelier-tabs" role="tablist" aria-label="Featured Atelier Editions">
+                <button type="button" class="hero-atelier-tab active" role="tab" aria-selected="true" data-atelier-index="0">
+                  <span class="tab-num">01</span>
+                  <span class="tab-name">Voyager Set</span>
+                </button>
+                <button type="button" class="hero-atelier-tab" role="tab" aria-selected="false" data-atelier-index="1">
+                  <span class="tab-num">02</span>
+                  <span class="tab-name">Stratus Cabin</span>
+                </button>
+                <button type="button" class="hero-atelier-tab" role="tab" aria-selected="false" data-atelier-index="2">
+                  <span class="tab-num">03</span>
+                  <span class="tab-name">Horizon Trunk</span>
+                </button>
+              </div>
+
+              <div class="hero-showcase-frame">
+                <div class="hero-showcase-media">
+                  <img id="hero-atelier-img" src="images/hero-home-side.jpg" alt="AeroVoyager Pro 3-Piece Luggage Set architectural showcase">
+                  <div class="hero-showcase-vignette"></div>
+
+                  <div class="hero-showcase-top">
+                    <span class="hero-glass-tag" id="hero-atelier-badge">
+                      <i class="fa-solid fa-award" aria-hidden="true"></i>
+                      <span>Signature Edition</span>
+                    </span>
+                    <span class="hero-glass-tag hero-glass-tag-subtle" id="hero-atelier-spec">
+                      <i class="fa-solid fa-plane-departure" aria-hidden="true"></i>
+                      <span>2.9 kg Cabin Spec</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="hero-featured-glass">
+                  <div class="hero-featured-meta">
+                    <span class="hero-featured-kicker" id="hero-atelier-kicker">Featured Bestseller &bull; 3-Piece Set</span>
+                    <div class="hero-featured-rating" id="hero-atelier-rating" aria-label="Rated 4.9 out of 5 from 142 reviews">
+                      <i class="fa-solid fa-star" aria-hidden="true"></i>
+                      <span>4.9 (142)</span>
+                    </div>
+                  </div>
+                  <div class="hero-featured-main">
+                    <div>
+                      <div class="hero-featured-title">
+                        <a id="hero-atelier-title" href="pages/service-details.html?id=aero-voyager-set">AeroVoyager Pro Set</a>
+                      </div>
+                      <div class="hero-featured-swatches" id="hero-atelier-swatches" aria-label="Available Finishes">
+                        <button type="button" class="hero-swatch active" style="background-color: #17283D;" data-finish="Midnight Navy" aria-label="Midnight Navy finish" title="Midnight Navy"></button>
+                        <button type="button" class="hero-swatch" style="background-color: #30363D;" data-finish="Graphite" aria-label="Graphite finish" title="Graphite"></button>
+                        <button type="button" class="hero-swatch" style="background-color: #E9DDCA;" data-finish="Warm Sand" aria-label="Warm Sand finish" title="Warm Sand"></button>
+                        <span class="hero-swatch-label" id="hero-atelier-finish">Midnight Navy &bull; 20&quot;/24&quot;/28&quot;</span>
+                      </div>
+                    </div>
+                    <div class="hero-featured-pricing">
+                      <span class="hero-featured-old" id="hero-atelier-old">$599</span>
+                      <span class="hero-featured-price" id="hero-atelier-price">$489</span>
+                    </div>
+                  </div>
+                  <div class="hero-featured-actions">
+                    <button type="button" class="btn btn-gold btn-sm hero-featured-add" id="hero-atelier-add" onclick="addToCart('aero-voyager-set')">
+                      <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                      <span>Add to Bag</span>
+                    </button>
+                    <a id="hero-atelier-details" href="pages/service-details.html?id=aero-voyager-set" class="hero-featured-link" aria-label="View edition details">
+                      <span>Details</span>
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <a href="#bestsellers" class="hero-scroll" aria-label="Scroll to Bestsellers">
-        <span>Explore</span>
-        <span>&darr;</span>
+
+      <a href="#bestsellers" class="hero-scroll hero-scroll-luxury" aria-label="Scroll to Bestsellers">
+        <span class="hero-scroll-label">Explore</span>
+        <span class="hero-scroll-line" aria-hidden="true"></span>
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
       </a>
     </section>
 
     <!-- ============================================================
          SECTION 2: BESTSELLING LUGGAGE SETS
          ============================================================ -->
-    <section class="section section-offwhite" id="bestsellers">
+    <section class="section section-offwhite home-bestsellers-section" id="bestsellers">
       <div class="container">
         <div class="flex-between flex-wrap gap-2 mb-4 bestsellers-head">
           <div class="section-header mb-0">
-            <span class="section-label">Most Coveted Bundles</span>
+            <span class="section-label">Most Coveted Editions</span>
             <h2 class="section-title">Bestselling Luggage Sets</h2>
             <p class="section-subtitle">
-              Engineered matching sets built for harmonious airport transit, flexible capacities, and compact nested storage at home.
+              Synchronized architectural sets engineered for seamless terminal transit, balanced capacities, and effortless nested storage at home.
             </p>
           </div>
-          <a href="pages/services.html?category=luggage-sets" class="btn btn-outline btn-sm">View All Sets <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="pages/services.html?category=luggage-sets" class="btn btn-outline btn-sm home-outline-gold">
+            <span>View All Sets</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
 
-        <div class="grid cols-auto-fill-280 gap-3">
+        <div class="home-bestsellers-grid">
           <!-- Bestseller 1 -->
-          <article class="product-card reveal">
+          <article class="product-card home-bestseller-card reveal">
             <div class="product-card-image">
-              <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=800&q=80" alt="AeroVoyager Pro 3-Piece Luggage Set in Midnight Navy" loading="lazy">
+              <img src="images/product-aerovoyager.jpg" alt="AeroVoyager Pro 3-Piece Luggage Set in Midnight Navy" loading="lazy">
               <div class="product-badges">
                 <span class="badge badge-bestseller">Bestseller</span>
                 <span class="badge badge-featured">3 Pieces</span>
               </div>
               <div class="product-actions">
                 <button class="action-btn" onclick="toggleWishlist('aero-voyager-set')" data-wishlist-id="aero-voyager-set" title="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
-                <button class="action-btn" onclick="openLightbox('https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=1200&q=80')" title="Zoom Image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <button class="action-btn" onclick="openLightbox('images/product-aerovoyager.jpg')" title="Zoom Image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
               </div>
             </div>
             <div class="product-card-body">
@@ -189,7 +302,9 @@
                 <a href="pages/service-details.html?id=aero-voyager-set">AeroVoyager Pro 3-Piece Luggage Set</a>
               </h3>
               <div class="product-rating">
-                <span class="stars">★★★★★</span>
+                <span class="stars-fa" aria-label="5 out of 5 stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
                 <span class="rating-count">4.9 (142 reviews)</span>
               </div>
               <div class="product-colors">
@@ -197,27 +312,30 @@
                 <span class="color-dot" style="background-color: #30363D;" title="Graphite"></span>
                 <span class="color-dot" style="background-color: #E9DDCA;" title="Warm Sand"></span>
               </div>
-              <div class="product-price">
-                $489 <span class="original">$599</span>
+              <div class="product-price-row">
+                <div class="product-price">
+                  $489 <span class="original">$599</span>
+                </div>
+                <span class="product-save-pill">Save $110</span>
               </div>
             </div>
             <div class="product-card-footer">
               <a href="pages/service-details.html?id=aero-voyager-set" class="btn btn-outline btn-sm flex-1">View Details</a>
-              <button class="btn btn-teal btn-sm" onclick="addToCart('aero-voyager-set')">Add to Cart</button>
+              <button class="btn btn-teal btn-sm" onclick="addToCart('aero-voyager-set')">Add to Bag</button>
             </div>
           </article>
 
           <!-- Bestseller 2 -->
-          <article class="product-card reveal reveal-delay-1">
+          <article class="product-card home-bestseller-card reveal reveal-delay-1">
             <div class="product-card-image">
-              <img src="https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=800&q=80" alt="Nomad Duo 2-Piece Carry-On and Check Set" loading="lazy">
+              <img src="images/product-nomad-duo.jpg" alt="Nomad Duo 2-Piece Carry-On and Check Set" loading="lazy">
               <div class="product-badges">
                 <span class="badge badge-sale">Save $70</span>
                 <span class="badge badge-featured">2 Pieces</span>
               </div>
               <div class="product-actions">
                 <button class="action-btn" onclick="toggleWishlist('aero-duo-set')" data-wishlist-id="aero-duo-set" title="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
-                <button class="action-btn" onclick="openLightbox('https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=1200&q=80')" title="Zoom Image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <button class="action-btn" onclick="openLightbox('images/product-nomad-duo.jpg')" title="Zoom Image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
               </div>
             </div>
             <div class="product-card-body">
@@ -226,7 +344,9 @@
                 <a href="pages/service-details.html?id=aero-duo-set">Nomad Duo 2-Piece Carry-On &amp; Check Set</a>
               </h3>
               <div class="product-rating">
-                <span class="stars">★★★★★</span>
+                <span class="stars-fa" aria-label="5 out of 5 stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
                 <span class="rating-count">4.8 (88 reviews)</span>
               </div>
               <div class="product-colors">
@@ -234,27 +354,30 @@
                 <span class="color-dot" style="background-color: #285B62;" title="Deep Teal"></span>
                 <span class="color-dot" style="background-color: #17283D;" title="Midnight Navy"></span>
               </div>
-              <div class="product-price">
-                $380 <span class="original">$450</span>
+              <div class="product-price-row">
+                <div class="product-price">
+                  $380 <span class="original">$450</span>
+                </div>
+                <span class="product-save-pill">Save $70</span>
               </div>
             </div>
             <div class="product-card-footer">
               <a href="pages/service-details.html?id=aero-duo-set" class="btn btn-outline btn-sm flex-1">View Details</a>
-              <button class="btn btn-teal btn-sm" onclick="addToCart('aero-duo-set')">Add to Cart</button>
+              <button class="btn btn-teal btn-sm" onclick="addToCart('aero-duo-set')">Add to Bag</button>
             </div>
           </article>
 
           <!-- Bestseller 3 -->
-          <article class="product-card reveal reveal-delay-2">
+          <article class="product-card home-bestseller-card reveal reveal-delay-2">
             <div class="product-card-image">
-              <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=800&q=80" alt="Stratus Luxe Carbon Cabin Suitcase" loading="lazy">
+              <img src="images/product-stratus-cabin.jpg" alt="Stratus Luxe Carbon Cabin Suitcase" loading="lazy">
               <div class="product-badges">
                 <span class="badge badge-featured">Staff Pick</span>
                 <span class="badge badge-new">Cabin Pro</span>
               </div>
               <div class="product-actions">
                 <button class="action-btn" onclick="toggleWishlist('stratus-carry-on')" data-wishlist-id="stratus-carry-on" title="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
-                <button class="action-btn" onclick="openLightbox('https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=1200&q=80')" title="Zoom Image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <button class="action-btn" onclick="openLightbox('images/product-stratus-cabin.jpg')" title="Zoom Image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
               </div>
             </div>
             <div class="product-card-body">
@@ -263,7 +386,9 @@
                 <a href="pages/service-details.html?id=stratus-carry-on">Stratus Luxe Carbon Cabin Suitcase</a>
               </h3>
               <div class="product-rating">
-                <span class="stars">★★★★★</span>
+                <span class="stars-fa" aria-label="5 out of 5 stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
                 <span class="rating-count">4.8 (98 reviews)</span>
               </div>
               <div class="product-colors">
@@ -271,26 +396,29 @@
                 <span class="color-dot" style="background-color: #30363D;" title="Graphite"></span>
                 <span class="color-dot" style="background-color: #F8F8F5;" title="Off White"></span>
               </div>
-              <div class="product-price">
-                $265 <span class="original">$310</span>
+              <div class="product-price-row">
+                <div class="product-price">
+                  $265 <span class="original">$310</span>
+                </div>
+                <span class="product-save-pill">Save $45</span>
               </div>
             </div>
             <div class="product-card-footer">
               <a href="pages/service-details.html?id=stratus-carry-on" class="btn btn-outline btn-sm flex-1">View Details</a>
-              <button class="btn btn-teal btn-sm" onclick="addToCart('stratus-carry-on')">Add to Cart</button>
+              <button class="btn btn-teal btn-sm" onclick="addToCart('stratus-carry-on')">Add to Bag</button>
             </div>
           </article>
 
           <!-- Bestseller 4 -->
-          <article class="product-card reveal reveal-delay-3">
+          <article class="product-card home-bestseller-card reveal reveal-delay-3">
             <div class="product-card-image">
-              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" alt="Horizon Grand 28 inch Check-in Trunk" loading="lazy">
+              <img src="images/product-horizon-trunk.jpg" alt="Horizon Grand 28 inch Check-in Trunk" loading="lazy">
               <div class="product-badges">
                 <span class="badge badge-bestseller">Long Voyage</span>
               </div>
               <div class="product-actions">
                 <button class="action-btn" onclick="toggleWishlist('horizon-checkin-large')" data-wishlist-id="horizon-checkin-large" title="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
-                <button class="action-btn" onclick="openLightbox('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80')" title="Zoom Image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <button class="action-btn" onclick="openLightbox('images/product-horizon-trunk.jpg')" title="Zoom Image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
               </div>
             </div>
             <div class="product-card-body">
@@ -299,20 +427,25 @@
                 <a href="pages/service-details.html?id=horizon-checkin-large">Horizon Grand 28" Check-in Trunk</a>
               </h3>
               <div class="product-rating">
-                <span class="stars">★★★★★</span>
+                <span class="stars-fa" aria-label="5 out of 5 stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
                 <span class="rating-count">4.9 (76 reviews)</span>
               </div>
               <div class="product-colors">
                 <span class="color-dot active" style="background-color: #17283D;" title="Midnight Navy"></span>
                 <span class="color-dot" style="background-color: #B99A63;" title="Muted Gold"></span>
               </div>
-              <div class="product-price">
-                $345 <span class="original">$395</span>
+              <div class="product-price-row">
+                <div class="product-price">
+                  $345 <span class="original">$395</span>
+                </div>
+                <span class="product-save-pill">Save $50</span>
               </div>
             </div>
             <div class="product-card-footer">
               <a href="pages/service-details.html?id=horizon-checkin-large" class="btn btn-outline btn-sm flex-1">View Details</a>
-              <button class="btn btn-teal btn-sm" onclick="addToCart('horizon-checkin-large')">Add to Cart</button>
+              <button class="btn btn-teal btn-sm" onclick="addToCart('horizon-checkin-large')">Add to Bag</button>
             </div>
           </article>
         </div>
@@ -322,14 +455,14 @@
     <!-- ============================================================
          SECTION 3: SHOP BY TRAVEL ESSENTIALS
          ============================================================ -->
-    <section class="section section-card" id="shop-essentials">
+    <section class="section section-card home-essentials-section" id="shop-essentials">
       <div class="container">
         <div class="lineup-heading reveal">
           <div class="section-header">
             <span class="section-label">Categorized Precision</span>
             <h2 class="section-title">Shop by Travel Essentials</h2>
             <p class="section-subtitle">
-              Every piece is purpose-built to streamline a specific phase of your voyage, from airport security checkpoints to rugged destination commutes.
+              Every silhouette is purpose-built to elevate a distinct chapter of your itinerary, from rapid security transit to cross-continent expeditions.
             </p>
           </div>
           <div class="lineup-count"><strong>08</strong> curated essentials</div>
@@ -337,114 +470,114 @@
 
         <div class="lineup-grid home-lineup">
           <!-- 1. Cabin Suitcases -->
-          <div class="lineup-card reveal" onclick="window.location.href='pages/services.html?category=cabin-luggage'" aria-label="Shop Cabin Suitcases">
-            <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=600&q=80" alt="Cabin Suitcases" loading="lazy">
+          <div class="lineup-card home-lineup-card reveal" onclick="window.location.href='pages/services.html?category=cabin-luggage'" aria-label="Shop Cabin Suitcases">
+            <img src="images/category-cabin-suitcases.jpg" alt="Cabin Suitcases" loading="lazy">
             <div class="lineup-top">
               <span class="lineup-icon"><i class="fa-solid fa-suitcase-rolling"></i></span>
-              <span class="lineup-tag">Cabin</span>
+              <span class="lineup-tag">01 &bull; Cabin</span>
             </div>
             <div class="lineup-info">
               <h3 class="lineup-title">Cabin Suitcases</h3>
               <p class="lineup-desc">IATA compliant 20"-21" overhead carry-ons with front tech access.</p>
-              <span class="lineup-cta">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="lineup-cta">Explore Edition <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 2. Check-in Luggage -->
-          <div class="lineup-card reveal reveal-delay-1" onclick="window.location.href='pages/services.html?category=checkin-suitcases'" aria-label="Shop Check-in Luggage">
-            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Check-in Luggage" loading="lazy">
+          <div class="lineup-card home-lineup-card reveal reveal-delay-1" onclick="window.location.href='pages/services.html?category=checkin-suitcases'" aria-label="Shop Check-in Luggage">
+            <img src="images/category-checkin-luggage.jpg" alt="Check-in Luggage" loading="lazy">
             <div class="lineup-top">
               <span class="lineup-icon"><i class="fa-solid fa-suitcase"></i></span>
-              <span class="lineup-tag">Check-in</span>
+              <span class="lineup-tag">02 &bull; Check-in</span>
             </div>
             <div class="lineup-info">
               <h3 class="lineup-title">Check-in Luggage</h3>
               <p class="lineup-desc">Medium 24" &amp; Large 28" trunks with shock-absorbing corners.</p>
-              <span class="lineup-cta">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="lineup-cta">Explore Edition <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 3. Luggage Sets -->
-          <div class="lineup-card reveal reveal-delay-2" onclick="window.location.href='pages/services.html?category=luggage-sets'" aria-label="Shop Luggage Sets">
-            <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=600&q=80" alt="Luggage Sets" loading="lazy">
+          <div class="lineup-card home-lineup-card reveal reveal-delay-2" onclick="window.location.href='pages/services.html?category=luggage-sets'" aria-label="Shop Luggage Sets">
+            <img src="images/product-aerovoyager.jpg" alt="Luggage Sets" loading="lazy">
             <div class="lineup-top">
-              <span class="lineup-icon"><i class="fa-solid fa-clipboard-list"></i></span>
-              <span class="lineup-tag">Sets</span>
+              <span class="lineup-icon"><i class="fa-solid fa-cubes-stacked"></i></span>
+              <span class="lineup-tag">03 &bull; Sets</span>
             </div>
             <div class="lineup-info">
               <h3 class="lineup-title">Luggage Sets</h3>
-              <p class="lineup-desc">2-piece &amp; 3-piece nesting sets for cohesive family journeys.</p>
-              <span class="lineup-cta">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+              <p class="lineup-desc">2-piece &amp; 3-piece nesting sets for cohesive global journeys.</p>
+              <span class="lineup-cta">Explore Edition <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 4. Travel Backpacks -->
-          <div class="lineup-card reveal reveal-delay-3" onclick="window.location.href='pages/services.html?category=travel-backpacks'" aria-label="Shop Travel Backpacks">
+          <div class="lineup-card home-lineup-card reveal reveal-delay-3" onclick="window.location.href='pages/services.html?category=travel-backpacks'" aria-label="Shop Travel Backpacks">
             <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=600&q=80" alt="Travel Backpacks" loading="lazy">
             <div class="lineup-top">
               <span class="lineup-icon"><i class="fa-solid fa-bag-shopping"></i></span>
-              <span class="lineup-tag">Packs</span>
+              <span class="lineup-tag">04 &bull; Packs</span>
             </div>
             <div class="lineup-info">
               <h3 class="lineup-title">Travel Backpacks</h3>
               <p class="lineup-desc">180° clamshell one-bag packs with dedicated 16" laptop vaults.</p>
-              <span class="lineup-cta">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="lineup-cta">Explore Edition <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 5. Duffel Bags -->
-          <div class="lineup-card reveal" onclick="window.location.href='pages/services.html?category=duffel-bags'" aria-label="Shop Duffel Bags">
-            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Duffel Bags" loading="lazy">
+          <div class="lineup-card home-lineup-card reveal" onclick="window.location.href='pages/services.html?category=duffel-bags'" aria-label="Shop Duffel Bags">
+            <img src="images/category-duffel-bags.jpg" alt="Duffel Bags" loading="lazy">
             <div class="lineup-top">
               <span class="lineup-icon"><i class="fa-solid fa-box"></i></span>
-              <span class="lineup-tag">Weekender</span>
+              <span class="lineup-tag">05 &bull; Weekender</span>
             </div>
             <div class="lineup-info">
               <h3 class="lineup-title">Duffel Bags</h3>
               <p class="lineup-desc">Waterproof ballistic weekender duffels with ventilated shoe bays.</p>
-              <span class="lineup-cta">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="lineup-cta">Explore Edition <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 6. Business Travel Bags -->
-          <div class="lineup-card reveal reveal-delay-1" onclick="window.location.href='pages/services.html?category=business-bags'" aria-label="Shop Business Travel Bags">
-            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Business Travel Bags" loading="lazy">
+          <div class="lineup-card home-lineup-card reveal reveal-delay-1" onclick="window.location.href='pages/services.html?category=business-bags'" aria-label="Shop Business Travel Bags">
+            <img src="images/category-business-bags.jpg" alt="Business Travel Bags" loading="lazy">
             <div class="lineup-top">
               <span class="lineup-icon"><i class="fa-solid fa-briefcase"></i></span>
-              <span class="lineup-tag">Business</span>
+              <span class="lineup-tag">06 &bull; Executive</span>
             </div>
             <div class="lineup-info">
               <h3 class="lineup-title">Business Travel Bags</h3>
-              <p class="lineup-desc">Italian leather briefcases &amp; folios with trolley luggage pass-through.</p>
-              <span class="lineup-cta">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+              <p class="lineup-desc">Italian leather briefcases &amp; folios with trolley pass-through.</p>
+              <span class="lineup-cta">Explore Edition <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 7. Travel Accessories -->
-          <div class="lineup-card reveal reveal-delay-2" onclick="window.location.href='pages/services.html?category=travel-accessories'" aria-label="Shop Travel Accessories">
-            <img src="https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=600&q=80" alt="Travel Accessories" loading="lazy">
+          <div class="lineup-card home-lineup-card reveal reveal-delay-2" onclick="window.location.href='pages/services.html?category=travel-accessories'" aria-label="Shop Travel Accessories">
+            <img src="images/category-travel-accessories.jpg" alt="Travel Accessories" loading="lazy">
             <div class="lineup-top">
               <span class="lineup-icon"><i class="fa-solid fa-lock"></i></span>
-              <span class="lineup-tag">Essentials</span>
+              <span class="lineup-tag">07 &bull; Essentials</span>
             </div>
             <div class="lineup-info">
               <h3 class="lineup-title">Travel Accessories</h3>
-              <p class="lineup-desc">Compression cube organizers, TSA inspection cable locks, and folio kits.</p>
-              <span class="lineup-cta">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+              <p class="lineup-desc">Compression cube organizers, TSA cable locks, and folio kits.</p>
+              <span class="lineup-cta">Explore Edition <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
 
           <!-- 8. Hard-Shell Suitcases -->
-          <div class="lineup-card reveal reveal-delay-3" onclick="window.location.href='pages/services.html?category=cabin-luggage'" aria-label="Shop Hard-Shell Suitcases">
-            <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=600&q=80" alt="Hard-Shell Suitcases" loading="lazy">
+          <div class="lineup-card home-lineup-card reveal reveal-delay-3" onclick="window.location.href='pages/services.html?category=cabin-luggage'" aria-label="Shop Hard-Shell Suitcases">
+            <img src="images/category-hard-shell.jpg" alt="Hard-Shell Suitcases" loading="lazy">
             <div class="lineup-top">
               <span class="lineup-icon"><i class="fa-solid fa-shield-halved"></i></span>
-              <span class="lineup-tag">Shell</span>
+              <span class="lineup-tag">08 &bull; Shell</span>
             </div>
             <div class="lineup-info">
               <h3 class="lineup-title">Hard-Shell Suitcases</h3>
-              <p class="lineup-desc">Aerospace polycarbonate shells that flex under impact and spring back without denting.</p>
-              <span class="lineup-cta">Shop now <i class="fa-solid fa-arrow-right"></i></span>
+              <p class="lineup-desc">Aerospace polycarbonate shells built to flex without denting.</p>
+              <span class="lineup-cta">Explore Edition <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
         </div>
@@ -454,51 +587,75 @@
     <!-- ============================================================
          SECTION 4: WHY CHOOSE OUR LUGGAGE
          ============================================================ -->
-    <section class="section section-dark" id="why-choose-us">
-      <div class="container">
+    <section class="section section-dark home-engineering-section" id="why-choose-us">
+      <div class="container home-engineering-container">
         <div class="section-header centered">
-          <span class="section-label">AeroPack Engineering</span>
+          <span class="section-label">AeroPack Atelier Engineering</span>
           <h2 class="section-title">Why Discerning Travelers Choose Our Luggage</h2>
           <p class="section-subtitle">
-            Every millimeter is tested under rigorous real-world travel simulations to deliver effortless maneuverability, indestructible security, and modern aesthetic elegance.
+            Every millimeter undergoes rigorous aerospace simulation to deliver silent maneuverability, fortified security, and quiet architectural elegance.
           </p>
         </div>
 
-        <div class="grid cols-3 gap-3">
-          <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="home-pillars-grid">
+          <div class="atelier-pillar-card reveal">
+            <div class="pillar-top">
+              <span class="pillar-num">01</span>
+              <span class="pillar-spec">German Makrolon&reg;</span>
+            </div>
+            <div class="feature-icon pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
             <h4>Durable Aerospace Materials</h4>
-            <p>100% pure virgin Makrolon® polycarbonate shells designed to flex under extreme baggage bay impacts and spring back without cracking or denting.</p>
+            <p>100% pure virgin polycarbonate shells engineered to absorb brutal cargo-hold impacts and rebound effortlessly without cracking.</p>
           </div>
 
-          <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="atelier-pillar-card reveal reveal-delay-1">
+            <div class="pillar-top">
+              <span class="pillar-num">02</span>
+              <span class="pillar-spec">Dual-Zone Interior</span>
+            </div>
+            <div class="feature-icon pillar-icon"><i class="fa-solid fa-layer-group"></i></div>
             <h4>Functional Compartments</h4>
-            <p>Smart dual-sided packing architecture featuring zippered waterproof wet-pocket barriers, compression straps, and dedicated tech organization bays.</p>
+            <p>Precision dual-chamber packing architecture featuring sealed waterproof wet barriers, Y-compression pads, and lined tech sleeves.</p>
           </div>
 
-          <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon"><i class="fa-solid fa-gear"></i></div>
+          <div class="atelier-pillar-card reveal reveal-delay-2">
+            <div class="pillar-top">
+              <span class="pillar-num">03</span>
+              <span class="pillar-spec">Japanese Hinomoto&reg;</span>
+            </div>
+            <div class="feature-icon pillar-icon"><i class="fa-solid fa-circle-notch"></i></div>
             <h4>Smooth-Rolling Wheels</h4>
-            <p>Japanese Hinomoto 360° silent caster wheels equipped with dual steel ball bearings for glide mobility across cobblestones, tarmac, and plush carpet.</p>
+            <p>Whisper-quiet 360&deg; dual-bearing silent casters engineered for effortless glide across terminal marble, cobblestones, and carpet.</p>
           </div>
 
-          <div class="feature-card reveal" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+          <div class="atelier-pillar-card reveal">
+            <div class="pillar-top">
+              <span class="pillar-num">04</span>
+              <span class="pillar-spec">TSA-008 Certified</span>
+            </div>
+            <div class="feature-icon pillar-icon"><i class="fa-solid fa-lock"></i></div>
             <h4>Secure Locking Systems</h4>
-            <p>Integrated, flush-mounted TSA-approved combination locks and burst-proof double-coil zipper teeth that resist puncture intrusions from sharp objects.</p>
+            <p>Integrated flush-mounted TSA combination locks paired with burst-proof double-coil zippers that resist forced puncture intrusion.</p>
           </div>
 
-          <div class="feature-card reveal reveal-delay-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon"><i class="fa-solid fa-ruler-combined"></i></div>
-            <h4>Thoughtful Design</h4>
-            <p>Ergonomic multi-stage aluminum handles that lock at three tailored heights to eliminate wrist fatigue during brisk sprints between airport gates.</p>
+          <div class="atelier-pillar-card reveal reveal-delay-1">
+            <div class="pillar-top">
+              <span class="pillar-num">05</span>
+              <span class="pillar-spec">Anodized Alloy</span>
+            </div>
+            <div class="feature-icon pillar-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+            <h4>Thoughtful Ergonomics</h4>
+            <p>Zero-rattle 4-stage aircraft-grade aluminum handles calibrated to reduce wrist torque during brisk terminal connections.</p>
           </div>
 
-          <div class="feature-card reveal reveal-delay-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-            <div class="feature-icon"><i class="fa-solid fa-globe"></i></div>
+          <div class="atelier-pillar-card reveal reveal-delay-2">
+            <div class="pillar-top">
+              <span class="pillar-num">06</span>
+              <span class="pillar-spec">SmartTag Ready</span>
+            </div>
+            <div class="feature-icon pillar-icon"><i class="fa-solid fa-globe"></i></div>
             <h4>Practical Travel Features</h4>
-            <p>Includes built-in hidden AirTag/SmartTag locator slots, expandable gussets for unexpected souvenirs, and nesting storage footprint.</p>
+            <p>Discreet interior AirTag locator pocket, 20% expandable packing gusset, and zero-footprint nested storage at home.</p>
           </div>
         </div>
       </div>
@@ -507,62 +664,68 @@
     <!-- ============================================================
          SECTION 5: DESIGNED FOR EVERY JOURNEY
          ============================================================ -->
-    <section class="section section-offwhite" id="every-journey">
+    <section class="section section-offwhite home-journey-section" id="every-journey">
       <div class="container">
         <div class="section-header centered">
           <span class="section-label">Tailored Itineraries</span>
           <h2 class="section-title">Designed for Every Journey</h2>
           <p class="section-subtitle">
-            Whether charting transatlantic flights or quick suburban train connections, find the precise volume, weight profile, and interior organization you need.
+            Whether boarding transatlantic flights or high-speed continental rail, select the exact silhouette, weight profile, and organization you demand.
           </p>
         </div>
 
         <div class="grid cols-3 gap-3">
-          <div class="journey-card reveal">
+          <div class="journey-card home-journey-card reveal">
             <span class="journey-icon"><i class="fa-solid fa-briefcase"></i></span>
-            <div>
+            <div class="journey-body">
+              <span class="journey-kicker">Executive &bull; 1–3 Days</span>
               <h4>Business Travel</h4>
-              <p>Quick-access front laptop sleeves, wrinkle-resistant suiter loops, and compliant overhead carry-on dimensions for fast boarding.</p>
+              <p>Quick-access laptop vaults, tailored garment loops, and compliant overhead dimensions for effortless boarding.</p>
             </div>
           </div>
 
-          <div class="journey-card reveal reveal-delay-1">
+          <div class="journey-card home-journey-card reveal reveal-delay-1">
             <span class="journey-icon"><i class="fa-solid fa-umbrella-beach"></i></span>
-            <div>
+            <div class="journey-body">
+              <span class="journey-kicker">Coastal &bull; 48–72 Hours</span>
               <h4>Weekend Getaways</h4>
-              <p>Featherweight 45L ballistic duffels and expandable weekender packs tailored for 48-to-72-hour city and coastal retreats.</p>
+              <p>Featherweight 45L ballistic duffels and expandable cabin cases shaped for boutique hotels and spontaneous escapes.</p>
             </div>
           </div>
 
-          <div class="journey-card reveal reveal-delay-2">
+          <div class="journey-card home-journey-card reveal reveal-delay-2">
             <span class="journey-icon"><i class="fa-solid fa-users"></i></span>
-            <div>
+            <div class="journey-body">
+              <span class="journey-kicker">Synchronized &bull; Multi-Piece</span>
               <h4>Family Vacations</h4>
-              <p>Synchronized 3-piece sets with high-volume 96L trunks and color-coded tags to keep everyone’s clothing organized in hotel rooms.</p>
+              <p>Coordinated 3-piece nesting sets with generous 96L trunks and leather tags to keep every traveler organized.</p>
             </div>
           </div>
 
-          <div class="journey-card reveal">
+          <div class="journey-card home-journey-card reveal">
             <span class="journey-icon"><i class="fa-solid fa-plane-departure"></i></span>
-            <div>
+            <div class="journey-body">
+              <span class="journey-kicker">Long-Haul &bull; 7+ Days</span>
               <h4>International Journeys</h4>
-              <p>TSA combination security, puncture-resistant zippers, and reinforced aluminum corner caps engineered for brutal baggage carousels.</p>
+              <p>Recessed TSA locks, puncture-proof double zippers, and riveted corner armor crafted for global air hubs.</p>
             </div>
           </div>
 
-          <div class="journey-card reveal reveal-delay-1">
+          <div class="journey-card home-journey-card reveal reveal-delay-1">
             <span class="journey-icon"><i class="fa-solid fa-mountain-sun"></i></span>
-            <div>
+            <div class="journey-body">
+              <span class="journey-kicker">Expedition &bull; All-Weather</span>
               <h4>Adventure Travel</h4>
-              <p>Abrasion-proof ballistic weave fabrics, weatherproof polyurethane-sealed seams, and all-terrain oversized caster wheels.</p>
+              <p>Abrasion-resistant weaves, weather-sealed seams, and oversized dual-axle casters built for rugged terrain.</p>
             </div>
           </div>
 
-          <div class="journey-card reveal reveal-delay-2">
+          <div class="journey-card home-journey-card reveal reveal-delay-2">
             <span class="journey-icon"><i class="fa-solid fa-graduation-cap"></i></span>
-            <div>
+            <div class="journey-body">
+              <span class="journey-kicker">Semester &bull; High Volume</span>
               <h4>Student &amp; Study Abroad</h4>
-              <p>Durable modular storage packs, high packing-to-weight ratios, and lifetime repair support for multi-semester overseas living.</p>
+              <p>High packing-to-weight modular systems backed by 5-year global concierge repairs for overseas living.</p>
             </div>
           </div>
         </div>
@@ -570,19 +733,44 @@
     </section>
 
     <!-- ============================================================
-         SECTION 6: SHOP YOUR NEXT JOURNEY (Promotional Banner)
+         SECTION 6: SHOP YOUR NEXT JOURNEY (Maison Promotional Banner)
          ============================================================ -->
-    <section class="section section-card" id="shop-cta-banner">
+    <section class="section section-card home-cta-section" id="shop-cta-banner">
       <div class="container">
-        <div class="cta-banner reveal">
-          <span class="section-label" style="color: var(--muted-gold);">Ready For Takeoff</span>
-          <h2 class="text-white mb-2 font-serif">Upgrade Your Next Journey With AeroPack</h2>
-          <p class="mb-4" style="max-width: 62ch; margin-inline: auto;">
-            Experience effortless glide, aerospace-certified durability, and sophisticated travel aesthetics backed by our 5-year global structural protection and dedicated repair support.
+        <div class="cta-banner home-cta-maison reveal">
+          <div class="home-cta-eyebrow">
+            <i class="fa-solid fa-compass" aria-hidden="true"></i>
+            <span>Ready For Departure</span>
+          </div>
+          <h2 class="text-white mb-2 font-serif">Upgrade Your Next Journey With <span class="home-cta-accent">AeroPack</span></h2>
+          <p class="home-cta-desc">
+            Experience whisper-quiet glide, aerospace-grade protection, and timeless silhouette balance—backed by complimentary dispatch and our 5-year global concierge guarantee.
           </p>
+
+          <div class="home-cta-proof" aria-label="Maison Credentials">
+            <div class="home-cta-proof-item">
+              <strong>4.9 / 5</strong>
+              <span>Verified Voyager Rating</span>
+            </div>
+            <div class="home-cta-proof-item">
+              <strong>120+</strong>
+              <span>Global Airline Approvals</span>
+            </div>
+            <div class="home-cta-proof-item">
+              <strong>5-Year</strong>
+              <span>Atelier Shell Warranty</span>
+            </div>
+          </div>
+
           <div class="cta-banner-actions">
-            <a href="pages/services.html" class="btn btn-gold btn-lg">Explore All Products &rarr;</a>
-            <a href="pages/pricing.html" class="btn btn-outline-white btn-lg">View Collections &amp; Bundles</a>
+            <a href="pages/services.html" class="btn btn-gold btn-lg hero-btn-primary">
+              <span>Explore All Products</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="pages/pricing.html" class="btn btn-outline-white btn-lg">
+              <i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i>
+              <span>View Collections &amp; Bundles</span>
+            </a>
           </div>
         </div>
       </div>

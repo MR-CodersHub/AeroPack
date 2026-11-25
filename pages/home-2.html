@@ -87,11 +87,6 @@
         <a href="pricing.html" class="mobile-nav-item"><span class="mobile-nav-num">06</span><div class="mobile-nav-text"><span class="mobile-nav-title">Pricing</span><span class="mobile-nav-desc">Bundles, Luggage Sets &amp; Offers</span></div><i class="fa-solid fa-arrow-right-long mobile-nav-arrow"></i></a>
         <a href="contact.html" class="mobile-nav-item"><span class="mobile-nav-num">07</span><div class="mobile-nav-text"><span class="mobile-nav-title">Contact</span><span class="mobile-nav-desc">Manhattan Flagship &amp; Concierge Desk</span></div><i class="fa-solid fa-arrow-right-long mobile-nav-arrow"></i></a>
       </div>
-      <div class="mobile-nav-quick-grid">
-        <button type="button" class="mobile-quick-card" onclick="window.location.href='services.html'"><i class="fa-regular fa-heart"></i><span>Wishlist (<span class="wishlist-count-badge">0</span>)</span></button>
-        <button type="button" class="mobile-quick-card" onclick="openCart(); document.querySelector('.mobile-nav').classList.remove('open');"><i class="fa-solid fa-bag-shopping"></i><span>My Bag (<span class="cart-count-badge">0</span>)</span></button>
-        <a href="tel:+18005552376" class="mobile-quick-card"><i class="fa-solid fa-phone"></i><span>Call Desk</span></a>
-      </div>
       <div class="mobile-nav-concierge-strip">
         <div class="mobile-concierge-icon"><i class="fa-solid fa-headset"></i></div>
         <div class="mobile-concierge-info"><strong>AeroPack 24/7 Concierge</strong><span>Toll-Free: +1 (800) 555-AERO &bull; NYC Flagship</span></div>
@@ -115,16 +110,19 @@
          ============================================================ -->
     <section class="hero" id="home2-hero" style="min-height: 85vh;">
       <div class="hero-bg">
-        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1920&q=80" alt="Editorial travel photography of traveler with luxury luggage">
+        <img src="../images/hero-home2-bg.jpg" alt="Editorial travel photography of traveler with luxury luggage">
       </div>
       <div class="hero-bg-overlay" style="background: linear-gradient(135deg, rgba(23,40,61,0.92) 0%, rgba(40,91,98,0.7) 100%);"></div>
-      <div class="container hero-content centered">
+      <div class="hero-side-image" aria-hidden="true">
+        <img src="../images/hero-home2-side.jpg" alt="">
+      </div>
+      <div class="container hero-content">
         <span class="hero-label">Curated Collections 2026</span>
         <h1 class="hero-title">Explore the World <br>with <span class="accent">Unwavering Confidence.</span></h1>
         <p class="hero-subtitle">
           From alpine weekend retreats to multi-continent flight itineraries, discover purpose-built travel luggage combining featherweight agility, structural durability, and refined minimalist aesthetics.
         </p>
-        <div class="hero-actions centered">
+        <div class="hero-actions">
           <a href="services.html#shop-by-type" class="btn btn-gold btn-lg">Browse Collections &rarr;</a>
           <a href="pricing.html" class="btn btn-outline-white btn-lg">View Luggage Sets</a>
         </div>
@@ -220,13 +218,13 @@
           <!-- Cabin 1: Stratus -->
           <article class="product-card reveal">
             <div class="product-card-image">
-              <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=800&q=80" alt="Stratus Luxe Carbon Cabin Suitcase" loading="lazy">
+              <img src="../images/product-stratus-cabin.jpg" alt="Stratus Luxe Carbon Cabin Suitcase" loading="lazy">
               <div class="product-badges">
                 <span class="badge badge-featured">IATA Compliant</span>
               </div>
               <div class="product-actions">
                 <button class="action-btn" onclick="toggleWishlist('stratus-carry-on')" data-wishlist-id="stratus-carry-on" title="Save to Wishlist"><i class="fa-regular fa-heart"></i></button>
-                <button class="action-btn" onclick="openLightbox('https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=1200&q=80')" title="Zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <button class="action-btn" onclick="openLightbox('../images/product-stratus-cabin.jpg')" title="Zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
               </div>
             </div>
             <div class="product-card-body">

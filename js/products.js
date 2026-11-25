@@ -22,9 +22,9 @@ const AEROPACK_PRODUCTS = [
       { name: "Graphite", hex: "#30363D" },
       { name: "Warm Sand", hex: "#E9DDCA" }
     ],
-    image: "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=800&q=80",
+    image: "images/product-aerovoyager.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=1000&q=80",
+      "images/product-aerovoyager.jpg",
       "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=1000&q=80",
       "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80",
       "https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=1000&q=80"
@@ -61,9 +61,9 @@ const AEROPACK_PRODUCTS = [
       { name: "Graphite", hex: "#30363D" },
       { name: "Off White", hex: "#F8F8F5" }
     ],
-    image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=800&q=80",
+    image: "images/product-stratus-cabin.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=1000&q=80",
+      "images/product-stratus-cabin.jpg",
       "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=1000&q=80",
       "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80"
     ],
@@ -98,9 +98,9 @@ const AEROPACK_PRODUCTS = [
       { name: "Midnight Navy", hex: "#17283D", active: true },
       { name: "Muted Gold", hex: "#B99A63" }
     ],
-    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+    image: "images/product-horizon-trunk.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80",
+      "images/product-horizon-trunk.jpg",
       "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=1000&q=80"
     ],
     badge: "Popular",
@@ -243,9 +243,9 @@ const AEROPACK_PRODUCTS = [
       { name: "Deep Teal", hex: "#285B62" },
       { name: "Midnight Navy", hex: "#17283D" }
     ],
-    image: "https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=800&q=80",
+    image: "images/product-nomad-duo.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1575844264771-892081089af5?auto=format&fit=crop&w=1000&q=80",
+      "images/product-nomad-duo.jpg",
       "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=1000&q=80"
     ],
     badge: "Sale -15%",
